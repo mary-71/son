@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<!-- facebook Tag -->
+<meta property="fb:app_id"           content="APP_ID" />
+<!-- Open Graph Tag -->
+<meta property="og:title"            content=""/><!-- 웹 페이지 제목 -->
+<meta property="og:type"             content="website"/><!-- 웹 페이지 타입 -->
+<meta property="og:url"              content=""/><!-- 웹 페이지 URL-->
+<meta property="og:image"            content=""/><!-- 웹 페이지 대표 이미지 -->
+<meta property="og:description"      content=""/><!-- 웹 페이지 설명 -->
+<!-- twitter Tag -->
+<meta property="twitter:card"        content="summary"/>
+<meta property="twitter:url"         content=""/><!-- 웹 페이지 URL-->
+<meta property="twitter:image"       content=""/><!-- 웹 페이지 대표 이미지 -->
+<meta property="twitter:title"       content=""/><!-- 웹 페이지 제목 -->
+<meta property="twitter:description" content=""/><!-- 웹 페이지 설명 -->
+<!-- icon (Internet Explorer & Windows Phone) -->
+<meta name="msapplication-square70x70logo" content="70x70.png"><!-- smalltile -->
+<meta name="msapplication-square150x150logo" content="150x150.png"><!-- mediumtile -->
+<meta name="msapplication-wide310x150logo" content="310x150.png"><!-- widetile -->
+<!-- icon (Chrome & Opera) -->
+<link rel="icon" sizes="192x192" href="192x192.png"><!-- 아이콘의 크기는 48px을 기본으로 합니다. 48px, 96px, 144px, 192px로 늘어납니다.-->
+<!-- icon (Safari) -->
+<link rel="apple-touch-icon" sizes="76x76" href="76x76.png"/><!-- iPad -->
+<link rel="apple-touch-icon" sizes="120x120" href="120x120.png"/><!-- iPhone Retina -->
+<link rel="apple-touch-icon" sizes="152x152" href="152x152.png"/><!-- iPad Retina -->
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="64x64.ico"/><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->	
+	
+<title>XDC :: maum API</title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="../resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../resources/css/common.css" />
+<script type="text/javascript" src="../resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="../resources/js/common.js"></script>
+<!-- //resources -->
+</head>
+
+<body>
+<!-- loading -->
+<div id="pageldg">
+    <div class="ld_item">
+        <span></span>  
+        <span></span>
+    </div>
+</div>
+<!-- //loading -->
+<!-- #wrap -->
+<div id="wrap"> 
+	<!-- #header -->
+	<div id="header" >	
+		<!-- .sta -->
+		<div class="sta">
+			<h1><a href="../index.html"><img src="../resources/images/img_cmn_h1.png" alt="maum API"></a></h1>			
+			<div class="etcMenu">
+				<ul>
+					<!-- <li class="login"><span>로그인</span></li> -->
+					<li class="lang">
+						<p class="lang_select"><img src="../resources/images/ico_lang_kr.png" alt="한국어"><em>한국어</em></p>
+						<ul class="lst">
+							<li><a href="../../en/index.html" target="_blank"><img src="../resources/images/ico_lang_us.png" alt="English"><em>English</em></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //.sta -->
+		<!-- .gnb -->
+		<div id="gnb" class="gnb guide_header">
+			<div class="gnbNavBox">
+				<ul class="gnbNav">
+					<li class="menu1depth">
+						<h2><a href="#none">제품</a></h2>
+						<div class="gnbItem">
+							<div class="lot_c">
+								<div class="itemBox">
+									<dl style="margin-bottom:55px">
+										<dt class="ico_voice"><span>음성</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../product/stt.html" target="_self">Speech To Text <em class="new">Demo</em></a></li>
+												<li><a href="../product/tts.html" target="_self">Text To Speech <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="ico_visual"><span>시각</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../product/diarl.html" target="_self">Document Image Analysis, Recognition and Learning <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_int"><span>지능</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../product/ec.html" target="_self">Ensemble Classification</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_lang"><span>언어</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../product/nlu.html" target="_self">Natural Language Understanding</a></li>
+												<li><a href="../product/dnn.html" target="_self">DNN Classification</a></li>
+												<li><a href="../product/hmd.html" target="_self">Hierarchical Multiple Dictionary</a></li>
+												<li><a href="../product/xdc.html" target="_self">eXplainable Document Classifier <em class="new">Demo</em></a></li>
+												<li><a href="../product/if.html" target="_self">Intent Finder</a></li>
+												<li><a href="../product/we.html" target="_self">Word Embedding</a></li>
+												<li><a href="../product/mrc.html" target="_self">Machine reading comprehension <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_cvs"><span>대화</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../product/sds.html" target="_self">Spoken Dialogue System</a></li>
+												<li><a href="../product/bqa.html" target="_self">Basic Question Answering <em class="new">Demo</em></a></li>
+												<li><a href="../product/kbqa.html" target="_self">Knowledge Based Question Answering <em class="new">Demo</em></a></li>
+												<li><a href="../product/irqa.html">Information Retrieval Question Answering <em class="new">Demo</em></a></li>
+												<li><a href="../product/deepqa.html" target="_self">Deep Question Answering <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu1depth"><h2><a href="#none">개발 가이드</a></h2>
+
+					</li>
+					<li class="menu1depth"><h2><a href="https://mindslabmall.ai/">구매하기</a></h2></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //.gnb -->
+
+	</div>
+	<!-- //#header -->
+
+	<!-- aside -->
+	<div class="aside" style="display:none;">
+		<!-- .aside_top -->
+		<div class="aside_top">
+			<h1><a href="index.html"><img src="../resources/images/logo_aside_h1.png" alt="maum API"></a></h1>
+		</div>
+		<!-- //.aside_top -->
+		<!-- .aside_mid -->
+		<div class="aside_mid">
+			<ul class="m_etcMenu">
+				<li class="lang">
+					<p class="lang_select"><img src="../resources/images/ico_lang_kr.png" alt="한국어"><em>한국어</em></p>
+					<ul class="lst">
+						<li><a href="../../en/index.html" target="_self"><img src="../resources/images/ico_lang_us.png" alt="English"><em>English</em></a></li>
+					</ul>
+				</li>
+			</ul>
+				
+			
+			<ul class="m_nav">
+				<li>
+					<h2><a href="#none">개발 가이드</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none"><span class="ico_voice">음성</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="stt.html" target="_self">Speech To Text <em class="new">Update</em></a></li>
+<!--							<li><a href="tts.html" target="_self">Text To Speech <em class="new">Demo</em></a></li>-->
+							</ul>
+						</li>
+<!--
+						<li>
+							<h3><a href="#none"><span class="ico_visual">시각</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="diarl.html" target="_self">Document Image Analysis, Recognition and Learning <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_int">지능</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="ec.html" target="_self">Ensemble Classification</a></li>
+							</ul>
+						</li>
+-->
+						<li>
+							<h3><a href="#none"><span class="ico_lang">언어</span></a></h3>
+							<ul class="m_lst_sub">
+<!--
+								<li><a href="nlu.html" target="_self">Natural Language Understanding</a></li>
+								<li><a href="dnn.html" target="_self">DNN Classification</a></li>
+								<li><a href="hmd.html" target="_self">Hierarchical Multiple Dictionary</a></li>
+-->
+								<li><a href="xdc.html" target="_self">eXplainable Document Classifier <em class="new">Update</em></a></li>
+<!--
+								<li><a href="if.html" target="_self">Intent Finder</a></li>
+								<li><a href="sc.html" target="_self">Simple Claasifier</a></li>
+								<li><a href="we.html" target="_self">Word Embedding</a></li>
+-->
+								<li><a href="mrc.html" target="_self">Machine Reading Comprehension  <em class="new">Update</em></a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_cvs">대화</span></a></h3>
+							<ul class="m_lst_sub">
+<!--
+								<li><a href="sds.html" target="_self">Spoken Dialogue System</a></li>
+								<li><a href="bqa.html" target="_self">Basic Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="kbqa.html" target="_self">Knowledge Based Question Answering <em class="new">Demo</em></a></li>
+-->
+								<li><a href="irqa.html" target="_self">Information Retrieval Question Answering <em class="new">Update</em></a></li>
+								<li><a href="dqa.html" target="_self">Deep Question Answering <em class="new">Update</em></a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">제품</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none"><span class="ico_voice">음성</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="../product/stt.html" target="_self">Speech To Text <em class="new">Demo</em></a></li>
+								<li><a href="../product/tts.html" target="_self">Text To Speech <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_visual">시각</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="../product/diarl.html" target="_self">Document Image Analysis, Recognition and Learning <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_int">지능</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="../product/ec.html" target="_self">Ensemble Classification</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_lang">언어</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="../product/nlu.html" target="_self">Natural Language Understanding</a></li>
+								<li><a href="../product/dnn.html" target="_self">DNN Classification</a></li>
+								<li><a href="../product/hmd.html" target="_self">Hierarchical Multiple Dictionary</a></li>
+								<li><a href="../product/xdc.html" target="_self">eXplainable Document Classifier <em class="new">Demo</em></a></li>
+								<li><a href="../product/if.html" target="_self">Intent Finder</a></li>
+								<li><a href="../product/sc.html" target="_self">Simple Claasifier</a></li>
+								<li><a href="../product/we.html" target="_self">Word Embedding</a></li>
+								<li><a href="../product/mrc.html" target="_self">Machine reading comprehension <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_cvs">대화</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="../product/sds.html" target="_self">Spoken Dialogue System</a></li>
+								<li><a href="../product/bqa.html" target="_self">Basic Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="../product/kbqa.html" target="_self">Knowledge Based Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="../product/irqa.html" target="_self">Information Retrieval Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="../product/deepqa.html" target="_self">Deep Question Answering <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="https://mindslabmall.ai/">구매하기</a></h2>
+				</li>
+				<li>
+					<h2><a href="#none">문의하기</a></h2>
+				</li>
+			</ul>  
+		</div>
+		<!-- //.aside_mid -->
+		<!-- .aside_btm -->
+		<div class="aside_btm">
+			<ul>
+				<li class="btn_mail"><a href="mailto:hello@mindslab.ai">hello@mindslab.ai</a></li>
+				<li class="btn_tel"><a href="tel:+82316254340">031. 625. 4340</a></li>
+			</ul>
+		</div>
+		<!-- //.aside_btm -->
+	</div>
+	<div class="bg_aside"></div> 
+	<a class="btn_header_ham" href="#none"><span class="hamburger_icon"></span></a>  
+	<!-- //aside -->     
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #contents -->
+		<div id="contents">	
+			<!-- .visualArea -->
+			<div class="guide_area">
+				
+			</div>
+			<!-- //.visualArea -->
+			<div class="guide_stn">
+				<div class="guide_list">					
+					<ul>
+						<li><a href="../guide/public.html">API 공통 가이드</a></li>
+						<li><a href="../guide/stt.html">Speech-To-Text <em class="new">UPDATE</em></a></li>					
+						<li><a href="../guide/tts.html">Text To Speech</a></li>
+						<li><a href="../guide/diarl.html"><span>Document Image Analysis,</span> <span>Recognition and Learning</span></a></li>
+						<li><a href="../guide/ec.html">Ensemble Classification</a></li>
+						<li><a href="../guide/nlp.html">Natural Language Understanding</a></li>
+						<li><a href="../guide/dnn.html">DNN Classification</a></li>
+						<li><a href="../guide/hmd.html">Hierarchical Multiple Dictionary</a></li>			
+						<li class="active"><a href="../guide/xdc.html">eXplainable Document Classifier <em class="new">UPDATE</em></a></li>
+						<li><a href="../guide/if.html">Intent Finder</a></li>
+						<li><a href="../guide/we.html">Word Embedding</a></li>
+						<li><a href="../guide/mrc.html">Machine Reading Comprehension <em class="new">UPDATE</em></a></li>
+						<li><a href="../guide/sds.html">Spoken Dialogue System</a></li>
+						<li><a href="../guide/bqa.html">Basic Question Answering </a></li>
+						<li><a href="../guide/kbqa.html">Knowledge Based Question Answering</a></li>
+						<li><a href="../guide/irqa.html"><span>Information Retrieval Question</span> <span>Answering <em class="new">UPDATE</em></span></a></li>
+						<li><a href="../guide/dqa.html">Deep Question Answering <em class="new">UPDATE</em></a></li>
+					</ul>
+				</div>
+				<div class="guide_box">
+					
+					<div class="guide_group">
+						<div class="title">
+							XDC(eXplainable Document Classifier)		
+						</div>
+						<p class="sub_txt"> 마인즈랩의 XDC(문서 분류, eXplainable Document Classifier)는 내용과 분량에 관계 없이 어떤 문서든 즉시 분류한 뒤 분류 이유를 설명할 수 있는 혁신적인 인공지능 문서 분류 기술입니다.</p>
+
+						<span class="sub_title">
+							준비사항			
+						</span>
+						<p class="sub_txt">① Input: 본믄 (텍스트) </p>
+						<p class="sub_txt">② 아래 Model 중 택 1  </p>
+						<ul>
+							<li>뉴스 분류 (default)</li>					
+						</ul>
+						<span class="sub_title">
+							 실행 가이드			
+						</span>
+						<p class="sub_txt">① Request  </p>
+						<ul>
+							<li>Method : POST</li>
+							<li>URL : https://api.maum.ai/api/xdc/</li>										
+						</ul>
+						<p class="sub_txt">② Request 파라미터 설명 </p>
+						<table>
+							<tr>
+								<th>키</th>
+								<th>설명</th>
+								<th>type</th>
+							</tr>
+							<tr>
+								<td>ID</td>
+								<td>사용자의 고유 ID. 마인즈랩 담당자에게 이메일로 발급요청 </td>
+								<td>string</td>
+							</tr>
+							<tr>
+								<td>key</td>
+								<td>사용자의 고유 key. 마인즈랩 담당자에게 이메일로 발급요청 </td>
+								<td>string</td>
+							</tr>
+							<tr>
+								<td>cmd</td>
+								<td>어떤 API 를 사용할지에 대한 간단한 키워드 (runXDC) </td>
+								<td>string</td>
+							</tr>
+							<tr>
+								<td>text</td>
+								<td>분류를 수행할 본문 (텍스트) </td>
+								<td>string</td>
+							</tr>	
+						</table>
+						<p class="sub_txt">③ Request 예제 </p>
+						<div class="code_box">
+curl -X POST \<br>
+<span>https://api.maum.ai/api/xdc/ \</span><br>
+<span>-H 'content-type: multipart/form-data; </span><br>
+boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \<br>
+<span>-F ID=(*ID 요청 필요) \</span><br>
+<span>-F key=(*key 요청 필요) \</span><br>
+<span>-F cmd=runXDC \</span><br>
+<span>-F 'text=문재인 대통령이  자영업자 지원 대책 마련을 지시했다.</span><br>
+자영업자 지원 대책을 통해 민생 경제 살리기에 나서겠다는 의도다. '<br>
+						</div>
+
+						<p class="sub_txt">④ Response 파라미터 설명 </p>
+						<span class="table_tit">Response</span>
+						<table>
+							<tr>
+								<th>키</th>
+								<th>설명</th>
+								<th>타입</th>
+							</tr>
+							<tr>
+								<td>data</td>
+								<td>API 결과 data (json format) </td>
+								<td>object</td>
+							</tr>
+							<tr>
+								<td>status</td>
+								<td>API 동작여부 (Success / Fail)</td>
+								<td>string</td>
+							</tr>
+						</table>	
+						<span class="table_tit">data: API 결과</span>
+						<table>
+							<tr>
+								<th>키</th>
+								<th>설명</th>
+								<th>타입</th>
+							</tr>
+							<tr>
+								<td>sent attns</td>
+								<td>문장별 분석 결과 (json list format)</td>
+								<td>list</td>
+							</tr>
+							<tr>
+								<td>cls</td>
+								<td>분류 결과 (json list format)</td>
+								<td>list</td>
+							</tr>
+							<tr>
+								<td>top_word_indices_lists</td>
+								<td>문장 내 “Top word” list<br>
+* Top word: 분류 결과에 영향을 크게 미친 단어</td>
+								<td>list</td>
+							</tr>
+							<tr>
+								<td>sentences</td>
+								<td>본문 원문 문장의 나열</td>
+								<td>list</td>
+							</tr>
+							<tr>
+								<td>top_sent_indics</td>
+								<td>본문 내 “Top sentence”  list <br>
+* Top sentence: 분류 결과에 영향을 크게 미친 문장</td>
+								<td>list</td>
+							</tr>
+						</table>	
+						<span class="table_tit">sent attns: 문장별 분석 결과</span>
+						<table>
+							<tr>
+								<th>키</th>
+								<th>설명</th>
+								<th>타입</th>
+							</tr>
+							<tr>
+								<td>weight</td>
+								<td>문장의 영향도 (0~1)</td>
+								<td>number</td>
+							</tr>
+							<tr>
+								<td>word attns</td>
+								<td>단어별 분석 결과 (json list format)</td>
+								<td>list</td>
+							</tr>
+						</table>	
+						<span class="table_tit">word attns: 단어별 분석 결과</span>
+						<table>
+							<tr>
+								<th>키</th>
+								<th>설명</th>
+								<th>타입</th>
+							</tr>
+							<tr>
+								<td>end</td>
+								<td>단어의 끝(n)</td>
+								<td>int</td>
+							</tr>
+							<tr>
+								<td>start</td>
+								<td>단어의 시작(n)</td>
+								<td>int</td>
+							</tr>
+							<tr>
+								<td>weight</td>
+								<td>단어의 영향도 (0~1)</td>
+								<td>number</td>
+							</tr>
+						</table>	
+						<span class="table_tit">cls: 분류 결과</span>
+						<table>
+							<tr>
+								<th>키</th>
+								<th>설명</th>
+								<th>타입</th>
+							</tr>	
+							<tr>
+								<td>label</td>
+								<td>분류 결과의 라벨 (확률 높은 순대로 배열)</td>
+								<td>string</td>
+							</tr>
+							<tr>
+								<td>probability</td>
+								<td>분류 결과 라벨에 대한 확률(0~1)</td>
+								<td>number</td>
+							</tr>
+						</table>
+						<p class="sub_txt">⑤ Response 예제 </p>
+						<div class="code_box">
+{ <br>
+<span>"data": { </span><br>
+<span class="twoD">"sent_attns": &#91; </span><br>
+<span class="thirD">{</span><br>
+<span class="fourD">"weight": 0.6107006072998047, </span><br>
+<span class="fourD">"word_attns": &#91;</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 3, </span><br>
+<span class="sixD">"start": 0,</span> <br>
+<span class="sixD">"weight": 0.4624311327934265</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 3, </span><br>
+<span class="sixD">"start": 4,</span><br>
+<span class="sixD">"weight": 0.4628150165081024</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 8,</span><br>
+<span class="sixD">"start": 7,</span><br>
+<span class="sixD">"weight": 0.00015031141811050475</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 11,</span><br>
+<span class="sixD">"start": 9,</span><br>
+<span class="sixD">"weight": 0.05583297088742256</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 12,</span><br>
+<span class="sixD">"start": 11,</span><br>
+<span class="sixD">"weight": 0.0008690473041497171</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 13,</span><br>
+<span class="sixD">"start": 12,</span><br>
+<span class="sixD">"weight": 0.00045832101022824645</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 16,</span><br>
+<span class="sixD">"start": 14,</span><br>
+<span class="sixD">"weight": 0.0016573637258261442</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 19,</span><br>
+<span class="sixD">"start": 17,</span><br>
+<span class="sixD">"weight": 0.012514691799879074</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 22,</span><br>
+<span class="sixD">"start": 20,</span><br>
+<span class="sixD">"weight": 0.0024623603094369173</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 23,</span><br>
+<span class="sixD">"start": 22,</span><br>
+<span class="sixD">"weight": 0.00009186907118419185</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 26,</span><br>
+<span class="sixD">"start": 24,</span><br>
+<span class="sixD">"weight": 0.00032167034805752337</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 27,</span><br>
+<span class="sixD">"start": 26,</span><br>
+<span class="sixD">"weight": 0.000014860834198771045</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 29,</span><br>
+<span class="sixD">"start": 26,</span><br>
+<span class="sixD">"weight": 0.00015158542373683304</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 28,</span><br>
+<span class="sixD">"start": 27,</span><br>
+<span class="sixD">"weight": 0.00011515152436913922</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 29,</span><br>
+<span class="sixD">"start": 28,</span><br>
+<span class="sixD">"weight": 0.00011353873560437933</span><br>
+<span class="fivD">}</span><br>
+<span class="fourD">]</span><br>
+<span class="thirD">},</span><br>
+<span class="thirD">{</span><br>
+<span class="fourD">"weight": 0.3892994225025177,</span><br>
+<span class="fourD">"word_attns": [</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 2,</span><br>
+<span class="sixD">"start": 0,</span><br>
+<span class="sixD">"weight": 0.46636006236076355</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 3,</span><br>
+<span class="sixD">"start": 2,</span><br>
+<span class="sixD">"weight": 0.005901840515434742</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 4,</span><br>
+<span class="sixD">"start": 3,</span><br>
+<span class="sixD">"weight": 0.002670261077582836</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 7,</span><br>
+<span class="sixD">"start": 5,</span><br>
+<span class="sixD">"weight": 0.008556583896279335</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 10,</span><br>
+<span class="sixD">"start": 8,</span><br>
+<span class="sixD">"weight": 0.059857748448848724</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 11,</span><br>
+<span class="sixD">"start": 10,</span><br>
+<span class="sixD">"weight": 0.000501320231705904</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 14,</span><br>
+<span class="sixD">"start": 12,</span><br>
+<span class="sixD">"weight": 0.00013077868788968772</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 14,</span><br>
+<span class="sixD">"start": 12,</span><br>
+<span class="sixD">"weight": 0.00152284512296319</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 17,</span><br>
+<span class="sixD">"start": 15,</span><br>
+<span class="sixD">"weight": 0.2578815519809723</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 20,</span><br>
+<span class="sixD">"start": 18,</span><br>
+<span class="sixD">"weight": 0.1869463324546814</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 23,</span><br>
+<span class="sixD">"start": 21,</span><br>
+<span class="sixD">"weight": 0.0004695350071415305</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 24,</span><br>
+<span class="sixD">"start": 23,</span><br>
+<span class="sixD">"weight": 0.0017966240411624312</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 25,</span><br>
+<span class="sixD">"start": 24,</span><br>
+<span class="sixD">"weight": 0.0002747586986515671</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 28,</span><br>
+<span class="sixD">"start": 26,</span><br>
+<span class="sixD">"weight": 0.00011514957441249862</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 29,</span><br>
+<span class="sixD">"start": 28,</span><br>
+<span class="sixD">"weight": 0.00037896056892350316</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 31,</span><br>
+<span class="sixD">"start": 29,</span><br>
+<span class="sixD">"weight": 0.0016354455146938562</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 34,</span><br>
+<span class="sixD">"start": 32,</span><br>
+<span class="sixD">"weight": 0.0028608269058167934</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 34,</span><br>
+<span class="sixD">"start": 34,</span><br>
+<span class="sixD">"weight": 0.0008212759857997298</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 35,</span><br>
+<span class="sixD">"start": 34,</span><br>
+<span class="sixD">"weight": 0.0006593979196622968</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 36,</span><br>
+<span class="sixD">"start": 35,</span><br>
+<span class="sixD">"weight": 0.0006588271935470402</span><br>
+<span class="fivD">}</span><br>
+<span class="fourD">]</span><br>
+<span class="thirD">}</span><br>
+<span class="twoD">],</span><br>
+<span class="twoD">"cls": [</span><br>
+<span class="thirD">{</span><br>
+<span class="fourD">"label": "정치",</span><br>
+<span class="fourD">"probability": 0.9963884353637695</span><br>
+<span class="thirD">},</span><br>
+<span class="thirD">{</span><br>
+<span class="fourD">"label": "사회기타",</span><br>
+<span class="fourD">"probability": 0.0009989844402298331</span><br>
+<span class="thirD">},</span><br>
+<span class="thirD">{</span><br>
+<span class="fourD">"label": "교육",</span><br>
+<span class="fourD">"probability": 0.0009375850204378366</span><br>
+<span class="thirD">}</span><br>
+<span class="twoD">],</span><br>
+<span class="twoD">"top_word_indices_lists": [</span><br>
+<span class="thirD">[</span><br>
+<span class="fourD">1,</span><br>
+<span class="fourD">0,</span><br>
+<span class="fourD">3</span><br>
+<span class="thirD">],</span><br>
+<span class="thirD">[</span><br>
+<span class="fourD">0,</span><br>
+<span class="fourD">8,</span><br>
+<span class="fourD">9</span><br>
+<span class="thirD">]</span><br>
+<span class="twoD">],</span><br>
+<span class="twoD">"sentences": [</span><br>
+<span class="fourD">"문재인 대통령이  자영업자 지원 대책 마련을 지시했다.",</span><br>
+<span class="fourD">"자영업자 지원 대책을 통해 민생 경제 살리기에 나서겠다는 의도다."</span><br>
+<span class="twoD">],</span><br>
+<span class="twoD">"top_sent_indices": [</span><br>
+<span class="fourD">0,</span><br>
+<span class="fourD">1</span><br>
+<span class="twoD">]</span><br>
+<span>},</span><br>
+<span>"status": "Success"</span><br>
+}<br>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+            
+			
+            
+			
+			<!-- .stn -->
+			<div id="api_contact" class="api_contact">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<!-- .stn_cont -->
+					<div class="stn_cont">
+						<!-- .contactBox -->
+						<div class="contactBox">
+							<!-- .leftBox -->
+							<div class="leftBox">
+								<div class="stn_tit">
+									<h3>Contact Us</h3>
+								</div>
+								<div class="leftTxtBox">
+									<p>마인즈랩과 마인즈랩의 API 서비스에 대한 문의가 있으시다면 여기에 남겨주세요.<br>페이스북과 링크드인을 팔로우하시면 새 소식을 더 빠르게 접하실 수 있습니다.</p>
+									<ul class="contact_lst">
+										<li class="btn_tel"><a href="tel:+82316254340">+82 31 625 4340</a></li>
+										<li class="btn_mail"><a href="mailto:hello@mindslab.ai">hello@mindslab.ai</a></li>
+										<li class="btn_web"><a href="http://mindslab.ai" target="_blank">마인즈랩 홈페이지 mindslab.ai</a></li>
+										<ul class="social_lst">
+											<li class="btn_fb"><a href="https://www.facebook.com/mindsinsight/?fref=ts" target="_blank">Facebook</a></li>
+											<li class="btn_ld"><a href="https://www.linkedin.com/company/mindslabai" target="_blank">Linkedin</a></li>
+										</ul>
+									</ul>
+								</div>
+							</div>
+							<!-- //.leftBox -->
+							<!-- .rightBox -->
+							<div class="rightBox">
+								<form action="contact_form">
+									<fieldset>
+										<legend>문의하기</legend>
+										<div class="contact">
+											<div class="cl_b">
+											<div class="fl">
+												<div class="txtfield">
+													<select id="contactType" class="select">
+														<option id="ctt_type01" value="문의유형">문의유형</option>
+														<option id="ctt_type02" value="유료사용신청">유료사용신청</option>
+														<option id="ctt_type03" value="마인즈랩 STT 문의">마인즈랩 STT 문의</option>
+														<option id="ctt_type04" value="사용자 피드백">사용자 피드백</option>
+													</select>
+												</div>
+											</div>
+											<div class="fr">
+												<div class="txtfield">
+													<input type="text" name="fm_name" id="fm_name" class="input_txt" placeholder="이름 *">
+												</div>
+											</div>
+											</div>
+											<div class="txtfield">
+												<input type="text" name="fm_email" id="fm_email"  class="input_txt" placeholder="이메일 *">
+											</div>
+											<div class="txtfield">
+												<input type="text" name="fm_tel" id="fm_tel"  class="input_txt" placeholder="전화번호">
+											</div>
+											<div class="txtfield">
+												<textarea name="fm_txt" id="fm_txt" class="textArea" rows="4" placeholder="문의내용 *"></textarea>
+											</div>
+											<ul class="btnBox">
+												<li><button class="btn_clor">문의하기</button></li>
+												<!-- <li><button>개발자 가이드</button></li> -->
+											</ul>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<!-- //.rightBox -->
+						</div>
+						<!-- //.contactBox -->
+					</div>
+					<!-- //.stn_cont -->
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.stn -->
+			<p class="btn_goTop"><button>맨위로</button></p>
+		</div>
+		<!-- //#contents -->
+	</div>
+	<!-- //#container -->
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="lot_c">
+			<div class="f_logo"><img src="../resources/images/logo_footer.png" alt="마인즈랩"></div>
+			<div class="cyrt"><span>MINDsLab &copy; 2018 .</span> <span>주식회사 마인즈랩ㅣ대표 유태준ㅣ</span><span>사업자 등록번호 314-86-55446</span></div>
+		</div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+<script type="text/javascript" src="../resources/js/particles.js"></script>
+<script type="text/javascript" src="../resources/js/app.js"></script>
+<script type="text/javascript">   
+$(window).load(function() {    
+	$('#pageldg').addClass('pageldg_hide').delay(500).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<script type="text/javascript">
+jQuery(function(){
+	jQuery("a#stt_mov01").movLayer();
+	jQuery("a#stt_mov02").movLayer();
+	jQuery("a#stt_mov03").movLayer();
+	jQuery("a#stt_mov04").movLayer();
+});
+</script> 
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){	
+		// Page CSS
+		$('#wrap').each(function(){				
+			$(this).addClass('type_xdc');
+		});	
+	
+		
+	});	
+});	
+	
+	
+// resize
+$(window).resize(function(){
+		
+});	
+// scroll event
+</script>
+</body>
+</html>

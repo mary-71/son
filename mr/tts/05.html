@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	
+<title>TTS </title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="resources/css/font.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/semantic.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/common.css" />
+<script type="text/javascript" src="resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="resources/js/common.js"></script>
+<script type="text/javascript" src="resources/js/semantic.js"></script>
+<!-- //resources -->
+</head>
+
+<body>
+<!-- loading -->
+<div id="pageldg">
+    <div class="ld_item">
+        <span></span>  
+        <span></span>
+    </div>
+</div>
+<!-- //loading -->
+<!-- #wrap -->
+<div id="wrap">   
+	<!-- #header -->
+	<div id="header">
+        <h1><a href=""><img src="resources/images/logo_header.png" alt="maum Voice"></a></h1>
+        <div class="sub_hd">
+			<ul>
+				<li><a href="">My Voice Cards</a></li>
+				<li><a href="02_process.html">Guide</a></li>
+			</ul>
+		</div>
+		
+		<!-- .etcmenu -->
+		<div class="etcmenu">
+			<div class="userBox">
+				<div class="ad_logo">
+<!--				네이버일때는 logo_naver.png로 바꾸기-->										
+				</div>
+				<div class="ad_mail"><a href="">hello@mindslab.ai</a></div>
+				<div class="btn_logout">
+					<button type="button">Log Out</button>
+				</div>			
+			</div>
+		</div>
+		<!-- //.etcmenu -->
+	</div>
+	<!-- //#header -->	
+	<!-- #container -->
+	<div id="container">
+			<!-- .visualArea -->
+			<div class="card_lst">
+				<ul>					
+					<li class="m_card">
+						<div class="card_btn">
+							<button class="btn_edit"></button>
+							<button class="btn_x"></button>						
+						</div>						
+						<div class="m_img"></div>
+						<p class="name">옥택연</p>
+						<p class="gender"> 남성 │ 20 대 중반</p>
+						<p class="desc"> 유쾌한 엔터테인먼트 톤</p>
+						<div class="btn_cdtion">
+							<a class="myVoice"  style="display: none;">my Voice</a>
+							<a class="record" href="06_start.html">Record</a>
+							<div class="ing" style="display: none;">
+								<span>In Progress.</span>
+							</div>	
+						</div>	
+					</li>
+					
+				</ul>
+			
+			</div>
+			<!-- //.visualArea -->		
+	</div>
+</div>
+<!-- //#wrap -->
+<script type="text/javascript" src="resources/js/player.js"></script>
+<script type="text/javascript">
+    $(window).load(function () {
+        $('#pageldg').addClass('pageldg_hide').delay(500).queue(function () { $(this).remove(); });
+    });
+</script>
+
+<script type="text/javascript">
+    jQuery.event.add(window, "load", function () {
+        $(document).ready(function () {
+           
+            
+            
+          
+    });
+});
+
+
+</script>
+</body>
+</html>
+	

@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* MINDsLab YMJ 20180128 */ 
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700");
+@import url("https://fonts.googleapis.com/earlyaccess/notosanskr.css");
+
+/* [reset css] */
+* {font-family:Noto Sans KR, sans-serif; word-wrap:break-word;}
+html,body {margin:0; padding:0; width:100%; height:100%; font-family:Noto Sans KR, sans-serif; background:#27262b; font-size:12px; color:#666; line-height:18px;}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,legend,em,span {margin:0; padding:0; font-family:Noto Sans KR, sans-serif;} 
+table {border-spacing:0; border-collapse:collapse; font-family:Noto Sans KR, sans-serif;}
+th, td {word-break:break-all;}
+form,fieldset {display:block;}
+form,fieldset,img {border:none;} 
+address,caption,cite,code,dfn,em,th,var {font-style:normal; font-weight:normal;} 
+ol,ul,li {list-style:none;} 
+abbr,acronym {border:none;} 
+hr {display:none;}
+a {text-decoration:none; color:#000; cursor:pointer; font-family:Noto Sans KR, sans-serif;}
+a:link,a:visited {text-decoration:none;}
+a:hover,a:active,a:focus {color:#333; text-decoration:none;}
+textarea {overflow:auto;} 
+html:first-child select {padding-right:6px; height:20px;} /* opera 9 & below fix */ 
+option {padding-right:6px;} /* firefox fix */
+legend {position:absolute; top:0; left:0; width:0; height:0; overflow:hidden; visibility:hidden; font-size:0; line-height:0;} /* for screen reader */ 
+pre {word-wrap:break-word;}
+label {font-family:Noto Sans KR, sans-serif;}
+h1,h2,h3,h4,h5,h6 {font-family:Noto Sans KR, sans-serif;}
+br {background:none !important;}
+img {vertical-align:top;}
+a:focus, input:focus, textarea:focus, button:focus {outline:none !important;}
+
+input[type=text]:-ms-clear {display:none;}
+input[type=text]::-ms-clear {display:none;}
+
+/*
+clear:both; display, position(top,left), float, overflow
+(min-width, width), (min-height, height) (margin,padding)
+font(text-indent, text-align, font-weight, font-size, line-height, font-family, color)
+border, background
+cursor, z-index, zoom
+*/
+
+/* maum background */ 
+#wrap {width:100%; height:100%; background:url(../images/sample/bg.jpg) 0 0 no-repeat;background-size:cover;}
+
+/* STEP01 - btn_letstalk button  */ 
+.btn_letstalk {display:block; position:fixed; right:20px; bottom:20px; margin:0; padding:0; border:none; background:none; cursor:pointer; z-index:1000;}
+
+/* STEP02 - login  */ 
+.loginWrap {position:fixed; right:5px; bottom:5px; width:300px; height:0; opacity:0; z-index:1000;}
+.loginWrap .icoBox {display:block; width:100%; height:70px; text-align:center; margin:auto; background:url(images/ico_letstalk.png) center 0 no-repeat; background-size:auto 100%;}
+.loginWrap .icoBox.rotate_mov {-webkit-animation:rotate_movPlane 4s infinite ease-in-out; animation:rotate_movPlane 4s infinite ease-in-out;}
+.loginWrap .loginBox {position:relative; height:310px; padding:20px 25px 0 25px; border-radius:10px; background:rgba(255, 255, 255, 0.8); box-shadow:0 0 1em #999;}
+.loginWrap .loginBox .idBox {position:relative;}
+.loginWrap .loginBox .idBox label {position:absolute; margin:30px 0 0 0; color:rgba(0, 0, 0, 0.4); font-size:18px; font-weight:normal; line-height:40px; transition:all 0.2s ease-out;}
+.loginWrap .loginBox .idBox .input_id {width:100%; height:40px; margin:30px 0 0 0; color:#00afaf; font-size:20px; font-weight:bold; border:none; border-bottom:1px solid rgba(0, 0, 0, 0.4); background:none;}
+.loginWrap .loginBox .pwBox {position:relative;}
+.loginWrap .loginBox .pwBox label {position:absolute; margin:30px 0 0 0; color:rgba(0, 0, 0, 0.4); font-size:18px; font-weight:normal; line-height:40px; transition:all 0.2s ease-out;}
+.loginWrap .loginBox .pwBox .input_pw {width:100%; height:40px; margin:30px 0 0 0; color:#00afaf; font-size:20px; font-weight:bold; border:none; border-bottom:1px solid rgba(0, 0, 0, 0.4); background:none;}
+.loginWrap .loginBox .btnBox {display:block; height:45px; margin:30px 0 0 0; border:2px solid #2ec2c2; border-radius:5px;}
+.loginWrap .loginBox .btnBox .btn_login {display:block; width:100%; height:45px; padding:0; color:#2ec2c2; font-size:18px; font-weight:bold; text-align:center; line-height:45px; border:none; background:none; cursor:pointer; transition:all 0.2s ease-out;}
+.loginWrap .loginBox .btnBox .btn_login:hover, .loginWrap .loginBox .btnBox .btn_login:focus {color:#fff; background:#2ec2c2;}
+.loginWrap .loginBox .error_msg {display:block; margin:30px 0 0 0; text-align:center; color:#c22e43;}
+
+/* login icon Animation */ 
+@-webkit-keyframes rotate_movPlane {0% {-webkit-transform:perspective(140px) rotateX(0deg) rotateY(0deg);
+		transform:perspective(140px) rotateX(0deg) rotateY(0deg);} 
+
+50% {-webkit-transform:perspective(0px) rotateX(0deg) rotateY(350deg);
+		transform:perspective(0px) rotateX(0deg) rotateY(350deg); 	
+   -webkit-filter:hue-rotate(220deg); /* Safari */
+		   filter:hue-rotate(220deg)			
+}
+100% {}
+}
+
+/* hide Animation  */ 
+.hide_mov {-webkit-animation-duration:0.5s; animation-duration:0.5s; -webkit-animation-fill-mode:both; animation-fill-mode:both; -webkit-animation-name:hide_mov; animation-name:hide_mov;}
+@-webkit-keyframes hide_mov {0% {opacity:1;}
+100% {opacity:0;}
+}
+
+@keyframes hide_mov {0% {opacity:1;}
+100% {opacity:0;}
+}
+
+/* STEP03 - letstalkWrap  */ 
+.letstalkWrap {display:none; overflow:hidden; position:fixed; right:30px; bottom:30px; width:350px; height:0; opacity:0; border-radius:10px; background:rgba(255, 255, 255, 0.5); box-shadow:0 0 5px #666; z-index:1000;}
+.letstalkWrap .titBox {display:block; overflow:hidden; height:50px; text-align:center; background:#1fc7d1;}
+.letstalkWrap .titBox span {font-family:'Roboto', sans-serif; color:#fff; font-size:20px; font-weight:bold; letter-spacing:-1px; line-height:50px;}
+.letstalkWrap .titBox .btn_letstalk_close {overflow:hidden; position:absolute; top:10px; right:5px; width:30px; height:30px; text-indent:-9999px; border:none; border-radius:30px; background:url(images/btn_letstalk_close.png) 50% 50% no-repeat; background-size:15px; cursor:pointer; opacity:0.6; transition:all 0.3s ease-out;}
+.letstalkWrap .titBox .btn_letstalk_close:hover {background-color:#18aeb7; opacity:1.0; transition:all 0.3s ease-out;}
+
+.letstalkWrap .talkLst {clear:both; overflow:auto; padding:0; background:#f2f2f5; margin:0;}
+.letstalkWrap .talkLst li {clear:both; overflow:hidden; margin-bottom:5px; padding:5px;}
+
+.letstalkWrap .talkLst li.longTime {display:block; clear:both; overflow:hidden; height:25px; margin:10px 0; padding:0; background:url(images/bg_longtime.png) 0 0 repeat-x;}  
+.letstalkWrap .talkLst li.newDate {position:relative; margin:10px 0 0 0; text-align:center; background:url(images/line_ccc.png) 0 center repeat-x;}
+.letstalkWrap .talkLst li.newDate span {display:inline-block; padding:0 10px; color:#afafaf; background:#f2f2f5;}
+.letstalkWrap .talkLst li a {color:blue; text-decoration:underline;}
+
+.letstalkWrap .talkLst li.bot {text-align:left; vertical-align:bottom;}
+.letstalkWrap .talkLst li.bot .thumb {float:left; overflow:hidden; width:40px; height:40px; margin:3px 0 0 0; border-radius:30px;}
+.letstalkWrap .talkLst li.bot .thumb img {width:100%; height:100%;}
+.letstalkWrap .talkLst li.bot .cont {float:left; max-width:270px; margin:0;}
+.letstalkWrap .talkLst li.bot .cont .name {display:block; padding:0 0 5px 10px; color:#999; font-size:12px; line-height:14px; font-style:normal;}
+.letstalkWrap .talkLst li.bot .cont .txt {position:relative; display:inline-block; max-width:235px; margin:0 5px 5px 10px; padding:10px; color:#555; font-size:14px; font-style:normal; line-height:22px; border-radius:10px; background:#fff;}
+.letstalkWrap .talkLst li.bot .cont .txt:after {content:''; position:absolute; bottom:0; left:-10px; border-top:5px solid transparent; border-right:20px solid #fff; border-top:20px solid transparent;}
+.letstalkWrap .talkLst li.bot .date {display:block; margin:0 0 3px 0; padding:0; color:#afafaf; font-size:11px; vertical-align:bottom;}
+.letstalkWrap .talkLst li.bot .date b {display:inline-block; margin:0 5px 0 0; color:#afafaf; font-size:11px; font-weight:normal;}
+
+.letstalkWrap .talkLst li.user {text-align:right; vertical-align:bottom; padding-right:15px;}
+.letstalkWrap .talkLst li.user .cont {float:right; max-width:270px; margin:0;}
+.letstalkWrap .talkLst li.user .cont .txt {position:relative; display:inline-block; max-width:180px; margin:0 0 2px 5px; padding:10px; color:#fff; font-style:normal; border-radius:10px; background:#5f83f2; box-shadow:1px 1px 2px #ccc;}
+.letstalkWrap .talkLst li.user .cont .txt:after {content:''; position:absolute; bottom:0; right:-10px; border-top:5px solid transparent; border-left:20px solid #5f83f2; border-top:20px solid transparent;}
+.letstalkWrap .talkLst li.user .date {display:block; margin:0 0 3px 0; padding:0 0 0; color:#afafaf; font-size:12px; text-align:right; vertical-align:bottom;}
+.letstalkWrap .talkLst li.user .date b {display:inline-block; margin:0 5px 0 0; color:#afafaf; font-size:11px; font-weight:normal;}
+
+.letstalkWrap .chatBox {display:block; position:relative; height:65px; vertical-align:top;}
+.letstalkWrap .chatBox .textArea {display:block; overflow:hidden; width:100%; height:65px; margin:0; padding:10px 80px 10px 10px; color:#333; font-size:14px; line-height:24px; border:none; border-radius:0;  resize:none;}
+.letstalkWrap .chatBox .btn_chat {position:absolute; top:0; right:0; width:70px; height:65px; margin:0; padding:0; color:#9c9c9c; font-size:14px; font-weight:normal; border:none; border-radius:0; background:#fff; cursor:pointer; transition:all 0.3s ease-out;}
+.letstalkWrap .chatBox .btn_chat:hover {color:#fff; background:#5f83f2; transition:all 0.3s ease-out;} 
+
+/* 180426 추가  */
+.letstalkWrap .talkLst li.botMsg_generic {display:block; max-width:255px; margin:0 20px 10px 55px; padding:0; text-align:left; vertical-align:bottom; border-radius:10px; background:#fff; box-shadow:1px 1px 2px #ccc;}
+.letstalkWrap .talkLst li.botMsg_generic .generic_image {display:block; overflow:hidden; position:relative; width:100%; max-height:150px; vertical-align:middle; background:#1fc7d1 url(../images/ico_ai.png) 50% 50% no-repeat;}
+.letstalkWrap .talkLst li.botMsg_generic .generic_image img {width:100%; border:none; box-shadow:none;}
+.letstalkWrap .talkLst li.botMsg_generic .generic_title {}
+.letstalkWrap .talkLst li.botMsg_generic .generic_url {display:block; padding:7px 12px;}
+.letstalkWrap .talkLst li.botMsg_generic .generic_url a {padding:0 12px 0 0; color:#5078f2; font-size:14px; line-height:22px; text-decoration:none; background:url(../images/ico_link_arrow.png) right 50% no-repeat;}
+.letstalkWrap .talkLst li.botMsg_generic .generic_url a:hover {text-decoration:underline;}
+.letstalkWrap .talkLst li.botMsg_generic .generic_description {display:block; padding:0 12px 10px 12px; color:#333;  font-size:13px; line-height:18px;}
+
+.letstalkWrap .talkLst li.botMsg_button {display:block; max-width:255px; margin:0 20px 10px 55px; padding:0; text-align:left; vertical-align:bottom; border-radius:10px; background:#fff; box-shadow:1px 1px 2px #ccc;}
+.letstalkWrap .talkLst li.botMsg_button .txt {display:block; padding:13px; color:#333; font-size:14px; border-bottom:1px solid #dadada;}
+.letstalkWrap .talkLst li.botMsg_button ul {display:block;}
+.letstalkWrap .talkLst li.botMsg_button ul li {display:block; margin:0; padding:0; border-bottom:1px solid #f1f1f1;}
+.letstalkWrap .talkLst li.botMsg_button ul li:last-child {border:none;}
+.letstalkWrap .talkLst li.botMsg_button ul li a {display:block; padding:10px 0; color:#5078f2;  font-size:14px; text-align:center; text-decoration:none; line-height:22px;}
+.letstalkWrap .talkLst li.botMsg_button ul li a:hover {text-decoration:underline;}
+
+/* Mobile Grid  */
+@media screen and (max-width:1200px) {/* STEP03 - letstalkWrap  */ 
+.letstalkWrap {width:100%; right:0; border-radius:0; background:none; box-shadow:none;}
+	.letstalkWrap .talkLst li.bot .cont {max-width:80%;}
+	.letstalkWrap .talkLst li.bot .cont .txt {max-width:100%;}
+	.letstalkWrap .chatBox {position:relative;}
+	.letstalkWrap .chatBox .textArea {display:block; overflow:auto; float:none; width:auto; padding-right:70px;}
+	.letstalkWrap .chatBox .btn_chat {position:absolute; top:0; right:0; color:#fff; background:#5f83f2;}
+}

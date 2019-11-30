@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	
+<title>TTS </title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="resources/css/font.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/semantic.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/common.css" />
+<script type="text/javascript" src="resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="resources/js/common.js"></script>
+<script type="text/javascript" src="resources/js/semantic.js"></script>
+
+<!-- //resources -->
+</head>
+
+<body>
+<!-- loading -->
+<div id="pageldg">
+    <div class="ld_item">
+        <span></span>  
+        <span></span>
+    </div>
+</div>
+<!-- //loading -->
+<!-- #wrap -->
+<div id="wrap">   
+	<!-- #header -->
+	<div id="header">
+        <h1><a href="01_login.html"><img src="resources/images/logo_header.png" alt="maum Voice"></a></h1>
+        <div class="sub_hd">
+			<ul>
+				<li><a href="03_add.html">My Voice Cards</a></li>
+				<li><a href="02_process.html">Guide</a></li>
+			</ul>
+		</div>
+		
+		<!-- .etcmenu -->
+		<div class="etcmenu">
+			<div class="userBox">
+				<div class="ad_logo">
+<!--				네이버일때는 logo_naver.png로 바꾸기-->										
+				</div>
+				<div class="ad_mail"><a href="">hello@mindslab.ai</a></div>
+				<div class="btn_logout">
+					<button type="button">Log Out</button>
+				</div>			
+			</div>
+		</div>
+		<!-- //.etcmenu -->
+	</div>
+	<!-- //#header -->	
+	<!-- #container -->
+	<div id="container">
+			<!-- .processArea -->
+			<div class="processArea">
+				<h3>maum Voice <span>Process</span></h3>
+				
+				<img src="resources/images/img_process.png" alt="maum Voice Process">
+				<ul class="processBox">
+					<li>
+						<p>목소리 <br> 기본정보 입력</p>
+					</li>
+					<li>
+						<p>1시간 분량 <br> 문장 녹음하기</p>
+					</li>
+					<li>
+						<p>전송</p>
+					</li>
+					<li>
+						<p>음성 학습</p>
+					</li>
+					<li>
+						<p>maum Voice <br> 완성!</p>
+					</li>
+				</ul>
+				<div class="process_select">
+					<ul>
+						<li>
+							<input type="checkbox" id="1"  checked>
+							<label for="1" class="agreecheck">녹음된 음성 및 개인 정보는 타인의 것이 아닌 본인의 것임을 동의합니다.</label>
+						</li>
+						<li>
+							<input type="checkbox" id="2">
+							<label for="2" class="agreecheck">본인의 목소리 외에 타인의 목소리를 사용 시 마인즈랩에서는 일절 책임이 없음을 동의합니다.</label>
+						</li>
+						<li>
+							<input type="checkbox" id="3">
+							<label for="3" class="agreecheck">녹음된 목소리를 상업적인 목적으로 사용하지 않을 것을 동의합니다.</label>
+						</li>
+					
+					</ul>
+					
+				</div>
+				<div class="btn_start">
+					<a href="03_add.html"> Start </a>
+				</div>
+			</div>
+			<!-- //.processArea -->		
+	</div>
+</div>
+<!-- //#wrap -->
+<script type="text/javascript" src="resources/js/player.js"></script>
+<script type="text/javascript">
+    $(window).load(function () {
+        $('#pageldg').addClass('pageldg_hide').delay(500).queue(function () { $(this).remove(); });
+    });
+</script>
+
+<script type="text/javascript">
+    jQuery.event.add(window, "load", function () {
+        $(document).ready(function () {
+           
+            
+            
+          
+    });
+});
+$('.ui.dropdown')
+  .dropdown()
+;
+
+</script>
+</body>
+</html>
+	

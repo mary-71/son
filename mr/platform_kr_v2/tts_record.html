@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<!-- icon_favicon -->
+<link rel="apple-touch-icon-precomposed" href="resources/images/ico_favicon_64x64.png" />
+<link rel="shortcut icon" type="image/x-icon" href="resources/images/ico_favicon_64x64.ico"/>
+<title>maum.ai platform</title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/font.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/common.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">	
+<!-- //resources -->
+
+<script type="text/javascript" src="resources/js/jquery-1.11.0.min.js"></script>	
+<script type="text/javascript" src="resources/js/common.js"></script>	
+
+</head>
+
+<body>
+
+<!-- .page loading -->
+<div id="page_ldWrap" class="page_loading">
+	<div class="loading_itemBox">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!-- //.page loading -->
+
+	
+<!-- wrap -->
+<div id="wrap"> 
+	<!-- #header -->
+	<div id="header">
+        <h1><a target="_self" href="welcome.html"><img src="resources/images/logo.png" alt="maum.ai"></a></h1>    
+		<!-- .sta -->
+		<div class="sta">
+			
+			<!-- .titArea -->
+			<div class="titArea">               
+                <div class="path">
+                    <span><img src="resources/images/ico_path_home_bk.png" alt="HOME"></span>
+                    <span>AI Services</span>
+                    <span>텍스트를 음성으로</span>
+                </div>
+            </div>
+            <!-- //.titArea -->	
+			
+			<!-- .etcmenu -->
+			<div class="etcmenu">
+<!--				<span><i>P</i><em>1,000</em> point</span>-->
+				<div class="userBox">
+					<dl>
+						<dt class="ico_user">User</dt>
+						<dd>
+							<a target="_self" href="#none">admin@console.com</a>
+						</dd>
+						<ul class="lst">
+							<li class="ico_profile"><a target="_self" href="#none">PROFILE</a></li>
+							<li class="ico_account"><a target="_self" href="#none">API ACCOUNT</a></li>
+							<li class="ico_payment"><a target="_self" href="#none">PAYMENT</a></li>
+						</ul>
+					</dl>
+				</div>
+			</div>
+			<!-- //.etcmenu -->
+		</div>
+		<!-- //.sta -->
+	</div>
+	<!-- //#header -->
+	<!-- .snb 한글 -->
+	<div class="snb">		
+		<ul>
+			<li class="collapsible list1"><a href="https://dev-api.maum.ai/"><i class="fas fa-home"></i>HOME</a></li>	
+			<li class="collapsible list2 active"><i class="fas fa-shapes"></i>AI Services</li>					
+			<li class="sublist list2_sub">
+				<a class="dropdwn twodepth active" id="flip">텍스트를 음성으로</a>
+				<ul class="twodepthLst panel">
+					<li><a href="tts.html">AI Voice 사용하기</a></li>
+					<li class="active"><a href="tts_record.html">내 목소리로 사용하기</a></li>
+				</ul>	
+				<a class="twodepth" href="stt.html">음성을 텍스트로</a>
+			</li>
+			<li class="collapsible list3 dropdwn"><i class="fas fa-laptop-code"></i>API Services</li>					
+			<li class="sublist list3_sub">
+				<a class="twodepth" href="api_tts.html">음성 생성</a>	
+				<a class="twodepth" href="api_stt.html">음성 인식</a>
+				<a class="twodepth" href="xdc.html">텍스트 분류</a>	
+				<a class="twodepth" href="mrc.html">AI 독해</a>
+				<a class="twodepth" href="hmd.html">패턴 분류</a>	
+				<a class="twodepth" href="nlu.html">자연어 이해</a>
+				<a class="twodepth" href="recog.html">화폐 · 고지서 인식</a>	
+			</li>		
+			<li class="collapsible list4 dropdwn"><i class="fas fa-grip-horizontal"></i>Application</li>					
+			<li class="sublist list4_sub">
+				<a class="twodepth" href="voc.html">maum VOC</a>	
+				<a class="twodepth" href="mai_1.html">mAI English</a>
+				<a class="twodepth" href="chatbot.html">날씨봇 · 위키봇</a>
+			</li>		
+			<li class="collapsible list5 dropdwn"><i class="fas fa-headphones-alt"></i>고객지원</li>					
+			<li class="sublist list5_sub">
+				<a class="twodepth" href="pricing.html">가격정책</a>	
+				 
+				<a class="twodepth" href="faq.html">FAQ</a>
+				<a class="twodepth" href="request.html">문의 내역</a>	
+				<a class="twodepth" href="contactus.html">Contact Us</a>	
+			</li>					
+		</ul>
+	</div>
+	<!-- //.snb 한글 -->	
+	<!-- #container -->
+	<div id="container">
+		<!-- .contents -->
+		<div class="contents">        	
+            <div class="content">
+				<h1>내 목소리로 사용하기</h1>
+				<!-- .recordingArea -->	
+				<div class="recordingArea">
+					<h3><span>Recording</span></h3>
+					<b>0%</b>
+					<div class="graph_long">
+						<em class="graph_clr"></em>
+					</div>
+					<div class="start_desc">
+						<p>녹음 방법</p>
+						<ul class="guide">
+							<li><span>지문을 읽고 목소리를 녹음</span></li>
+							<li>녹음 완료까지 <span>약 30분 </span><small>(210개 문장)</small> 소요</li>
+												
+						</ul>
+						<ul class="guide">	
+							<li>각 문장 <span>바로 재생 및 재녹음</span> 가능</li>
+							<li>녹음 중간 종료해도 추후 <span>이어서 녹음 가능</span></li>
+<!--						<li>녹음 완료 시 데이터가 전송되어 <span>학습이 시작</span> 됩니다. </li>-->						
+						</ul>
+						<ul class="guide width_df">	
+							<li>음성생성 완료 후, <span>이메일로 안내</span> <small>(평일 기준 48시간 소요)</small></li>						
+						</ul>
+					</div>
+					<div class="btn_start">
+						<a href="tts_record_chepter1.html">Start </a>
+					</div>
+					<div class="start_note">
+						<span>유의사항</span>
+						<ul>	
+							<li>개인정보 수집 동의 하에 본인 목소리로만 녹음을 진행해주시기 바랍니다. <br>동의 없이 타인의 목소리를 사용할 경우, 법적인 문제가 발생할 수 있습니다.</li>	
+							<li>주변 소음이 있는 상태에서 녹음이 될 경우, 제공되는 엔진도 소음과 함께 재생이 되오니, 이 점 유의하여 녹음 하시길 바랍니다.</li>		
+						</ul>
+					</div>
+				</div>
+				<!-- //.recordingArea -->	 	
+			</div>
+			<!-- //.contents -->
+			<!-- #footer -->
+			<div id="footer">
+				<div class="lot_c">
+					<div class="cyrt"><span>MINDsLab &copy; 2019</span></div>
+				</div>
+			</div>
+			<!-- //#footer -->	
+		</div>
+		<!-- .contents -->
+	</div>
+	<!-- //#container -->	
+</div>
+<!-- //wrap -->
+
+
+<script type="text/javascript" src="resources/js/bootstrap-datepicker.js"></script>	
+<script type="text/javascript">   
+$(window).load(function() {    
+	$('.page_loading').addClass('pageldg_hide').delay(300).queue(function() { 
+		$(this).remove(); 
+	});
+}); 
+</script>
+<script type="text/javascript">
+//twodepth	
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var sublist = this.nextElementSibling;
+    if (sublist.style.maxHeight){
+      sublist.style.maxHeight = null;
+	  	
+    } else {
+      sublist.style.maxHeight = sublist.scrollHeight + "px";
+		$('.dropdwn').removeClass('.active');
+    } 
+  });
+}
+	
+//	
+//threedepth	
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+		$('.twodepth ').each(function(){
+			if($(this).hasClass('active')){
+				$(this).trigger( "click" );
+			}
+		});	
+		
+		$("#flip").click(function(){
+			if($(this).hasClass('active')){
+				$(this).removeClass('active');	
+			}else{
+				$(this).addClass('active');
+			}
+			
+			$(".panel").slideToggle("fast");
+			var sublist = this.parentNode;
+			sublist.style.maxHeight =  sublist.scrollHeight + $(".twodepthLst").prop('scrollHeight')+ "px";	
+			
+		});		
+	});	
+});
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+		$('.snb ul li.collapsible').each(function(){
+			if($(this).hasClass('active')){				
+				$(this).trigger( "click" );
+				
+			}
+		});			
+			
+		//add layer popup
+		$('#lyr_add').on('click', function () {
+			$('.lyr_add').fadeIn(300);              
+			$('body').css({
+				'overflow': 'hidden',
+			});
+			
+		});
+		// product layer popup     
+		$('.btn_lyrWrap_close, .lyr_bg').on('click', function () {
+			$('.lyr_add').fadeOut(300);
+			$('body').css({
+				'overflow': '',
+			});
+		});
+			 
+			
+	});	
+});	
+	
+
+</script>
+	
+</body>
+</html>
+
+

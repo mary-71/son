@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<!-- facebook Tag -->
+<meta property="fb:app_id"           content="APP_ID" />
+<!-- Open Graph Tag -->
+<meta property="og:title"            content=""/><!-- 웹 페이지 제목 -->
+<meta property="og:type"             content="website"/><!-- 웹 페이지 타입 -->
+<meta property="og:url"              content=""/><!-- 웹 페이지 URL-->
+<meta property="og:image"            content=""/><!-- 웹 페이지 대표 이미지 -->
+<meta property="og:description"      content=""/><!-- 웹 페이지 설명 -->
+<!-- twitter Tag -->
+<meta property="twitter:card"        content="summary"/>
+<meta property="twitter:url"         content=""/><!-- 웹 페이지 URL-->
+<meta property="twitter:image"       content=""/><!-- 웹 페이지 대표 이미지 -->
+<meta property="twitter:title"       content=""/><!-- 웹 페이지 제목 -->
+<meta property="twitter:description" content=""/><!-- 웹 페이지 설명 -->
+<!-- icon (Internet Explorer & Windows Phone) -->
+<meta name="msapplication-square70x70logo" content="70x70.png"><!-- smalltile -->
+<meta name="msapplication-square150x150logo" content="150x150.png"><!-- mediumtile -->
+<meta name="msapplication-wide310x150logo" content="310x150.png"><!-- widetile -->
+<!-- icon (Chrome & Opera) -->
+<link rel="icon" sizes="192x192" href="192x192.png"><!-- 아이콘의 크기는 48px을 기본으로 합니다. 48px, 96px, 144px, 192px로 늘어납니다.-->
+<!-- icon (Safari) -->
+<link rel="apple-touch-icon" sizes="76x76" href="76x76.png"/><!-- iPad -->
+<link rel="apple-touch-icon" sizes="120x120" href="120x120.png"/><!-- iPhone Retina -->
+<link rel="apple-touch-icon" sizes="152x152" href="152x152.png"/><!-- iPad Retina -->
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="64x64.ico"/><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->	
+	
+<title>DIARL :: maum API</title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="../resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../resources/css/common.css" />
+<script type="text/javascript" src="../resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="../resources/js/common.js"></script>
+<!-- //resources -->
+</head>
+
+<body>
+<!-- loading -->
+<div id="pageldg">
+    <div class="ld_item">
+        <span></span>  
+        <span></span>
+    </div>
+</div>
+<!-- //loading -->
+<!-- #wrap -->
+<div id="wrap"> 
+	<!-- #header -->
+	<div id="header" >	
+		<!-- .sta -->
+		<div class="sta">
+			<h1><a href="../index.html"><img src="../resources/images/img_cmn_h1.png" alt="maum API"></a></h1>			
+			<div class="etcMenu">
+				<ul>
+					<!-- <li class="login"><span>로그인</span></li> -->
+					<li class="lang">
+						<p class="lang_select"><img src="../resources/images/ico_lang_kr.png" alt="한국어"><em>한국어</em></p>
+						<ul class="lst">
+							<li><a href="../../en/index.html" target="_blank"><img src="../resources/images/ico_lang_us.png" alt="English"><em>English</em></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //.sta -->
+		<!-- .gnb -->
+		<div id="gnb" class="gnb">
+			<div class="gnbNavBox">
+				<ul class="gnbNav">
+					<li class="menu1depth">
+						<h2><a href="#none">제품</a></h2>
+						<div class="gnbItem">
+							<div class="lot_c">
+								<div class="itemBox">
+									<dl style="margin-bottom:55px">
+										<dt class="ico_voice"><span>음성</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="stt.html" target="_self">Speech To Text <em class="new">Demo</em></a></li>
+												<li><a href="tts.html" target="_self">Text To Speech <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="ico_visual"><span>시각</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="diarl.html" target="_self">Document Image Analysis, Recognition and Learning <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_int"><span>지능</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="ec.html" target="_self">Ensemble Classification</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_lang"><span>언어</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="nlu.html" target="_self">Natural Language Understanding</a></li>
+												<li><a href="dnn.html" target="_self">DNN Classification</a></li>
+												<li><a href="hmd.html" target="_self">Hierarchical Multiple Dictionary</a></li>
+												<li><a href="xdc.html" target="_self">eXplainable Document Classifier <em class="new">Demo</em></a></li>
+												<li><a href="if.html" target="_self">Intent Finder</a></li>
+												<li><a href="we.html" target="_self">Word Embedding</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_cvs"><span>대화</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="sds.html" target="_self">Spoken Dialogue System</a></li>
+												<li><a href="bqa.html" target="_self">Basic Question Answering <em class="new">Demo</em></a></li>
+												<li><a href="kbqa.html" target="_self">Knowledge Based Question Answering <em class="new">Demo</em></a></li>
+												<li><a href="irqa.html">Information Retrieval Question Answering <em class="new">Demo</em></a></li>
+												<li><a href="deepqa.html" target="_self">Deep Question Answering <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu1depth"><h2><a href="#none">문서</a></h2>
+						<div class="gnbItem">
+							<div class="lot_c">
+								<div class="itemBox">
+									<dl style="margin-bottom:55px">
+										<dt class="ico_voice"><span>음성</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../guide/stt.html" target="_self">Speech To Text </a></li>
+												<li><a href="../guide/tts.html" target="_self"><span>Text To Speech</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="ico_visual"><span>시각</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../guide/diarl.html" target="_self"><span>Document Image Analysis, Recognition and Learning</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_int"><span>지능</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../guide/ec.html" target="_self"><span>Ensemble Classification</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_lang"><span>언어</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../guide/nlu.html" target="_self"><span>Natural Language Understanding</span></a></li>
+												<li><a href="../guide/dnn.html" target="_self"><span>DNN Classification</span></a></li>
+												<li><a href="../guide/hmd.html" target="_self"><span>Hierarchical Multiple Dictionary</span></a></li>
+												<li><a href="../guide/xdc.html" target="_self"><span>eXplainable Document Classifier</span></a></li>
+												<li><a href="../guide/if.html" target="_self"><span>Intent Finder</span></a></li>
+												<li><a href="../guide/we.html" target="_self"><span>Word Embedding</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_cvs"><span>대화</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../guide/sds.html" target="_self"><span>Spoken Dialogue System</span></a></li>
+												<li><a href="../guide/bqa.html" target="_self"><span>Basic Question Answering</span></a></li>
+												<li><a href="../guide/kbqa.html" target="_self"><span>Knowledge Based Question Answering</span> </a></li>
+												<li><a href="../guide/irqa.html"><span>Information Retrieval Question Answering </span></a></li>
+												<li><a href="../guide/deepqa.html" target="_self"><span>Deep Question Answering</span> </a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu1depth"><h2><span>파트너</span></h2></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //.gnb -->
+		<div class="lnb">
+			<div class="lot_c">
+				<h2>DIARL</h2>
+				<ul class="nav">
+					<li><a href="#stn_demo">Demo</a></li>
+					<li><a href="#stn_process">Process</a></li>
+					<li><a href="#stn_feature">Features</a></li>
+                    <li><a href="#stn_pricing">Pricing</a></li>
+					<li><a class="point" href="#api_contact">문의하기</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- //#header -->
+
+	<!-- aside -->
+	<div class="aside" style="display:none;">
+		<!-- .aside_top -->
+		<div class="aside_top">
+			<h1><a href="index.html"><img src="resources/images/logo_aside_h1.png" alt="maum API"></a></h1>
+		</div>
+		<!-- //.aside_top -->
+		<!-- .aside_mid -->
+		<div class="aside_mid">
+			<ul class="m_etcMenu">
+				<li class="lang">
+					<p class="lang_select"><img src="../resources/images/ico_lang_kr.png" alt="한국어"><em>한국어</em></p>
+					<ul class="lst">
+						<li><a href="../../en/index.html" target="_self"><img src="../resources/images/ico_lang_us.png" alt="English"><em>English</em></a></li>
+					</ul>
+				</li>
+			</ul>
+				
+			
+			<ul class="m_nav">
+				<li>
+					<h2><span>문서</span></h2>
+				</li>
+				<li>
+					<h2><a href="#none">제품</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none"><span class="ico_voice">음성</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="stt.html" target="_self">Speech To Text <em class="new">Demo</em></a></li>
+								<li><a href="tts.html" target="_self">Text To Speech <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_visual">시각</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="diarl.html" target="_self">Document Image Analysis, Recognition and Learning <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_int">지능</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="ec.html" target="_self">Ensemble Classification</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_lang">언어</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="nlu.html" target="_self">Natural Language Processing</a></li>
+								<li><a href="dnn.html" target="_self">DNN Classification</a></li>
+								<li><a href="hmd.html" target="_self">Hierarchical Multiple Dictionary</a></li>
+								<li><a href="xdc.html" target="_self">eXplainable Document Classifier <em class="new">Demo</em></a></li>
+								<li><a href="if.html" target="_self">Intent Finder</a></li>
+								<li><a href="sc.html" target="_self">Simple Claasifier</a></li>
+								<li><a href="we.html" target="_self">Word Embedding</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_cvs">대화</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="sds.html" target="_self">Spoken Dialogue System</a></li>
+								<li><a href="bqa.html" target="_self">Basic Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="kbqa.html" target="_self">Knowledge Based Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="irqa.html" target="_self">Information Retrieval Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="deepqa.html" target="_self">Deep Question Answering <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><span>파트너</span></h2>
+				</li>
+				<li>
+					<h2><a href="#none">문의하기</a></h2>
+				</li>
+			</ul>  
+		</div>
+		<!-- //.aside_mid -->
+		<!-- .aside_btm -->
+		<div class="aside_btm">
+			<ul>
+				<li class="btn_mail"><a href="mailto:hello@mindslab.ai">hello@mindslab.ai</a></li>
+				<li class="btn_tel"><a href="tel:+82316254340">031. 625. 4340</a></li>
+			</ul>
+		</div>
+		<!-- //.aside_btm -->
+	</div>
+	<div class="bg_aside"></div> 
+	<a class="btn_header_ham" href="#none"><span class="hamburger_icon"></span></a>  
+	<!-- //aside -->     
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #contents -->
+		<div id="contents">	
+			<!-- .visualArea -->
+			<div class="visualArea">
+				<div class="lot_c">
+					<div class="visual_tit">
+						<h2>
+							<span class="slogan">이미지문서를 다루는 새로운 패러다임</span>
+							<span class="logotype">DIARL</span>
+							<span class="fullName">Document Image Analysis, Recognition and Learning</span>
+						</h2>
+						<p class="h2_txt">maum DIARL은 문서 상의 이미지에서 텍스트를 검출, 인식하여 분석할 수 있는 인공지능 기반 고성능 문서처리 엔진입니다.<br>
+문서 내의 표, 서명란, 체크박스 등 다양한 형태의 객체를 정확하게 검출할 수 있기 때문에 고지서나 화폐 자동인식 및 분석 솔루션,<br>
+고지서 자동 납부 서비스 등에서 활발하게 활용되고 있습니다.<br>
+
+</p>
+					</div>
+				</div>			
+			</div>
+			<!-- //.visualArea -->
+            
+			<!-- .시연영상 -->
+			<div id="stn_demo" class="stn demo_videoWrap">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<!-- .stn_tit -->
+					<div class="stn_tit02">
+						<h4>시연영상</h4>
+					</div>
+					<!-- //.stn_tit -->
+					<!-- .demo_videoBox -->
+					<div class="demo_videoBox">
+                    	<ul>
+                        	<li>
+                            	<div class="videoBox">                                	
+                                    <a class="btn_movLayer" href="https://youtu.be/9opV_XaS_tQ">
+                                        <div class="img_info">
+                                           <img src="../resources/images/img_demo_video01.png" alt="데모영상">
+                                        </div> 
+                                        <strong class="ico_mov">동영상 보기</strong>
+                                    </a>
+                                    <p class="tit">화폐 인식</p>
+                                </div>
+                            </li>
+                            <li>
+                            	<div class="videoBox">
+                                    <a class="btn_movLayer" href="https://youtu.be/p8FZ2w7rSb4">
+                                        <div class="img_info">
+                                           <img src="../resources/images/img_demo_video02.png" alt="데모영상">
+                                        </div> 
+                                        <strong class="ico_mov">동영상 보기</strong>
+                                    </a>
+                                    <p class="tit">고지서 인식</p>
+                                </div>
+                            </li>
+                            <li>
+                            	<div class="videoBox">
+                                    <a class="btn_movLayer" href="https://youtu.be/XdLfqNS3RUI">
+                                        <div class="img_info">
+                                           <img src="../resources/images/img_demo_video03.png" alt="데모영상">
+                                        </div> 
+                                        <strong class="ico_mov">동영상 보기</strong>
+                                    </a>
+                                    <p class="tit">동의서 체크박스 인식</p>
+                                </div>
+                            </li>
+                        </ul>
+					</div>
+					<!-- //.demo_videoBox -->
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.시연영상 -->
+            
+			<!-- .demo -->
+			<div id="stn_demo" class="stn demo_bg">
+				<!-- .bg_ani -->
+				<div class="bg_ani">
+					<div class="diarlDemo_bg">
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<!-- //.bg_ani -->
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<!-- .stn_tit -->
+					<div class="stn_tit">
+						<h3 >Demo</h3>
+					</div>
+					<!-- //.stn_tit -->
+					<!-- .demoBox -->
+					<div class="demoWrap tabUi">
+                    	<ul class="tab_nav">
+                        	<li><a href="#tab_demo01">화폐</a></li>
+                            <li><a href="#tab_demo02">고지서</a></li>
+                        </ul>
+                        <div class="tab_container">
+                        	<div id="tab_demo01" class="tab_contents">
+                                <!-- step01 -->
+                                <div class="demo_step01">
+                                	<div class="info_txt">원하시는 화폐를 선택하신 뒤,<span class="ft_point"> '문서인식'</span> 시작 버튼을 클릭하세요.</div>
+                                	<!-- .diarl_itemBox -->
+                                    <div class="diarl_itemBox">
+                                        <ul class="lst">
+                                            <li>
+                                            	<input type="radio" name="item_radio0101" id="item_radio0101" class="item_radio">
+                                                <label for="item_radio0101">
+                                                    <img src="../resources/images/img_money_sample01.png" alt="화폐이미지">
+                                                    <span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                            	<input type="radio" name="item_radio0102" id="item_radio0102"  class="item_radio">
+                                                <label for="item_radio0102">
+                                                    <img src="../resources/images/img_money_sample02.png" alt="화폐이미지">
+                                                    <span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                            	<input type="radio" name="item_radio0103" id="item_radio0103"  class="item_radio">
+                                                <label for="item_radio0103">
+                                                    <img src="../resources/images/img_money_sample03.png" alt="화폐이미지">
+                                                    <span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                            	<input type="radio" name="item_radio0104" id="item_radio0104"  class="item_radio">
+                                                <label for="item_radio0104">
+                                                    <img src="../resources/images/img_money_sample04.png" alt="화폐이미지">
+                                                    <span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                            	<input type="radio" name="item_radio0105" id="item_radio0105"  class="item_radio">
+                                                <label for="item_radio0105">
+                                                    <img src="../resources/images/img_money_sample05.png" alt="화폐이미지">
+                                                    <span></span>
+                                                </label>
+                                            </li>        
+                                            <li>
+                                            	 <input type="radio" name="item_radio0106" id="item_radio0106" class="item_radio">
+                                                <label for="item_radio0106">
+                                                    <img src="../resources/images/img_money_sample06.png" alt="화폐이미지">
+                                                    <span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                            	<input type="radio" name="item_radio0107" id="item_radio0107"  class="item_radio">
+                                                <label for="item_radio0107">
+                                                    <img src="../resources/images/img_money_sample07.png" alt="화폐이미지">
+                                                    <span></span>
+                                                </label> 
+                                            </li>
+                                            <li>
+                                            	<input type="radio" name="item_radio0108" id="item_radio0108"  class="item_radio">
+                                                <label for="item_radio0108">
+                                                    <img src="../resources/images/img_money_sample08.png" alt="화폐이미지">
+                                                    <span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                            	<input type="radio" name="item_radio0109" id="item_radio0109"  class="item_radio">
+                                                <label for="item_radio0109">
+                                                    <img src="../resources/images/img_money_sample09.png" alt="화폐이미지">
+                                                    <span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                            	<input type="radio" name="item_radio0110" id="item_radio0110"  class="item_radio">
+                                                <label for="item_radio10">
+                                                    <img src="../resources/images/img_money_sample10.png" alt="화폐이미지">
+                                                    <span></span>
+                                                </label>
+                                            </li>                                            
+                                        </ul>
+                                    </div>
+                                    <!-- //.diarl_itemBox -->
+                                    <!-- .btnBox -->
+                                    <div class="btnBox">
+                                        <div class="holeBox01">
+                                            <div class="hole01">
+                                                <i></i><i></i><i></i><i></i><i></i>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn_demo_start">문서 인식 시작</button>
+                                    </div>
+                                    <!-- //.btnBox -->
+                                </div>
+                            	<!-- //step01 -->
+                                <!-- step02 -->
+                                <div class="demo_step02 layerpopup_wrap">
+                                	<div class="layer_bg"></div>                                   
+                                	<div class="resultBox layerBox">
+                                    	 <a href="#none" class="layer_close">닫기</a>
+                                    	<div class="thumb">
+                                        	<img src="../resources/images/img_money_sample01.png" alt="">
+                                        </div>
+                                        <div class="txtBox">
+                                        	<dl class="dltype02">
+                                            	<dt>분류</dt>
+                                                <dd>화폐</dd>
+                                            </dl>
+                                        	<dl class="dltype02">
+                                            	<dt>통화명</dt>
+                                                <dd>USD</dd>
+                                            </dl>
+                                        	<dl class="dltype02">
+                                            	<dt>금액</dt>
+                                                <dd>100</dd>
+                                            </dl>
+                                        	<dl class="dltype02">
+                                            	<dt>정확도</dt>
+                                                <dd>89.3%</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //step02 -->
+                            </div>
+                            <div id="tab_demo02"class="tab_contents">
+                                <!-- step01 -->
+                                <div class="demo_step01" style="display:block">
+                                	<div class="info_txt">원하시는 고지서를 선택하신 뒤,<span class="ft_point"> '문서인식'</span> 시작 버튼을 클릭하세요.</div>
+                                	<!-- .diarl_itemBox -->
+                                    <div class="diarl_itemBox">
+                                        <ul class="lst">
+                                            <li>
+                                            	<input type="radio" name="item_radio0201" id="item_radio0201" class="item_radio">
+                                                <label for="item_radio0201">
+                                                    <img src="../resources/images/img_ocr_sample01.png" alt="화폐이미지">
+                                                    <span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                            	<input type="radio" name="item_radio0202" id="item_radio0202"  class="item_radio">
+                                                <label for="item_radio0202">
+                                                    <img src="../resources/images/img_ocr_sample02.png" alt="화폐이미지">
+                                                    <span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                            	<input type="radio" name="item_radio0203" id="item_radio0203"  class="item_radio">
+                                                <label for="item_radio0203">
+                                                    <img src="../resources/images/img_ocr_sample03.png" alt="화폐이미지">
+                                                    <span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                            	<input type="radio" name="item_radio0204" id="item_radio0204"  class="item_radio">
+                                                <label for="item_radio0204">
+                                                    <img src="../resources/images/img_ocr_sample04.png" alt="화폐이미지">
+                                                    <span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                            	<input type="radio" name="item_radio0205" id="item_radio0205"  class="item_radio">
+                                                <label for="item_radio0205">
+                                                    <img src="../resources/images/img_ocr_sample05.png" alt="화폐이미지">
+                                                    <span></span>
+                                                </label>
+                                            </li>                                            
+                                        </ul>
+                                        <ul class="lst">
+                                            <li>
+                                            	 <input type="radio" name="item_radio0206" id="item_radio0206" class="item_radio">
+                                                <label for="item_radio0206">
+                                                    <img src="../resources/images/img_ocr_sample06.png" alt="화폐이미지">
+                                                    <span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                            	<input type="radio" name="item_radio0207" id="item_radio0207"  class="item_radio">
+                                                <label for="item_radio0207">
+                                                    <img src="../resources/images/img_ocr_sample07.png" alt="화폐이미지">
+                                                    <span></span>
+                                                </label> 
+                                            </li>
+                                            <li>
+                                            	<input type="radio" name="item_radio0208" id="item_radio0208"  class="item_radio">
+                                                <label for="item_radio0208">
+                                                    <img src="../resources/images/img_ocr_sample08.png" alt="화폐이미지">
+                                                    <span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                            	<input type="radio" name="item_radio0209" id="item_radio0209"  class="item_radio">
+                                                <label for="item_radio0209">
+                                                    <img src="../resources/images/img_ocr_sample09.png" alt="화폐이미지">
+                                                    <span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                            	<input type="radio" name="item_radio0210" id="item_radio0210"  class="item_radio">
+                                                <label for="item_radio0210">
+                                                    <img src="../resources/images/img_ocr_sample10.png" alt="화폐이미지">
+                                                    <span></span>
+                                                </label>
+                                            </li>                                            
+                                        </ul>
+                                    </div>
+                                    <!-- //.diarl_itemBox -->
+                                    <!-- .btnBox -->
+                                    <div class="btnBox">
+                                        <div class="holeBox01">
+                                            <div class="hole01">
+                                                <i></i><i></i><i></i><i></i><i></i>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn_demo_start">문서 인식 시작</button>
+                                    </div>
+                                    <!-- //.btnBox -->
+                                </div>
+                            	<!-- //step01 -->
+                                <!-- step02 -->
+                                <div class="demo_step02 layerpopup_wrap">
+                                	<div class="layer_bg"></div>                                   
+                                	<div class="resultBox layerBox">
+                                    	 <a href="#none" class="layer_close">닫기</a>
+                                    	<div class="thumb">
+                                        	<img src="../resources/images/img_ocr_sample01.png" alt="">
+                                        </div>
+                                        <div class="txtBox">
+                                        	<dl class="dltype02">
+                                            	<dt>분류</dt>
+                                                <dd>고지서</dd>
+                                            </dl>
+                                        	<dl class="dltype02">
+                                            	<dt>유형</dt>
+                                                <dd>전기요금</dd>
+                                            </dl>
+                                        	<dl class="dltype02">
+                                            	<dt>전자납부번호</dt>
+                                                <dd>1234567890</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //step02 -->
+                            </div>
+                        </div>
+					</div>
+					<!-- //.demoBox -->
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.demo -->
+            
+			<!-- .video -->
+			<div class="stn videoArea">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<!-- .stn_tit -->
+					<div class="stn_tit">
+						<h3 >VIDEO</h3>
+					</div>
+					<!-- //.stn_tit -->
+
+					<!-- .stn_cont -->
+					<div class="stn_cont">
+						<!-- .videoBox -->
+                        <div class="videoBox">
+                            <a class="btn_movLayer" href="https://youtu.be/nqnGHQgUgbY">
+                                <div class="img_info">
+                                    <img src="../resources/images/img_videoArea_dairl.png" alt="홍보영상">
+                                </div> 
+                                <strong class="ico_mov">동영상 보기</strong>
+                            </a>
+						</div>
+						<!-- //.videoBox -->
+					</div>
+					<!-- //.stn_cont -->
+					
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.video -->
+                        
+			<!-- .stn -->
+			<div id="stn_process" class="stn processArea">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<div class="stn_tit">
+						<h3>Process</h3>
+					</div>
+					<div class="stn_cont">
+						<div class="processBox"><img src="../resources/images/img_processArea_diarl_m.png" alt=""></div>
+					</div>
+				</div>
+				<!-- //.lot_c -->	
+			</div>
+			<!-- //.stn -->
+            
+			<!-- .stn -->
+			<div id="stn_feature" class="stn featureArea">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<div class="stn_tit">
+						<h3>feature</h3>
+					</div>
+					<div class="stn_cont">
+						<div class="dlBox">
+							<dl class="dltype01">
+								<dt>다양한 형태 객체 인식</dt>
+								<dd>
+									<span>사진, 일련번호, 지문, 체크박스, 서명란, 표 등 다양한 형태의 객체를 인식합니다.</span>
+								</dd>
+							</dl>
+							<dl class="dltype01">
+								<dt>높은 인식률</dt>
+								<dd><span>문서나 이미지 상의 다양한 폰트 형태나 왜곡된 폰트 등 노이즈에도 구애받지 않고 높은 인식률을 보입니다.</span></dd>
+							</dl>
+							<dl class="dltype01">
+								<dt>민감정보 마스킹</dt>
+								<dd><span>주민등록번호와 지문처럼 민감한 정보를 자동으로 마스킹하기 때문에 보안 문제없이 DB화가 가능합니다.</span></dd>
+							</dl>
+							
+						</div>
+					</div>
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.stn -->
+            
+			<!-- .pricing -->
+			<div id="stn_pricing" class="stn pricingArea">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<div class="stn_tit">
+						<h3>PRICING</h3>
+					</div>
+					<div class="stn_cont">
+
+						<div class="fl">
+							<p>클라우드형 (SaaS)</p>
+							<div class="saas_box">
+								<div class="img">
+									<img src="../resources/images/ico_productLst_diarl.png">
+								</div>
+								<p>시각엔진 (DIARL)</p>
+                                <div class="dlBox03">
+                                    <dl>
+                                        <dt>고지서 인식</dt>
+                                        <dd><span>100</span>원/장당</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>화폐 인식</dt>
+                                        <dd><span>1000</span>원/장당</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>영수증 인식</dt> 
+                                        <dd><span>50</span>원/장당</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt class="pdt0">커스텀 모델 적용시</dt>
+                                        <dd>협의</dd>
+                                    </dl>
+                                </div>
+							</div>
+						</div>
+						<div class="fr">
+							<p>구축형 (SW License) <span>단위: 원/VAT 별도</span></p>
+                            <div class="tblBox">
+                                <table class="tbl_type01" summary="구분,구성요소,제품명,개수,소비자단가">
+                                    <caption class="hide">DIARL 구축형 소비자 단가</caption>
+                                    <colgroup>
+                                        <col><col><col><col><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">구성요소</th>
+                                            <th scope="col">제품명</th>
+                                            <th scope="col">개수</th>
+                                            <th scope="col">소비자 단가</th>
+                                        </tr>
+                                    </thead>	
+                                    <tbody>
+                                    <tr>
+                                        <td scope="row" rowspan="3" class="first_col">
+                                            시각 엔진<br>
+                                            Computer <br>
+                                            Vision <br>
+                                            Engines<br>
+                                        </td>
+                                        <td rowspan="3"  class="sec_col">
+                                            DIARL<br>
+                                            (Document Image <br>
+                                            Analytics, <br>
+                                            Recognition and <br>
+                                            Learning)
+                                        </td>
+                                        <td class="p_name">Tax Bill Recognition</td>
+                                        <td>1</td>
+                                        <td class="c_price">180,000,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row" class="p_name">Bill Recognition</td>
+                                        <td>1</td>
+                                        <td class="c_price">160,000,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row" class="p_name">Receipt Recognition</td>
+                                        <td>1</td>
+                                        <td class="c_price">60,000,000</td>
+                                    </tr>
+                                </tbody>
+                                </table>
+                            </div>
+						</div>
+                        <ul class="license_lst">	
+                            <li><span>최초 1,000건(이미지 개수)은 무료</span>이며, 초과 1장당 개수에 따라 월별 과금됩니다.</li>
+                            <li>커스텀 모델 적용 시 비용은 협의 후 결정됩니다.</li>
+                        </ul>
+					</div>
+				</div>
+				<!-- //.lot_c -->	
+			</div>
+			<!-- //.pricing -->
+
+			<!-- .stn -->
+			<div id="api_contact" class="api_contact">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<!-- .stn_cont -->
+					<div class="stn_cont">
+						<!-- .contactBox -->
+						<div class="contactBox">
+							<!-- .leftBox -->
+							<div class="leftBox">
+								<div class="stn_tit">
+									<h3>Contact Us</h3>
+								</div>
+								<div class="leftTxtBox">
+									<p>마인즈랩과 마인즈랩의 API 서비스에 대한 문의가 있으시다면 여기에 남겨주세요.<br>페이스북과 링크드인을 팔로우하시면 새 소식을 더 빠르게 접하실 수 있습니다.</p>
+									<ul class="contact_lst">
+										<li class="btn_tel"><a href="tel:+82316254340">+82 31 625 4340</a></li>
+										<li class="btn_mail"><a href="mailto:hello@mindslab.ai">hello@mindslab.ai</a></li>
+										<li class="btn_web"><a href="http://mindslab.ai" target="_blank">마인즈랩 홈페이지 mindslab.ai</a></li>
+										<ul class="social_lst">
+											<li class="btn_fb"><a href="https://www.facebook.com/mindsinsight/?fref=ts" target="_blank">Facebook</a></li>
+											<li class="btn_ld"><a href="https://www.linkedin.com/company/mindslabai" target="_blank">Linkedin</a></li>
+										</ul>
+									</ul>
+								</div>
+							</div>
+							<!-- //.leftBox -->
+							<!-- .rightBox -->
+							<div class="rightBox">
+								<form action="contact_form">
+									<fieldset>
+										<legend>문의하기</legend>
+										<div class="contact">
+											<div class="cl_b">
+											<div class="fl">
+												<div class="txtfield">
+													<select id="contactType" class="select">
+														<option id="ctt_type01" value="문의유형">문의유형</option>
+														<option id="ctt_type02" value="유료사용신청">유료사용신청</option>
+														<option id="ctt_type03" value="마인즈랩 STT 문의">마인즈랩 STT 문의</option>
+														<option id="ctt_type04" value="사용자 피드백">사용자 피드백</option>
+													</select>
+												</div>
+											</div>
+											<div class="fr">
+												<div class="txtfield">
+													<input type="text" name="fm_name" id="fm_name" class="input_txt" placeholder="이름 *">
+												</div>
+											</div>
+											</div>
+											<div class="txtfield">
+												<input type="text" name="fm_email" id="fm_email"  class="input_txt" placeholder="이메일 *">
+											</div>
+											<div class="txtfield">
+												<input type="text" name="fm_tel" id="fm_tel"  class="input_txt" placeholder="전화번호">
+											</div>
+											<div class="txtfield">
+												<textarea name="fm_txt" id="fm_txt" class="textArea" rows="4" placeholder="문의내용 *"></textarea>
+											</div>
+											<ul class="btnBox">
+												<li><button class="btn_clor">문의하기</button></li>
+												<!-- <li><button>개발자 가이드</button></li> -->
+											</ul>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<!-- //.rightBox -->
+						</div>
+						<!-- //.contactBox -->
+					</div>
+					<!-- //.stn_cont -->
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.stn -->
+			<p class="btn_goTop"><button>맨위로</button></p>
+		</div>
+		<!-- //#contents -->
+	</div>
+	<!-- //#container -->
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="lot_c">
+			<div class="f_logo"><img src="../resources/images/logo_footer.png" alt="마인즈랩"></div>
+			<div class="cyrt"><span>MINDsLab &copy; 2018 .</span> <span>주식회사 마인즈랩ㅣ대표 유태준ㅣ</span><span>사업자 등록번호 314-86-55446</span></div>
+		</div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+<script type="text/javascript">   
+$(window).load(function() {    
+	$('#pageldg').addClass('pageldg_hide').delay(500).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<script type="text/javascript">
+jQuery(function(){
+	jQuery("a.btn_movLayer").movLayer();
+});
+</script> 
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){	
+		// Page CSS
+		$('#wrap').each(function(){				
+			$(this).addClass('type_diarl');
+		});	
+		
+		// Demo show
+		$('.btn_demo_start').on('click',function(){
+			$(this).parent().parent().parent().children('.demo_step02').fadeIn(300);
+		});
+		
+		// Demo hide
+		$('.layer_close').on('click',function(){
+			$(this).parent().parent().fadeOut(300);
+		});
+		// Demo hide
+		$('.layer_bg').on('click',function(){
+			$(this).parent().fadeOut(300);
+		});
+			
+	});	
+});	
+
+</script>
+	
+</body>
+</html>

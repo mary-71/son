@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="button.overrides" server="10.122.64.245//srv/web/" local="131895752183183626" remote="131895976140000000" Dst="0" />
+<file name="button.variables" server="10.122.64.245//srv/web/" local="131895752183373552" remote="131895976140000000" Dst="0" />
+<file name="container.overrides" server="10.122.64.245//srv/web/" local="131895752183503588" remote="131895976140000000" Dst="0" />
+<file name="container.variables" server="10.122.64.245//srv/web/" local="131895752183633614" remote="131895976140000000" Dst="0" />
+<file name="divider.overrides" server="10.122.64.245//srv/web/" local="131895752183773827" remote="131895976140000000" Dst="0" />
+<file name="divider.variables" server="10.122.64.245//srv/web/" local="131895752183923680" remote="131895976140000000" Dst="0" />
+<file name="flag.overrides" server="10.122.64.245//srv/web/" local="131895752184073722" remote="131895976140000000" Dst="0" />
+<file name="flag.variables" server="10.122.64.245//srv/web/" local="131895752184223749" remote="131895976140000000" Dst="0" />
+<file name="header.overrides" server="10.122.64.245//srv/web/" local="131895752184353792" remote="131895976150000000" Dst="0" />
+<file name="header.variables" server="10.122.64.245//srv/web/" local="131895752184473808" remote="131895976150000000" Dst="0" />
+<file name="icon.overrides" server="10.122.64.245//srv/web/" local="131895752184633846" remote="131895976150000000" Dst="0" />
+<file name="icon.variables" server="10.122.64.245//srv/web/" local="131895752184763868" remote="131895976150000000" Dst="0" />
+<file name="image.overrides" server="10.122.64.245//srv/web/" local="131895752184883901" remote="131895976150000000" Dst="0" />
+<file name="image.variables" server="10.122.64.245//srv/web/" local="131895752185013947" remote="131895976150000000" Dst="0" />
+<file name="input.overrides" server="10.122.64.245//srv/web/" local="131895752185144137" remote="131895976150000000" Dst="0" />
+<file name="input.variables" server="10.122.64.245//srv/web/" local="131895752185273988" remote="131895976150000000" Dst="0" />
+<file name="label.overrides" server="10.122.64.245//srv/web/" local="131895752185414013" remote="131895976150000000" Dst="0" />
+<file name="label.variables" server="10.122.64.245//srv/web/" local="131895752185554052" remote="131895976150000000" Dst="0" />
+<file name="list.overrides" server="10.122.64.245//srv/web/" local="131895752185694258" remote="131895976150000000" Dst="0" />
+<file name="list.variables" server="10.122.64.245//srv/web/" local="131895752185854138" remote="131895976150000000" Dst="0" />
+<file name="loader.overrides" server="10.122.64.245//srv/web/" local="131895752185994327" remote="131895976150000000" Dst="0" />
+<file name="loader.variables" server="10.122.64.245//srv/web/" local="131895752186134195" remote="131895976150000000" Dst="0" />
+<file name="rail.overrides" server="10.122.64.245//srv/web/" local="131895752186304399" remote="131895976150000000" Dst="0" />
+<file name="rail.variables" server="10.122.64.245//srv/web/" local="131895752186454253" remote="131895976150000000" Dst="0" />
+<file name="reveal.overrides" server="10.122.64.245//srv/web/" local="131895752186574460" remote="131895976150000000" Dst="0" />
+<file name="reveal.variables" server="10.122.64.245//srv/web/" local="131895752186724320" remote="131895976150000000" Dst="0" />
+<file name="segment.overrides" server="10.122.64.245//srv/web/" local="131895752186844343" remote="131895976150000000" Dst="0" />
+<file name="segment.variables" server="10.122.64.245//srv/web/" local="131895752186974396" remote="131895976150000000" Dst="0" />
+<file name="step.overrides" server="10.122.64.245//srv/web/" local="131895752187104398" remote="131895976150000000" Dst="0" />
+<file name="step.variables" server="10.122.64.245//srv/web/" local="131895752187234520" remote="131895976150000000" Dst="0" />
+</dwsync>

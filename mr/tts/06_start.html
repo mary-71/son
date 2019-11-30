@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	
+<title>TTS </title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="resources/css/font.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/semantic.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/common.css" />
+<script type="text/javascript" src="resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="resources/js/common.js"></script>
+<script type="text/javascript" src="resources/js/semantic.js"></script>
+<!-- //resources -->
+</head>
+
+<body>
+<!-- loading -->
+<div id="pageldg">
+    <div class="ld_item">
+        <span></span>  
+        <span></span>
+    </div>
+</div>
+<!-- //loading -->
+<!-- #wrap -->
+<div id="wrap">   
+	<!-- #header -->
+	<div id="header">
+        <h1><a href="01_login.html"><img src="resources/images/logo_header.png" alt="maum Voice"></a></h1>
+        <div class="sub_hd">
+			<ul>
+				<li><a href="03_add.html">My Voice Cards</a></li>
+				<li><a href="02_process.html">Guide</a></li>
+			</ul>
+		</div>
+		
+		<!-- .etcmenu -->
+		<div class="etcmenu">
+			<div class="userBox">
+				<div class="ad_logo">
+<!--				네이버일때는 logo_naver.png로 바꾸기-->										
+				</div>
+				<div class="ad_mail"><a href="">hello@mindslab.ai</a></div>
+				<div class="btn_logout">
+					<button type="button">Log Out</button>
+				</div>			
+			</div>
+		</div>
+		<!-- //.etcmenu -->
+	</div>
+	<!-- //#header -->	
+	<!-- #container -->
+	<div id="container">
+		<!-- .recordingArea -->	
+		<div class="recordingArea">
+			<h3>maum Voice <span>Recording</span></h3>
+			<b>0%</b>
+			<div class="graph_long">
+				<em class="graph_clr"></em>
+			</div>
+			<div class="start_desc">
+				<p>녹음 가이드</p>
+				<ul class="guide">
+					<li>지금부터 나오는 <span>지문을 읽고 목소리를 녹음</span>해 주세요.</li>
+					<li>녹음이 완료 되기까지 <span>약 1시간 가량</span>(약 600개 문장) 소요됩니다.</li>
+					<li>각 문장을 녹음 후, <span>바로 재생이 가능</span>하며 <span>재녹음이 가능</span>합니다.</li>
+					<li>녹음 중간에 종료 할 경우, 다음에 <span>이어 녹음하기가 가능</span>합니다.</li>
+					<li>모든 문장 녹음 완료 후, 24시간 학습 후 My Voice 확인이 가능합니다.</li>
+				</ul>
+			</div>
+			<div class="btn_start">
+				<a href="07_recording.html">Start </a>
+			</div>
+			<div class="start_note">
+				<span>유의사항</span>
+				<ul>	
+					<li>개인정보 수집 동의 하에 본인 목소리로만 녹음을 진행해주시기 바랍니다. <br>동의 없이 타인의 목소리를 사용할 경우, 법적인 문제가 발생할 수 있습니다.</li>	
+					<li>주변 소음이 있는 상태에서 녹음이 될 경우, 제공되는 엔진도 소음과 함께 재생이 되오니, 이 점 유의하여 녹음 하시길 바랍니다.</li>		
+				</ul>
+			</div>
+		</div>
+		<!-- //.recordingArea -->
+	</div>
+</div>
+<!-- //#wrap -->
+<script type="text/javascript" src="resources/js/player.js"></script>
+<script type="text/javascript">
+    $(window).load(function () {
+        $('#pageldg').addClass('pageldg_hide').delay(500).queue(function () { $(this).remove(); });
+    });
+</script>
+
+<script type="text/javascript">
+    jQuery.event.add(window, "load", function () {
+        $(document).ready(function () {
+           
+            
+         //add layer popup
+		$('#lyr_add').on('click', function () {
+			$('.lyr_add').fadeIn(300);              
+			$('body').css({
+				'overflow': 'hidden',
+			});
+			
+		});
+		// product layer popup     
+		$('.btn_lyrWrap_close, .lyr_bg').on('click', function () {
+			$('.lyr_add').fadeOut(300);
+			$('body').css({
+				'overflow': '',
+			});
+		});
+			
+		$('.graph_clr').css('width', '0%');	   
+          
+    });
+});
+$('.ui.dropdown')
+  .dropdown()
+;
+</script>
+
+</body>
+</html>
+	

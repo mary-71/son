@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta http-equiv="Expires" content="-1"> <!--캐시된 페이지가 만료되어 삭제되는 시간을 정의합니다. 특별한 경우가 아니면 -1로 설정합니다. -->
+<meta http-equiv="Pragma" content="no-cache"> <!--  페이지 로드시마다 페이지를 캐싱하지 않습니다. (HTTP 1.0) -->
+<meta http-equiv="Cache-Control" content="no-cache"> <!-- 페이지 로드시마다 페이지를 캐싱하지 않습니다. (HTTP 1.1)-->
+
+<!-- icon_favicon -->
+<link rel="apple-touch-icon-precomposed" href="resources/images/ico_favicon_64x64.png" />
+<link rel="shortcut icon" type="image/x-icon" href="resources/images/ico_favicon_64x64.ico"/>
+<title>maum.ai platform</title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/font.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/common.css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">	
+
+<!-- //resources -->
+
+<script type="text/javascript" src="resources/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="resources/js/common.js"></script>
+
+</head>
+
+<body>
+
+<!-- .page loading -->
+<div id="page_ldWrap" class="page_loading">
+	<div class="loading_itemBox">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!-- //.page loading -->
+
+
+<!-- wrap -->
+<div id="wrap">
+	<!-- #header -->
+	<div id="header">
+        <h1><a target="_self" href="welcome.html"><img src="resources/images/logo.png" alt="maum.ai"></a></h1>
+		<!-- .sta -->
+		<div class="sta">
+			<!-- .titArea -->
+			<div class="titArea">
+                <div class="path">
+                    <span><img src="resources/images/ico_path_home_bk.png" alt="HOME"></span>
+                    <span class="pop_term">API Services</span>
+<!--				<span>AI 독해</span>-->
+                </div>
+            </div>
+            <!-- //.titArea -->
+
+			<!-- .etcmenu -->
+			<div class="etcmenu">
+<!--			<span><i>P</i><em>1,000</em> point</span>-->
+				<div class="userBox">
+					<dl>
+						<dt class="ico_user">User</dt>
+						<dd>
+							<a target="_self" href="#none">admin@console.com</a>
+						</dd>
+						<ul class="lst">
+							<li class="ico_profile"><a target="_self" href="#none">PROFILE</a></li>
+							<li class="ico_account"><a target="_self" href="#none">API ACCOUNT</a></li>
+							<li class="ico_payment"><a target="_self" href="#none">PAYMENT</a></li>
+							<li class="ico_logout"><a target="_self" href="#none">LOGOUT</a></li>
+						</ul>
+					</dl>
+				</div>
+			</div>
+			<!-- //.etcmenu -->
+		</div>
+		<!-- //.sta -->
+	</div>
+	<!-- //#header -->
+	<!-- .snb 한글 -->
+	<div class="snb">		
+		<ul>
+			<li class="collapsible list1"><a href="https://dev-api.maum.ai/"><i class="fas fa-home"></i>HOME</a></li>	
+			<li class="collapsible list2 active"><i class="fas fa-shapes"></i>AI Services</li>					
+			<li class="sublist list2_sub">
+				<a class="dropdwn twodepth " id="flip">텍스트를 음성으로</a>
+				<ul class="twodepthLst panel">
+					<li class=""><a href="tts.html">AI Voice 사용하기</a></li>
+					<li><a href="tts_record.html">내 목소리로 사용하기</a></li>
+				</ul>	
+				<a class="twodepth" href="stt.html">음성을 텍스트로</a>
+			</li>
+			<li class="collapsible list3 dropdwn active"><i class="fas fa-laptop-code"></i>API Services</li>					
+			<li class="sublist list3_sub">
+				<a class="twodepth" href="api_tts.html">음성 생성</a>	
+				<a class="twodepth" href="api_stt.html">음성 인식</a>
+				<a class="twodepth" href="xdc.html">텍스트 분류</a>	
+				<a class="twodepth active" href="mrc.html">AI 독해</a>
+				<a class="twodepth" href="hmd.html">패턴 분류</a>	
+				<a class="twodepth" href="nlu.html">자연어 이해</a>
+				<a class="twodepth" href="recog.html">화폐 · 고지서 인식</a>	
+			</li>		
+			<li class="collapsible list4 dropdwn"><i class="fas fa-grip-horizontal"></i>Application</li>					
+			<li class="sublist list4_sub">
+				<a class="twodepth" href="voc.html">maum VOC</a>	
+				<a class="twodepth" href="mai_1.html">mAI English</a>
+				<a class="twodepth" href="chatbot.html">날씨봇 · 위키봇</a>
+			</li>		
+			<li class="collapsible list5 dropdwn"><i class="fas fa-headphones-alt"></i>고객지원</li>					
+			<li class="sublist list5_sub">
+				<a class="twodepth" href="pricing.html">가격정책</a>	
+				 
+				<a class="twodepth" href="faq.html">FAQ</a>
+				<a class="twodepth" href="request.html">문의 내역</a>	
+				<a class="twodepth" href="contactus.html">Contact Us</a>	
+			</li>				
+		</ul>
+	</div>
+	<!-- //.snb 한글 -->	
+	<!-- aside -->
+	<div class="aside" style="display:none;">
+		<!-- .aside_top -->
+		<div class="aside_top">
+			<h1><a href="index.html"><img src="resources/images/logo_m.png" alt="maum API"></a></h1>
+		</div>
+		<!-- //.aside_top -->
+		<!-- .aside_mid -->
+		<div class="aside_mid">
+			<ul class="m_etcMenu">
+				<li class="lang">
+					<p class="lang_select"><img src="resources/images/ico_lang_kr.png" alt="한국어"><em>한국어</em></p>
+					<ul class="lst">
+						<li><a href="../en/index.html" target="_self"><img src="resources/images/ico_lang_us.png" alt="English"><em>English</em></a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="m_nav">
+				<li>
+					<h2><a href="#none">HOME</a></h2>
+				</li>
+				<li>
+					<h2><a href="#none">AI Services</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none" class="depth3">택스트를 음성으로</a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="tts.html" target="_self">AI Voice 사용하기</a></li>
+								<li><a href="tts_record.html" target="_self">내 목소리로 사용하기</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none">음성을 텍스트로</a></h3>							
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">API Services</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none">음성 생성</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">음성 인식</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">텍스트 분류</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">AI 독해</a></h3>						
+						</li>
+						<li>
+							<h3><a href="#none">패턴 분류</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">자연어 이해</a></h3>						
+						</li>
+						<li>
+							<h3><a href="#none">화폐 · 고지서 인식</a></h3>							
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">Application</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none">maum VOC</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">mAI English</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">날씨봇 · 위키봇</a></h3>							
+						</li>						
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">고객지원</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none">가격정책</a></h3>							
+						</li>
+						 
+						<li>
+							<h3><a href="#none">FAQ</a></h3>							
+						</li>	
+						<li>
+							<h3><a href="#none">문의 내역</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">Contact Us</a></h3>							
+						</li>
+					</ul>
+				</li>
+			</ul>  
+		</div>
+		<!-- //.aside_mid -->
+		<!-- .aside_btm -->
+<!--
+		<div class="aside_btm">
+			<ul>
+				<li class="btn_mail"><a href="mailto:hello@mindslab.ai">hello@mindslab.ai</a></li>
+				<li class="btn_tel"><a href="tel:+82316254340">031. 625. 4340</a></li>
+			</ul>
+		</div>
+-->
+		<!-- //.aside_btm -->
+	</div>
+	<div class="bg_aside"></div> 
+	<a class="btn_header_ham" href="#none"><span class="hamburger_icon"></span></a>  
+	<!-- //aside -->
+	<!-- #container -->
+	<div id="container">
+		<!-- .contents -->
+		<div class="contents">
+			<div class="content api_content">
+				<h1 class="api_tit">AI 독해</h1>
+				<ul class="menu_lst">
+					<li class="tablinks" onclick="openTap(event, 'mrcdemo')" id="defaultOpen">데모</li>
+					<li class="tablinks" onclick="openTap(event, 'mrcmenu')">메뉴얼</li>
+					<li class="tablinks" onclick="openTap(event, 'mrcexample')">적용사례</li>
+					<li class="tablinks"><a href="" target="_blank" title="마인즈랩 몰">구매하기</a></li>
+				</ul>
+				<!--.demobox_mrc-->
+				<div class="demobox demobox_mrc" id="mrcdemo">
+					<p>정확하게 읽고 답하는 AI 독해 <small>(MRC, Machine Reading Comprehension)</small></p>
+					<span class="sub">내용을 읽고 분석하여 질문에 맞는 답을 정확하게 찾습니다</span>
+					
+					<!--.mrc_box-->
+					<div class="mrc_box">
+						<!--.step01-->
+						<div class="step01">
+							<div class="demo_top">
+								<button type="button" class="btn_article" id="btn_lyr_naver">기사검색</button>	
+								<p>본문넣기</p>
+								<button type="button" class="btn_example" id="btn_lyr_sample">예문선택</button>	
+							</div>
+							<div class="text_area">
+								<textarea rows="7" placeholder="문서본문 (뉴스기사, 웹문서)을 붙여넣기 해주세요.
+(왼쪽 ‘기사 검색’ 버튼을 통해 기사를 검색하거나, 오른쪽 ‘예문 선택’ 버튼을 통해 미리 준비된 에문을 선택해 주세요.)"></textarea>
+							</div>
+						</div>	
+						<!--//.step01-->
+						<!--.step02-->
+						<div class="step02">
+							<div class="demo_top">									
+								<p>질문하기</p>
+								<button type="button" class="btn_example" id="btn_lyr_question">질문 예제 선택</button>	
+							</div>							
+							<div class="text_area">
+								<textarea class="example_area" placeholder="본문에서 궁금한 내용을 질문해 주세요.
+(예문을 선택한 경우, 오른쪽 ‘질문 예제 선택’ 버튼을 통해 미리 준비된 질문 예제를 선택해 주세요.)"></textarea>
+							</div> 
+							<div class="btn_area">
+								<button type="button" class="btn_search" id="" disable
+										d>답변찾기</button>
+								<span class="disBox"></span>
+							</div>
+						</div>	
+						<!--//.step02-->
+						<!-- .lyr_wrap -->
+						<div class="lyr_wrap">
+							
+							<div class="lyr_bg"></div>
+							<!-- .lyr_naver -->
+							<div id="lyr_naver" class="lyr_box">    
+							    <span class="close">×</span>
+								<div class="lyr_tit">
+									<h4>네이버 기사 검색</h4>
+								</div>
+								<div class="lyr_cont">
+									<div class="lyr_srch">
+										<input type="text" class="ipt_txt" placeholder="검색어를 입력해 주세요. (예: 인공지능, 축구 등)">
+										<button type="button" class="btnType01">검색</button>
+									</div>
+									<div class="lyr_lstBox">
+										<p class="txt">아래의 네이버 기사 검색 결과 리스트중 하나의 기사를 선택해 주세요.</p>
+										<ul class="lyr_lst">
+											<li><a href="#none">'쁘라삐룬' 지나가자 '마리아' 온다…8호 태풍 오키나와 접근 중</a></li>
+											<li><a href="#none">여수 해경교육원 태풍 쓰레기 수거</a></li>
+											<li><a href="#none">태풍&middot;장마에 출하량 감소…채솟값 다시 '꿈틀'</a></li>
+											<li><a href="#none">태풍 마리아, 괌서 북진 중…7일 '중형'으로 격상 가능성, 한반도 영향은?</a></li>
+											<li><a href="#none">행안부, 폭우&middot;태풍피해 응급복구&middot;전수조사</a></li>
+											<li><a href="#none">'쁘라삐룬' 지나가자 '마리아' 온다…8호 태풍 오키나와 접근 중</a></li>
+											<li><a href="#none">여수 해경교육원 태풍 쓰레기 수거</a></li>
+											<li><a href="#none">태풍&middot;장마에 출하량 감소…채솟값 다시 '꿈틀'</a></li>
+											<li><a href="#none">태풍 마리아, 괌서 북진 중…7일 '중형'으로 격상 가능성, 한반도 영향은?</a></li>
+											<li><a href="#none">행안부, 폭우&middot;태풍피해 응급복구&middot;전수조사</a></li>
+										</ul>
+									</div>
+									<div class="btrnBox">
+										<button type="button" class="btnType01">확인</button>
+									</div>
+								</div>
+							</div>
+							<!-- //.lyr_naver -->
+							<!-- .lyr_sample -->
+							<div id="lyr_sample" class="lyr_box">   
+								<span class="close">×</span>
+								<div class="lyr_tit">
+									<h4>예문 선택</h4>
+								</div>
+								<div class="lyr_cont">
+									<div class="lyr_lstBox">
+										<p class="txt">미리 준비된 예문 중 하나를 선택해 주세요.</p>
+										<ul class="lyr_lst" style="max-height:260px;">
+											<li><a href="#none">'쁘라삐룬' 지나가자 '마리아' 온다…8호 태풍 오키나와 접근 중</a></li>
+											<li><a href="#none">여수 해경교육원 태풍 쓰레기 수거</a></li>
+											<li><a href="#none">태풍&middot;장마에 출하량 감소…채솟값 다시 '꿈틀'</a></li>
+											<li><a href="#none">태풍 마리아, 괌서 북진 중…7일 '중형'으로 격상 가능성, 한반도 영향은?</a></li>
+											<li><a href="#none">행안부, 폭우&middot;태풍피해 응급복구&middot;전수조사</a></li>
+											<li><a href="#none">'쁘라삐룬' 지나가자 '마리아' 온다…8호 태풍 오키나와 접근 중</a></li>
+											<li><a href="#none">여수 해경교육원 태풍 쓰레기 수거</a></li>
+											<li><a href="#none">태풍&middot;장마에 출하량 감소…채솟값 다시 '꿈틀'</a></li>
+											<li><a href="#none">태풍 마리아, 괌서 북진 중…7일 '중형'으로 격상 가능성, 한반도 영향은?</a></li>
+											<li><a href="#none">행안부, 폭우&middot;태풍피해 응급복구&middot;전수조사</a></li>
+										</ul>
+									</div>
+									<div class="btrnBox">
+										<button type="button" class="btnType01">확인</button>
+									</div>
+								</div>
+							</div>
+							<!-- //.lyr_sample -->
+							<!-- .lyr_question -->
+							<div id="lyr_question" class="lyr_box"> 
+								<span class="close">×</span>
+								<div class="lyr_tit">
+									<h4>질문 예제 선택</h4>
+								</div>
+								<div class="lyr_cont">
+									<div class="lyr_lstBox">
+										<p class="txt">미리 준비된 질문 예제 중 하나를 선택해 주세요.</p>
+										<ul class="lyr_lst" style="max-height:260px;">
+											<li><a href="#none">'쁘라삐룬' 지나가자 '마리아' 온다…8호 태풍 오키나와 접근 중</a></li>
+											<li><a href="#none">여수 해경교육원 태풍 쓰레기 수거</a></li>
+											<li><a href="#none">태풍&middot;장마에 출하량 감소…채솟값 다시 '꿈틀'</a></li>
+											<li><a href="#none">태풍 마리아, 괌서 북진 중…7일 '중형'으로 격상 가능성, 한반도 영향은?</a></li>
+											<li><a href="#none">행안부, 폭우&middot;태풍피해 응급복구&middot;전수조사</a></li>
+											<li><a href="#none">'쁘라삐룬' 지나가자 '마리아' 온다…8호 태풍 오키나와 접근 중</a></li>
+											<li><a href="#none">여수 해경교육원 태풍 쓰레기 수거</a></li>
+											<li><a href="#none">태풍&middot;장마에 출하량 감소…채솟값 다시 '꿈틀'</a></li>
+											<li><a href="#none">태풍 마리아, 괌서 북진 중…7일 '중형'으로 격상 가능성, 한반도 영향은?</a></li>
+											<li><a href="#none">행안부, 폭우&middot;태풍피해 응급복구&middot;전수조사</a></li>
+										</ul>
+									</div>
+									<div class="btrnBox">
+										<button type="button" class="btnType01">확인</button>
+									</div>
+								</div>
+							</div>
+							<!-- //.lyr_question -->
+						</div>
+						<!-- //.lyr_wrap -->
+						<!--.step03-->
+						<div class="step03">
+							<div class="tit"><img src="resources/images/ico_mrcresult.png"><span>MRC 분석 결과</span></div>
+							<div class="resultBox">
+								신뢰도: <span>93.25%</span>
+								</div>
+							<div class="result_txt">
+								신성 로마 제국(라틴어: Sacrum Romanum Imperium)은 중세에서 근대 초까지 이어진 기독교 성향이 강한 유럽 국가들의 정치적 연방체이다. 프랑크 왕국이 베르됭 조약(843년)으로 나뉜 동쪽에서 독일 왕이 마자르족을 격퇴한 후 <strong>교황</strong>으로부터 황제의 관을 수여받아 신성 로마 제국 건국을 선포하였다. 신성 로마 제국은 초기에는 강력한 중앙집권 국가였으나, 점차 이탈리아에 대한 간섭으로 독일 지역에 소홀히 하면서 여러 제후들에 의해 분할 상태가 되었다. <strong>30년 전쟁(1618~48년)</strong>이 일어난 나라로 유명하며, 30년 전쟁에 패배하여 베스트팔렌 조약(1648년)으로 많은 영토를 잃었다		
+							</div>		
+							<div class="btn_area">
+								<button type="button" class="btn_reset" id="" >처음으로</button>	
+							</div>
+						</div>
+						<!--//.step03-->
+					</div>						
+					<!--//.mrc_box-->			
+					
+				</div>
+				<!-- .<!--.demobox_mrc -->
+				
+				<!--.mrcmenu-->
+				<div class="demobox" id="mrcmenu">				
+					
+					<!--guide_box-->
+					<div class="guide_box">
+						<div class="guide_group">
+							<div class="title">
+								MRC <small>(Machine Reading Comprehension)</small>		
+							</div>
+							<p class="sub_txt">마인즈랩의 MRC는 내용이나 분량에 관계없이 어떠한 문서든즉시 독해하고 사용자의 질문에 정확하게 답할 수 있는 혁신적인 인공지능(AI) 기술입니다.</p>
+
+							<span class="sub_title">
+								준비사항			
+							</span>
+							<p class="sub_txt">① Input: 본문 (텍스트), 질문 (텍스트)</p>
+							<p class="sub_txt">② 아래 Model 중 택 1  </p>
+							<ul>
+								<li>Default</li>					
+							</ul>
+							<span class="sub_title">
+								 실행 가이드			
+							</span>
+							<p class="sub_txt">① Request  </p>
+							<ul>
+								<li>Method : POST</li>
+								<li>URL : https://api.maum.ai/api/mrc/</li>										
+							</ul>
+							<p class="sub_txt">② Request 파라미터 설명 </p>
+							<table>
+								<tr>
+									<th>키</th>
+									<th>설명</th>
+									<th>type</th>
+								</tr>
+								<tr>
+									<td>ID</td>
+									<td>사용자의 고유 ID. 마인즈랩 담당자에게 이메일로 발급요청 </td>
+									<td>string</td>
+								</tr>
+								<tr>
+									<td>key</td>
+									<td>사용자의 고유 key. 마인즈랩 담당자에게 이메일로 발급요청 </td>
+									<td>string</td>
+								</tr>
+								<tr>
+									<td>cmd</td>
+									<td>어떤 API 를 사용할지에 대한 간단한 키워드 (runMRC) </td>
+									<td>string</td>
+								</tr>
+								<tr>
+									<td>sentence</td>
+									<td>본문내용 (텍스트) </td>
+									<td>string</td>
+								</tr>
+								<tr>
+									<td>question</td>
+									<td>답을 요구하는 질문 (텍스트) </td>
+									<td>string</td>
+								</tr>							
+							</table>
+							<p class="sub_txt">③ Request 예제 </p>
+							<div class="code_box">
+		curl -X POST \<br>
+	<span>https://api.maum.ai/api/mrc/ \</span><br>
+	<span>-H 'Content-Type: application/x-www-form-urlencoded' \</span><br>
+	<span>-F ID=(*ID 요청 필요) \</span><br>
+	<span>-F key=(*key 요청 필요) \</span><br>
+	<span>-F cmd=runMRC \</span><br>
+	<span>-F 'sentence=신성 로마 제국(라틴어: Sacrum Romanum Imperium)은 중세에서 근대 초까지 이어진 기독교 성향이 강한 유럽 국가들의 정치적 연방체이다. 프랑크 왕국이 베르됭 조약(843년)으로 나뉜 동쪽에서 독일 왕이 마자르족을 격퇴한 후 교황으로부터 황제의 관을 수여받아 신성 로마 제국 건국을 선포하였다. '
+	</span><br>
+	<span>-F 'question=신성 로마 제국은 언제 세워졌어?'</span>
+							</div>
+
+							<p class="sub_txt">④ Response 파라미터 설명 </p>
+							<span class="table_tit">Response</span>
+							<table>
+								<tr>
+									<th>키</th>
+									<th>설명</th>
+									<th>타입</th>
+								</tr>
+								<tr>
+									<td>data</td>
+									<td>API 결과 data (json format) </td>
+									<td>list</td>
+								</tr>
+								<tr>
+									<td>status</td>
+									<td>API 동작여부 (Success / Fail)</td>
+									<td>string</td>
+								</tr>
+								<tr>
+									<td>extra_data</td>
+									<td>추가 데이터 </td>
+									<td>string</td>
+								</tr>
+							</table>
+							<span class="table_tit">data: API 결과 </span>
+							<table>
+								<tr>
+									<th>키</th>
+									<th>설명</th>
+									<th>타입</th>
+								</tr>
+								<tr>
+									<td>answers</td>
+									<td>독해 결과 (json list format) </td>
+									<td>list</td>
+								</tr>
+								<tr>
+									<td>original</td>
+									<td>입력된 원문 (텍스트) </td>
+									<td>string</td>
+								</tr>							
+							</table>
+							<span class="table_tit">answers: 독해 결과</span>
+							<table>
+								<tr>
+									<th>키</th>
+									<th>설명</th>
+									<th>타입</th>
+								</tr>
+								<tr>
+									<td>answer</td>
+									<td>질문에 해당되는 답 (텍스트)</td>
+									<td>string</td>
+								</tr>
+								<tr>
+									<td>prob</td>
+									<td>결과에 대한 확률 (0~1)</td>
+									<td>number</td>
+								</tr>							
+							</table>
+							<p class="sub_txt">⑤ Response 예제 </p>
+							<div class="code_box">
+	{<br>
+	<span>"data": [</span><br>
+	<span class="twoD">{</span><br>
+	<span class="thirD">"answers": [</span><br>
+	<span class="fourD">{</span><br>
+	<span class="fivD">"answer": "베르됭 조약(843년",</span><br>
+	<span class="fivD"> "prob": 0.1667664647102356</span><br>
+	<span class="fourD">}</span><br>
+	<span class="thirD">],</span><br>
+	<span class="thirD">"original": "신성 로마 제국(라틴어: Sacrum Romanum Imperium)은 중세에서 근대 초까지 이어진 기독교 성향이 강한 유럽 국가들의 정치적 연방체이다. 프랑크 왕국이 베르됭 조약(843년)으로 나뉜 동쪽에서 독일 왕이 마자르족을 격퇴한 후 교황으로부터 황제의 관을 수여받아 신성 로마 제국 건국을 선포하였다."</span><br>
+
+	<span class="twoD">}</span><br>
+	<span>],</span><br>
+	<span>"status": "Success",</span><br>
+	<span>"extra_data": "None"</span><br>
+	}
+
+
+							</div>
+						</div>
+					</div>
+					<!--//.guide_box-->		
+				</div>
+				<!--//mrcmenu-->
+				<!--.mrcexample-->
+				<div class="demobox" id="mrcexample">	
+					<div class="coming_txt">
+						<h5>준비중입니다</h5>
+					</div>
+				</div>
+				
+			</div>
+			<!-- #footer -->
+			<div id="footer">
+				<div class="lot_c">
+					<div class="cyrt"><span>MINDsLab &copy; 2019</span></div>
+				</div>
+			</div>
+			<!-- //#footer -->
+		</div>
+		<!-- //.contents -->
+	</div>
+	<!-- //#container -->
+</div>
+<!-- //wrap -->
+
+<script type="text/javascript">
+$(window).load(function() {
+	$('.page_loading').addClass('pageldg_hide').delay(300).queue(function() {
+		$(this).remove();
+	});
+});
+</script>
+<script type="text/javascript">
+//twodepth	
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var sublist = this.nextElementSibling;
+    if (sublist.style.maxHeight){
+      sublist.style.maxHeight = null;
+	  	
+    } else {
+      sublist.style.maxHeight = sublist.scrollHeight + "px";
+		$('.dropdwn').removeClass('.active');
+    } 
+  });
+}
+	
+//	
+//threedepth	
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+		$('.twodepth ').each(function(){
+			if($(this).hasClass('active')){
+				$(this).trigger( "click" );
+			}
+		});	
+		
+		$("#flip").click(function(){
+			if($(this).hasClass('active')){
+				$(this).removeClass('active');	
+			}else{
+				$(this).addClass('active');
+			}
+			
+			$(".panel").slideToggle("fast");
+			var sublist = this.parentNode;
+			sublist.style.maxHeight =  sublist.scrollHeight + $(".twodepthLst").prop('scrollHeight')+ "px";	
+			
+		});		
+	});	
+});	
+		
+	
+	
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){		
+		$('.snb ul li.collapsible').each(function(){
+			if($(this).hasClass('active')){
+				$(this).trigger( "click" );				
+			}
+		});
+		//mrc
+		// Layer (네이버 기사 검색)
+		$('#btn_lyr_naver').on('click',function(){
+			$('.lyr_wrap').fadeIn(300);
+			$('#lyr_naver').fadeIn(300);
+		});
+		
+		// Layer (예문선택)
+		$('#btn_lyr_sample').on('click',function(){
+			$('.lyr_wrap').fadeIn(300);
+			$('#lyr_sample').fadeIn(300);
+		});
+		
+		// Layer (질문선택)
+		$('#btn_lyr_question').on('click',function(){
+			$('.lyr_wrap').fadeIn(300);
+			$('#lyr_question').fadeIn(300);
+		});
+		
+		// Layer (리스트 선택)
+		$('.lyr_wrap .lyr_lst li a').on('click',function(){
+			$('.lyr_wrap .lyr_lst li a').removeClass('active');
+			$(this).addClass('active');
+		});
+		
+		// Layer (close)
+		$('.lyr_wrap .btrnBox .btnType01').on('click',function(){
+			$('.lyr_wrap').fadeOut(300);
+			$(this).parent().parent().parent().fadeOut(300);
+		});
+		
+		// Layer (close)
+		$('.lyr_bg').on('click',function(){
+			$('.lyr_wrap').fadeOut(300);
+			$('.lyr_box').fadeOut(300);
+		});
+		
+		
+		// product layer popup     
+		$('.close, .lyr_bg').on('click', function () {
+			$('.demobox_mrc .lyr_wrap').fadeOut(300);			
+			$('body').css({
+				'overflow': '',
+			});
+		});	
+		
+		
+		// step01 > step02
+		$('.demobox_mrc .mrc_box .step02').show();
+		$('.mrc_box .step01 textarea').on('input keyup paste', function() {			
+			var txtValLth = $(this).val().length;			
+			if ( txtValLth > 0) {
+				$('.demobox_mrc .mrc_box .step02').show();
+				$('.progress li:nth-child(2)').addClass('active'); 	
+				
+			} else {
+				$('.demobox_mrc .mrc_box .step02').hide();
+				$('.demobox_mrc .mrc_box .step03').hide();
+				$('.demobox_mrc .mrc_box .step02 .btnBox').show();
+				$('.progress li:nth-child(2)').removeClass('active'); 	
+			}
+		});
+		
+		// step02 button active
+		$('.mrc_box .step02 textarea').on('input keyup paste', function() {			
+			var txtValLth = $(this).val().length;
+			
+			if ( txtValLth > 0) {
+				$('.mrc_box .step02 .btn_area button').removeClass('disable');	
+				$('.mrc_box .step02 .btn_area button').removeAttr('disabled');	
+				$('.mrc_box .step02 .btn_area .disBox').remove();
+			} else {
+//				$('.mrc_box .step02 .btn_area button').addClass('disable');	
+				$('.mrc_box .step02 .btn_area button').attr('disabled');
+				$('.mrc_box .step03').hide();
+				$('.mrc_box .step02 .btn_area').append('<span class="disBox"></span>');
+			}
+		});
+		
+		// step02 > step03
+		$('.mrc_box .step02 .btn_search').on('click',function(){	
+			$('.mrc_box .step01').hide();	
+			$('.mrc_box .step02').hide();	
+			$('.mrc_box .step03').fadeIn();
+			$('.progress li:nth-child(3)').addClass('active'); 	
+		});
+		
+		// step03 > step01
+		$('.mrc_box .step03 .btn_reset').on('click',function(){
+			$('.mrc_box .text_area textarea').val('');
+			$('.mrc_box .step01').show();
+			$('.mrc_box .step02').show();
+			$('.mrc_box .step03').hide();
+			$('.mrc_box .step02 .btn_area').show();
+//			$('.mrc_box .step02 .btn_area button').addClass('disable');	
+			$('.mrc_box .step02 .btn_area button').attr('disabled');
+			$('.mrc_box .step02 .btn_area').append('<span class="disBox"></span>');
+			$('.progress li:nth-child(1)').addClass('active'); 	
+			$('.progress li:nth-child(2)').removeClass('active');
+			$('.progress li:nth-child(3)').removeClass('active');
+		});
+
+		//mrc
+	});
+});
+
+//API 탭  	
+function openTap(evt, menu) {
+  var i, demobox, tablinks;
+  demobox = document.getElementsByClassName("demobox");
+  for (i = 0; i < demobox.length; i++) {
+    demobox[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(menu).style.display = "block";
+  evt.currentTarget.className += " active";
+}	
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();	
+
+</script>
+
+
+
+</body>
+</html>
+
+

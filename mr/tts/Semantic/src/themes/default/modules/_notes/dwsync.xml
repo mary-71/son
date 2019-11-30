@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="accordion.overrides" server="10.122.64.245//srv/web/" local="131895752231604701" remote="131895976270000000" Dst="0" />
+<file name="accordion.variables" server="10.122.64.245//srv/web/" local="131895752231774919" remote="131895976270000000" Dst="0" />
+<file name="chatroom.overrides" server="10.122.64.245//srv/web/" local="131895752231924783" remote="131895976270000000" Dst="0" />
+<file name="chatroom.variables" server="10.122.64.245//srv/web/" local="131895752232114996" remote="131895976280000000" Dst="0" />
+<file name="checkbox.overrides" server="10.122.64.245//srv/web/" local="131895752232345053" remote="131895976280000000" Dst="0" />
+<file name="checkbox.variables" server="10.122.64.245//srv/web/" local="131895752232514911" remote="131895976280000000" Dst="0" />
+<file name="dimmer.overrides" server="10.122.64.245//srv/web/" local="131895752232654943" remote="131895976280000000" Dst="0" />
+<file name="dimmer.variables" server="10.122.64.245//srv/web/" local="131895752232845163" remote="131895976280000000" Dst="0" />
+<file name="dropdown.overrides" server="10.122.64.245//srv/web/" local="131895752233095038" remote="131895976280000000" Dst="0" />
+<file name="dropdown.variables" server="10.122.64.245//srv/web/" local="131895752233275067" remote="131895976280000000" Dst="0" />
+<file name="embed.overrides" server="10.122.64.245//srv/web/" local="131895752233445114" remote="131895976280000000" Dst="0" />
+<file name="embed.variables" server="10.122.64.245//srv/web/" local="131895752233655168" remote="131895976280000000" Dst="0" />
+<file name="modal.overrides" server="10.122.64.245//srv/web/" local="131895752233805200" remote="131895976280000000" Dst="0" />
+<file name="modal.variables" server="10.122.64.245//srv/web/" local="131895752233985420" remote="131895976280000000" Dst="0" />
+<file name="nag.overrides" server="10.122.64.245//srv/web/" local="131895752234115275" remote="131895976280000000" Dst="0" />
+<file name="nag.variables" server="10.122.64.245//srv/web/" local="131895752234285322" remote="131895976280000000" Dst="0" />
+<file name="popup.overrides" server="10.122.64.245//srv/web/" local="131895752234425340" remote="131895976280000000" Dst="0" />
+<file name="popup.variables" server="10.122.64.245//srv/web/" local="131895752234625389" remote="131895976280000000" Dst="0" />
+<file name="progress.overrides" server="10.122.64.245//srv/web/" local="131895752234755418" remote="131895976280000000" Dst="0" />
+<file name="progress.variables" server="10.122.64.245//srv/web/" local="131895752234955463" remote="131895976280000000" Dst="0" />
+<file name="rating.overrides" server="10.122.64.245//srv/web/" local="131895752235485684" remote="131895976280000000" Dst="0" />
+<file name="rating.variables" server="10.122.64.245//srv/web/" local="131895752235695629" remote="131895976280000000" Dst="0" />
+<file name="search.overrides" server="10.122.64.245//srv/web/" local="131895752235825662" remote="131895976290000000" Dst="0" />
+<file name="search.variables" server="10.122.64.245//srv/web/" local="131895752236005705" remote="131895976290000000" Dst="0" />
+<file name="shape.overrides" server="10.122.64.245//srv/web/" local="131895752236145726" remote="131895976290000000" Dst="0" />
+<file name="shape.variables" server="10.122.64.245//srv/web/" local="131895752236315770" remote="131895976290000000" Dst="0" />
+<file name="sidebar.overrides" server="10.122.64.245//srv/web/" local="131895752236455986" remote="131895976290000000" Dst="0" />
+<file name="sidebar.variables" server="10.122.64.245//srv/web/" local="131895752236645964" remote="131895976290000000" Dst="0" />
+<file name="sticky.overrides" server="10.122.64.245//srv/web/" local="131895752236776051" remote="131895976290000000" Dst="0" />
+<file name="sticky.variables" server="10.122.64.245//srv/web/" local="131895752236935914" remote="131895976290000000" Dst="0" />
+<file name="tab.overrides" server="10.122.64.245//srv/web/" local="131895752237116131" remote="131895976290000000" Dst="0" />
+<file name="tab.variables" server="10.122.64.245//srv/web/" local="131895752237296167" remote="131895976290000000" Dst="0" />
+<file name="transition.overrides" server="10.122.64.245//srv/web/" local="131895752237476036" remote="131895976290000000" Dst="0" />
+<file name="transition.variables" server="10.122.64.245//srv/web/" local="131895752237626067" remote="131895976290000000" Dst="0" />
+</dwsync>

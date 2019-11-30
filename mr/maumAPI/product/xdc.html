@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<!-- facebook Tag -->
+<meta property="fb:app_id"           content="APP_ID" />
+<!-- Open Graph Tag -->
+<meta property="og:title"            content=""/><!-- 웹 페이지 제목 -->
+<meta property="og:type"             content="website"/><!-- 웹 페이지 타입 -->
+<meta property="og:url"              content=""/><!-- 웹 페이지 URL-->
+<meta property="og:image"            content=""/><!-- 웹 페이지 대표 이미지 -->
+<meta property="og:description"      content=""/><!-- 웹 페이지 설명 -->
+<!-- twitter Tag -->
+<meta property="twitter:card"        content="summary"/>
+<meta property="twitter:url"         content=""/><!-- 웹 페이지 URL-->
+<meta property="twitter:image"       content=""/><!-- 웹 페이지 대표 이미지 -->
+<meta property="twitter:title"       content=""/><!-- 웹 페이지 제목 -->
+<meta property="twitter:description" content=""/><!-- 웹 페이지 설명 -->
+<!-- icon (Internet Explorer & Windows Phone) -->
+<meta name="msapplication-square70x70logo" content="70x70.png"><!-- smalltile -->
+<meta name="msapplication-square150x150logo" content="150x150.png"><!-- mediumtile -->
+<meta name="msapplication-wide310x150logo" content="310x150.png"><!-- widetile -->
+<!-- icon (Chrome & Opera) -->
+<link rel="icon" sizes="192x192" href="192x192.png"><!-- 아이콘의 크기는 48px을 기본으로 합니다. 48px, 96px, 144px, 192px로 늘어납니다.-->
+<!-- icon (Safari) -->
+<link rel="apple-touch-icon" sizes="76x76" href="76x76.png"/><!-- iPad -->
+<link rel="apple-touch-icon" sizes="120x120" href="120x120.png"/><!-- iPhone Retina -->
+<link rel="apple-touch-icon" sizes="152x152" href="152x152.png"/><!-- iPad Retina -->
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="64x64.ico"/><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->	
+	
+<title>XDC :: maum API</title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="../resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../resources/css/common.css" />
+<script type="text/javascript" src="../resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="../resources/js/common.js"></script>
+<!-- //resources -->
+</head>
+
+<body>
+<!-- loading -->
+<div id="pageldg">
+    <div class="ld_item">
+        <span></span>  
+        <span></span>
+    </div>
+</div>
+<!-- //loading -->
+<!-- #wrap -->
+<div id="wrap"> 
+	<!-- #header -->
+	<div id="header" >	
+		<!-- .sta -->
+		<div class="sta">
+			<h1><a href="../index.html"><img src="../resources/images/img_cmn_h1.png" alt="maum API"></a></h1>			
+			<div class="etcMenu">
+				<ul>
+					<!-- <li class="login"><span>로그인</span></li> -->
+					<li class="lang">
+						<p class="lang_select"><img src="../resources/images/ico_lang_kr.png" alt="한국어"><em>한국어</em></p>
+						<ul class="lst">
+							<li><a href="../../en/index.html" target="_self"><img src="../resources/images/ico_lang_us.png" alt="English"><em>English</em></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //.sta -->
+		<!-- .gnb -->
+		<div id="gnb" class="gnb">
+			<div class="gnbNavBox">
+				<ul class="gnbNav">
+					<li class="menu1depth">
+						<h2><a href="#none">제품</a></h2>
+						<div class="gnbItem">
+							<div class="lot_c">
+								<div class="itemBox">
+									<dl style="margin-bottom:55px">
+										<dt class="ico_voice"><span>음성</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="stt.html" target="_self">Speech To Text <em class="new">Demo</em></a></li>
+												<li><a href="tts.html" target="_self">Text To Speech <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="ico_visual"><span>시각</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="diarl.html" target="_self">Document Image Analysis, Recognition and Learning <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_int"><span>지능</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="ec.html" target="_self">Ensemble Classification</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_lang"><span>언어</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="nlu.html" target="_self">Natural Language Understanding</a></li>
+												<li><a href="dnn.html" target="_self">DNN Classification</a></li>
+												<li><a href="hmd.html" target="_self">Hierarchical Multiple Dictionary</a></li>
+												<li><a href="xdc.html" target="_self">eXplainable Document Classifier <em class="new">Demo</em></a></li>
+												<li><a href="if.html" target="_self">Intent Finder</a></li>
+												<li><a href="we.html" target="_self">Word Embedding</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_cvs"><span>대화</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="sds.html" target="_self">Spoken Dialogue System</a></li>
+												<li><a href="bqa.html" target="_self">Basic Question Answering <em class="new">Demo</em></a></li>
+												<li><a href="kbqa.html" target="_self">Knowledge Based Question Answering <em class="new">Demo</em></a></li>
+												<li><a href="irqa.html">Information Retrieval Question Answering <em class="new">Demo</em></a></li>
+												<li><a href="deepqa.html" target="_self">Deep Question Answering <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu1depth"><h2><a href="#none">문서</a></h2>
+						<div class="gnbItem">
+							<div class="lot_c">
+								<div class="itemBox">
+									<dl style="margin-bottom:55px">
+										<dt class="ico_voice"><span>음성</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../guide/stt.html" target="_self">Speech To Text <em class="new">New</em></a></li>
+												<li><a><span>Text To Speech</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="ico_visual"><span>시각</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a><span>Document Image Analysis, Recognition and Learning</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_int"><span>지능</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a><span>Ensemble Classification</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_lang"><span>언어</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a><span>Natural Language Understanding</span></a></li>
+												<li><a><span>DNN Classification</span></a></li>
+												<li><a><span>Hierarchical Multiple Dictionary</span></a></li>
+												<li><a href="../guide/xdc.html" target="_self">eXplainable Document Classifier <em class="new">New</em></a></li>
+												<li><a><span>Intent Finder</span></a></li>
+												<li><a><span>Word Embedding</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_cvs"><span>대화</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a><span>Spoken Dialogue System</span></a></li>
+												<li><a><span>Basic Question Answering</span></a></li>
+												<li><a><span>Knowledge Based Question Answering</span> </a></li>
+												<li><a><span>Information Retrieval Question Answering </span></a></li>
+												<li><a><span>Deep Question Answering</span> </a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu1depth"><h2><span>파트너</span></h2></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //.gnb -->
+		<div class="lnb">
+			<div class="lot_c">
+				<h2>XDC</h2>
+				<ul class="nav">
+					<li><a href="#stn_demo">Demo</a></li>
+					<li><a href="#stn_process">Process</a></li>
+					<li><a href="#stn_feature">Features</a></li>
+                    <li><a href="#stn_pricing">Pricing</a></li>
+					<li><a class="point" href="#api_contact">문의하기</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- //#header -->
+
+	<!-- aside -->
+	<div class="aside" style="display:none;">
+		<!-- .aside_top -->
+		<div class="aside_top">
+			<h1><a href="index.html"><img src="resources/images/logo_aside_h1.png" alt="maum API"></a></h1>
+		</div>
+		<!-- //.aside_top -->
+		<!-- .aside_mid -->
+		<div class="aside_mid">
+			<ul class="m_etcMenu">
+				<li class="lang">
+					<p class="lang_select"><img src="../resources/images/ico_lang_kr.png" alt="한국어"><em>한국어</em></p>
+					<ul class="lst">
+						<li><a href="../../en/index.html" target="_self"><img src="../resources/images/ico_lang_us.png" alt="English"><em>English</em></a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="m_nav">
+				<li>
+					<h2><span>문서</span></h2>
+				</li>
+				<li>
+					<h2><a href="#none">제품</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none"><span class="ico_voice">음성</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="stt.html" target="_self">Speech To Text <em class="new">Demo</em></a></li>
+								<li><a href="tts.html" target="_self">Text To Speech <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_visual">시각</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="diarl.html" target="_self">Document Image Analysis, Recognition and Learning <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_int">지능</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="ec.html" target="_self">Ensemble Classification</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_lang">언어</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="nlu.html" target="_self">Natural Language Processing</a></li>
+								<li><a href="dnn.html" target="_self">DNN Classification</a></li>
+								<li><a href="hmd.html" target="_self">Hierarchical Multiple Dictionary</a></li>
+								<li><a href="xdc.html" target="_self">eXplainable Document Classifier <em class="new">Demo</em></a></li>
+								<li><a href="if.html" target="_self">Intent Finder</a></li>
+								<li><a href="sc.html" target="_self">Simple Claasifier</a></li>
+								<li><a href="we.html" target="_self">Word Embedding</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_cvs">대화</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="sds.html" target="_self">Spoken Dialogue System</a></li>
+								<li><a href="bqa.html" target="_self">Basic Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="kbqa.html" target="_self">Knowledge Based Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="irqa.html" target="_self">Information Retrieval Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="deepqa.html" target="_self">Deep Question Answering <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><span>파트너</span></h2>
+				</li>
+				<li>
+					<h2><a href="#none">문의하기</a></h2>
+				</li>
+			</ul>  
+		</div>
+		<!-- //.aside_mid -->
+		<!-- .aside_btm -->
+		<div class="aside_btm">
+			<ul>
+				<li class="btn_mail"><a href="mailto:hello@mindslab.ai">hello@mindslab.ai</a></li>
+				<li class="btn_tel"><a href="tel:+82316254340">031. 625. 4340</a></li>
+			</ul>
+		</div>
+		<!-- //.aside_btm -->
+	</div>
+	<div class="bg_aside"></div> 
+	<a class="btn_header_ham" href="#none"><span class="hamburger_icon"></span></a>  
+	<!-- //aside -->       
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #contents -->
+		<div id="contents">	
+			<!-- .visualArea -->
+			<div class="visualArea">
+				<div class="lot_c">
+					<div class="visual_tit">
+						<h2>
+							<span class="slogan">정확하고 강력한 문서 분류</span>
+							<span class="logotype">XDC</span>
+							<span class="fullName">eXplainable Document Classifier</span>
+						</h2>
+						<p class="h2_txt">마인즈랩의 XDC(문서 분류, eXplainable Document Classifier)는 내용과 분량에 관계 없이 어떤 문서든 즉시 분류한 뒤 분류 이유를 설명할 수 있는 혁신적인 인공지능 문서 분류  기술입니다.</p>
+						<div class="link_box">
+							<div class="demo_link"><a href="../guide/xdc.html">개발 가이드 </a></div>							
+						</div>
+					</div>
+				</div>			
+			</div>
+			<!-- //.visualArea -->
+			<!-- .demo -->
+			<div id="stn_demo" class="stn demo_bg">
+				<div class="bg_ani">
+                    <div class="demo_xdc">
+                    	<span></span><span></span>
+                    </div>
+				</div>
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<div class="stn_tit">
+						<h3>Demo</h3>
+					</div>
+					<div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal_content">
+                              <span class="close">×</span>
+                              <img class="pop_up" src="../resources/images/xdc/mrc-description.png" alt="help pop-up modal">
+                         </div>
+                	</div>
+					<!-- .tabUi -->
+					<div class="tabUi demoTab">
+                        <div class="tab_contents">
+                            <div class="innerBox">
+                                <!-- .step01 -->
+                                <div id="xdc_article_wrap" class="demo_article" style="display:none;">
+                                  <div class="btnBox01">
+                                      <div class="holeBox01">
+                                          <div class="hole01">
+                                              <i></i><i></i><i></i><i></i><i></i>
+                                          </div>
+                                      </div>
+                                      <button type="button" id="naver_search_option">네이버<br>기사검색</button>
+                                  </div>
+                                  <div class="tit"><img src="../resources/images/ico_demo_xdc01.png"><span>본문 넣기</span></div>
+                                  <textarea row="5" class="input_text" id="id_input_text" placeholder="문서 본문 (뉴스 기사, 웹 문서 등)을 붙여 넣기 해주세요&#13;&#10;[ 본문이 없을 경우, 오른쪽 '네이버 기사 검색' 버튼을 통해 기사를 검색해 주세요 ]"></textarea>
+                                  <div id="news_modal" class="modal">
+                                      <!-- Modal content -->
+                                      <div class="modal_content search_modal naver_news_search_div">
+                                          <span class="close close_naver">×</span>
+                                          <div class="search_modal_wrap">
+                                              <span class="naver_search_tit">네이버 기사 검색</span>
+                                              <input class="naver_search_box" type="text" id="search_input" placeholder="검색어를 입력해 주세요. (예: 인공지능, 축구 등)">
+                                              <button type="button" class="btn search_btn" id="search_button">검색</button>
+                                              <span class="naver_search_desc">아래의 네이버 기사 검색 결과 리스트중 하나의 기사를 선택해 주세요.</span>
+                                              <input type="hidden" id="article_content" value=" " name="article_content">
+                                              <div class="loading_wrap" id="loading_gif"><img src="{% static 'client/demo/images/spinner.gif' %}"></div>
+                                              <ul class="result_search" id="search_results">
+                                                  <li class="article_item" name=""><a> </a></li>
+                                                  <li class="article_item" name=""><a> </a></li>
+                                                  <li class="article_item" name=""><a> </a></li>
+                                                  <li class="article_item" name=""><a> </a></li>
+                                                  <li class="article_item" name=""><a> </a></li>
+                                              </ul>
+                                              <button type="button" class="btn cont_btn" id="insert_selected_content">확인</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="btnBox02">
+                                      <div class="holeBox02">
+                                          <div class="hole02">
+                                              <i></i><i></i><i></i><i></i><i></i>
+                                          </div>
+                                      </div>
+                                      <button type="button" id="classify_content"><span>분석하기</span></button>
+                                  </div>
+                                </div>
+                                <!-- //.step01 -->
+                                <!-- .step02 -->
+                                <div id="xdc_result_wrap" class="demo_result" style="display:block;">
+                                  <div class="resultBoxTop">
+                                    <div class="btnBox03">
+                                        <div class="holeBox03">
+                                            <div class="hole03">
+                                                <i></i><i></i><i></i><i></i><i></i>
+                                            </div>
+                                        </div>
+                                        <button id="back_to_article">처음으로</button>
+                                    </div>
+                                    <div class="tit"><img src="../resources/images/ico_productLst_xdc.png"><span>분류 및 XDC 결과</span></div>
+                                    <div class="txt" id="xdc_result_classification">
+										<ol class="xdc_lst">
+                                        	<li>
+                                            	<span class="rank"><b>1</b>위</span>
+                                                <span class="label">IT</span>
+                                                <span class="probability">
+                                                	<em>0.012341234</em>
+                                                </span>
+                                            </li>
+                                        	<li>
+                                            	<span class="rank"><b>2</b>위</span>
+                                                <span class="label">모바일</span>
+                                                <span class="probability">
+                                                	<em>0.012341234</em>
+                                                </span>
+                                            </li>
+                                        	<li>
+                                            	<span class="rank"><b>3</b>위</span>
+                                                <span class="label">소프트웨어</span>
+                                                <span class="probability">
+                                                	<em>0.012341234</em>
+                                                </span>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                  </div>
+                                  <div class="result_desc">
+                                  	<span><img src="../resources/images/xdc/mouse.png" alt="마우스 아이콘"> 마우스를 표시된 문장이나 단어 위로 이동시켜 보세요. 분류 결과에 기여한 정도가 표시됩니다.</span> 
+                                  </div>
+                                  <div class="resultBoxBottom">
+                                    <div class="balloon" id="xdc_result_weights">
+                                        <div id="sentenceWeight"></div>
+                                        <div id="wordWeight"></div>
+                                    </div>
+                                    <div class="txt" id="xdc_result_xdc" >
+<span class="s_0" id="s_0_w_0" onmouseover="showWeight(0,0,0.195701,0.000839)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;마이크로소프트</span><span class="s_0" id="s_0_w_1" onmouseover="showWeight(0,1,0.195701,0.000043)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">와</span><span class="s_0" id="s_0_w_2" onmouseover="showWeight(0,2,0.195701,0.012771)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;구글</span><span class="s_0" id="s_0_w_3" onmouseover="showWeight(0,3,0.195701,0.000086)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">,</span><span class="s_0" id="s_0_w_4" onmouseover="showWeight(0,4,0.195701,0.107812)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;IT</span><span class="s_0" id="s_0_w_5" onmouseover="showWeight(0,5,0.195701,0.002051)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;업계</span><span class="s_0" id="s_0_w_6" onmouseover="showWeight(0,6,0.195701,0.000100)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">의</span><span class="s_0" id="s_0_w_7" onmouseover="showWeight(0,7,0.195701,0.001415)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;거인</span><span class="s_0" id="s_0_w_8" onmouseover="showWeight(0,8,0.195701,0.000022)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">이</span><span class="s_0" id="s_0_w_9" onmouseover="showWeight(0,9,0.195701,0.000080)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;5</span><span class="s_0" id="s_0_w_10" onmouseover="showWeight(0,10,0.195701,0.000056)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">년</span><span class="s_0" id="s_0_w_11" onmouseover="showWeight(0,11,0.195701,0.000007)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">에</span><span class="s_0" id="s_0_w_12" onmouseover="showWeight(0,12,0.195701,0.000038)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;걸쳐</span><span class="s_0" id="s_0_w_14" onmouseover="showWeight(0,14,0.195701,0.043253)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;스마트</span><span class="s_0" id="s_0_w_15" onmouseover="showWeight(0,15,0.195701,0.415805)" onmouseout="hideWeight()" style="color: rgb(255, 96, 0); font-weight: bold;">폰</span><span class="s_0" id="s_0_w_16" onmouseover="showWeight(0,16,0.195701,0.000265)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">이나</span><span class="s_0" id="s_0_w_17" onmouseover="showWeight(0,17,0.195701,0.241962)" onmouseout="hideWeight()" style="color: rgb(255, 96, 0); font-weight: bold;">&nbsp;게임</span><span class="s_0" id="s_0_w_18" onmouseover="showWeight(0,18,0.195701,0.000629)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">기</span><span class="s_0" id="s_0_w_19" onmouseover="showWeight(0,19,0.195701,0.000025)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">를</span><span class="s_0" id="s_0_w_20" onmouseover="showWeight(0,20,0.195701,0.000079)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;둘러싼</span><span class="s_0" id="s_0_w_22" onmouseover="showWeight(0,22,0.195701,0.000129)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;수많</span><span class="s_0" id="s_0_w_23" onmouseover="showWeight(0,23,0.195701,0.000063)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">은</span><span class="s_0" id="s_0_w_24" onmouseover="showWeight(0,24,0.195701,0.133226)" onmouseout="hideWeight()" style="color: rgb(255, 96, 0); font-weight: bold;">&nbsp;특허</span><span class="s_0" id="s_0_w_25" onmouseover="showWeight(0,25,0.195701,0.026850)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;침해</span><span class="s_0" id="s_0_w_26" onmouseover="showWeight(0,26,0.195701,0.008878)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;소송</span><span class="s_0" id="s_0_w_27" onmouseover="showWeight(0,27,0.195701,0.003032)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;전쟁</span><span class="s_0" id="s_0_w_28" onmouseover="showWeight(0,28,0.195701,0.000040)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">이</span><span class="s_0" id="s_0_w_29" onmouseover="showWeight(0,29,0.195701,0.000075)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;마침내</span><span class="s_0" id="s_0_w_30" onmouseover="showWeight(0,30,0.195701,0.000158)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;종결</span><span class="s_0" id="s_0_w_31" onmouseover="showWeight(0,31,0.195701,0.000014)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">됐</span><span class="s_0" id="s_0_w_33" onmouseover="showWeight(0,33,0.195701,0.000056)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">다</span><span class="s_0" id="s_0_w_34" onmouseover="showWeight(0,34,0.195701,0.000020)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">.</span><br><span class="s_1" id="s_1_w_0" onmouseover="showWeight(1,0,0.112470,0.018722)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;양사</span><span class="s_1" id="s_1_w_1" onmouseover="showWeight(1,1,0.112470,0.000326)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">의</span><span class="s_1" id="s_1_w_2" onmouseover="showWeight(1,2,0.112470,0.102410)" onmouseout="hideWeight()" style="color: rgb(255, 96, 0); font-weight: bold;">&nbsp;특허</span><span class="s_1" id="s_1_w_3" onmouseover="showWeight(1,3,0.112470,0.034677)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;침해</span><span class="s_1" id="s_1_w_4" onmouseover="showWeight(1,4,0.112470,0.011879)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;소송</span><span class="s_1" id="s_1_w_5" onmouseover="showWeight(1,5,0.112470,0.000164)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">은</span><span class="s_1" id="s_1_w_6" onmouseover="showWeight(1,6,0.112470,0.000839)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;마이크로소프트</span><span class="s_1" id="s_1_w_7" onmouseover="showWeight(1,7,0.112470,0.000048)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">가</span><span class="s_1" id="s_1_w_8" onmouseover="showWeight(1,8,0.112470,0.010618)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;구글</span><span class="s_1" id="s_1_w_9" onmouseover="showWeight(1,9,0.112470,0.000302)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;산하</span><span class="s_1" id="s_1_w_10" onmouseover="showWeight(1,10,0.112470,0.000045)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">이</span><span class="s_1" id="s_1_w_11" onmouseover="showWeight(1,11,0.112470,0.000061)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">던</span><span class="s_1" id="s_1_w_12" onmouseover="showWeight(1,12,0.112470,0.000460)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;모토롤라모빌리티</span><span class="s_1" id="s_1_w_13" onmouseover="showWeight(1,13,0.112470,0.000043)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">(</span><span class="s_1" id="s_1_w_14" onmouseover="showWeight(1,14,0.112470,0.000376)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">Motorola</span><span class="s_1" id="s_1_w_15" onmouseover="showWeight(1,15,0.112470,0.000798)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;Mobility</span><span class="s_1" id="s_1_w_16" onmouseover="showWeight(1,16,0.112470,0.000098)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">)</span><span class="s_1" id="s_1_w_17" onmouseover="showWeight(1,17,0.112470,0.000174)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">의</span><span class="s_1" id="s_1_w_18" onmouseover="showWeight(1,18,0.112470,0.067221)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;스마트</span><span class="s_1" id="s_1_w_19" onmouseover="showWeight(1,19,0.112470,0.598458)" onmouseout="hideWeight()" style="color: rgb(255, 96, 0); font-weight: bold;">폰</span><span class="s_1" id="s_1_w_20" onmouseover="showWeight(1,20,0.112470,0.000222)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">이</span><span class="s_1" id="s_1_w_21" onmouseover="showWeight(1,21,0.112470,0.024932)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;자사</span><span class="s_1" id="s_1_w_22" onmouseover="showWeight(1,22,0.112470,0.001327)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;보유</span><span class="s_1" id="s_1_w_23" onmouseover="showWeight(1,23,0.112470,0.101057)" onmouseout="hideWeight()" style="color: rgb(255, 96, 0); font-weight: bold;">&nbsp;특허</span><span class="s_1" id="s_1_w_24" onmouseover="showWeight(1,24,0.112470,0.000048)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">와</span><span class="s_1" id="s_1_w_25" onmouseover="showWeight(1,25,0.112470,0.000817)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;관련</span><span class="s_1" id="s_1_w_26" onmouseover="showWeight(1,26,0.112470,0.000010)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">한</span><span class="s_1" id="s_1_w_28" onmouseover="showWeight(1,28,0.112470,0.002996)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;특정</span><span class="s_1" id="s_1_w_29" onmouseover="showWeight(1,29,0.112470,0.004392)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;기능</span><span class="s_1" id="s_1_w_30" onmouseover="showWeight(1,30,0.112470,0.000047)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">을</span><span class="s_1" id="s_1_w_31" onmouseover="showWeight(1,31,0.112470,0.001633)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;사용</span><span class="s_1" id="s_1_w_32" onmouseover="showWeight(1,32,0.112470,0.000012)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">한다며</span><span class="s_1" id="s_1_w_34" onmouseover="showWeight(1,34,0.112470,0.003946)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;기능</span><span class="s_1" id="s_1_w_35" onmouseover="showWeight(1,35,0.112470,0.002989)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;사용</span><span class="s_1" id="s_1_w_36" onmouseover="showWeight(1,36,0.112470,0.000523)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;정지</span><span class="s_1" id="s_1_w_37" onmouseover="showWeight(1,37,0.112470,0.000031)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">를</span><span class="s_1" id="s_1_w_38" onmouseover="showWeight(1,38,0.112470,0.000232)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;요구</span><span class="s_1" id="s_1_w_39" onmouseover="showWeight(1,39,0.112470,0.000008)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">하</span><span class="s_1" id="s_1_w_40" onmouseover="showWeight(1,40,0.112470,0.000054)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">는</span><span class="s_1" id="s_1_w_41" onmouseover="showWeight(1,41,0.112470,0.001274)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;금지</span><span class="s_1" id="s_1_w_42" onmouseover="showWeight(1,42,0.112470,0.004978)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;소송</span><span class="s_1" id="s_1_w_43" onmouseover="showWeight(1,43,0.112470,0.000030)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">을</span><span class="s_1" id="s_1_w_44" onmouseover="showWeight(1,44,0.112470,0.000173)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;제기</span><span class="s_1" id="s_1_w_45" onmouseover="showWeight(1,45,0.112470,0.000005)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">하</span><span class="s_1" id="s_1_w_46" onmouseover="showWeight(1,46,0.112470,0.000036)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">면서</span><span class="s_1" id="s_1_w_47" onmouseover="showWeight(1,47,0.112470,0.000132)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;시작</span><span class="s_1" id="s_1_w_48" onmouseover="showWeight(1,48,0.112470,0.000016)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">됐</span><span class="s_1" id="s_1_w_50" onmouseover="showWeight(1,50,0.112470,0.000066)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">다</span><span class="s_1" id="s_1_w_51" onmouseover="showWeight(1,51,0.112470,0.000023)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">.</span><br><span class="s_2" id="s_2_w_0" onmouseover="showWeight(2,0,0.111061,0.000425)" onmouseout="hideWeight()">&nbsp;이</span><span class="s_2" id="s_2_w_1" onmouseover="showWeight(2,1,0.111061,0.000026)" onmouseout="hideWeight()">에</span><span class="s_2" id="s_2_w_2" onmouseover="showWeight(2,2,0.111061,0.000407)" onmouseout="hideWeight()">&nbsp;대</span><span class="s_2" id="s_2_w_3" onmouseover="showWeight(2,3,0.111061,0.000018)" onmouseout="hideWeight()">해</span><span class="s_2" id="s_2_w_5" onmouseover="showWeight(2,5,0.111061,0.036074)" onmouseout="hideWeight()">&nbsp;구글</span><span class="s_2" id="s_2_w_6" onmouseover="showWeight(2,6,0.111061,0.000317)" onmouseout="hideWeight()">은</span><span class="s_2" id="s_2_w_7" onmouseover="showWeight(2,7,0.111061,0.002220)" onmouseout="hideWeight()">&nbsp;마이크로소프트</span><span class="s_2" id="s_2_w_8" onmouseover="showWeight(2,8,0.111061,0.000339)" onmouseout="hideWeight()">의</span><span class="s_2" id="s_2_w_9" onmouseover="showWeight(2,9,0.111061,0.402419)" onmouseout="hideWeight()">&nbsp;게임</span><span class="s_2" id="s_2_w_10" onmouseover="showWeight(2,10,0.111061,0.001544)" onmouseout="hideWeight()">기</span><span class="s_2" id="s_2_w_11" onmouseover="showWeight(2,11,0.111061,0.118189)" onmouseout="hideWeight()">&nbsp;엑스박스</span><span class="s_2" id="s_2_w_12" onmouseover="showWeight(2,12,0.111061,0.000058)" onmouseout="hideWeight()">에</span><span class="s_2" id="s_2_w_13" onmouseover="showWeight(2,13,0.111061,0.000557)" onmouseout="hideWeight()">&nbsp;대</span><span class="s_2" id="s_2_w_14" onmouseover="showWeight(2,14,0.111061,0.000019)" onmouseout="hideWeight()">해</span><span class="s_2" id="s_2_w_16" onmouseover="showWeight(2,16,0.111061,0.005480)" onmouseout="hideWeight()">&nbsp;모토</span><span class="s_2" id="s_2_w_17" onmouseover="showWeight(2,17,0.111061,0.001595)" onmouseout="hideWeight()">로라</span><span class="s_2" id="s_2_w_18" onmouseover="showWeight(2,18,0.111061,0.000076)" onmouseout="hideWeight()">가</span><span class="s_2" id="s_2_w_19" onmouseover="showWeight(2,19,0.111061,0.000530)" onmouseout="hideWeight()">&nbsp;보유</span><span class="s_2" id="s_2_w_20" onmouseover="showWeight(2,20,0.111061,0.000017)" onmouseout="hideWeight()">한</span><span class="s_2" id="s_2_w_22" onmouseover="showWeight(2,22,0.111061,0.168432)" onmouseout="hideWeight()">&nbsp;특허</span><span class="s_2" id="s_2_w_23" onmouseover="showWeight(2,23,0.111061,0.000092)" onmouseout="hideWeight()">를</span><span class="s_2" id="s_2_w_24" onmouseover="showWeight(2,24,0.111061,0.001926)" onmouseout="hideWeight()">&nbsp;무단</span><span class="s_2" id="s_2_w_25" onmouseover="showWeight(2,25,0.111061,0.003384)" onmouseout="hideWeight()">&nbsp;사용</span><span class="s_2" id="s_2_w_26" onmouseover="showWeight(2,26,0.111061,0.000020)" onmouseout="hideWeight()">했</span><span class="s_2" id="s_2_w_28" onmouseover="showWeight(2,28,0.111061,0.000491)" onmouseout="hideWeight()">다며</span><span class="s_2" id="s_2_w_29" onmouseover="showWeight(2,29,0.111061,0.242963)" onmouseout="hideWeight()">&nbsp;특허</span><span class="s_2" id="s_2_w_30" onmouseover="showWeight(2,30,0.111061,0.007878)" onmouseout="hideWeight()">&nbsp;사용</span><span class="s_2" id="s_2_w_31" onmouseover="showWeight(2,31,0.111061,0.000490)" onmouseout="hideWeight()">료</span><span class="s_2" id="s_2_w_32" onmouseover="showWeight(2,32,0.111061,0.000051)" onmouseout="hideWeight()">를</span><span class="s_2" id="s_2_w_33" onmouseover="showWeight(2,33,0.111061,0.000349)" onmouseout="hideWeight()">&nbsp;요구</span><span class="s_2" id="s_2_w_34" onmouseover="showWeight(2,34,0.111061,0.000011)" onmouseout="hideWeight()">하</span><span class="s_2" id="s_2_w_35" onmouseover="showWeight(2,35,0.111061,0.000081)" onmouseout="hideWeight()">며</span><span class="s_2" id="s_2_w_36" onmouseover="showWeight(2,36,0.111061,0.002868)" onmouseout="hideWeight()">&nbsp;응전</span><span class="s_2" id="s_2_w_37" onmouseover="showWeight(2,37,0.111061,0.000012)" onmouseout="hideWeight()">했</span><span class="s_2" id="s_2_w_39" onmouseover="showWeight(2,39,0.111061,0.000120)" onmouseout="hideWeight()">다</span><span class="s_2" id="s_2_w_40" onmouseover="showWeight(2,40,0.111061,0.000042)" onmouseout="hideWeight()">.</span><br><span class="s_3" id="s_3_w_0" onmouseover="showWeight(3,0,0.063664,0.155278)" onmouseout="hideWeight()">&nbsp;양사</span><span class="s_3" id="s_3_w_1" onmouseover="showWeight(3,1,0.063664,0.001785)" onmouseout="hideWeight()">는</span><span class="s_3" id="s_3_w_2" onmouseover="showWeight(3,2,0.063664,0.015782)" onmouseout="hideWeight()">&nbsp;미국</span><span class="s_3" id="s_3_w_3" onmouseover="showWeight(3,3,0.063664,0.000617)" onmouseout="hideWeight()">과</span><span class="s_3" id="s_3_w_4" onmouseover="showWeight(3,4,0.063664,0.020572)" onmouseout="hideWeight()">&nbsp;독일</span><span class="s_3" id="s_3_w_5" onmouseover="showWeight(3,5,0.063664,0.063603)" onmouseout="hideWeight()">&nbsp;법원</span><span class="s_3" id="s_3_w_6" onmouseover="showWeight(3,6,0.063664,0.000384)" onmouseout="hideWeight()">에</span><span class="s_3" id="s_3_w_7" onmouseover="showWeight(3,7,0.063664,0.046879)" onmouseout="hideWeight()">&nbsp;소송</span><span class="s_3" id="s_3_w_8" onmouseover="showWeight(3,8,0.063664,0.002482)" onmouseout="hideWeight()">&nbsp;20</span><span class="s_3" id="s_3_w_9" onmouseover="showWeight(3,9,0.063664,0.002239)" onmouseout="hideWeight()">건</span><span class="s_3" id="s_3_w_10" onmouseover="showWeight(3,10,0.063664,0.000262)" onmouseout="hideWeight()">을</span><span class="s_3" id="s_3_w_11" onmouseover="showWeight(3,11,0.063664,0.002204)" onmouseout="hideWeight()">&nbsp;제기</span><span class="s_3" id="s_3_w_12" onmouseover="showWeight(3,12,0.063664,0.000096)" onmouseout="hideWeight()">하</span><span class="s_3" id="s_3_w_13" onmouseover="showWeight(3,13,0.063664,0.000779)" onmouseout="hideWeight()">는</span><span class="s_3" id="s_3_w_14" onmouseover="showWeight(3,14,0.063664,0.631966)" onmouseout="hideWeight()">&nbsp;특허</span><span class="s_3" id="s_3_w_15" onmouseover="showWeight(3,15,0.063664,0.040842)" onmouseout="hideWeight()">&nbsp;전쟁</span><span class="s_3" id="s_3_w_16" onmouseover="showWeight(3,16,0.063664,0.012488)" onmouseout="hideWeight()">&nbsp;상태</span><span class="s_3" id="s_3_w_17" onmouseover="showWeight(3,17,0.063664,0.000144)" onmouseout="hideWeight()">에</span><span class="s_3" id="s_3_w_18" onmouseover="showWeight(3,18,0.063664,0.000215)" onmouseout="hideWeight()">&nbsp;들어갔</span><span class="s_3" id="s_3_w_20" onmouseover="showWeight(3,20,0.063664,0.000797)" onmouseout="hideWeight()">다</span><span class="s_3" id="s_3_w_21" onmouseover="showWeight(3,21,0.063664,0.000294)" onmouseout="hideWeight()">.</span><br><span class="s_4" id="s_4_w_0" onmouseover="showWeight(4,0,0.127032,0.001217)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;하지만</span><span class="s_4" id="s_4_w_1" onmouseover="showWeight(4,1,0.127032,0.016641)" onmouseout="hideWeight()" style="color: rgb(255, 96, 0); font-weight: bold;">&nbsp;올해</span><span class="s_4" id="s_4_w_2" onmouseover="showWeight(4,2,0.127032,0.001438)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;9</span><span class="s_4" id="s_4_w_3" onmouseover="showWeight(4,3,0.127032,0.001549)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">월</span><span class="s_4" id="s_4_w_4" onmouseover="showWeight(4,4,0.127032,0.001773)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;30</span><span class="s_4" id="s_4_w_5" onmouseover="showWeight(4,5,0.127032,0.002259)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">일</span><span class="s_4" id="s_4_w_6" onmouseover="showWeight(4,6,0.127032,0.016206)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;진흙</span><span class="s_4" id="s_4_w_7" onmouseover="showWeight(4,7,0.127032,0.001156)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">탕</span><span class="s_4" id="s_4_w_8" onmouseover="showWeight(4,8,0.127032,0.009449)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;싸움</span><span class="s_4" id="s_4_w_9" onmouseover="showWeight(4,9,0.127032,0.000562)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">의</span><span class="s_4" id="s_4_w_10" onmouseover="showWeight(4,10,0.127032,0.001735)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;양상</span><span class="s_4" id="s_4_w_11" onmouseover="showWeight(4,11,0.127032,0.000134)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">을</span><span class="s_4" id="s_4_w_12" onmouseover="showWeight(4,12,0.127032,0.000801)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;띠</span><span class="s_4" id="s_4_w_13" onmouseover="showWeight(4,13,0.127032,0.000610)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">던</span><span class="s_4" id="s_4_w_14" onmouseover="showWeight(4,14,0.127032,0.005386)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;이</span><span class="s_4" id="s_4_w_15" onmouseover="showWeight(4,15,0.127032,0.907952)" onmouseout="hideWeight()" style="color: rgb(255, 96, 0); font-weight: bold;">&nbsp;특허</span><span class="s_4" id="s_4_w_16" onmouseover="showWeight(4,16,0.127032,0.028181)" onmouseout="hideWeight()" style="color: rgb(255, 96, 0); font-weight: bold;">&nbsp;전쟁</span><span class="s_4" id="s_4_w_17" onmouseover="showWeight(4,17,0.127032,0.000313)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">이</span><span class="s_4" id="s_4_w_18" onmouseover="showWeight(4,18,0.127032,0.000648)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;드디어</span><span class="s_4" id="s_4_w_19" onmouseover="showWeight(4,19,0.127032,0.000031)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;끝난</span><span class="s_4" id="s_4_w_21" onmouseover="showWeight(4,21,0.127032,0.001032)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">&nbsp;것</span><span class="s_4" id="s_4_w_22" onmouseover="showWeight(4,22,0.127032,0.000213)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">이</span><span class="s_4" id="s_4_w_23" onmouseover="showWeight(4,23,0.127032,0.000426)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">다</span><span class="s_4" id="s_4_w_24" onmouseover="showWeight(4,24,0.127032,0.000154)" onmouseout="hideWeight()" style="color: rgb(0, 0, 0); font-weight: bold;">.</span><br><span class="s_5" id="s_5_w_0" onmouseover="showWeight(5,0,0.088219,0.001624)" onmouseout="hideWeight()">&nbsp;이</span><span class="s_5" id="s_5_w_1" onmouseover="showWeight(5,1,0.088219,0.000087)" onmouseout="hideWeight()">에</span><span class="s_5" id="s_5_w_2" onmouseover="showWeight(5,2,0.088219,0.000150)" onmouseout="hideWeight()">&nbsp;따라</span><span class="s_5" id="s_5_w_4" onmouseover="showWeight(5,4,0.088219,0.079904)" onmouseout="hideWeight()">&nbsp;양사</span><span class="s_5" id="s_5_w_5" onmouseover="showWeight(5,5,0.088219,0.001734)" onmouseout="hideWeight()">는</span><span class="s_5" id="s_5_w_6" onmouseover="showWeight(5,6,0.088219,0.628666)" onmouseout="hideWeight()">&nbsp;특허</span><span class="s_5" id="s_5_w_7" onmouseover="showWeight(5,7,0.088219,0.213871)" onmouseout="hideWeight()">&nbsp;침해</span><span class="s_5" id="s_5_w_8" onmouseover="showWeight(5,8,0.088219,0.067635)" onmouseout="hideWeight()">&nbsp;소송</span><span class="s_5" id="s_5_w_9" onmouseover="showWeight(5,9,0.088219,0.000352)" onmouseout="hideWeight()">을</span><span class="s_5" id="s_5_w_10" onmouseover="showWeight(5,10,0.088219,0.000461)" onmouseout="hideWeight()">&nbsp;모두</span><span class="s_5" id="s_5_w_11" onmouseover="showWeight(5,11,0.088219,0.004067)" onmouseout="hideWeight()">&nbsp;취하</span><span class="s_5" id="s_5_w_12" onmouseover="showWeight(5,12,0.088219,0.000046)" onmouseout="hideWeight()">했</span><span class="s_5" id="s_5_w_14" onmouseover="showWeight(5,14,0.088219,0.000513)" onmouseout="hideWeight()">다</span><span class="s_5" id="s_5_w_15" onmouseover="showWeight(5,15,0.088219,0.000183)" onmouseout="hideWeight()">.</span><br><span class="s_6" id="s_6_w_0" onmouseover="showWeight(6,0,0.094824,0.002535)" onmouseout="hideWeight()">&nbsp;마이크로소프트</span><span class="s_6" id="s_6_w_1" onmouseover="showWeight(6,1,0.094824,0.000117)" onmouseout="hideWeight()">와</span><span class="s_6" id="s_6_w_2" onmouseover="showWeight(6,2,0.094824,0.028734)" onmouseout="hideWeight()">&nbsp;구글</span><span class="s_6" id="s_6_w_3" onmouseover="showWeight(6,3,0.094824,0.000090)" onmouseout="hideWeight()">이</span><span class="s_6" id="s_6_w_4" onmouseover="showWeight(6,4,0.094824,0.000120)" onmouseout="hideWeight()">&nbsp;짧</span><span class="s_6" id="s_6_w_5" onmouseover="showWeight(6,5,0.094824,0.000099)" onmouseout="hideWeight()">게</span><span class="s_6" id="s_6_w_6" onmouseover="showWeight(6,6,0.094824,0.000013)" onmouseout="hideWeight()">&nbsp;낸</span><span class="s_6" id="s_6_w_8" onmouseover="showWeight(6,8,0.094824,0.001566)" onmouseout="hideWeight()">&nbsp;공동</span><span class="s_6" id="s_6_w_9" onmouseover="showWeight(6,9,0.094824,0.004461)" onmouseout="hideWeight()">&nbsp;성명</span><span class="s_6" id="s_6_w_10" onmouseover="showWeight(6,10,0.094824,0.000064)" onmouseout="hideWeight()">에</span><span class="s_6" id="s_6_w_11" onmouseover="showWeight(6,11,0.094824,0.000270)" onmouseout="hideWeight()">는</span><span class="s_6" id="s_6_w_12" onmouseover="showWeight(6,12,0.094824,0.024072)" onmouseout="hideWeight()">&nbsp;양사</span><span class="s_6" id="s_6_w_13" onmouseover="showWeight(6,13,0.094824,0.000493)" onmouseout="hideWeight()">는</span><span class="s_6" id="s_6_w_14" onmouseover="showWeight(6,14,0.094824,0.270321)" onmouseout="hideWeight()">&nbsp;특허</span><span class="s_6" id="s_6_w_15" onmouseover="showWeight(6,15,0.094824,0.003192)" onmouseout="hideWeight()">&nbsp;분쟁</span><span class="s_6" id="s_6_w_16" onmouseover="showWeight(6,16,0.094824,0.002005)" onmouseout="hideWeight()">&nbsp;합의</span><span class="s_6" id="s_6_w_17" onmouseover="showWeight(6,17,0.094824,0.000038)" onmouseout="hideWeight()">에</span><span class="s_6" id="s_6_w_18" onmouseover="showWeight(6,18,0.094824,0.000087)" onmouseout="hideWeight()">&nbsp;도달했</span><span class="s_6" id="s_6_w_20" onmouseover="showWeight(6,20,0.094824,0.000227)" onmouseout="hideWeight()">다는</span><span class="s_6" id="s_6_w_21" onmouseover="showWeight(6,21,0.094824,0.001350)" onmouseout="hideWeight()">&nbsp;점</span><span class="s_6" id="s_6_w_22" onmouseover="showWeight(6,22,0.094824,0.000055)" onmouseout="hideWeight()">을</span><span class="s_6" id="s_6_w_23" onmouseover="showWeight(6,23,0.094824,0.000284)" onmouseout="hideWeight()">&nbsp;기쁘</span><span class="s_6" id="s_6_w_24" onmouseover="showWeight(6,24,0.094824,0.000094)" onmouseout="hideWeight()">게</span><span class="s_6" id="s_6_w_25" onmouseover="showWeight(6,25,0.094824,0.001756)" onmouseout="hideWeight()">&nbsp;생각</span><span class="s_6" id="s_6_w_26" onmouseover="showWeight(6,26,0.094824,0.000018)" onmouseout="hideWeight()">하</span><span class="s_6" id="s_6_w_27" onmouseover="showWeight(6,27,0.094824,0.000135)" onmouseout="hideWeight()">며</span><span class="s_6" id="s_6_w_28" onmouseover="showWeight(6,28,0.094824,0.001282)" onmouseout="hideWeight()">&nbsp;합의</span><span class="s_6" id="s_6_w_29" onmouseover="showWeight(6,29,0.094824,0.000029)" onmouseout="hideWeight()">에</span><span class="s_6" id="s_6_w_30" onmouseover="showWeight(6,30,0.094824,0.000049)" onmouseout="hideWeight()">&nbsp;따라</span><span class="s_6" id="s_6_w_32" onmouseover="showWeight(6,32,0.094824,0.020262)" onmouseout="hideWeight()">&nbsp;양사</span><span class="s_6" id="s_6_w_33" onmouseover="showWeight(6,33,0.094824,0.000334)" onmouseout="hideWeight()">는</span><span class="s_6" id="s_6_w_34" onmouseover="showWeight(6,34,0.094824,0.001207)" onmouseout="hideWeight()">&nbsp;지금</span><span class="s_6" id="s_6_w_35" onmouseover="showWeight(6,35,0.094824,0.000293)" onmouseout="hideWeight()">까지</span><span class="s_6" id="s_6_w_36" onmouseover="showWeight(6,36,0.094824,0.000448)" onmouseout="hideWeight()">의</span><span class="s_6" id="s_6_w_37" onmouseover="showWeight(6,37,0.094824,0.399394)" onmouseout="hideWeight()">&nbsp;특허</span><span class="s_6" id="s_6_w_38" onmouseover="showWeight(6,38,0.094824,0.027233)" onmouseout="hideWeight()">&nbsp;소송</span><span class="s_6" id="s_6_w_39" onmouseover="showWeight(6,39,0.094824,0.000170)" onmouseout="hideWeight()">을</span><span class="s_6" id="s_6_w_40" onmouseover="showWeight(6,40,0.094824,0.003379)" onmouseout="hideWeight()">&nbsp;취하</span><span class="s_6" id="s_6_w_41" onmouseover="showWeight(6,41,0.094824,0.000378)" onmouseout="hideWeight()">&nbsp;또는</span><span class="s_6" id="s_6_w_42" onmouseover="showWeight(6,42,0.094824,0.010125)" onmouseout="hideWeight()">&nbsp;특정</span><span class="s_6" id="s_6_w_43" onmouseover="showWeight(6,43,0.094824,0.171485)" onmouseout="hideWeight()">&nbsp;특허</span><span class="s_6" id="s_6_w_44" onmouseover="showWeight(6,44,0.094824,0.007491)" onmouseout="hideWeight()">&nbsp;사항</span><span class="s_6" id="s_6_w_45" onmouseover="showWeight(6,45,0.094824,0.000046)" onmouseout="hideWeight()">에</span><span class="s_6" id="s_6_w_46" onmouseover="showWeight(6,46,0.094824,0.000577)" onmouseout="hideWeight()">&nbsp;대</span><span class="s_6" id="s_6_w_47" onmouseover="showWeight(6,47,0.094824,0.000021)" onmouseout="hideWeight()">해</span><span class="s_6" id="s_6_w_49" onmouseover="showWeight(6,49,0.094824,0.000722)" onmouseout="hideWeight()">&nbsp;서로</span><span class="s_6" id="s_6_w_50" onmouseover="showWeight(6,50,0.094824,0.002292)" onmouseout="hideWeight()">&nbsp;협력</span><span class="s_6" id="s_6_w_51" onmouseover="showWeight(6,51,0.094824,0.000025)" onmouseout="hideWeight()">해</span><span class="s_6" id="s_6_w_53" onmouseover="showWeight(6,53,0.094824,0.000434)" onmouseout="hideWeight()">&nbsp;앞</span><span class="s_6" id="s_6_w_54" onmouseover="showWeight(6,54,0.094824,0.000101)" onmouseout="hideWeight()">으로</span><span class="s_6" id="s_6_w_55" onmouseover="showWeight(6,55,0.094824,0.005260)" onmouseout="hideWeight()">&nbsp;사용</span><span class="s_6" id="s_6_w_56" onmouseover="showWeight(6,56,0.094824,0.000354)" onmouseout="hideWeight()">자</span><span class="s_6" id="s_6_w_57" onmouseover="showWeight(6,57,0.094824,0.000897)" onmouseout="hideWeight()">&nbsp;이익</span><span class="s_6" id="s_6_w_58" onmouseover="showWeight(6,58,0.094824,0.000029)" onmouseout="hideWeight()">에</span><span class="s_6" id="s_6_w_59" onmouseover="showWeight(6,59,0.094824,0.000561)" onmouseout="hideWeight()">&nbsp;기여</span><span class="s_6" id="s_6_w_60" onmouseover="showWeight(6,60,0.094824,0.000016)" onmouseout="hideWeight()">하</span><span class="s_6" id="s_6_w_61" onmouseover="showWeight(6,61,0.094824,0.000222)" onmouseout="hideWeight()">기</span><span class="s_6" id="s_6_w_62" onmouseover="showWeight(6,62,0.094824,0.000032)" onmouseout="hideWeight()">로</span><span class="s_6" id="s_6_w_63" onmouseover="showWeight(6,63,0.094824,0.000959)" onmouseout="hideWeight()">&nbsp;합의</span><span class="s_6" id="s_6_w_64" onmouseover="showWeight(6,64,0.094824,0.000016)" onmouseout="hideWeight()">했</span><span class="s_6" id="s_6_w_66" onmouseover="showWeight(6,66,0.094824,0.000291)" onmouseout="hideWeight()">다고</span><span class="s_6" id="s_6_w_67" onmouseover="showWeight(6,67,0.094824,0.000429)" onmouseout="hideWeight()">&nbsp;발표</span><span class="s_6" id="s_6_w_68" onmouseover="showWeight(6,68,0.094824,0.000016)" onmouseout="hideWeight()">했</span><span class="s_6" id="s_6_w_70" onmouseover="showWeight(6,70,0.094824,0.000184)" onmouseout="hideWeight()">다</span><span class="s_6" id="s_6_w_71" onmouseover="showWeight(6,71,0.094824,0.000067)" onmouseout="hideWeight()">.</span><br><span class="s_7" id="s_7_w_0" onmouseover="showWeight(7,0,0.093431,0.018385)" onmouseout="hideWeight()">&nbsp;이번</span><span class="s_7" id="s_7_w_1" onmouseover="showWeight(7,1,0.093431,0.808374)" onmouseout="hideWeight()">&nbsp;특허</span><span class="s_7" id="s_7_w_2" onmouseover="showWeight(7,2,0.093431,0.040115)" onmouseout="hideWeight()">&nbsp;소송</span><span class="s_7" id="s_7_w_3" onmouseover="showWeight(7,3,0.093431,0.005052)" onmouseout="hideWeight()">&nbsp;취하</span><span class="s_7" id="s_7_w_4" onmouseover="showWeight(7,4,0.093431,0.000069)" onmouseout="hideWeight()">에</span><span class="s_7" id="s_7_w_5" onmouseover="showWeight(7,5,0.093431,0.000881)" onmouseout="hideWeight()">&nbsp;대</span><span class="s_7" id="s_7_w_6" onmouseover="showWeight(7,6,0.093431,0.000035)" onmouseout="hideWeight()">해</span><span class="s_7" id="s_7_w_8" onmouseover="showWeight(7,8,0.093431,0.035308)" onmouseout="hideWeight()">&nbsp;양사</span><span class="s_7" id="s_7_w_9" onmouseover="showWeight(7,9,0.093431,0.000596)" onmouseout="hideWeight()">의</span><span class="s_7" id="s_7_w_10" onmouseover="showWeight(7,10,0.093431,0.023420)" onmouseout="hideWeight()">&nbsp;크로스</span><span class="s_7" id="s_7_w_11" onmouseover="showWeight(7,11,0.093431,0.039216)" onmouseout="hideWeight()">&nbsp;라이선스</span><span class="s_7" id="s_7_w_12" onmouseover="showWeight(7,12,0.093431,0.004277)" onmouseout="hideWeight()">&nbsp;합의</span><span class="s_7" id="s_7_w_13" onmouseover="showWeight(7,13,0.093431,0.000119)" onmouseout="hideWeight()">가</span><span class="s_7" id="s_7_w_14" onmouseover="showWeight(7,14,0.093431,0.000111)" onmouseout="hideWeight()">&nbsp;있</span><span class="s_7" id="s_7_w_15" onmouseover="showWeight(7,15,0.093431,0.000138)" onmouseout="hideWeight()">었</span><span class="s_7" id="s_7_w_16" onmouseover="showWeight(7,16,0.093431,0.001411)" onmouseout="hideWeight()">는지</span><span class="s_7" id="s_7_w_17" onmouseover="showWeight(7,17,0.093431,0.004896)" onmouseout="hideWeight()">&nbsp;금전적</span><span class="s_7" id="s_7_w_18" onmouseover="showWeight(7,18,0.093431,0.003489)" onmouseout="hideWeight()">&nbsp;지급</span><span class="s_7" id="s_7_w_19" onmouseover="showWeight(7,19,0.093431,0.000111)" onmouseout="hideWeight()">이</span><span class="s_7" id="s_7_w_20" onmouseover="showWeight(7,20,0.093431,0.000098)" onmouseout="hideWeight()">&nbsp;있</span><span class="s_7" id="s_7_w_21" onmouseover="showWeight(7,21,0.093431,0.000110)" onmouseout="hideWeight()">었</span><span class="s_7" id="s_7_w_22" onmouseover="showWeight(7,22,0.093431,0.000867)" onmouseout="hideWeight()">는지</span><span class="s_7" id="s_7_w_23" onmouseover="showWeight(7,23,0.093431,0.000043)" onmouseout="hideWeight()">에</span><span class="s_7" id="s_7_w_24" onmouseover="showWeight(7,24,0.093431,0.000705)" onmouseout="hideWeight()">&nbsp;대</span><span class="s_7" id="s_7_w_25" onmouseover="showWeight(7,25,0.093431,0.000031)" onmouseout="hideWeight()">한</span><span class="s_7" id="s_7_w_27" onmouseover="showWeight(7,27,0.093431,0.010646)" onmouseout="hideWeight()">&nbsp;정보</span><span class="s_7" id="s_7_w_28" onmouseover="showWeight(7,28,0.093431,0.000229)" onmouseout="hideWeight()">는</span><span class="s_7" id="s_7_w_29" onmouseover="showWeight(7,29,0.093431,0.000142)" onmouseout="hideWeight()">&nbsp;알려지</span><span class="s_7" id="s_7_w_30" onmouseover="showWeight(7,30,0.093431,0.000290)" onmouseout="hideWeight()">지</span><span class="s_7" id="s_7_w_31" onmouseover="showWeight(7,31,0.093431,0.000078)" onmouseout="hideWeight()">&nbsp;않</span><span class="s_7" id="s_7_w_32" onmouseover="showWeight(7,32,0.093431,0.000086)" onmouseout="hideWeight()">았</span><span class="s_7" id="s_7_w_33" onmouseover="showWeight(7,33,0.093431,0.000235)" onmouseout="hideWeight()">다</span><span class="s_7" id="s_7_w_34" onmouseover="showWeight(7,34,0.093431,0.000084)" onmouseout="hideWeight()">.</span><br><span class="s_8" id="s_8_w_0" onmouseover="showWeight(8,0,0.021611,0.002209)" onmouseout="hideWeight()">&nbsp;하지만</span><span class="s_8" id="s_8_w_1" onmouseover="showWeight(8,1,0.021611,0.007740)" onmouseout="hideWeight()">&nbsp;마이크로소프트</span><span class="s_8" id="s_8_w_2" onmouseover="showWeight(8,2,0.021611,0.000460)" onmouseout="hideWeight()">와</span><span class="s_8" id="s_8_w_3" onmouseover="showWeight(8,3,0.021611,0.148204)" onmouseout="hideWeight()">&nbsp;구글</span><span class="s_8" id="s_8_w_4" onmouseover="showWeight(8,4,0.021611,0.000638)" onmouseout="hideWeight()">이</span><span class="s_8" id="s_8_w_5" onmouseover="showWeight(8,5,0.021611,0.006721)" onmouseout="hideWeight()">&nbsp;공동</span><span class="s_8" id="s_8_w_6" onmouseover="showWeight(8,6,0.021611,0.015981)" onmouseout="hideWeight()">&nbsp;성명</span><span class="s_8" id="s_8_w_7" onmouseover="showWeight(8,7,0.021611,0.000227)" onmouseout="hideWeight()">을</span><span class="s_8" id="s_8_w_8" onmouseover="showWeight(8,8,0.021611,0.000057)" onmouseout="hideWeight()">&nbsp;통해</span><span class="s_8" id="s_8_w_10" onmouseover="showWeight(8,10,0.021611,0.000529)" onmouseout="hideWeight()">&nbsp;밝힌</span><span class="s_8" id="s_8_w_12" onmouseover="showWeight(8,12,0.021611,0.024671)" onmouseout="hideWeight()">&nbsp;사용</span><span class="s_8" id="s_8_w_13" onmouseover="showWeight(8,13,0.021611,0.001835)" onmouseout="hideWeight()">자</span><span class="s_8" id="s_8_w_14" onmouseover="showWeight(8,14,0.021611,0.000841)" onmouseout="hideWeight()">의</span><span class="s_8" id="s_8_w_15" onmouseover="showWeight(8,15,0.021611,0.004201)" onmouseout="hideWeight()">&nbsp;이익</span><span class="s_8" id="s_8_w_16" onmouseover="showWeight(8,16,0.021611,0.000161)" onmouseout="hideWeight()">에</span><span class="s_8" id="s_8_w_17" onmouseover="showWeight(8,17,0.021611,0.013006)" onmouseout="hideWeight()">&nbsp;공헌</span><span class="s_8" id="s_8_w_18" onmouseover="showWeight(8,18,0.021611,0.000111)" onmouseout="hideWeight()">하</span><span class="s_8" id="s_8_w_19" onmouseover="showWeight(8,19,0.021611,0.000706)" onmouseout="hideWeight()">는</span><span class="s_8" id="s_8_w_20" onmouseover="showWeight(8,20,0.021611,0.028498)" onmouseout="hideWeight()">&nbsp;분야</span><span class="s_8" id="s_8_w_21" onmouseover="showWeight(8,21,0.021611,0.001181)" onmouseout="hideWeight()">는</span><span class="s_8" id="s_8_w_22" onmouseover="showWeight(8,22,0.021611,0.038220)" onmouseout="hideWeight()">&nbsp;양사</span><span class="s_8" id="s_8_w_23" onmouseover="showWeight(8,23,0.021611,0.000441)" onmouseout="hideWeight()">가</span><span class="s_8" id="s_8_w_24" onmouseover="showWeight(8,24,0.021611,0.007090)" onmouseout="hideWeight()">&nbsp;아마존</span><span class="s_8" id="s_8_w_25" onmouseover="showWeight(8,25,0.021611,0.000332)" onmouseout="hideWeight()">,</span><span class="s_8" id="s_8_w_26" onmouseover="showWeight(8,26,0.021611,0.006694)" onmouseout="hideWeight()">&nbsp;넷플릭스</span><span class="s_8" id="s_8_w_27" onmouseover="showWeight(8,27,0.021611,0.000716)" onmouseout="hideWeight()">&nbsp;등</span><span class="s_8" id="s_8_w_28" onmouseover="showWeight(8,28,0.021611,0.000137)" onmouseout="hideWeight()">과</span><span class="s_8" id="s_8_w_29" onmouseover="showWeight(8,29,0.021611,0.002623)" onmouseout="hideWeight()">&nbsp;결성</span><span class="s_8" id="s_8_w_30" onmouseover="showWeight(8,30,0.021611,0.000071)" onmouseout="hideWeight()">한</span><span class="s_8" id="s_8_w_32" onmouseover="showWeight(8,32,0.021611,0.012796)" onmouseout="hideWeight()">&nbsp;오픈미디어</span><span class="s_8" id="s_8_w_33" onmouseover="showWeight(8,33,0.021611,0.012085)" onmouseout="hideWeight()">얼라이언스</span><span class="s_8" id="s_8_w_34" onmouseover="showWeight(8,34,0.021611,0.000530)" onmouseout="hideWeight()">(</span><span class="s_8" id="s_8_w_35" onmouseover="showWeight(8,35,0.021611,0.003970)" onmouseout="hideWeight()">Alliance</span><span class="s_8" id="s_8_w_36" onmouseover="showWeight(8,36,0.021611,0.009715)" onmouseout="hideWeight()">&nbsp;for</span><span class="s_8" id="s_8_w_37" onmouseover="showWeight(8,37,0.021611,0.090857)" onmouseout="hideWeight()">&nbsp;Open</span><span class="s_8" id="s_8_w_38" onmouseover="showWeight(8,38,0.021611,0.014977)" onmouseout="hideWeight()">&nbsp;Media</span><span class="s_8" id="s_8_w_39" onmouseover="showWeight(8,39,0.021611,0.001160)" onmouseout="hideWeight()">)</span><span class="s_8" id="s_8_w_40" onmouseover="showWeight(8,40,0.021611,0.001320)" onmouseout="hideWeight()">의</span><span class="s_8" id="s_8_w_41" onmouseover="showWeight(8,41,0.021611,0.025763)" onmouseout="hideWeight()">&nbsp;설립</span><span class="s_8" id="s_8_w_42" onmouseover="showWeight(8,42,0.021611,0.021156)" onmouseout="hideWeight()">&nbsp;목적</span><span class="s_8" id="s_8_w_43" onmouseover="showWeight(8,43,0.021611,0.000535)" onmouseout="hideWeight()">인</span><span class="s_8" id="s_8_w_45" onmouseover="showWeight(8,45,0.021611,0.000842)" onmouseout="hideWeight()">&nbsp;차</span><span class="s_8" id="s_8_w_46" onmouseover="showWeight(8,46,0.021611,0.089558)" onmouseout="hideWeight()">세대</span><span class="s_8" id="s_8_w_47" onmouseover="showWeight(8,47,0.021611,0.282671)" onmouseout="hideWeight()">&nbsp;동영상</span><span class="s_8" id="s_8_w_48" onmouseover="showWeight(8,48,0.021611,0.021821)" onmouseout="hideWeight()">&nbsp;압축</span><span class="s_8" id="s_8_w_49" onmouseover="showWeight(8,49,0.021611,0.000595)" onmouseout="hideWeight()">과</span><span class="s_8" id="s_8_w_50" onmouseover="showWeight(8,50,0.021611,0.004482)" onmouseout="hideWeight()">&nbsp;전달</span><span class="s_8" id="s_8_w_51" onmouseover="showWeight(8,51,0.021611,0.053703)" onmouseout="hideWeight()">&nbsp;기술</span><span class="s_8" id="s_8_w_52" onmouseover="showWeight(8,52,0.021611,0.022331)" onmouseout="hideWeight()">&nbsp;개발</span><span class="s_8" id="s_8_w_53" onmouseover="showWeight(8,53,0.021611,0.000196)" onmouseout="hideWeight()">로</span><span class="s_8" id="s_8_w_54" onmouseover="showWeight(8,54,0.021611,0.002482)" onmouseout="hideWeight()">&nbsp;예상</span><span class="s_8" id="s_8_w_55" onmouseover="showWeight(8,55,0.021611,0.000061)" onmouseout="hideWeight()">해볼</span><span class="s_8" id="s_8_w_59" onmouseover="showWeight(8,59,0.021611,0.000324)" onmouseout="hideWeight()">&nbsp;수</span><span class="s_8" id="s_8_w_60" onmouseover="showWeight(8,60,0.021611,0.000302)" onmouseout="hideWeight()">&nbsp;있</span><span class="s_8" id="s_8_w_61" onmouseover="showWeight(8,61,0.021611,0.000935)" onmouseout="hideWeight()">다는</span><span class="s_8" id="s_8_w_62" onmouseover="showWeight(8,62,0.021611,0.007213)" onmouseout="hideWeight()">&nbsp;분석</span><span class="s_8" id="s_8_w_63" onmouseover="showWeight(8,63,0.021611,0.000412)" onmouseout="hideWeight()">이</span><span class="s_8" id="s_8_w_64" onmouseover="showWeight(8,64,0.021611,0.000743)" onmouseout="hideWeight()">다</span><span class="s_8" id="s_8_w_65" onmouseover="showWeight(8,65,0.021611,0.000260)" onmouseout="hideWeight()">.</span><br><span class="s_9" id="s_9_w_0" onmouseover="showWeight(9,0,0.082438,0.000197)" onmouseout="hideWeight()">&nbsp;이</span><span class="s_9" id="s_9_w_1" onmouseover="showWeight(9,1,0.082438,0.000011)" onmouseout="hideWeight()">에</span><span class="s_9" id="s_9_w_2" onmouseover="showWeight(9,2,0.082438,0.000019)" onmouseout="hideWeight()">&nbsp;따라</span><span class="s_9" id="s_9_w_4" onmouseover="showWeight(9,4,0.082438,0.042778)" onmouseout="hideWeight()">&nbsp;스마트</span><span class="s_9" id="s_9_w_5" onmouseover="showWeight(9,5,0.082438,0.428613)" onmouseout="hideWeight()">폰</span><span class="s_9" id="s_9_w_6" onmouseover="showWeight(9,6,0.082438,0.000279)" onmouseout="hideWeight()">이나</span><span class="s_9" id="s_9_w_7" onmouseover="showWeight(9,7,0.082438,0.373947)" onmouseout="hideWeight()">&nbsp;PC</span><span class="s_9" id="s_9_w_8" onmouseover="showWeight(9,8,0.082438,0.000063)" onmouseout="hideWeight()">에서</span><span class="s_9" id="s_9_w_9" onmouseover="showWeight(9,9,0.082438,0.000242)" onmouseout="hideWeight()">의</span><span class="s_9" id="s_9_w_10" onmouseover="showWeight(9,10,0.082438,0.076951)" onmouseout="hideWeight()">&nbsp;스트리밍</span><span class="s_9" id="s_9_w_11" onmouseover="showWeight(9,11,0.082438,0.075246)" onmouseout="hideWeight()">&nbsp;콘텐츠</span><span class="s_9" id="s_9_w_12" onmouseover="showWeight(9,12,0.082438,0.000048)" onmouseout="hideWeight()">를</span><span class="s_9" id="s_9_w_13" onmouseover="showWeight(9,13,0.082438,0.000641)" onmouseout="hideWeight()">&nbsp;발전</span><span class="s_9" id="s_9_w_14" onmouseover="showWeight(9,14,0.082438,0.000023)" onmouseout="hideWeight()">시켜나갈</span><span class="s_9" id="s_9_w_18" onmouseover="showWeight(9,18,0.082438,0.000129)" onmouseout="hideWeight()">&nbsp;것</span><span class="s_9" id="s_9_w_19" onmouseover="showWeight(9,19,0.082438,0.000017)" onmouseout="hideWeight()">으로</span><span class="s_9" id="s_9_w_20" onmouseover="showWeight(9,20,0.082438,0.000255)" onmouseout="hideWeight()">&nbsp;기대</span><span class="s_9" id="s_9_w_21" onmouseover="showWeight(9,21,0.082438,0.000005)" onmouseout="hideWeight()">해볼</span><span class="s_9" id="s_9_w_25" onmouseover="showWeight(9,25,0.082438,0.000025)" onmouseout="hideWeight()">&nbsp;수</span><span class="s_9" id="s_9_w_26" onmouseover="showWeight(9,26,0.082438,0.000022)" onmouseout="hideWeight()">&nbsp;있</span><span class="s_9" id="s_9_w_27" onmouseover="showWeight(9,27,0.082438,0.000058)" onmouseout="hideWeight()">다는</span><span class="s_9" id="s_9_w_28" onmouseover="showWeight(9,28,0.082438,0.000150)" onmouseout="hideWeight()">&nbsp;것</span><span class="s_9" id="s_9_w_29" onmouseover="showWeight(9,29,0.082438,0.000029)" onmouseout="hideWeight()">이</span><span class="s_9" id="s_9_w_30" onmouseover="showWeight(9,30,0.082438,0.000058)" onmouseout="hideWeight()">다</span><span class="s_9" id="s_9_w_31" onmouseover="showWeight(9,31,0.082438,0.000021)" onmouseout="hideWeight()">.</span><br><span class="s_10" id="s_10_w_0" onmouseover="showWeight(10,0,0.009547,0.544583)" onmouseout="hideWeight()">&nbsp;관련</span><span class="s_10" id="s_10_w_1" onmouseover="showWeight(10,1,0.009547,0.128483)" onmouseout="hideWeight()">&nbsp;내용</span><span class="s_10" id="s_10_w_2" onmouseover="showWeight(10,2,0.009547,0.022067)" onmouseout="hideWeight()">은</span><span class="s_10" id="s_10_w_3" onmouseover="showWeight(10,3,0.009547,0.055380)" onmouseout="hideWeight()">&nbsp;이곳</span><span class="s_10" id="s_10_w_4" onmouseover="showWeight(10,4,0.009547,0.002786)" onmouseout="hideWeight()">에서</span><span class="s_10" id="s_10_w_5" onmouseover="showWeight(10,5,0.009547,0.198789)" onmouseout="hideWeight()">&nbsp;확인</span><span class="s_10" id="s_10_w_6" onmouseover="showWeight(10,6,0.009547,0.001757)" onmouseout="hideWeight()">할</span><span class="s_10" id="s_10_w_8" onmouseover="showWeight(10,8,0.009547,0.008040)" onmouseout="hideWeight()">&nbsp;수</span><span class="s_10" id="s_10_w_9" onmouseover="showWeight(10,9,0.009547,0.006791)" onmouseout="hideWeight()">&nbsp;있</span><span class="s_10" id="s_10_w_10" onmouseover="showWeight(10,10,0.009547,0.018616)" onmouseout="hideWeight()">다</span><span class="s_10" id="s_10_w_11" onmouseover="showWeight(10,11,0.009547,0.006611)" onmouseout="hideWeight()">.</span><br>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- //.step02 -->
+                            </div>
+                        </div>
+					</div>
+					<!-- //.tabUi -->
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.demo -->
+            
+			<!-- .video -->
+			<div class="stn videoArea">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<!-- .stn_tit -->
+					<div class="stn_tit">
+						<h3 >VIDEO</h3>
+					</div>
+					<!-- //.stn_tit -->
+
+					<!-- .stn_cont -->
+					<div class="stn_cont">
+						<!-- .videoBox -->
+                        <div class="videoBox">
+                            <a class="btn_movLayer" href="https://youtu.be/1fLGnZE4epA">
+                                <div class="img_info">
+                                	<img src="../resources/images/img_videoArea_xdc.png" alt="홍보영상">
+                                </div> 
+                                <strong class="ico_mov">동영상 보기</strong>
+                            </a>
+						</div>
+						<!-- //.videoBox -->
+					</div>
+					<!-- //.stn_cont -->
+					
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.video -->
+            
+			<!-- .stn -->
+			<div id="stn_process" class="stn processArea">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<div class="stn_tit">
+						<h3>Process</h3>
+					</div>
+					<div class="stn_cont">
+						<div class="processBox"><img src="../resources/images/img_processArea_xdc_m.png" alt=""></div>
+					</div>
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.stn -->
+            
+			<!-- .stn -->
+			<div id="stn_feature" class="stn featureArea">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<div class="stn_tit">
+						<h3>feature</h3>
+					</div>
+					<div class="stn_cont">
+						<div class="dlBox">
+							<dl class="dltype01">
+								<dt>설명할 수 있는</br>인공지능</dt>
+								<dd>
+									<span>분류 결과만 나오는 기존의 AI의 맹점인 Black box 문제를 극복하고, 분류 결과에 대한 이유까지 제시하는 혁신적인 인공지능 엔진입니다.</span>
+								</dd>
+							</dl>
+							<dl class="dltype01">
+								<dt>풍부한 인사이트</br>제공</dt>
+								<dd><span>분류 결과에 대한 이유를 알 수 있기 때문에 결과에 대한 영감을 얻거나 개선점을 찾는 등 풍부한 인사이트를 제공받을 수 있습니다.</span></dd>
+							</dl>
+							<dl class="dltype01">
+								<dt>분량이 많은 문서도</br>OK</dt>
+								<dd><span>짧은 길이의 텍스트만 분류할 수 있는 기존의 분류기와는 달리, 긴 길이의 문서도 정확하게 분류할 수 있습니다.</span></dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.stn -->
+            
+			<!-- .pricing -->
+			<div id="stn_pricing" class="stn pricingArea">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<div class="stn_tit">
+						<h3>PRICING</h3>
+					</div>
+					<div class="stn_cont">
+						<div class="fl">
+							<p>클라우드형 (SaaS)</p>
+							<div class="saas_box">
+								<div class="img">
+									<img src="../resources/images/ico_productLst_xdc.png" alt="xdc 아이콘">
+								</div>
+								<p>문서 분류 엔진 (XDC)</p>
+                                <div class="dlBox02">
+                                    <dl>
+                                        <dt>월별 과금</dt>
+                                        <dd>
+                                        	<span><b>3.3</b>원</span>
+                                            <em><b> / API Call당</b></em>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="dlBox03">
+                                    <dl>
+                                        <dt>과금 기준</dt>
+                                        <dd>API Call</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>무료사용</dt>
+                                        <dd>1,000개 호출 무료(매달)</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>커스텀 모델 적용시</dt>
+                                        <dd>협의</dd>
+                                    </dl>
+                                </div>
+							</div>
+						</div>
+						<div class="fr">
+							<p>구축형 (SW License) <span>단위: 원/VAT 별도</span></p>
+                            <table class="tbl_type01" summary="구분,구성요소,제품명,개수,소비자단가">
+                                <caption class="hide">구축형 소비자 단가</caption>
+                                <colgroup>
+                                    <col><col><col><col><col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">구성요소</th>
+                                        <th scope="col">제품명</th>
+                                        <th scope="col">개수</th>
+                                        <th scope="col">소비자 단가</th>
+                                    </tr>
+                                </thead>	
+                                <tbody>
+                                    <tr>
+                                        <td scope="row" class="first_col">
+                                            문서 분류
+                                        </td>
+                                        <td  class="sec_col">
+                                           XDC
+                                        </td>
+                                        <td class="p_name">eXplainable Document Classifier</td>
+                                        <td>1</td>
+                                        <td class="c_price">100,000,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+						</div>
+					</div>
+				</div>
+				<!-- //.lot_c -->	
+			</div>
+			<!-- //.pricing --> 
+
+			<!-- .stn -->
+			<div id="api_contact" class="api_contact">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<!-- .stn_cont -->
+					<div class="stn_cont">
+						<!-- .contactBox -->
+						<div class="contactBox">
+							<!-- .leftBox -->
+							<div class="leftBox">
+								<div class="stn_tit">
+									<h3>Contact Us</h3>
+								</div>
+								<div class="leftTxtBox">
+									<p>마인즈랩과 마인즈랩의 API 서비스에 대한 문의가 있으시다면 여기에 남겨주세요.<br>페이스북과 링크드인을 팔로우하시면 새 소식을 더 빠르게 접하실 수 있습니다.</p>
+									<ul class="contact_lst">
+										<li class="btn_tel"><a href="tel:+82316254340">+82 31 625 4340</a></li>
+										<li class="btn_mail"><a href="mailto:hello@mindslab.ai">hello@mindslab.ai</a></li>
+										<li class="btn_web"><a href="http://mindslab.ai" target="_blank">마인즈랩 홈페이지 mindslab.ai</a></li>
+										<ul class="social_lst">
+											<li class="btn_fb"><a href="https://www.facebook.com/mindsinsight/?fref=ts" target="_blank">Facebook</a></li>
+											<li class="btn_ld"><a href="https://www.linkedin.com/company/mindslabai" target="_blank">Linkedin</a></li>
+										</ul>
+									</ul>
+								</div>
+							</div>
+							<!-- //.leftBox -->
+							<!-- .rightBox -->
+							<div class="rightBox">
+								<form action="contact_form">
+									<fieldset>
+										<legend>문의하기</legend>
+										<div class="contact">
+											<div class="cl_b">
+											<div class="fl">
+												<div class="txtfield">
+													<select id="contactType" class="select">
+														<option id="ctt_type01" value="문의유형">문의유형</option>
+														<option id="ctt_type02" value="유료사용신청">유료사용신청</option>
+														<option id="ctt_type03" value="마인즈랩 STT 문의">마인즈랩 STT 문의</option>
+														<option id="ctt_type04" value="사용자 피드백">사용자 피드백</option>
+													</select>
+												</div>
+											</div>
+											<div class="fr">
+												<div class="txtfield">
+													<input type="text" name="fm_name" id="fm_name" class="input_txt" placeholder="이름 *">
+												</div>
+											</div>
+											</div>
+											<div class="txtfield">
+												<input type="text" name="fm_email" id="fm_email"  class="input_txt" placeholder="이메일 *">
+											</div>
+											<div class="txtfield">
+												<input type="text" name="fm_tel" id="fm_tel"  class="input_txt" placeholder="전화번호">
+											</div>
+											<div class="txtfield">
+												<textarea name="fm_txt" id="fm_txt" class="textArea" rows="4" placeholder="문의내용 *"></textarea>
+											</div>
+											<ul class="btnBox">
+												<li><button class="btn_clor">문의하기</button></li>
+												<li><button>개발자 가이드</button></li>
+											</ul>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<!-- //.rightBox -->
+						</div>
+						<!-- //.contactBox -->
+					</div>
+					<!-- //.stn_cont -->
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.stn -->
+			<p class="btn_goTop"><button>맨위로</button></p>
+		</div>
+		<!-- //#contents -->
+	</div>
+	<!-- //#container -->
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="lot_c">
+			<div class="f_logo"><img src="../resources/images/logo_footer.png" alt="마인즈랩"></div>
+			<div class="cyrt"><span>MINDsLab &copy; 2018 .</span> <span>주식회사 마인즈랩ㅣ대표 유태준ㅣ</span><span>사업자 등록번호 314-86-55446</span></div>
+		</div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+<script type="text/javascript">   
+$(window).load(function() {    
+	$('#pageldg').addClass('pageldg_hide').delay(500).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<script type="text/javascript">
+jQuery(function(){
+	jQuery("a.btn_movLayer").movLayer();
+});
+</script>
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){	
+		// Page CSS
+		$('#wrap').each(function(){				
+			$(this).addClass('type_xdc');
+		});	
+		
+		var hideResult = true;
+		$("#classify_content").click(function(){
+			if(hideResult){
+				var txt = document.getElementById('id_input_text').value;
+				var param = {'text': txt}
+				param = JSON.stringify(param);
+				var sentences;
+				var top_n;
+				var cls;
+				var sent_attns;
+				var top_sents;
+				$.ajax({
+					type: 'POST',
+					url: '/client/do_xdc/',
+					dataType: 'json',
+					data: param,
+					error: function(xhr, status, error){
+						alert('[에러] 문단을 분석하는 데에 실패했습니다.');
+					}, success: function(data) {
+							cls = data['cls'];
+							sent_attns = data['sent_attns'];
+							top_sent_indices = data['top_sent_indices'];
+							top_word_indices_lists = data['top_word_indices_lists']
+							sentences = data['sentences']
+							$("#xdc_result_wrap").css("display", "block");
+							$("#xdc_article_wrap").css("display", "none");
+							hideResult = false;
+							for (i = 0; i < cls.length; i++){
+								$("#xdc_result_classification").append("<ol class='lst'><li class='rank'>"
+								+(i + 1)
+								+ " </li><li class='label'>위 &nbsp;&nbsp;&nbsp;&nbsp;"
+								+ (cls[i]["label"]) + "</li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <li class='probability'>"
+								+ parseFloat(cls[i]["probability"]).toFixed(6)
+								+ "</li></ol>");
+							}
+	
+							for (i = 0; i < (sent_attns).length; i++){
+								word_attns = sent_attns[i].word_attns;
+								sent_weight = sent_attns[i]["weight"];
+								sent_weight = parseFloat(sent_weight).toFixed(6);
+								start = -1;
+								end = -1;
+								appendBlank = true;
+								for(j = 0; j < word_attns.length; j++){
+									//1st trial
+									if(start != word_attns[j]['start']){
+										start = word_attns[j]['start'];
+										if(start == end) {
+											appendBlank = false;
+										} else {
+											appendBlank = true;
+										}
+										end = word_attns[j]['end'];
+										if (appendBlank) {
+											word = "<span class=s_" + i + " id=s_" + i + "_w_" + j + ">&nbsp;" + sentences[i].substring(start, end) + "</span>";
+										} else {
+											word = "<span class=s_" + i + " id=s_" + i + "_w_" + j + ">" + sentences[i].substring(start, end) + "</span>";
+										}
+										$("#xdc_result_xdc").append(word);
+										word_weight = word_attns[j]['weight'];
+										word_weight = parseFloat(word_weight).toFixed(6);
+										$("#s_" + i + "_w_" + j).attr('onmouseover', "showWeight(" + i + "," + j + "," + sent_weight + "," + word_weight + ")" );
+										$("#s_" + i + "_w_" + j).attr('onmouseout', "hideWeight()" );
+									}
+								}
+								if(top_sent_indices.indexOf(i) > -1) {
+									$(".s_" + i).css("color", "#000000");
+									$(".s_" + i).css("font-weight", "bold");
+									for (j in top_word_indices_lists[i]) {	//영향력 높은 문장들 내의 영향력 높은 단어들에 대해서만 하이라이트 표시
+										$("#s_" + i + "_w_" + top_word_indices_lists[i][j]).css("color", "#ff6000");
+										$("#s_" + i + "_w_" + top_word_indices_lists[i][j]).css("font-weight", "bold");
+									}
+								}
+								$("#xdc_result_xdc").append("<br>");
+							}
+							var offset = $("#xdc_result_wrap").offset().top - 200;
+							console.log(offset);
+							$("html,body").animate({scrollTop: offset}, 1000);
+						}
+				});
+			}
+		});
+		$("#back_to_article").click(function() {
+			$("#xdc_result_wrap").css("display", "none");
+			$("#xdc_article_wrap").css("display", "block");
+			$("#xdc_result_classification").empty();
+			$("#xdc_result_xdc").empty();
+			hideResult = true;
+		});
+		$("#insert_selected_content").click(function() {
+			var txt = $("#article_content").val();
+			document.getElementById("id_input_text").value = txt;
+			document.getElementById("news_modal").style.display = "none";
+			document.getElementById("search_input").value = "";
+			$(".article_item").empty();
+			$(".article_item").append("<a> </a>");
+			$(".article_item").removeClass('chosen');
+			document.getElementById("article_content").value = "";
+		});
+		$("#search_button").click(function(){
+			var txt = document.getElementById("search_input").value;
+			if (txt == null || txt == ""){
+				alert("검색어를 입력해주세요.");
+				return;
+			}
+			var param = {'keyword' : txt };
+			$("#search_results").hide();
+			$("#loading_gif").show();
+			$.ajax({
+				type: 'POST',
+				url: '/client/search_news/',
+				dataType: 'json',
+				data: param,
+				error: function(xhr, status, error){
+					alert('[에러] 검색어를 찾을 수 없습니다.');
+					$("#loading_gif").hide();
+					$("#search_results").show();
+				}, success: function(data) {
+					data = data['data']
+					// console.log(data);
+					$(".article_item").empty();
+					$(".article_item").append("<a> </a>");
+					for (i = 0; i < Object.keys(data).length; i++){
+						$($("#search_results").children("li")[i]).attr('name', data[i]["desc"]);
+						$($("#search_results").children("li")[i]).empty();
+						$($("#search_results").children("li")[i]).append("<a>" + data[i]["title"]+"</a>");
+					}
+					$("#loading_gif").hide();
+					$("#search_results").show();
+				}
+			});
+		});
+		$(".article_item").click(function(){
+			var results = document.getElementById("search_results");
+			$(".article_item").removeClass('chosen');
+			document.getElementById("article_content").value = $(this).attr('name');
+			$(this).toggleClass('chosen');
+		});
+		$("#submit_button").click(function(){
+			var txt = document.getElementById("question_content").value;
+			document.getElementById("id_question").value= txt;
+	
+			var param = {
+				'lang' : document.getElementById('lang').value,
+				'question': document.getElementById('id_question').value,
+				'input_text': document.getElementById('id_input_text').value
+			}
+			$.ajax({
+				type: 'POST',
+				url: '/do_mrc/',
+				dataType: 'json',
+				data: param,
+				error: function(request, status, error) {
+					if (request.statusText == ""){
+						alert("서버에 연결할 수 없습니다.");
+					}
+					else if (request.statusText == "INTERNAL SERVER ERROR"){
+						alert("서버에서 답을 불러올 수 없습니다.");
+					}
+					else{
+						alert(request.statusText);
+					}
+				},
+				success: function(data) {
+					var answer = data["answer"];
+					document.getElementById("answer").value = answer;
+					var highlight_chars = answer[0].slice(0,-8);
+					var pos = jQuery("#id_input_text").val().indexOf(highlight_chars);
+					if (pos != -1) {
+						var target = document.getElementById("id_input_text");
+						target.focus();
+						if (target.setSelectionRange){
+							target.setSelectionRange(pos, pos + highlight_chars.length);
+						}
+						else {
+							var r = target.createTextRange();
+							r.collapse(true);
+							r.moveEnd('character', pos + highlight_chars);
+							r.moveStart('character', pos);
+							r.select();
+						}
+						var objDiv = document.getElementById("id_input_text");
+						var sh = objDiv.scrollHeight;
+						var font_size = $("#id_input_text").css('font-size');
+						var line_ht = $("#id_input_text").css('line-height').replace('px','');;
+						var n_lines = sh / line_ht;
+						var char_in_line = $("#id_input_text").val().length / n_lines;
+						var height = Math.floor(pos / char_in_line);
+	
+						if (height >= 4){
+							height -= 4;
+						}
+						else if (height >= 3){
+							height -= 3;
+						}
+						else if (height >= 2){
+							height -= 2;
+						}
+						else if (height >= 1){
+							height -= 1;
+						}
+						$("#id_input_text").scrollTop(height * line_ht);
+					}
+					else{
+						console.log("not found");
+					}
+				}
+			});
+		});
+		$("#help_icon").click(function(){
+			document.getElementById("myModal").style.display = "block";
+		});
+		$("#naver_search_option").click(function(){
+			document.getElementById("news_modal").style.display = "block";
+			$("#loading_gif").hide();
+		});
+		$(".close").click(function(){
+			document.getElementById("myModal").style.display = "none";
+			document.getElementById("news_modal").style.display = "none";
+			$(".article_item").removeClass('chosen');
+			document.getElementById("article_content").value = "";
+		});
+	
+	});	
+});	
+
+function showWeight(i, j, sent_w, word_w){
+	word_left = $("#s_" + i + "_w_" + j).position().left + 5;
+	word_top = $("#s_" + i + "_w_" + j).position().top - 50;
+	$("#xdc_result_weights").css('visibility', "visible");
+	$("#xdc_result_weights").css('left', word_left);
+	$("#xdc_result_weights").css('top', word_top);
+	$("#sentenceWeight").html("문장 영향력: "+sent_w);
+	$("#wordWeight").html("단어 영향력: "+word_w);
+}
+
+function hideWeight(){
+	$("#xdc_result_weights").css('visibility', "hidden");
+	$("#sentenceWeight").html("");
+	$("#wordWeight").html("");
+}
+
+</script>
+</body>
+</html>

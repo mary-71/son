@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta http-equiv="Expires" content="-1"> <!--캐시된 페이지가 만료되어 삭제되는 시간을 정의합니다. 특별한 경우가 아니면 -1로 설정합니다. -->
+<meta http-equiv="Pragma" content="no-cache"> <!--  페이지 로드시마다 페이지를 캐싱하지 않습니다. (HTTP 1.0) -->
+<meta http-equiv="Cache-Control" content="no-cache"> <!-- 페이지 로드시마다 페이지를 캐싱하지 않습니다. (HTTP 1.1)-->
+
+<!-- icon_favicon -->
+<link rel="apple-touch-icon-precomposed" href="resources/images/ico_favicon_64x64.png" />
+<link rel="shortcut icon" type="image/x-icon" href="resources/images/ico_favicon_64x64.ico"/>
+<title>maum.ai platform</title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/font.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/common.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/xdc.css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">	
+
+<!-- //resources -->
+
+<script type="text/javascript" src="resources/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="resources/js/common.js"></script>
+
+</head>
+
+<body>
+
+<!-- .page loading -->
+<div id="page_ldWrap" class="page_loading">
+	<div class="loading_itemBox">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!-- //.page loading -->
+
+
+<!-- wrap -->
+<div id="wrap">
+	<!-- #header -->
+	<div id="header">
+        <h1><a target="_self" href="welcome.html"><img src="resources/images/logo.png" alt="maum.ai"></a></h1>
+		<!-- .sta -->
+		<div class="sta">
+			<!-- .titArea -->
+			<div class="titArea">
+                <div class="path">
+                    <span><img src="resources/images/ico_path_home_bk.png" alt="HOME"></span>
+                    <span class="pop_term">API Services</span>
+				<!--<span>Uploading</span>-->
+                </div>
+            </div>
+            <!-- //.titArea -->
+
+			<!-- .etcmenu -->
+			<div class="etcmenu">
+<!--				<span><i>P</i><em>1,000</em> point</span>-->
+				<div class="userBox">
+					<dl>
+						<dt class="ico_user">User</dt>
+						<dd>
+							<a target="_self" href="#none">admin@console.com</a>
+						</dd>
+						<ul class="lst">
+							<li class="ico_profile"><a target="_self" href="#none">PROFILE</a></li>
+							<li class="ico_account"><a target="_self" href="#none">API ACCOUNT</a></li>
+							<li class="ico_payment"><a target="_self" href="#none">PAYMENT</a></li>
+							<li class="ico_logout"><a target="_self" href="#none">LOGOUT</a></li>
+						</ul>
+					</dl>
+				</div>
+			</div>
+			<!-- //.etcmenu -->
+		</div>
+		<!-- //.sta -->
+	</div>
+	<!-- //#header -->
+	<!-- .snb 한글 -->
+	<div class="snb">		
+		<ul>
+			<li class="collapsible list1"><a href="https://dev-api.maum.ai/"><i class="fas fa-home"></i>HOME</a></li>	
+			<li class="collapsible list2 active"><i class="fas fa-shapes"></i>AI Services</li>					
+			<li class="sublist list2_sub">
+				<a class="dropdwn twodepth " id="flip">텍스트를 음성으로</a>
+				<ul class="twodepthLst panel">
+					<li class=""><a href="tts.html">AI Voice 사용하기</a></li>
+					<li><a href="tts_record.html">내 목소리로 사용하기</a></li>
+				</ul>	
+				<a class="twodepth" href="stt.html">음성을 텍스트로</a>
+			</li>
+			<li class="collapsible list3 dropdwn active"><i class="fas fa-laptop-code"></i>API Services</li>					
+			<li class="sublist list3_sub">
+				<a class="twodepth" href="api_tts.html">음성 생성</a>	
+				<a class="twodepth" href="api_stt.html">음성 인식</a>
+				<a class="twodepth active" href="xdc.html">텍스트 분류</a>	
+				<a class="twodepth" href="mrc.html">AI 독해</a>
+				<a class="twodepth" href="hmd.html">패턴 분류</a>	
+				<a class="twodepth" href="nlu.html">자연어 이해</a>
+				<a class="twodepth" href="recog.html">화폐 · 고지서 인식</a>	
+			</li>		
+			<li class="collapsible list4 dropdwn"><i class="fas fa-grip-horizontal"></i>Application</li>					
+			<li class="sublist list4_sub">
+				<a class="twodepth" href="voc.html">maum VOC</a>	
+				<a class="twodepth" href="mai_1.html">mAI English</a>
+				<a class="twodepth" href="chatbot.html">날씨봇 · 위키봇</a>
+			</li>		
+			<li class="collapsible list5 dropdwn"><i class="fas fa-headphones-alt"></i>고객지원</li>					
+			<li class="sublist list5_sub">
+				<a class="twodepth" href="pricing.html">가격정책</a>	
+				 
+				<a class="twodepth" href="faq.html">FAQ</a>
+				<a class="twodepth" href="request.html">문의 내역</a>	
+				<a class="twodepth" href="contactus.html">Contact Us</a>	
+			</li>				
+		</ul>
+	</div>
+	<!-- //.snb 한글 -->
+	<!-- aside -->
+	<div class="aside" style="display:none;">
+		<!-- .aside_top -->
+		<div class="aside_top">
+			<h1><a href="index.html"><img src="resources/images/logo_m.png" alt="maum API"></a></h1>
+		</div>
+		<!-- //.aside_top -->
+		<!-- .aside_mid -->
+		<div class="aside_mid">
+			<ul class="m_etcMenu">
+				<li class="lang">
+					<p class="lang_select"><img src="resources/images/ico_lang_kr.png" alt="한국어"><em>한국어</em></p>
+					<ul class="lst">
+						<li><a href="../en/index.html" target="_self"><img src="resources/images/ico_lang_us.png" alt="English"><em>English</em></a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="m_nav">
+				<li>
+					<h2><a href="#none">HOME</a></h2>
+				</li>
+				<li>
+					<h2><a href="#none">AI Services</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none" class="depth3">택스트를 음성으로</a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="tts.html" target="_self">AI Voice 사용하기</a></li>
+								<li><a href="tts_record.html" target="_self">내 목소리로 사용하기</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none">음성을 텍스트로</a></h3>							
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">API Services</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none">음성 생성</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">음성 인식</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">텍스트 분류</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">AI 독해</a></h3>						
+						</li>
+						<li>
+							<h3><a href="#none">패턴 분류</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">자연어 이해</a></h3>						
+						</li>
+						<li>
+							<h3><a href="#none">화폐 · 고지서 인식</a></h3>							
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">Application</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none">maum VOC</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">mAI English</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">날씨봇 · 위키봇</a></h3>							
+						</li>						
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">고객지원</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none">가격정책</a></h3>							
+						</li>
+						 
+						<li>
+							<h3><a href="#none">FAQ</a></h3>							
+						</li>	
+						<li>
+							<h3><a href="#none">문의 내역</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">Contact Us</a></h3>							
+						</li>
+					</ul>
+				</li>
+			</ul>  
+		</div>
+		<!-- //.aside_mid -->
+		<!-- .aside_btm -->
+<!--
+		<div class="aside_btm">
+			<ul>
+				<li class="btn_mail"><a href="mailto:hello@mindslab.ai">hello@mindslab.ai</a></li>
+				<li class="btn_tel"><a href="tel:+82316254340">031. 625. 4340</a></li>
+			</ul>
+		</div>
+-->
+		<!-- //.aside_btm -->
+	</div>
+	<div class="bg_aside"></div> 
+	<a class="btn_header_ham" href="#none"><span class="hamburger_icon"></span></a>  
+	<!-- //aside -->		
+	<!-- #container -->
+	<div id="container">
+		<!-- .contents -->
+		<div class="contents">
+			<div class="content api_content">
+				<h1 class="api_tit">텍스트 분류</h1>
+				<ul class="menu_lst">
+					<li class="tablinks" onclick="openTap(event, 'xdcdemo')" id="defaultOpen">데모</li>
+					<li class="tablinks" onclick="openTap(event, 'xdcmenu')">메뉴얼</li>
+					<li class="tablinks" onclick="openTap(event, 'xdcexample')">적용사례</li>
+					<li class="tablinks"><a href="" target="_blank" title="마인즈랩 몰">구매하기</a></li>
+				</ul>
+				<!--.demobox_xdc-->
+				<div class="demobox demobox_xdc"  id="xdcdemo">
+					<p>정확한 텍스트 분류<small style="font-size:14px;">(XDC, eXplainable Document Classifier)</small>를 통한 뉴스 분석</p>
+					<span class="sub">내용과 분량에 관계 없이 어떤 문서든 분류하고 분석합니다</span>
+					
+					<!--.xdc_box-->
+					<div class="xdc_box">	
+						<div class="xdc_wrap">
+							<div class="demo_top">
+								<p>본문넣기</p>
+								<button type="button" class="btn_article" id="">기사검색</button>	
+							</div>
+							<div class="text_area">
+								<textarea rows="12" maxlength="1050" placeholder="문서 본문(뉴스기사)을 검색하거나 직접 붙여 넣기 해주세요."></textarea>
+							</div>	
+							<!-- Modal -->
+							<div id="news_modal" class="modal">
+								  <!-- Modal content -->
+								  <div class="modal_content search_modal naver_news_search_div">
+									  <span class="close close_naver">×</span>
+									  <div class="search_modal_wrap">
+										  <span class="naver_search_tit">네이버 기사 검색</span>
+										  <input class="naver_search_box" type="text" id="search_input" placeholder="검색어를 입력해 주세요. (예: 인공지능, 축구 등)">
+										  <button type="button" class="btn search_btn" id="search_button">검색</button>
+										  <span class="naver_search_desc">아래의 네이버 기사 검색 결과 리스트중 하나의 기사를 선택해 주세요.</span>
+										  <input type="hidden" id="article_content" value=" " name="article_content">
+										  <div class="loading_wrap" id="loading_gif"><img src="resources/images/spinner.gif"></div>
+										  <ul class="result_search" id="search_results">
+											  <li class="article_item" name=""><a>"미래 인공지능 칩 학습 쌓이면 반려 기계 등장 가능" </a></li>
+											  <li class="article_item" name=""><a>네이버에서 인공지능 강의한 '육군 대위'… </a></li>
+											  <li class="article_item" name=""><a> </a></li>
+											  <li class="article_item" name=""><a> </a></li>
+											  <li class="article_item" name=""><a> </a></li>
+										  </ul>
+										  <button type="button" class="btn cont_btn" id="insert_selected_content">확인</button>
+									  </div>
+								  </div>
+								 <!--//.Modal content -->
+							</div>
+							<!-- //.Modal -->
+							<div class="btn_area">							
+								<button type="button" class="start_btn" id="classify_content" disabled><i class="fas fa-file-invoice"></i>분석하기</button>	
+								<span class="disBox"></span>
+							</div>
+						</div>
+						
+						<!--.xdc_result_wrap-->						
+						<div class="xdc_result_wrap">
+							<div class="resultBoxTop">								
+									<div class="tit"><span>분류 및 XDC 결과</span></div>
+									<div class="xdc_recod">
+										<!-- recording -->
+										<div class="recording">
+											<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+											<span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+										</div>
+										<!-- //recording -->
+									</div>
+									<div class="txt" id="xdc_result_classification">
+										<ol class="xdc_lst">
+											<li>
+												<span class="rank"><b>1</b>위</span>
+												<span class="label">IT</span>
+												<span class="probability">
+													<em>0.012341234</em>
+												</span>
+											</li>
+											<li>
+												<span class="rank"><b>2</b>위</span>
+												<span class="label">모바일</span>
+												<span class="probability">
+													<em>0.012341234</em>
+												</span>
+											</li>
+											<li>
+												<span class="rank"><b>3</b>위</span>
+												<span class="label">소프트웨어</span>
+												<span class="probability">
+													<em>0.012341234</em>
+												</span>
+											</li>
+										</ol>
+									</div>
+							  </div>
+							  <div class="result_desc">
+                                  	<span><img src="resources/images/mouse.png" alt="마우스 아이콘"> 마우스를 표시된 문장이나 단어 위로 이동시켜 보세요. 분석 내용이 표시됩니다.</span> 
+                              </div>
+							   <div class="resultBoxBottom">
+                                    <div class="balloon" id="xdc_result_weights">
+                                        <div id="sentenceWeight"></div>
+                                        <div id="wordWeight"></div>
+                                    </div>
+                                    <div class="txt" id="xdc_result_xdc" >『국어의 <span>기술</span>외전 독서활동 추천도서: 미래를 바꾼 아홉 가지 알고리즘』 소개
+기왕에 <span>독서</span>를 해야 한다면 시험에도 도움이 될 만한 책을 고르는 것이 중요하다. 그런데 학생 입장에서 어떤 책이 수능 국어영역과 학생부 독서활동 모두에 도움이 되는지 판단하기 어렵다. 『국어의 기술 외전 독서활동 추천도서』는 적합한 책을 추천하고, 또 해당 책과 관련된 [한국교육과정평가원 기출지문+‘국어의 기술’식 해설]을 제공한다. 국어시험 점수,
+ 학생부 독서활동이라는 두 마리 토끼를 한꺼번에 잡을 수 있기 바란다.
+『미래를 바꾼 아홉 가지 알고리즘』 소개
+오늘날 우리는 궁금한 것이 있으면 인터넷 검색엔진에 검색어를 입력하고, 필요한 물건이 있으면 인터넷 쇼핑몰에서 구입한다. 일상생활의 모든 활동을 컴퓨터로 하고 있다고 해도 과언이 아니다. 그렇다면 우리가 컴퓨터를 사용할 때, 컴퓨터 안에서는 무슨 일이 일어나고 있을까? 존 맥코믹은 이를 가능케 한 아홉 가지 위대한 알고리즘 이면의 기본적 아이디어를 다양한 비유와 예를 활용해 쉽고 정확하게 설명한다. 독자들은 이 아홉 가지 알고리즘에 관한 설명에서 검색엔진, 데이터 압축, 암호화, 오류 정정, 패턴 인식 등 우리가 매일 이용하는 컴퓨터 기술의 이론적 아이디어를 흥미진진하게 이해할 수 있다.
+기왕에 독서를 해야 한다면 시험에도 도움이 될 만한 책을 고르는 것이 중요하다. 그런데 학생 입장에서 어떤 책이 수능 국어영역과 학생부 독서활동 모두에 도움이 되는지 판단하기 어렵다. 『국어의 기술 외전 독서활동 추천도서』는 적합한 책을 추천하고, 또 해당 책과 관련된 [한국교육과정평가원 기출지문+‘국어의 기술’식 해설]을 제공한다. 국어시험 점수, 학생부 독서활동이라는 두 마리 토끼를 한꺼번에 잡을 수 있기 바란다.
+
+앤서니 브라운
+저자 앤서니 브라운
+1946년 영국에서 태어났다. LEEDS COLLEGE OF ART에서 그래픽 디자인을 공부한 뒤, 3년 동안 맨체스터 왕립 병원에서 의학 전문 화가로 일했다. LEEDS COLLEGE OF ART에서 파트 타임으로 학생들을 가르쳤고 15년 동안 GORDON FRASER 갤러리에서 연하장을 디자인했다. 
+아주 우연히 를 그리게 되면서 본격적인 그림책 작가가 되었다. 1983년 고릴라로 영국 도서관 협회에서 그 해 최고의 그림책에 주는 '케이트 그린어웨이' 상과 '커트 매쉴러' 상을 받았고 동물원으로 두 번째 '케이트 그린어웨이' 상을 받았다.
+독특하고 뛰어난 작품으로 세계적으로 높은 평가와 주목을 받고 있는 작가로 군더더기 하나 없는 완벽한 구성, 간결하면서도 유머가 넘치는 글
+</div>
+							  </div>	
+							  <!--.btn_area-->
+							  <div class="btn_area">							
+								<button type="button" class="btn_goback" id="">처음으로</button>	
+<!--							<button type="button" class="btn_save" id="">저장하기</button>	-->
+							  </div>	
+						</div>
+						<!--//.xdc_result_wrap-->	
+					</div>						
+					<!--//.xdc_box-->			
+					
+				</div>
+				<!-- .<!--.demobox_xdc -->
+				<!--.xdcmenu-->
+				<div class="demobox" id="xdcmenu">				
+					
+					<!--guide_box-->
+					<div class="guide_box">
+					
+					<div class="guide_group">
+						<div class="title">
+							XDC <small>(eXplainable Document Classifier)</small>		
+						</div>
+						<p class="sub_txt"> 마인즈랩의 XDC(문서 분류, eXplainable Document Classifier)는 내용과 분량에 관계 없이 어떤 문서든 즉시 분류한 뒤 분류 이유를 설명할 수 있는 혁신적인 인공지능 문서 분류 기술입니다.</p>
+
+						<span class="sub_title">
+							준비사항			
+						</span>
+						<p class="sub_txt">① Input: 본믄 (텍스트) </p>
+						<p class="sub_txt">② 아래 Model 중 택 1  </p>
+						<ul>
+							<li>뉴스 분류 (default)</li>					
+						</ul>
+						<span class="sub_title">
+							 실행 가이드			
+						</span>
+						<p class="sub_txt">① Request  </p>
+						<ul>
+							<li>Method : POST</li>
+							<li>URL : https://api.maum.ai/api/xdc/</li>										
+						</ul>
+						<p class="sub_txt">② Request 파라미터 설명 </p>
+						<table>
+							<tr>
+								<th>키</th>
+								<th>설명</th>
+								<th>type</th>
+							</tr>
+							<tr>
+								<td>ID</td>
+								<td>사용자의 고유 ID. 마인즈랩 담당자에게 이메일로 발급요청 </td>
+								<td>string</td>
+							</tr>
+							<tr>
+								<td>key</td>
+								<td>사용자의 고유 key. 마인즈랩 담당자에게 이메일로 발급요청 </td>
+								<td>string</td>
+							</tr>
+							<tr>
+								<td>cmd</td>
+								<td>어떤 API 를 사용할지에 대한 간단한 키워드 (runXDC) </td>
+								<td>string</td>
+							</tr>
+							<tr>
+								<td>text</td>
+								<td>분류를 수행할 본문 (텍스트) </td>
+								<td>string</td>
+							</tr>	
+						</table>
+						<p class="sub_txt">③ Request 예제 </p>
+						<div class="code_box">
+curl -X POST \<br>
+<span>https://api.maum.ai/api/xdc/ \</span><br>
+<span>-H 'content-type: multipart/form-data; </span><br>
+boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \<br>
+<span>-F ID=(*ID 요청 필요) \</span><br>
+<span>-F key=(*key 요청 필요) \</span><br>
+<span>-F cmd=runXDC \</span><br>
+<span>-F 'text=문재인 대통령이  자영업자 지원 대책 마련을 지시했다.</span><br>
+자영업자 지원 대책을 통해 민생 경제 살리기에 나서겠다는 의도다. '<br>
+						</div>
+
+						<p class="sub_txt">④ Response 파라미터 설명 </p>
+						<span class="table_tit">Response</span>
+						<table>
+							<tr>
+								<th>키</th>
+								<th>설명</th>
+								<th>타입</th>
+							</tr>
+							<tr>
+								<td>data</td>
+								<td>API 결과 data (json format) </td>
+								<td>object</td>
+							</tr>
+							<tr>
+								<td>status</td>
+								<td>API 동작여부 (Success / Fail)</td>
+								<td>string</td>
+							</tr>
+						</table>	
+						<span class="table_tit">data: API 결과</span>
+						<table>
+							<tr>
+								<th>키</th>
+								<th>설명</th>
+								<th>타입</th>
+							</tr>
+							<tr>
+								<td>sent attns</td>
+								<td>문장별 분석 결과 (json list format)</td>
+								<td>list</td>
+							</tr>
+							<tr>
+								<td>cls</td>
+								<td>분류 결과 (json list format)</td>
+								<td>list</td>
+							</tr>
+							<tr>
+								<td>top_word_indices_lists</td>
+								<td>문장 내 “Top word” list<br>
+* Top word: 분류 결과에 영향을 크게 미친 단어</td>
+								<td>list</td>
+							</tr>
+							<tr>
+								<td>sentences</td>
+								<td>본문 원문 문장의 나열</td>
+								<td>list</td>
+							</tr>
+							<tr>
+								<td>top_sent_indics</td>
+								<td>본문 내 “Top sentence”  list <br>
+* Top sentence: 분류 결과에 영향을 크게 미친 문장</td>
+								<td>list</td>
+							</tr>
+						</table>	
+						<span class="table_tit">sent attns: 문장별 분석 결과</span>
+						<table>
+							<tr>
+								<th>키</th>
+								<th>설명</th>
+								<th>타입</th>
+							</tr>
+							<tr>
+								<td>weight</td>
+								<td>문장의 영향도 (0~1)</td>
+								<td>number</td>
+							</tr>
+							<tr>
+								<td>word attns</td>
+								<td>단어별 분석 결과 (json list format)</td>
+								<td>list</td>
+							</tr>
+						</table>	
+						<span class="table_tit">word attns: 단어별 분석 결과</span>
+						<table>
+							<tr>
+								<th>키</th>
+								<th>설명</th>
+								<th>타입</th>
+							</tr>
+							<tr>
+								<td>end</td>
+								<td>단어의 끝(n)</td>
+								<td>int</td>
+							</tr>
+							<tr>
+								<td>start</td>
+								<td>단어의 시작(n)</td>
+								<td>int</td>
+							</tr>
+							<tr>
+								<td>weight</td>
+								<td>단어의 영향도 (0~1)</td>
+								<td>number</td>
+							</tr>
+						</table>	
+						<span class="table_tit">cls: 분류 결과</span>
+						<table>
+							<tr>
+								<th>키</th>
+								<th>설명</th>
+								<th>타입</th>
+							</tr>	
+							<tr>
+								<td>label</td>
+								<td>분류 결과의 라벨 (확률 높은 순대로 배열)</td>
+								<td>string</td>
+							</tr>
+							<tr>
+								<td>probability</td>
+								<td>분류 결과 라벨에 대한 확률(0~1)</td>
+								<td>number</td>
+							</tr>
+						</table>
+						<p class="sub_txt">⑤ Response 예제 </p>
+						<div class="code_box">
+{ <br>
+<span>"data": { </span><br>
+<span class="twoD">"sent_attns": &#91; </span><br>
+<span class="thirD">{</span><br>
+<span class="fourD">"weight": 0.6107006072998047, </span><br>
+<span class="fourD">"word_attns": &#91;</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 3, </span><br>
+<span class="sixD">"start": 0,</span> <br>
+<span class="sixD">"weight": 0.4624311327934265</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 3, </span><br>
+<span class="sixD">"start": 4,</span><br>
+<span class="sixD">"weight": 0.4628150165081024</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 8,</span><br>
+<span class="sixD">"start": 7,</span><br>
+<span class="sixD">"weight": 0.00015031141811050475</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 11,</span><br>
+<span class="sixD">"start": 9,</span><br>
+<span class="sixD">"weight": 0.05583297088742256</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 12,</span><br>
+<span class="sixD">"start": 11,</span><br>
+<span class="sixD">"weight": 0.0008690473041497171</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 13,</span><br>
+<span class="sixD">"start": 12,</span><br>
+<span class="sixD">"weight": 0.00045832101022824645</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 16,</span><br>
+<span class="sixD">"start": 14,</span><br>
+<span class="sixD">"weight": 0.0016573637258261442</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 19,</span><br>
+<span class="sixD">"start": 17,</span><br>
+<span class="sixD">"weight": 0.012514691799879074</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 22,</span><br>
+<span class="sixD">"start": 20,</span><br>
+<span class="sixD">"weight": 0.0024623603094369173</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 23,</span><br>
+<span class="sixD">"start": 22,</span><br>
+<span class="sixD">"weight": 0.00009186907118419185</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 26,</span><br>
+<span class="sixD">"start": 24,</span><br>
+<span class="sixD">"weight": 0.00032167034805752337</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 27,</span><br>
+<span class="sixD">"start": 26,</span><br>
+<span class="sixD">"weight": 0.000014860834198771045</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 29,</span><br>
+<span class="sixD">"start": 26,</span><br>
+<span class="sixD">"weight": 0.00015158542373683304</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 28,</span><br>
+<span class="sixD">"start": 27,</span><br>
+<span class="sixD">"weight": 0.00011515152436913922</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 29,</span><br>
+<span class="sixD">"start": 28,</span><br>
+<span class="sixD">"weight": 0.00011353873560437933</span><br>
+<span class="fivD">}</span><br>
+<span class="fourD">]</span><br>
+<span class="thirD">},</span><br>
+<span class="thirD">{</span><br>
+<span class="fourD">"weight": 0.3892994225025177,</span><br>
+<span class="fourD">"word_attns": [</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 2,</span><br>
+<span class="sixD">"start": 0,</span><br>
+<span class="sixD">"weight": 0.46636006236076355</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 3,</span><br>
+<span class="sixD">"start": 2,</span><br>
+<span class="sixD">"weight": 0.005901840515434742</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 4,</span><br>
+<span class="sixD">"start": 3,</span><br>
+<span class="sixD">"weight": 0.002670261077582836</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 7,</span><br>
+<span class="sixD">"start": 5,</span><br>
+<span class="sixD">"weight": 0.008556583896279335</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 10,</span><br>
+<span class="sixD">"start": 8,</span><br>
+<span class="sixD">"weight": 0.059857748448848724</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 11,</span><br>
+<span class="sixD">"start": 10,</span><br>
+<span class="sixD">"weight": 0.000501320231705904</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 14,</span><br>
+<span class="sixD">"start": 12,</span><br>
+<span class="sixD">"weight": 0.00013077868788968772</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 14,</span><br>
+<span class="sixD">"start": 12,</span><br>
+<span class="sixD">"weight": 0.00152284512296319</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 17,</span><br>
+<span class="sixD">"start": 15,</span><br>
+<span class="sixD">"weight": 0.2578815519809723</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 20,</span><br>
+<span class="sixD">"start": 18,</span><br>
+<span class="sixD">"weight": 0.1869463324546814</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 23,</span><br>
+<span class="sixD">"start": 21,</span><br>
+<span class="sixD">"weight": 0.0004695350071415305</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 24,</span><br>
+<span class="sixD">"start": 23,</span><br>
+<span class="sixD">"weight": 0.0017966240411624312</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 25,</span><br>
+<span class="sixD">"start": 24,</span><br>
+<span class="sixD">"weight": 0.0002747586986515671</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 28,</span><br>
+<span class="sixD">"start": 26,</span><br>
+<span class="sixD">"weight": 0.00011514957441249862</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 29,</span><br>
+<span class="sixD">"start": 28,</span><br>
+<span class="sixD">"weight": 0.00037896056892350316</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 31,</span><br>
+<span class="sixD">"start": 29,</span><br>
+<span class="sixD">"weight": 0.0016354455146938562</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 34,</span><br>
+<span class="sixD">"start": 32,</span><br>
+<span class="sixD">"weight": 0.0028608269058167934</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 34,</span><br>
+<span class="sixD">"start": 34,</span><br>
+<span class="sixD">"weight": 0.0008212759857997298</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 35,</span><br>
+<span class="sixD">"start": 34,</span><br>
+<span class="sixD">"weight": 0.0006593979196622968</span><br>
+<span class="fivD">},</span><br>
+<span class="fivD">{</span><br>
+<span class="sixD">"end": 36,</span><br>
+<span class="sixD">"start": 35,</span><br>
+<span class="sixD">"weight": 0.0006588271935470402</span><br>
+<span class="fivD">}</span><br>
+<span class="fourD">]</span><br>
+<span class="thirD">}</span><br>
+<span class="twoD">],</span><br>
+<span class="twoD">"cls": [</span><br>
+<span class="thirD">{</span><br>
+<span class="fourD">"label": "정치",</span><br>
+<span class="fourD">"probability": 0.9963884353637695</span><br>
+<span class="thirD">},</span><br>
+<span class="thirD">{</span><br>
+<span class="fourD">"label": "사회기타",</span><br>
+<span class="fourD">"probability": 0.0009989844402298331</span><br>
+<span class="thirD">},</span><br>
+<span class="thirD">{</span><br>
+<span class="fourD">"label": "교육",</span><br>
+<span class="fourD">"probability": 0.0009375850204378366</span><br>
+<span class="thirD">}</span><br>
+<span class="twoD">],</span><br>
+<span class="twoD">"top_word_indices_lists": [</span><br>
+<span class="thirD">[</span><br>
+<span class="fourD">1,</span><br>
+<span class="fourD">0,</span><br>
+<span class="fourD">3</span><br>
+<span class="thirD">],</span><br>
+<span class="thirD">[</span><br>
+<span class="fourD">0,</span><br>
+<span class="fourD">8,</span><br>
+<span class="fourD">9</span><br>
+<span class="thirD">]</span><br>
+<span class="twoD">],</span><br>
+<span class="twoD">"sentences": [</span><br>
+<span class="fourD">"문재인 대통령이  자영업자 지원 대책 마련을 지시했다.",</span><br>
+<span class="fourD">"자영업자 지원 대책을 통해 민생 경제 살리기에 나서겠다는 의도다."</span><br>
+<span class="twoD">],</span><br>
+<span class="twoD">"top_sent_indices": [</span><br>
+<span class="fourD">0,</span><br>
+<span class="fourD">1</span><br>
+<span class="twoD">]</span><br>
+<span>},</span><br>
+<span>"status": "Success"</span><br>
+}<br>
+
+						</div>
+					</div>
+				</div>
+				<!--//.guide_box-->			
+				</div>
+				<!--//xdcmenu-->
+				<!--.xdcexample-->
+				<div class="demobox" id="xdcexample">	
+					<div class="coming_txt">
+						<h5>준비중입니다</h5>
+					</div>
+				</div>
+				
+				
+			</div>
+			<!-- #footer -->
+			<div id="footer">
+				<div class="lot_c">
+					<div class="cyrt"><span>MINDsLab &copy; 2019</span></div>
+				</div>
+			</div>
+			<!-- //#footer -->
+		</div>
+		<!-- //.contents -->
+	</div>
+	<!-- //#container -->
+</div>
+<!-- //wrap -->
+
+<script type="text/javascript">
+$(window).load(function() {
+	$('.page_loading').addClass('pageldg_hide').delay(300).queue(function() {
+		$(this).remove();
+	});
+});
+</script>
+<script type="text/javascript">
+//twodepth	
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var sublist = this.nextElementSibling;
+    if (sublist.style.maxHeight){
+      sublist.style.maxHeight = null;
+	  	
+    } else {
+      sublist.style.maxHeight = sublist.scrollHeight + "px";
+		$('.dropdwn').removeClass('.active');
+    } 
+  });
+}
+	
+//	
+//threedepth	
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+		$('.twodepth ').each(function(){
+			if($(this).hasClass('active')){
+				$(this).trigger( "click" );
+			}
+		});	
+		
+		$("#flip").click(function(){
+			if($(this).hasClass('active')){
+				$(this).removeClass('active');	
+			}else{
+				$(this).addClass('active');
+			}
+			
+			$(".panel").slideToggle("fast");
+			var sublist = this.parentNode;
+			sublist.style.maxHeight =  sublist.scrollHeight + $(".twodepthLst").prop('scrollHeight')+ "px";	
+			
+		});		
+	});	
+});	
+	
+	
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){		
+		$('.snb ul li.collapsible').each(function(){
+			if($(this).hasClass('active')){
+				$(this).trigger( "click" );				
+			}
+		});
+		//XDC
+		
+		$('.xdc_result_wrap').hide();
+		
+		$('.btn_article').on('click', function () {
+			$('.demobox_xdc .modal').fadeIn(200);
+			$("#loading_gif").hide();	
+		});
+		
+		$('#insert_selected_content').on('click', function () {
+			$('.demobox_xdc .modal').fadeOut(300);	
+			$('body').css({
+				'overflow': '',
+			});
+			$('.xdc_box .btn_area button').removeClass('disable');
+			$('.xdc_box .btn_area button').addClass('start_btn');
+			$('.progress li:nth-child(2)').addClass('active'); 	
+		});	
+		
+		$('.xdc_box .text_area textarea').on('input keyup paste', function() {			
+			var txtValLth = $(this).val().length;			
+			if ( txtValLth > 0) {
+				$('.progress li:nth-child(2)').addClass('active'); 		
+				$('.xdc_box .btn_area button').removeClass('disable');
+				$('.xdc_box .btn_area button').removeAttr('disabled');
+				$('.xdc_box .btn_area .disBox').remove();
+			} else {
+				$('.progress li:nth-child(2)').removeClass('active');
+				$('.xdc_box .btn_area button').attr('disabled');
+				$('.xdc_box .btn_area').append('<span class="disBox"></span>');
+			}
+		});
+
+		
+		// product layer popup     
+		$('.close, .lyr_bg').on('click', function () {
+			$('.demobox_xdc .modal').fadeOut(300);			
+			$('body').css({
+				'overflow': '',
+			});
+		});
+		
+		
+		
+//		step 2
+		
+		$('#classify_content').on('click', function () {
+			$(this).parent().parent().hide();
+			$('.xdc_result_wrap').show();
+			$('.progress li:nth-child(3)').addClass('active'); 	
+		});	
+		
+		
+		$('.btn_goback').on('click', function () {
+			$('.xdc_result_wrap').hide();
+			$('.xdc_wrap').show(); 	
+			$('.progress li:nth-child(1)').addClass('active'); 	
+			$('.progress li:nth-child(2)').removeClass('active');
+			$('.progress li:nth-child(3)').removeClass('active');
+		});	
+		
+		//XDC
+	});
+});
+
+//API 탭  	
+function openTap(evt, menu) {
+  var i, demobox, tablinks;
+  demobox = document.getElementsByClassName("demobox");
+  for (i = 0; i < demobox.length; i++) {
+    demobox[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(menu).style.display = "block";
+  evt.currentTarget.className += " active";
+}	
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();	
+
+</script>
+
+
+
+</body>
+</html>
+
+

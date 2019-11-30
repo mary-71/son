@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta http-equiv="Expires" content="-1"> <!--캐시된 페이지가 만료되어 삭제되는 시간을 정의합니다. 특별한 경우가 아니면 -1로 설정합니다. -->
+<meta http-equiv="Pragma" content="no-cache"> <!--  페이지 로드시마다 페이지를 캐싱하지 않습니다. (HTTP 1.0) -->
+<meta http-equiv="Cache-Control" content="no-cache"> <!-- 페이지 로드시마다 페이지를 캐싱하지 않습니다. (HTTP 1.1)-->	
+	
+<!-- icon_favicon -->
+<link rel="apple-touch-icon-precomposed" href="resources/images/ico_favicon_64x64.png" />
+<link rel="shortcut icon" type="image/x-icon" href="resources/images/ico_favicon_64x64.ico"/>
+<title>maum.ai platform</title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/font.css" />	
+<link rel="stylesheet" type="text/css" href="resources/css/common.css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">	
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">	
+<!-- //resources -->
+
+<script type="text/javascript" src="resources/js/jquery-1.11.0.min.js"></script>	
+<script type="text/javascript" src="resources/js/common.js"></script>	
+
+</head>
+
+<body>
+
+<!-- .page loading -->
+<div id="page_ldWrap" class="page_loading">
+	<div class="loading_itemBox">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!-- //.page loading -->
+
+<!-- .lyr_event -->
+<div class="lyr_event">
+	<div class="lyr_bg"></div>
+	<!-- .productWrap -->
+	<div class="lyrWrap">				
+		<button class="btn_lyrWrap_close" type="button">제품 리스트 닫기</button>				
+		<!-- .lyr_bd -->
+		<div class="lyr_bd">
+			<h4></h4>	
+			<p class="notice">오픈 기념 이벤트!</p>
+			<p class="notice_desc">여러분의 피드백은 더 나은 서비스를 <br>만드는 데 큰 도움이 됩니다:) <br>
+간단한 설문 조사에 참여해주시면 <br> 30,000포인트를 추가로 제공해드리니,<br> 많은 참여를 부탁드립니다. </p>
+			<a href="" class="btn_cancel">취소</a>
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLScy1Vkd9WOIIoaMsHQ3w2dW71DPjUbi9BBasd1sVq5RCgcI1Q/viewform" class="btn_close">참여</a>
+
+		</div>
+		<!-- //.lyr_bd -->
+
+	</div>
+	<!-- //.productWrap -->   
+</div>
+<!-- //.lyr_event -->	
+
+	
+<!-- wrap -->
+<div id="wrap"> 
+	<!-- #header -->
+	<div id="header">
+        <h1><a target="_self" href="welcome.html"><img src="resources/images/logo.png" alt="maum.ai"></a></h1>    
+		<!-- .sta -->
+		<div class="sta">
+			
+			<!-- .titArea -->
+			<div class="titArea">               
+                <div class="path">
+                    <span><img src="resources/images/ico_path_home_bk.png" alt="HOME"></span>
+                    <span class="pop_term">HOME</span>
+<!--                    <span>Uploading</span>-->
+                </div>
+            </div>
+            <!-- //.titArea -->	
+			
+			<!-- .etcmenu -->
+			<div class="etcmenu">
+<!--			<span><i>P</i><em>1,000</em> point</span>-->
+				<div class="userBox">
+					<dl>
+						<dt class="ico_user">User</dt>
+						<dd>
+							<a target="_self" href="#none">admin@console.com</a>
+						</dd>
+						<ul class="lst">
+							<li class="ico_profile"><a target="_self" href="profile.html">PROFILE</a></li>
+							<li class="ico_account"><a target="_self" href="apiaccount.html">API ACCOUNT</a></li>
+							<li class="ico_payment"><a target="_self" href="paymentinfo.html">PAYMENT</a></li>
+							<li class="ico_logout"><a target="_self" href="#none">LOGOUT</a></li>
+						</ul>
+					</dl>
+				</div>
+			</div>
+			<!-- //.etcmenu -->
+		</div>
+		<!-- //.sta -->
+	</div>
+	<!-- //#header -->
+	
+	<!-- .snb 한글 -->
+	<div class="snb">		
+		<ul>
+			<li class="collapsible list1"><a href="https://dev-api.maum.ai/"><i class="fas fa-home"></i>HOME</a></li>	
+			<li class="list2 active"><i class="fas fa-shapes"></i>AI Services</li>					
+			<li class="list2_sub">
+				<a class="dropdwn twodepth" id="flip">텍스트를 음성으로</a>
+				<ul class="twodepthLst panel">
+					<li><a href="tts.html">AI Voice 사용하기</a></li>
+					<li><a href="">내 목소리로 사용하기</a></li>
+				</ul>	
+				<a class="twodepth" href="stt.html">음성을 텍스트로</a>
+			</li>
+			<li class="collapsible list3 dropdwn"><i class="fas fa-laptop-code"></i>API Services</li>					
+			<li class="sublist list3_sub">
+				<a class="twodepth" href="tts.html">음성 생성</a>	
+				<a class="twodepth" href="stt.html">음성 인식</a>
+				<a class="twodepth" href="">텍스트 분류</a>	
+				<a class="twodepth" href="">AI 독해</a>
+				<a class="twodepth" href="">패턴 분류</a>	
+				<a class="twodepth" href="">자연어 이해</a>
+				<a class="twodepth" href="">화폐 · 고지서 인식</a>	
+			</li>		
+			<li class="collapsible list4 dropdwn"><i class="fas fa-grip-horizontal"></i>Application</li>					
+			<li class="sublist list4_sub">
+				<a class="twodepth" href="">maum VOC</a>	
+				<a class="twodepth" href="">mAI English</a>
+				<a class="twodepth" href="">날씨봇 · 위키봇</a>
+			</li>		
+			<li class="collapsible list5 dropdwn"><i class="fas fa-headphones-alt"></i>고객지원</li>					
+			<li class="sublist list5_sub">
+				<a class="twodepth" href="">가격정책</a>
+				<a class="twodepth" href="">FAQ</a>
+				<a class="twodepth" href="">문의 내역</a>	
+				<a class="twodepth" href="">Contact Us</a>	
+			</li>				
+		</ul>
+	</div>
+	<!-- //.snb 한글 -->
+	<!-- aside -->
+	<div class="aside" style="display:none;">
+		<!-- .aside_top -->
+		<div class="aside_top">
+			<h1><a href="index.html"><img src="resources/images/logo_m.png" alt="maum API"></a></h1>
+		</div>
+		<!-- //.aside_top -->
+		<!-- .aside_mid -->
+		<div class="aside_mid">
+			<ul class="m_etcMenu">
+				<li class="lang">
+					<p class="lang_select"><img src="resources/images/ico_lang_kr.png" alt="한국어"><em>한국어</em></p>
+					<ul class="lst">
+						<li><a href="../en/index.html" target="_self"><img src="resources/images/ico_lang_us.png" alt="English"><em>English</em></a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="m_nav">
+				<li>
+					<h2><a href="#none">HOME</a></h2>
+				</li>
+				<li>
+					<h2><a href="#none">AI Services</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none" class="depth3">택스트를 음성으로</a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="tts.html" target="_self">AI Voice 사용하기</a></li>
+								<li><a href="tts_record.html" target="_self">내 목소리로 사용하기</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none">음성을 텍스트로</a></h3>							
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">API Services</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none">음성 생성</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">음성 인식</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">텍스트 분류</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">AI 독해</a></h3>						
+						</li>
+						<li>
+							<h3><a href="#none">패턴 분류</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">자연어 이해</a></h3>						
+						</li>
+						<li>
+							<h3><a href="#none">화폐 · 고지서 인식</a></h3>							
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">Application</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none">maum VOC</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">mAI English</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">날씨봇 · 위키봇</a></h3>							
+						</li>						
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">고객지원</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none">가격정책</a></h3>							
+						</li>
+						 
+						<li>
+							<h3><a href="#none">FAQ</a></h3>							
+						</li>	
+						<li>
+							<h3><a href="#none">문의 내역</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">Contact Us</a></h3>							
+						</li>
+					</ul>
+				</li>
+			</ul>  
+		</div>
+		<!-- //.aside_mid -->
+		<!-- .aside_btm -->
+<!--
+		<div class="aside_btm">
+			<ul>
+				<li class="btn_mail"><a href="mailto:hello@mindslab.ai">hello@mindslab.ai</a></li>
+				<li class="btn_tel"><a href="tel:+82316254340">031. 625. 4340</a></li>
+			</ul>
+		</div>
+-->
+		<!-- //.aside_btm -->
+	</div>
+	<div class="bg_aside"></div> 
+	<a class="btn_header_ham" href="#none"><span class="hamburger_icon"></span></a>  
+	<!-- //aside -->  	
+	<!-- #container -->
+	<div id="container">
+		
+        
+		<!-- .contents -->
+		<div class="contents">
+        	
+            <div class="content">
+				<h1><b>Welcome!</b> maum.ai</h1>
+				
+				<div class="intro">
+					<div class="fl_video">
+						<a class="btn_movLayer" href="https://www.youtube.com/watch?v=eIZ95zq4DQ4"> </a>
+					</div>
+					<div class="fr_txt">
+						<p class="main_tit">누구의 목소리나 실제처럼 자연스럽게<br><span>음성 서비스</span> <b>새로운 비즈니스 경험</b></p>
+						<p>남녀 노소 누구의 목소리라도, 최소 20분 이내의 짧은 시간안에 실제 인물의 목소리와 구분이 안 갈 정도로 우수한 품질의 AI Voice를 만들어 보세요.</p>
+						<a href="tts.html" class="btn"><b>AI Voice</b> 바로 만들어볼게요</a>
+						<a href="contactus.html" class="btn colorAdd">제가 가진 <b>음성 파일</b>로 만들어볼게요</a>
+					</div>
+				</div>				
+				
+				<p class="wel_subTit">내 비즈니스에 <span>AI Voice</span> <b>결합하기</b></p>
+				<a href="tts_learning.html" class="btn_consol">20분만에 나만의 AI 음성 만들기</a>
+				<ul class="ul_lst">
+					<li>
+						<span class="happy">AI 음성봇 <br>해피콜</span>
+						<p>AI Voice와 챗봇을 결합하면 품질 확인, 설문조사, 고객 만족도 조사 등 반복적 성격의 아웃바운드 콜을 자동화하는 해피콜 서비스가 탄생합니다.</p>
+					</li>
+					<li>	
+						<span class="service">자동 안내 <br>서비스</span>
+						<p>AI Voice를 사내 방송이나 매장 등에서 활용하면, 다양한 성격의 고객 안내 메시지를 보다 효율적으로 자연스럽게 전달할 수 있어요.</p>
+					</li>
+					<li>
+						<span class="youtube">유튜브<br> 크리에이터</span>
+						<p>유튜브나 브이로그 등 영상 콘텐츠를 제작하는 크리에이터 이신가요? AI Voice를 통해 영상에 나레이션을 좀더 빠르고 간편하게 넣어 보세요.</p>
+					</li>
+					<li>
+						<span class="game">게임 <br>사운드 효과</span>
+						<p>게임에 등장하는 캐릭터 의 음성, 목소리 톤도 좀 더 자연 스러워지고 감정까지 살린 AI Voice로 다양한 사운드 효과를 실감나게 구현할 수 있어요.</p>
+					</li>
+					<li>
+						<span class="edu">아동 교육 <br>콘텐츠</span>
+						<p>우리 아이들을 위한 교육 콘텐츠, AI Voice를 통해 아이들이 좋아하는 캐릭터의 목소리를 입혀보세요. 집중도가 향상 됩니다.</p>
+					</li>
+					<li>
+						<span class="news">뉴스 <br>브리핑</span>
+						<p>고객이 좋아하는 목소리로 내 관심사만 쏙쏙 고른 뉴스 브리핑 서비스, AI Voice와 AI 뉴스 분류 엔진으로 지금 바로 구현할 수 있어요.</p>
+					</li>
+				</ul>
+					
+			</div>
+			
+			<!-- #footer -->
+			<div id="footer">
+				<div class="lot_c">
+					<div class="cyrt"><span>MINDsLab &copy; 2019</span></div>
+				</div>
+			</div>
+			<!-- //#footer -->
+		</div>
+		<!-- //.contents -->
+		
+	</div>
+	<!-- //#container -->
+	
+</div>
+<!-- //wrap -->
+
+<script type="text/javascript">   
+$(window).load(function() {    
+	$('.page_loading').addClass('pageldg_hide').delay(300).queue(function() { 
+		$(this).remove(); 
+	});
+}); 
+</script>
+<script type="text/javascript">
+jQuery(function(){
+	jQuery("a.btn_movLayer").movLayer();
+});	
+	
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+
+	});	
+});	
+	
+
+</script>
+	
+	
+<script type="text/javascript">	
+//twodepth	
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var sublist = this.nextElementSibling;
+    if (sublist.style.maxHeight){
+      sublist.style.maxHeight = null;
+	  	
+    } else {
+      sublist.style.maxHeight = sublist.scrollHeight + "px";
+		$('.dropdwn').removeClass('.active');
+    } 
+  });
+}
+	
+//	
+//threedepth	
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+		$('.snb ul li.collapsible').each(function(){
+			if($(this).hasClass('active')){
+				$(this).trigger( "click" );
+			}
+		});	
+		
+		$("#flip").click(function(){
+			if($(this).hasClass('active')){
+				$(this).removeClass('active');	
+			}else{
+				$(this).addClass('active');
+			}
+			
+			$(".panel").slideToggle("fast");
+			var sublist = this.parentNode;
+			sublist.style.maxHeight =  sublist.scrollHeight + $(".twodepthLst").prop('scrollHeight')+ "px";	
+			
+		});	
+		
+		
+	});	
+});
+
+
+</script>
+</body>
+</html>
+
+

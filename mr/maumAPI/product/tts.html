@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<!-- facebook Tag -->
+<meta property="fb:app_id"           content="APP_ID" />
+<!-- Open Graph Tag -->
+<meta property="og:title"            content=""/><!-- 웹 페이지 제목 -->
+<meta property="og:type"             content="website"/><!-- 웹 페이지 타입 -->
+<meta property="og:url"              content=""/><!-- 웹 페이지 URL-->
+<meta property="og:image"            content=""/><!-- 웹 페이지 대표 이미지 -->
+<meta property="og:description"      content=""/><!-- 웹 페이지 설명 -->
+<!-- twitter Tag -->
+<meta property="twitter:card"        content="summary"/>
+<meta property="twitter:url"         content=""/><!-- 웹 페이지 URL-->
+<meta property="twitter:image"       content=""/><!-- 웹 페이지 대표 이미지 -->
+<meta property="twitter:title"       content=""/><!-- 웹 페이지 제목 -->
+<meta property="twitter:description" content=""/><!-- 웹 페이지 설명 -->
+<!-- icon (Internet Explorer & Windows Phone) -->
+<meta name="msapplication-square70x70logo" content="70x70.png"><!-- smalltile -->
+<meta name="msapplication-square150x150logo" content="150x150.png"><!-- mediumtile -->
+<meta name="msapplication-wide310x150logo" content="310x150.png"><!-- widetile -->
+<!-- icon (Chrome & Opera) -->
+<link rel="icon" sizes="192x192" href="192x192.png"><!-- 아이콘의 크기는 48px을 기본으로 합니다. 48px, 96px, 144px, 192px로 늘어납니다.-->
+<!-- icon (Safari) -->
+<link rel="apple-touch-icon" sizes="76x76" href="76x76.png"/><!-- iPad -->
+<link rel="apple-touch-icon" sizes="120x120" href="120x120.png"/><!-- iPhone Retina -->
+<link rel="apple-touch-icon" sizes="152x152" href="152x152.png"/><!-- iPad Retina -->
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="64x64.ico"/><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->	
+	
+<title>TTS :: maum API</title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="../resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../resources/css/common.css" />
+<script type="text/javascript" src="../resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="../resources/js/common.js"></script>
+<!-- //resources -->
+</head>
+
+<body>
+<!-- loading -->
+<div id="pageldg">
+    <div class="ld_item">
+        <span></span>  
+        <span></span>
+    </div>
+</div>
+<!-- //loading -->
+<!-- #wrap -->
+<div id="wrap"> 
+	<!-- #header -->
+	<div id="header" >	
+		<!-- .sta -->
+		<div class="sta">
+			<h1><a href="../index.html"><img src="../resources/images/img_cmn_h1.png" alt="maum API"></a></h1>			
+			<div class="etcMenu">
+				<ul>
+					<!-- <li class="login"><span>로그인</span></li> -->
+					<li class="lang">
+						<p class="lang_select"><img src="../resources/images/ico_lang_kr.png" alt="한국어"><em>한국어</em></p>
+						<ul class="lst">
+							<li><a href="../../en/index.html" target="_self"><img src="../resources/images/ico_lang_us.png" alt="English"><em>English</em></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //.sta -->
+		<!-- .gnb -->
+		<div id="gnb" class="gnb">
+			<div class="gnbNavBox">
+				<ul class="gnbNav">
+					<li class="menu1depth">
+						<h2><a href="#none">제품</a></h2>
+						<div class="gnbItem">
+							<div class="lot_c">
+								<div class="itemBox">
+									<dl style="margin-bottom:55px">
+										<dt class="ico_voice"><span>음성</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="stt.html" target="_self">Speech To Text <em class="new">Demo</em></a></li>
+												<li><a href="tts.html" target="_self">Text To Speech <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="ico_visual"><span>시각</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="diarl.html" target="_self">Document Image Analysis, Recognition and Learning <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_int"><span>지능</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="ec.html" target="_self">Ensemble Classification</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_lang"><span>언어</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="nlu.html" target="_self">Natural Language Understanding</a></li>
+												<li><a href="dnn.html" target="_self">DNN Classification</a></li>
+												<li><a href="hmd.html" target="_self">Hierarchical Multiple Dictionary</a></li>
+												<li><a href="xdc.html" target="_self">eXplainable Document Classifier <em class="new">Demo</em></a></li>
+												<li><a href="if.html" target="_self">Intent Finder</a></li>
+												<li><a href="we.html" target="_self">Word Embedding</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_cvs"><span>대화</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="sds.html" target="_self">Spoken Dialogue System</a></li>
+												<li><a href="bqa.html" target="_self">Basic Question Answering <em class="new">Demo</em></a></li>
+												<li><a href="kbqa.html" target="_self">Knowledge Based Question Answering <em class="new">Demo</em></a></li>
+												<li><a href="irqa.html">Information Retrieval Question Answering <em class="new">Demo</em></a></li>
+												<li><a href="deepqa.html" target="_self">Deep Question Answering <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu1depth"><h2><a href="#none">개발 가이드</a></h2>
+						<div class="gnbItem">
+							<div class="lot_c">
+								<div class="itemBox">
+									<dl style="margin-bottom:55px">
+										<dt class="ico_voice"><span>음성</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../guide/stt.html" target="_self">Speech To Text </a></li>
+												<li><a href="../guide/tts.html" target="_self"><span>Text To Speech</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="ico_visual"><span>시각</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../guide/diarl.html" target="_self"><span>Document Image Analysis, Recognition and Learning</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_int"><span>지능</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../guide/ec.html" target="_self"><span>Ensemble Classification</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_lang"><span>언어</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../guide/nlu.html" target="_self"><span>Natural Language Understanding</span></a></li>
+												<li><a href="../guide/dnn.html" target="_self"><span>DNN Classification</span></a></li>
+												<li><a href="../guide/hmd.html" target="_self"><span>Hierarchical Multiple Dictionary</span></a></li>
+												<li><a href="../guide/xdc.html" target="_self"><span>eXplainable Document Classifier</span></a></li>
+												<li><a href="../guide/if.html" target="_self"><span>Intent Finder</span></a></li>
+												<li><a href="../guide/we.html" target="_self"><span>Word Embedding</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_cvs"><span>대화</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../guide/sds.html" target="_self"><span>Spoken Dialogue System</span></a></li>
+												<li><a href="../guide/bqa.html" target="_self"><span>Basic Question Answering</span></a></li>
+												<li><a href="../guide/kbqa.html" target="_self"><span>Knowledge Based Question Answering</span> </a></li>
+												<li><a href="../guide/irqa.html"><span>Information Retrieval Question Answering </span></a></li>
+												<li><a href="../guide/deepqa.html" target="_self"><span>Deep Question Answering</span> </a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu1depth"><h2><span>파트너</span></h2></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //.gnb -->
+		<div class="lnb">
+			<div class="lot_c">
+				<h2>TTS</h2>
+				<ul class="nav">
+					<li><a href="#stn_demo">Demo</a></li>
+					<li><a href="#stn_process">Process</a></li>
+					<li><a href="#stn_feature">Features</a></li>
+                    <li><a href="#stn_pricing">Pricing</a></li>
+					<li><a class="point" href="#api_contact">문의하기</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- //#header -->
+
+	<!-- aside -->
+	<div class="aside" style="display:none;">
+		<!-- .aside_top -->
+		<div class="aside_top">
+			<h1><a href="index.html"><img src="resources/images/logo_aside_h1.png" alt="maum API"></a></h1>
+		</div>
+		<!-- //.aside_top -->
+		<!-- .aside_mid -->
+		<div class="aside_mid">
+			<ul class="m_etcMenu">
+				<li class="lang">
+					<p class="lang_select"><img src="../resources/images/ico_lang_kr.png" alt="한국어"><em>한국어</em></p>
+					<ul class="lst">
+						<li><a href="../../en/index.html" target="_self"><img src="../resources/images/ico_lang_us.png" alt="English"><em>English</em></a></li>
+					</ul>
+				</li>
+			</ul>
+		
+			<ul class="m_nav">
+				<li>
+					<h2><span>개발 가이드</span></h2>
+				</li>
+				<li>
+					<h2><a href="#none">제품</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none"><span class="ico_voice">음성</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="stt.html" target="_self">Speech To Text <em class="new">Demo</em></a></li>
+								<li><a href="tts.html" target="_self">Text To Speech <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_visual">시각</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="diarl.html" target="_self">Document Image Analysis, Recognition and Learning <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_int">지능</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="ec.html" target="_self">Ensemble Classification</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_lang">언어</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="nlu.html" target="_self">Natural Language Processing</a></li>
+								<li><a href="dnn.html" target="_self">DNN Classification</a></li>
+								<li><a href="hmd.html" target="_self">Hierarchical Multiple Dictionary</a></li>
+								<li><a href="xdc.html" target="_self">eXplainable Document Classifier <em class="new">Demo</em></a></li>
+								<li><a href="if.html" target="_self">Intent Finder</a></li>
+								<li><a href="sc.html" target="_self">Simple Claasifier</a></li>
+								<li><a href="we.html" target="_self">Word Embedding</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_cvs">대화</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="sds.html" target="_self">Spoken Dialogue System</a></li>
+								<li><a href="bqa.html" target="_self">Basic Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="kbqa.html" target="_self">Knowledge Based Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="irqa.html" target="_self">Information Retrieval Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="deepqa.html" target="_self">Deep Question Answering <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><span>파트너</span></h2>
+				</li>
+				<li>
+					<h2><a href="#none">문의하기</a></h2>
+				</li>
+			</ul>  
+		</div>
+		<!-- //.aside_mid -->
+		<!-- .aside_btm -->
+		<div class="aside_btm">
+			<ul>
+				<li class="btn_mail"><a href="mailto:hello@mindslab.ai">hello@mindslab.ai</a></li>
+				<li class="btn_tel"><a href="tel:+82316254340">031. 625. 4340</a></li>
+			</ul>
+		</div>
+		<!-- //.aside_btm -->
+	</div>
+	<div class="bg_aside"></div> 
+	<a class="btn_header_ham" href="#none"><span class="hamburger_icon"></span></a>  
+	<!-- //aside -->        
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #contents -->
+		<div id="contents">	
+			<!-- .visualArea -->
+			<div class="visualArea">
+				<div class="lot_c">
+					<div class="visual_tit">
+						<h2>
+							<span class="slogan">실제처럼 자연스러운 음성 합성</span>
+							<span class="logotype">TTS</span>
+							<span class="fullName">Text to Speech</span>
+						</h2>
+						<p class="h2_txt">마인즈랩 음성합성(TTS) API 서비스는 매우 적은 음성 데이터만으로도 화자의 실제 특성을 살려 실제와 구분하기 힘들만큼 자연스러운 음성을 생성합니다.<br>최신 딥러닝 기술을 기반으로 제공되는 마인즈랩 TTS를 통해 콜센터는 물론 다양한 콘텐츠에 실제 사람과 같은 생생한 음성을 더할 수 있습니다.
+
+						</p>
+						<div class="link_box">
+							<div class="demo_link"><a href="../guide/stt.html">개발 가이드</a></div>
+							<div class="demo_link btn_buy"><a href="http://mindslab.cafe24.com/product/stt-speech-to-text/16/category/1/display/2/">구매 하기</a></div>
+						</div>
+					</div>
+				</div>			
+			</div>
+			<!-- //.visualArea -->
+
+			<!-- .시연영상 -->
+			<div id="stn_demo" class="stn demo_videoWrap">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<!-- .stn_tit -->
+					<div class="stn_tit02">
+						<h4>시연영상</h4>
+					</div>
+					<!-- //.stn_tit -->
+					<!-- .demo_videoBox -->
+					<div class="demo_videoBox">
+                    	<ul>
+                            <li>
+                            	<div class="videoBox">
+                                    <a class="btn_movLayer" href="https://youtu.be/D4gUb1TzVqc">
+                                        <div class="img_info">
+                                           <img src="../resources/images/img_videoArea_tts01.png" alt="데모영상">
+                                        </div> 
+                                        <strong class="ico_mov">동영상 보기</strong>
+                                    </a>
+                                    <p class="tit">음성합성(TTS) 기반 해피콜</p>
+                                </div>
+                            </li>
+                        </ul>
+					</div>
+					<!-- //.demo_videoBox -->
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.시연영상 -->
+			
+			<!-- .demo -->
+			<div id="" class="stn bg_gray03">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<!-- .stn_tit -->
+					<div class="stn_tit">
+						<h3 >Demo</h3>
+					</div>
+					<!-- //.stn_tit -->
+					<!-- .tabUi -->
+					<div class="tabUi demoTab">						
+						<!-- .tab_container -->
+						<div class="tab_container">
+							<!-- #demo01 -->
+							<div id="demo01" class="tab_contents">
+                            	<div class="demoBox">
+									<!-- .step01 -->
+									<div class="demo_intro">	
+										<div class="voice_tit">
+											<p>음성 선택</p>										
+										</div>
+										<div class="lang_lst">
+											<span>한국어</span>
+											<ul class="voice_lst"> 
+												<li class="radioBox">
+													<input type="radio" name="voice_radio" id="voice_radio01" class="ipt_radio">
+													<label for="voice_radio01">여성1</label>                                                
+												</li> 
+												<li class="radioBox">
+													<input type="radio" name="voice_radio" id="voice_radio02" class="ipt_radio">
+													<label for="voice_radio02">여성2</label>                                                
+												</li> 
+												<li class="radioBox">
+													<input type="radio" name="voice_radio" id="voice_radio03" class="ipt_radio">
+													<label for="voice_radio03">여성3</label>                                                
+												</li> 
+												<li class="radioBox">
+													<input type="radio" name="voice_radio" id="voice_radio04" class="ipt_radio">
+													<label for="voice_radio04">남성1</label>                                                
+												</li> 
+												<li class="radioBox">
+													<input type="radio" name="voice_radio" id="voice_radio05" class="ipt_radio">
+													<label for="voice_radio05">남성2</label>                                                
+												</li> 
+												<li class="radioBox">
+													<input type="radio" name="voice_radio" id="voice_radio06" class="ipt_radio">
+													<label for="voice_radio06">키즈</label>                                                
+												</li> 
+											</ul>
+										</div>
+											
+										<div class="lang_lst">
+											<span>영어</span>
+											<ul class="voice_lst"> 
+												<li class="radioBox">
+													<input type="radio" name="voice_radio" id="voice_radio07" class="ipt_radio">
+													<label for="voice_radio07">여성</label>                                                
+												</li> 
+												
+											</ul>
+										</div>
+										<div class="demo_infoTxt">
+                                        	<textarea class="textArea" rows="8" maxlength="150" placeholder="음성을 생성할 텍스트를 150자 이내로 입력하세요."></textarea>
+                                        </div>
+                                        
+										<div class="btnBox">											
+                                            <div class="holeBox">
+                                                <div class="hole">
+                                                    <i></i><i></i><i></i><i></i><i></i>
+                                                </div>
+                                            </div>
+                                            <button class="demoRecord disabled" disabled><span>음성생성</span></button>
+                                            <span class="disBox"></span>
+										</div>
+									</div>
+									<!-- //.step01 -->
+									<!-- .step02 -->
+									<div class="demo_recording">
+										<div class="demo_infoTxt">파일 변환 중입니다. <br>잠시만 기다려 주시기 바랍니다.</div>	
+										<!-- recordingBox -->
+										<div class="recordingBox">
+                                
+											<div class="recording1">
+												<i></i><i></i><i></i><i></i><i></i>
+												<i></i>
+											</div>
+										</div>
+										<!-- //recordingBox -->
+									</div>
+									<!-- //.step02 -->
+									
+									<!-- .step03 -->
+									<div class="demo_recording2">
+										<div class="demo_infoTxt">음원이 재생 되고 있습니다.</div>	
+										<!-- recording -->
+										<div class="recording">
+											<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+											<span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+										</div>
+										<!-- //recording -->
+										<div class="btnBox">											
+											<button class="demoReset btnbtn"><span>RESET</span></button>
+											<button class="demoReplay btnbtn"><span>REPLAY</span></button>
+										</div>
+										
+									</div>
+									<!-- //.step03 -->
+									<!-- .step04 -->
+									<div class="demo_result">
+                                        <div class="demo_player">
+                                            <audio src="../resources/audio/aekukka.mp3" preload="auto" controls></audio>
+                                        </div>
+										<div class="btnBox">
+											<button class="demoReset"><span>RESET</span></button>
+										</div>
+									</div>
+									<!-- //.step05 -->
+                                </div>
+							</div>
+							<!-- //#demo01 -->
+							<!-- #demo02 -->
+							<div id="demo02" class="tab_contents">
+                            	<div class="demoBox">
+									<!-- .step01 -->
+									<div class="demo_intro">	
+<!--
+                                        <ul class="voice_lst"> 
+                                            <li class="radioBox">
+                                            	<input type="radio" name="voice_radio" id="voice_radio01" class="ipt_radio">
+                                            	<label for="voice_radio01">여성 성우</label>                                                
+                                            </li> 
+                                            <li class="radioBox">
+                                            	<input type="radio" name="voice_radio" id="voice_radio02" class="ipt_radio">
+                                            	<label for="voice_radio02">여성 일반인</label>                                                
+                                            </li> 
+                                            <li class="radioBox">
+                                            	<input type="radio" name="voice_radio" id="voice_radio03" class="ipt_radio">
+                                            	<label for="voice_radio03">여성 상담사</label>                                                
+                                            </li> 
+                                            <li class="radioBox">
+                                            	<input type="radio" name="voice_radio" id="voice_radio04" class="ipt_radio">
+                                            	<label for="voice_radio04">뽀로로</label>                                                
+                                            </li> 
+                                        </ul>-->
+
+										<div class="demo_infoTxt">
+                                        	<textarea class="textArea" rows="8" maxlength="150" placeholder="음성을 생성할 텍스트를 150자 이내로 입력하세요."></textarea>
+                                        </div>
+                                        
+										<div class="btnBox">											
+                                            <div class="holeBox">
+                                                <div class="hole">
+                                                    <i></i><i></i><i></i><i></i><i></i>
+                                                </div>
+                                            </div>
+                                            <button class="demoRecord disabled" disabled><span>음성생성</span></button>
+                                            <span class="disBox"></span>
+										</div>
+									</div>
+									<!-- //.step01 -->
+									<!-- .step02 -->
+									<div class="step02">
+										<div class="demo_infoTxt">파일 변환 중입니다. <br>잠시만 기다려 주시기 바랍니다.</div>	
+										<!-- recordingBox -->
+										<div class="recordingBox">
+                                
+											<div class="recording1">
+												<i></i><i></i><i></i><i></i><i></i>
+												<i></i>
+											</div>
+										</div>
+										<!-- //recordingBox -->
+									</div>
+									<!-- //.step02 -->
+									<div class="demo_recording2">
+										<div class="demo_infoTxt">음원이 재생 되고 있습니다.</div>	
+										<!-- recording -->
+										<div class="recording">
+											<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+											<span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+										</div>
+										<!-- //recording -->
+										<div class="btnBox">											
+											<button class="demoReset btnbtn"><span>RESET</span></button>
+											<button class="demoRecord btnbtn"><span>REPLAY</span></button>
+										</div>
+									</div>
+									<!-- .step03 -->
+									<div class="demo_result">
+                                        <div class="demo_player">
+                                            <audio src="../resources/audio/aekukka.mp3" preload="auto" controls></audio>
+                                        </div>
+										<div class="btnBox">
+											<button class="demoReset"><span>RESET</span></button>
+										</div>
+									</div>
+									<!-- //.step03 -->
+                                </div>
+							</div>
+							<!-- //#demo02 -->
+						</div>
+						<!-- //.tab_container -->
+					</div>
+					<!-- //.tabUi -->
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.demo -->
+            
+			<!-- .stn -->
+			<div id="stn_process" class="stn processArea">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<div class="stn_tit">
+						<h3>Process</h3>
+					</div>
+					<div class="stn_cont">
+						<div class="processBox"><img src="../resources/images/img_processArea_tts.png" alt=""></div>
+					</div>
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.stn -->
+			
+			<!-- .stn -->
+			<div id="stn_feature" class="stn featureArea">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<div class="stn_tit">
+						<h3>feature</h3>
+					</div>
+					<div class="stn_cont">
+						<div class="dlBox">
+							<dl class="dltype01">
+								<dt>자연스러운 음성 생성</dt>
+								<dd>
+									<span>화자의 목소리나 말투, 발화 습관 등 화자의 특성을 살려 실제 사람과 거의 유사할 정도로 자연스러운 음성을 생성할 수 있습니다. </span>
+								</dd>
+							</dl>
+							<dl class="dltype01">
+								<dt>최신 딥러닝 알고리즘</dt>
+								<dd><span>적은 음성 데이터로도 음성 합성과 생성이 가능한 최신 딥러닝 알고리즘을 활용하고 있습니다. </span></dd>
+							</dl>
+							<dl class="dltype01">
+								<dt>AI 컨택센터에 활용</dt>
+								<dd><span>마인즈랩 TTS를 상담사를 대신하는 해피콜 서비스나 보컬로이드 등에 활용함으로써 AI 컨택센터를 구현하는 데 도움을 받을 수 있습니다. </span></dd>
+							</dl>
+							
+						</div>
+					</div>
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.stn -->
+
+			<!-- .pricing -->
+			<div id="stn_pricing" class="stn pricingArea">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<div class="stn_tit">
+						<h3>PRICING</h3>
+					</div>
+					<div class="stn_cont">
+						<div class="fl">
+							<p>클라우드형 (SaaS)</p>
+							<div class="saas_box">
+								<div class="img">
+									<img src="../resources/images/ico_productLst_tts.png" alt="TTS 아이콘">
+								</div>
+								<p>음성합성 (TTS)</p>
+                                <div class="dlBox02">
+                                    <dl>
+                                        <dt>월별 과금</dt>
+                                        <dd>
+                                        	<span><b>35</b>원</span>
+                                            <em><b>(공백 미포함)<br> / 초과 1분당</b></em>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="dlBox03">
+                                    <dl>
+                                        <dt>무료 사용량</dt>
+                                        <dd>1,500,000자 무료</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>커스텀 모델 적용시</dt>
+                                        <dd>협의</dd>
+                                    </dl>
+                                </div>
+							</div>
+						</div>
+						<div class="fr">
+							<p>구축형 (SW License) <span>단위: 원/VAT 별도</span></p>
+                            <table class="tbl_type01" summary="구분,구성요소,제품명,개수,소비자단가">
+                                <caption class="hide">구축형 소비자 단가</caption>
+                                <colgroup>
+                                    <col><col><col><col><col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">구성요소</th>
+                                        <th scope="col">제품명</th>
+                                        <th scope="col">개수</th>
+                                        <th scope="col">소비자 단가</th>
+                                    </tr>
+                                </thead>	
+                                <tbody>
+                                <tr>
+                                    <td scope="row" rowspan="2" class="first_col">
+                                        음성 엔진<br>
+                                        (Voice Engines)
+                                    </td>
+                                    <td rowspan="2"  class="sec_col">
+                                        TTS
+                                    </td>
+                                    <td class="p_name">TTS(Text To Speech) for KR</td>
+                                    <td>100</td>
+                                    <td class="c_price">800,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="p_name">TTS(Text To Speech) for EN</td>
+                                    <td>100</td>
+                                    <td class="c_price">800,000</td>
+                                </tr>
+                            </tbody>
+                            </table>
+						</div>
+                        <ul class="license_lst">	
+                            <li><span>최초 1,500,000자(공백 미포함) 무료</span>이며, 초과 1,000자 당 월별 과금됩니다.</li>
+                            <li>커스텀 모델 적용 시 비용은 협의 후 결정됩니다.</li>
+                        </ul> 
+					</div>
+				</div>
+				<!-- //.lot_c -->	
+			</div>
+			<!-- //.pricing -->
+
+			<!-- .stn -->
+			<div id="api_contact" class="api_contact">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<!-- .stn_cont -->
+					<div class="stn_cont">
+						<!-- .contactBox -->
+						<div class="contactBox">
+							<!-- .leftBox -->
+							<div class="leftBox">
+								<div class="stn_tit">
+									<h3>Contact Us</h3>
+								</div>
+								<div class="leftTxtBox">
+									<p>마인즈랩과 마인즈랩의 API 서비스에 대한 문의가 있으시다면 여기에 남겨주세요.<br>페이스북과 링크드인을 팔로우하시면 새 소식을 더 빠르게 접하실 수 있습니다.</p>
+									<ul class="contact_lst">
+										<li class="btn_tel"><a href="tel:+82316254340">+82 31 625 4340</a></li>
+										<li class="btn_mail"><a href="mailto:hello@mindslab.ai">hello@mindslab.ai</a></li>
+										<li class="btn_web"><a href="http://mindslab.ai" target="_blank">마인즈랩 홈페이지 mindslab.ai</a></li>
+										<ul class="social_lst">
+											<li class="btn_fb"><a href="https://www.facebook.com/mindsinsight/?fref=ts" target="_blank">Facebook</a></li>
+											<li class="btn_ld"><a href="https://www.linkedin.com/company/mindslabai" target="_blank">Linkedin</a></li>
+										</ul>
+									</ul>
+								</div>
+							</div>
+							<!-- //.leftBox -->
+							<!-- .rightBox -->
+							<div class="rightBox">
+								<form action="contact_form">
+									<fieldset>
+										<legend>문의하기</legend>
+										<div class="contact">
+											<div class="cl_b">
+											<div class="fl">
+												<div class="txtfield">
+													<select id="contactType" class="select">
+														<option id="ctt_type01" value="문의유형">문의유형</option>
+														<option id="ctt_type02" value="유료사용신청">유료사용신청</option>
+														<option id="ctt_type03" value="마인즈랩 STT 문의">마인즈랩 STT 문의</option>
+														<option id="ctt_type04" value="사용자 피드백">사용자 피드백</option>
+													</select>
+												</div>
+											</div>
+											<div class="fr">
+												<div class="txtfield">
+													<input type="text" name="fm_name" id="fm_name" class="input_txt" placeholder="이름 *">
+												</div>
+											</div>
+											</div>
+											<div class="txtfield">
+												<input type="text" name="fm_email" id="fm_email"  class="input_txt" placeholder="이메일 *">
+											</div>
+											<div class="txtfield">
+												<input type="text" name="fm_tel" id="fm_tel"  class="input_txt" placeholder="전화번호">
+											</div>
+											<div class="txtfield">
+												<textarea name="fm_txt" id="fm_txt" class="textArea" rows="4" placeholder="문의내용 *"></textarea>
+											</div>
+											<ul class="btnBox">
+												<li><button class="btn_clor">문의하기</button></li>
+												<!-- <li><button>개발자 가이드</button></li> -->
+											</ul>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<!-- //.rightBox -->
+						</div>
+						<!-- //.contactBox -->
+					</div>
+					<!-- //.stn_cont -->
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.stn -->
+			<p class="btn_goTop"><button>맨위로</button></p>
+		</div>
+		<!-- //#contents -->
+	</div>
+	<!-- //#container -->
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="lot_c">
+			<div class="f_logo"><img src="../resources/images/logo_footer.png" alt="마인즈랩"></div>
+			<div class="cyrt"><span>MINDsLab &copy; 2018 .</span> <span>주식회사 마인즈랩ㅣ대표 유태준ㅣ</span><span>사업자 등록번호 314-86-55446</span></div>
+		</div>
+	</div>
+	<!-- //#footer -->
+	
+</div>
+<!-- //#wrap -->
+<script type="text/javascript" src="../resources/js/player.js"></script>	
+<script type="text/javascript">   
+$(window).load(function() {    
+	$('#pageldg').addClass('pageldg_hide').delay(500).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<script type="text/javascript">
+jQuery(function(){
+	jQuery("a.btn_movLayer").movLayer();
+});
+</script> 
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){	
+		// Page CSS
+		$('#wrap').each(function(){				
+			$(this).addClass('type_tts');
+		});	
+		
+		// text count
+		$('.demoBox .textArea').on('input keyup paste', function() {			
+			var txtValLth = $(this).val().length;
+			
+			if ( txtValLth > 0) {
+				$('.demo_intro .btnBox .demoRecord').removeClass('disabled');	
+				$('.demo_intro .btnBox .demoRecord').removeAttr('disabled');
+				$('.demo_intro .btnBox .holeBox').show();
+				$('.demo_intro .btnBox .disBox').remove();
+			} else {
+				$('.demo_intro .btnBox .demoRecord').addClass('disabled');	
+				$('.demo_intro .btnBox .demoRecord').attr('disabled');
+				$('.demo_intro .btnBox .holeBox').hide();
+				$('.demo_intro .btnBox').append('<span class="disBox"></span>');
+			}
+		});
+		
+		// step01 > step02
+		$('.type_tts button.demoRecord').on('click', function(){	
+			$(this).parent().parent('.demo_intro').hide();
+			$(this).parent().parent().parent().children('.demo_recording').show();
+		});	
+		// step02> step03
+		$('.type_tts .recording1').on('click', function(){	
+			$(this).parent().parent('.demo_recording').hide();
+			$(this).parent().parent().parent().children('.demo_recording2').show();
+		});	
+		
+		// step03 > step04
+		$('.type_tts .recording').on('click', function(){	
+			$(this).parent('.demo_recording2').hide();
+			$(this).parent().parent().children('.demo_result').show();
+		});	
+		
+		// step04 > step01
+		$('.type_tts .demoReset').on('click', function(){	
+			$('.type_tts .demoBox .textArea').val('');
+			$('.demo_intro .btnBox .demoRecord').addClass('disabled');	
+			$('.demo_intro .btnBox .demoRecord').attr('disabled');
+			$('.demo_intro .btnBox .holeBox').hide();
+			$('.demo_intro .btnBox').append('<span class="disBox"></span>');
+			$(this).parent().parent('.demo_result').hide();
+			$(this).parent().parent().parent().children('.demo_intro').show();
+		});	
+		// chatbot 
+		$('.productWrap .bot_lst li button').on('click', function() {
+			var winWidth = $(window).width();
+			var chatMidHeight = $(window).height()-350;
+			if ( winWidth < 760) {
+				$('.productWrap .chatbot_contents .chat_mid').css({
+					'height': chatMidHeight,	
+				});	
+				$('.productWrap .product_bd .product_cont').css({
+					'height': chatMidHeight+130,	
+				});
+				$('.productWrap .chatbot_contents .chat_mid').scrollTop($('.chatbot_contents .chat_mid')[0].scrollHeight);	
+			}  else {
+				$('.productWrap .chatbot_contents .chat_mid').css({
+					'height': 'calc(100% - 65px)',	
+				});
+				$('.productWrap .product_bd .product_cont').css({
+					'height': '',	
+				});
+				$('.productWrap .chatbot_contents .chat_mid').scrollTop($('.chatbot_contents .chat_mid')[0].scrollHeight);	
+			}
+			
+			$('.lyr_product .productWrap .bot_lst li button').removeClass('active');
+			$(this).addClass('active');
+		});
+		
+		$('.lyr_product .bot_lst li.ico_sully button').trigger('click');	
+	});	
+});	
+
+// audio
+$( function() { 
+	$( 'audio' ).audioPlayer(); 
+	} 
+);
+</script>
+</body>
+</html>

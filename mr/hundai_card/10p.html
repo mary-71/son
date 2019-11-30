@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<!-- icon_favicon -->
+<link rel="apple-touch-icon-precomposed" href="resources/images/ico_favicon_64x64.png" />
+<link rel="shortcut icon" type="image/x-icon" href="resources/images/ico_favicon_64x64.ico"/>
+
+<title>현대카드 STT</title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/font.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/common.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/datepicker.css" />
+<link rel="stylesheet" href="css/animations.css">
+<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<script type="text/javascript" src="resources/js/jquery-1.11.0.min.js"></script>	
+<script type="text/javascript" src="resources/js/jquery-ui-custom.min.js"></script>	
+<script type="text/javascript" src="resources/js/grid.locale-en.js"></script>	
+<script type="text/javascript" src="resources/js/jquery.jqGrid.js"></script>	
+<script type="text/javascript" src="resources/js/common.js"></script>	
+<script type="text/javascript" src="resources/js/player.js"></script>	
+	
+<!-- //resources -->
+</head>
+
+<body>
+
+<!-- .page loading -->
+<div id="page_ldWrap" class="page_loading">
+	<div class="loading_itemBox">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!-- //.page loading -->
+
+<!-- .lyrWrap -->
+<div class="lyrWrap">
+	<div class="lyr_bg"></div>
+	<div id="lyrview" class="lyrBox02">
+    	<div class="lyr_top">
+        	<h3>상세보기</h3>
+            <button type="button" class="btn_lyr_close">닫기</button>
+        </div>
+    	<div class="lyr_mid">
+            <div class="txtBox">
+                <table class="tbl_view">
+                    <colgroup>
+                        <col width="15%"><col width="35%"><col width="15%"><col width="35%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+							<th scope="row">상담 일자</th>
+                            <td>2018.11.02</td>                            
+							<th scope="row">상담 시간</th>
+                            <td>16:11:04 - 16:11:552</td>
+                        </tr>                        
+                        <tr>
+							<th scope="row">상담원</th>
+                            <td>NDT000 / 김태희</td>
+                            <th scope="row">녹취 시간</th>
+                            <td>00:00:51</td>							
+                        </tr>                       
+                        <tr>
+                            <th scope="row">고객 번호</th>
+                            <td>888888-88888555</td>
+							<th scope="row">평균 발화 속도</th>
+                            <td>5.6</td>
+                        </tr>  						
+                    </tbody>
+                </table>
+				<div class="fr_view"> 
+					<p>검색어</p>
+					 
+					<div class="ly_srchBox">
+						
+						<input type="text" placeholder="">
+						<button type="submit" class="btn_srch"><img src="resources/images/ico_srch_bk.png" alt="조회">조회</button>
+					
+					</div>
+					 
+				</div>
+				<div class="fl_view"> 
+					<p>상담콜</p>
+					 <!-- .rightBox -->
+                    <div class="rightBox">
+                    	<!-- .callBox -->
+                    	<div class="callBox">                        	
+                            <!-- .call_btm -->
+                            <div class="call_player">
+                            	<audio src="resources/audio/aekukka.mp3" preload="auto" controls></audio>
+                            </div>
+                            <!-- //.call_btm -->
+                            <!-- .call_mid -->
+                            <div class="call_mid">
+                            	
+                            </div>
+                            <!-- //.call_mid -->
+                        </div>
+                        <!-- //.callBox -->
+                    </div>
+                    <!-- //.rightBox -->
+				</div>
+				<div class="lyr_tb">
+					<table class="tbl_lst ly_tbl">
+							<colgroup>
+								<col><col><col><col><col>
+								<col><col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">시작시간</th>
+									<th scope="col">종료시간</th>
+									<th scope="col">화자</th>
+									<th scope="col">속도</th>
+									<th scope="col">묵음</th>
+									<th scope="col">묵음시간</th>
+									<th scope="col">STT 텍스트</th>					
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td scope="row">00:00:00</td>
+									<td>00:00:09</td>
+									<td>상담원</td>
+									<td>4.36</td>
+									<td>N</td>
+									<td>-</td>
+									<td class="stt_txt"><a href="#none">안녕하세요. 현대카드 입니다.</a></td>	
+								</tr>
+								<tr>
+									<td scope="row">00:00:00</td>
+									<td>00:00:09</td>
+									<td>상담원</td>
+									<td>4.36</td>
+									<td>N</td>
+									<td>-</td>
+									<td class="stt_txt"><a href="#none">무엇을 도와 드릴까요</a></td>	
+								</tr>
+								<tr>
+									<td scope="row">00:00:00</td>
+									<td>00:00:09</td>
+									<td>고객</td>
+									<td>4.36</td>
+									<td>N</td>
+									<td>-</td>
+									<td class="stt_txt"><a href="#none">납입하려면 어떻게 해야하나요?</a></td>	
+								</tr>	
+								<tr>
+									<td scope="row">00:00:00</td>
+									<td>00:00:09</td>
+									<td>상담원</td>
+									<td>4.36</td>
+									<td>N</td>
+									<td>-</td>
+									<td class="stt_txt"><a href="#none">무엇을 도와 드릴까요</a></td>	
+								</tr>
+								<tr>
+									<td scope="row">00:00:00</td>
+									<td>00:00:09</td>
+									<td>고객</td>
+									<td>4.36</td>
+									<td>N</td>
+									<td>-</td>
+									<td class="stt_txt"><a href="#none">납입하려면 어떻게 해야하나요?</a></td>	
+								</tr>
+								<tr>
+									<td scope="row">00:00:00</td>
+									<td>00:00:09</td>
+									<td>상담원</td>
+									<td>4.36</td>
+									<td>N</td>
+									<td>-</td>
+									<td class="stt_txt"><a href="#none">무엇을 도와 드릴까요</a></td>	
+								</tr>
+								<tr>
+									<td scope="row">00:00:00</td>
+									<td>00:00:09</td>
+									<td>고객</td>
+									<td>4.36</td>
+									<td>N</td>
+									<td>-</td>
+									<td class="stt_txt"><a href="#none">납입하려면 어떻게 해야하나요?</a></td>	
+								</tr>
+								<tr>
+									<td scope="row">00:00:00</td>
+									<td>00:00:09</td>
+									<td>고객</td>
+									<td>4.36</td>
+									<td>N</td>
+									<td>-</td>
+									<td class="stt_txt"><a href="#none">납입하려면 어떻게 해야하나요?</a></td>	
+								</tr>
+								<tr>
+									<td scope="row">00:00:00</td>
+									<td>00:00:09</td>
+									<td>상담원</td>
+									<td>4.36</td>
+									<td>N</td>
+									<td>-</td>
+									<td class="stt_txt"><a href="#none">무엇을 도와 드릴까요</a></td>	
+								</tr>
+								<tr>
+									<td scope="row">00:00:00</td>
+									<td>00:00:09</td>
+									<td>고객</td>
+									<td>4.36</td>
+									<td>N</td>
+									<td>-</td>
+									<td class="stt_txt"><a href="#none">납입하려면 어떻게 해야하나요?</a></td>	
+								</tr>
+								<tr>
+									<td scope="row">00:00:00</td>
+									<td>00:00:09</td>
+									<td>고객</td>
+									<td>4.36</td>
+									<td>N</td>
+									<td>-</td>
+									<td class="stt_txt"><a href="#none">납입하려면 어떻게 해야하나요?</a></td>	
+								</tr>
+								<tr>
+									<td scope="row">00:00:00</td>
+									<td>00:00:09</td>
+									<td>상담원</td>
+									<td>4.36</td>
+									<td>N</td>
+									<td>-</td>
+									<td class="stt_txt"><a href="#none">무엇을 도와 드릴까요</a></td>	
+								</tr>
+								<tr>
+									<td scope="row">00:00:00</td>
+									<td>00:00:09</td>
+									<td>고객</td>
+									<td>4.36</td>
+									<td>N</td>
+									<td>-</td>
+									<td class="stt_txt"><a href="#none">납입하려면 어떻게 해야하나요?</a></td>	
+								</tr>
+							</tbody>
+						</table>
+					</div>
+            </div>
+        </div>
+        <div class="lyr_btm">
+        	<ul class="btn_lst">
+            	<li><button type="button" class="btn_clr btn_lyr_close">확인</button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- //.lyrWrap -->
+
+<!-- wrap -->
+<div id="wrap"> 
+	<!-- #header -->
+	<div id="header">
+        <h1><a target="_self" href=""><img src="resources/images/logo_h.png" alt="Hundai Card"></a></h1>
+        
+		<!-- .etcmenu -->
+		<div class="etcmenu">            
+            <div class="userBox">
+            	<ul>
+                	<li class="ico_user">User</li>
+                    <li><a target="_self" href="#none">단기 Collection 지원팀 | 김영기  </a></li>                    
+                </ul>
+            </div>				
+			<div class="userBox">
+				<ul class="lst">
+					<li class="ico_logout">User</li>
+            		<li><a target="_self" class="lyr_logout">로그아웃</a></li>
+				</ul>
+            </div>
+		</div>
+		<!-- //.etcmenu -->
+	</div>
+	<!-- //#header -->
+		
+	<!-- #container -->
+	<div id="container">
+		<!-- .snb -->
+		<div class="snb">
+			<ul class="nav">
+				<li><a target="_self" href="04p.html"><i class="material-icons">dashboard</i>STT 텍스트 조회</a></li>
+				<li><a target="_self" href="06p.html"><i class="material-icons">settings_phone</i>금칙어/민원 콜 조회</a></li>
+				<li><a target="_self" href="07p.html"><i class="material-icons">assignment</i>키워드 관리</a></li>
+				<li><a target="_self" href="08p.html"><i class="material-icons">bookmark_border</i>관심 키워드</a></li>
+				<li><a target="_self" href="09p.html"><i class="material-icons">scatter_plot</i>상담원 발화속도 관리</a></li>
+				<li class="active"><a target="_self" href="10p.html"><i class="material-icons">how_to_reg</i>묵음 탐지 콜 조회</a></li>
+				<li><a target="_blink" href="#" onClick="window.open('03p.html', 'DashBord', 'resizable=yes scrollbars=yes width=1315 height=750')"><i class="material-icons">assessment</i>대시보드</a></li>
+			</ul>
+		</div>
+		<!-- //.snb -->
+        
+		<!-- .contents -->
+		<div class="contents">
+        	<!-- .titArea -->
+			<div class="titArea">
+                <h3>묵음 탐지 콜 조회</h3>                
+            </div>
+            <!-- //.titArea -->
+            <!-- .srchArea -->
+            <div class="srchArea">
+            	<!-- .fl -->
+            	<div class="fl">
+					<span class="title">상담 일자</span>
+					<div class="dateBox">
+                    	<input type="text" id="startDate" class="ipt_txt" placeholder="시작일" autocomplete="off" >
+                        <span class="hyphen">-</span>
+                        <input type="text" id="endDate" class="ipt_txt" placeholder="종료일" autocomplete="off" >
+                    </div>
+                    <span class="title">상담원 사번</span>
+					<div class="srchbox">					
+						<input type="text" class="ipt_txt ipt_wide" placeholder="NDT000">
+					</div>						
+				 </div>
+                <!-- //.fl -->	
+			</div>
+            <!-- //.srchArea -->
+			
+			<!-- .srchArea -->
+            <div class="srchArea">
+				
+					<span class="title">부서</span>
+					
+					<div class="selectbox"> 					
+						<label for="depart1">단기 Collection 지원</label> 
+						<select id="depart1"> 
+							<option selected>단기 Collection 지원</option> 
+							<option value="고객">전체</option> 
+							<option value="??">??</option>                          
+						</select> 
+					</div>
+					<div class="selectbox"> 					
+						<label for="depart2">전체</label> 
+						<select id="depart2"> 
+							<option selected>전체</option> 
+							<option value="고객">전체</option> 
+							<option value="??">??</option>                          
+						</select> 
+					</div>
+					<div class="selectbox"> 					
+						<label for="depart3">전체</label> 
+						<select id="depart3"> 
+							<option selected>전체</option> 
+							<option value="고객">전체</option> 
+							<option value="??">??</option>                          
+						</select> 
+					</div>
+		
+			 </div>		 	
+            <!-- //.srchArea -->
+			<!-- .srchArea -->
+            <div class="srchArea">
+				
+					<span class="title">묵음시간</span>
+					<div class="srchbox">					
+						<input type="text" class="ipt_txt sec_txt" placeholder="5">
+					</div>	
+					<span class="small_txt">초 이상</span>
+					<div class="fr">	
+						<div class="srchbox"> 			
+							<button type="submit" class="btn_srch"><img src="resources/images/ico_srch_bk.png" alt="조회">조회</button>							
+							<button type="button" class="btn_srch"><img src="resources/images/ico_download_bk.png" alt="다운로드">엑셀 다운로드</button>                   
+						</div>
+					</div>
+			 </div>		 	
+            <!-- //.srchArea -->
+            <!-- .content -->
+            <div class="content">
+            	<!-- .stn -->
+            	<div class="stn">
+					<table class="tbl_lst">
+						<colgroup>
+							<col><col><col><col><col>
+							<col><col>
+						</colgroup>
+						<thead>
+							<tr>								
+								<th scope="col">상담원  부서</th>
+								<th scope="col">상담원</th>
+								<th scope="col">내선 번호</th>
+								<th scope="col">고객 번호</th>
+								<th scope="col">상담 일시</th>							
+								<th scope="col">묵음시간(초)</th>
+								<th scope="col">청취</th>														
+							</tr>
+						</thead>
+						<tbody>
+							<tr>															
+								<td scope="row">단기 Collection 지원 </td>		
+								<td>NDT000/김태희</td>
+								<td>10113</td>
+								<td>83857294</td>
+								<td>2018.11.01 15:02:00</td>
+								<td>5</td>	
+								<td><span class="lyr_view"><i class="material-icons">volume_up</i></span></td>
+							</tr>
+							<tr>
+								<td scope="row">단기 Collection 지원 </td>		
+								<td>NDT000/김태희</td>
+								<td>10113</td>
+								<td>83857294</td>
+								<td>2018.11.01 15:02:00</td>
+								<td>5</td>	
+								<td><span class="lyr_view"><i class="material-icons">volume_up</i></span></td>
+							</tr>
+							<tr>
+								<td scope="row">단기 Collection 지원 </td>		
+								<td>NDT000/김태희</td>
+								<td>10113</td>
+								<td>83857294</td>
+								<td>2018.11.01 15:02:00</td>
+								<td>5</td>	
+								<td><span class="lyr_view"><i class="material-icons">volume_up</i></span></td>
+							</tr>
+							<tr>
+								<td scope="row"></td>
+								<td></td>
+								<td></td>								
+								<td></td>
+								<td></td>		
+								<td></td>	
+								<td><span class="lyr_view"><i class="material-icons">volume_up</i></span></td>
+							</tr>
+							<tr>
+								<td scope="row"></td>
+								<td></td>
+								<td></td>	
+								<td></td>
+								<td></td>		
+								<td></td>								
+								<td><span class="lyr_view"><i class="material-icons">volume_up</i></span></td>
+							</tr>
+							<tr>
+								<td scope="row"></td>
+								<td></td>								
+								<td></td>
+								<td></td>
+								<td></td>		
+								<td></td>
+								<td><span class="lyr_view"><i class="material-icons">volume_up</i></span></td>
+							</tr>
+							<tr>
+								<td scope="row"></td>
+								<td></td>								
+								<td></td>
+								<td></td>
+								<td></td>		
+								<td></td>
+								<td><span class="lyr_view"><i class="material-icons">volume_up</i></span></td>
+							</tr>
+							
+							
+						</tbody>
+					</table>
+					<!-- 페이징 -->
+                    <div class="pageing">
+                        <a target="_self" href="#" class="first">처음페이지</a>
+                        <a target="_self" href="#" class="prev">이전페이지</a>
+                        <strong>1</strong>
+                        <a target="_self" href="#">2</a>
+                        <a target="_self" href="#">3</a>
+                        <a target="_self" href="#">4</a>
+                        <a target="_self" href="#">5</a>
+                        <a target="_self" href="#">6</a>
+                        <a target="_self" href="#" class="next">다음페이지</a>
+                        <a target="_self" href="#" class="end">마지막페이지</a>
+                    </div>
+                    <!-- //페이징 -->	
+                </div>
+                <!-- //.stn -->
+            </div>
+            <!-- //.content -->
+		</div>
+		<!-- //.contents -->
+	</div>
+	<!-- //#container -->
+	<!-- #footer -->
+	<div id="footer">
+		<div class="lot_c">
+			<div class="cyrt"><span>MINDsLab &copy; 2018</span></div>
+		</div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //wrap -->
+
+<script type="text/javascript" src="resources/js/bootstrap-datepicker.js"></script>	
+
+<script type="text/javascript">   
+$(window).load(function() {    
+	$('.page_loading').addClass('pageldg_hide').delay(300).queue(function() { 
+		$(this).remove(); 
+	});
+}); 
+</script>
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+		$('.lyr_view').on('click',function(){
+			$('.lyrWrap').fadeIn(300);
+			$('#lyr_view').show();
+		});	
+		$('.lyr_logout').on('click',function(){
+			confirm("로그아웃 하시겠습니까?");
+		});	
+	});	
+});	
+	
+
+// datapicker
+var nowTemp = new Date();
+var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+ 
+var checkin = $('#startDate').datepicker({
+  onRender: function(date) {
+	return date.valueOf() < now.valueOf() ? 'abled' : '';
+  }
+}).on('changeDate', function(ev) {
+  if (ev.date.valueOf() > checkout.date.valueOf()) {
+	var newDate = new Date(ev.date)
+	newDate.setDate(newDate.getDate() + 1);
+	checkout.setValue(newDate);
+  }
+  checkin.hide();
+  $('#endDate')[0].focus();
+}).data('datepicker');
+var checkout = $('#endDate').datepicker({
+  onRender: function(date) {
+	return date.valueOf() <= checkin.date.valueOf() ? 'abled' : '';
+  }
+}).on('changeDate', function(ev) {
+  checkout.hide();
+}).data('datepicker');	
+	
+// audio
+$( function() { 
+	$( 'audio' ).audioPlayer(); 
+	} 
+);	
+</script>
+
+</body>
+</html>
+
+

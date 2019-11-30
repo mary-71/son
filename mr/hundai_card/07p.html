@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<!-- icon_favicon -->
+<link rel="apple-touch-icon-precomposed" href="resources/images/ico_favicon_64x64.png" />
+<link rel="shortcut icon" type="image/x-icon" href="resources/images/ico_favicon_64x64.ico"/>
+
+<title>현대카드 STT</title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/font.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/common.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/datepicker.css" />
+<link rel="stylesheet" href="css/animations.css">
+<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+	
+<!-- //resources -->
+</head>
+
+<body>
+
+<!-- .page loading -->
+<div id="page_ldWrap" class="page_loading">
+	<div class="loading_itemBox">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!-- //.page loading -->
+
+<!-- .lyrWrap -->
+<div class="lyrWrap">
+	<div class="lyr_bg"></div>
+	<div id="lyr_add" class="lyrBox03">
+    	<div class="lyr_top">
+        	<h3>키워드 추가</h3>
+            <button type="button" class="btn_lyr_close">닫기</button>
+        </div>
+    	<div class="lyr_mid">
+            <div class="txtBox">
+                <table class="tbl_view">
+                    <colgroup>
+                        <col width="20%"><col width="40%"><col width="40%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">카테고리</th>
+                            <td>													
+								
+								<select id="a" class=""> 
+									<option selected>전체</option> 
+									<option value="전체">전체</option> 
+									<option value="민원">민원</option> 
+									<option value="정부기관 및 감독기관">정부기관 및 감독기관</option>                           
+								</select> 
+							</td>
+							<td>
+								
+								<select id="b" class=""> 
+									<option selected>전체</option> 
+									<option value="전체">전체</option> 
+									<option value="민원">민원</option> 
+									<option value="정부기관 및 감독기관">정부기관 및 감독기관</option>                           
+								</select> 
+							
+							</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">키워드</th>
+                            <td><input type="text" class="ipt_txt ipt_wide" placeholder="">	</td>
+							<td></td>
+                        </tr>                        
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="lyr_btm">
+        	<ul class="btn_lst">
+            	<li><button type="button" class="btn_clr btn_lyr_close">확인</button></li>
+            </ul>
+        </div>
+    </div>
+	<div id="lyr_modify" class="lyrBox03">
+    	<div class="lyr_top">
+        	<h3>키워드 수정</h3>
+            <button type="button" class="btn_lyr_close">닫기</button>
+        </div>
+    	<div class="lyr_mid">
+            <div class="txtBox">
+                <table class="tbl_view">
+                    <colgroup>
+                        <col width="20%"><col width="40%"><col width="40%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">카테고리</th>
+                            <td>	
+								<select> 
+									<option selected>민원</option> 
+									<option value="전체">전체</option> 
+									<option value="민원">민원</option> 
+									<option value="정부기관 및 감독기관">정부기관 및 감독기관</option>  
+								</select> 
+							</td>
+							<td>
+								<select> 
+									<option selected>정부기관 및 감독기관</option> 
+									<option value="전체">전체</option> 
+									<option value="민원">민원</option>    
+									<option value="정부기관 및 감독기관">정부기관 및 감독기관</option> 
+								</select> 
+							
+							</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">키워드</th>
+                            <td><input type="text" class="ipt_txt ipt_wide" placeholder="금융위원회">	</td>
+							<td></td>
+                        </tr>                        
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="lyr_btm">
+        	<ul class="btn_lst">
+            	<li><button type="button" class="btn_clr btn_lyr_close">확인</button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- //.lyrWrap -->
+
+
+<!-- wrap -->
+<div id="wrap"> 
+	<!-- #header -->
+	<div id="header">
+        <h1><a target="_self" href=""><img src="resources/images/logo_h.png" alt="Hundai Card"></a></h1>
+        
+		<!-- .etcmenu -->
+		<div class="etcmenu">            
+            <div class="userBox">
+            	<ul>
+                	<li class="ico_user">User</li>
+                    <li><a target="_self" href="#none">단기 Collection 지원팀 | 김영기  </a></li>                    
+                </ul>
+            </div>				
+			<div class="userBox">
+				<ul class="lst">
+					<li class="ico_logout">User</li>
+            		<li><a target="_self" class="lyr_logout">로그아웃</a></li>
+				</ul>
+            </div>
+		</div>
+		<!-- //.etcmenu -->
+	</div>
+	<!-- //#header -->
+		
+	<!-- #container -->
+	<div id="container">
+		<!-- .snb -->
+		<div class="snb">
+			<ul class="nav">
+				<li><a target="_self" href="04p.html"><i class="material-icons">dashboard</i>STT 텍스트 조회</a></li>
+				<li><a target="_self" href="06p.html"><i class="material-icons">settings_phone</i>금칙어/민원 콜 조회</a></li>
+				<li class="active"><a target="_self" href="07p.html"><i class="material-icons">assignment</i>키워드 관리</a></li>
+				<li><a target="_self" href="08p.html"><i class="material-icons">bookmark_border</i>관심 키워드</a></li>
+				<li><a target="_self" href="09p.html"><i class="material-icons">scatter_plot</i>상담원 발화속도 관리</a></li>
+				<li><a target="_self" href="10p.html"><i class="material-icons">how_to_reg</i>묵음 탐지 콜 조회</a></li>
+				<li><a target="_blink" href="#" onClick="window.open('03p.html', 'DashBord', 'resizable=yes scrollbars=yes width=1315 height=750')"><i class="material-icons">assessment</i>대시보드</a></li>
+			</ul>
+		</div>
+		<!-- //.snb -->
+        
+		<!-- .contents -->
+		<div class="contents">
+        	<!-- .titArea -->
+			<div class="titArea">
+                <h3>키워드 관리</h3>                
+            </div>
+            <!-- //.titArea -->
+           			
+			
+			<!-- .srchArea -->
+            <div class="srchArea">
+				
+					<span class="title">카테고리</span>
+					
+					<div class="selectbox"> 					
+						<label for="depart1">전체</label> 
+						<select id="depart1" class="s_wide"> 
+							<option selected>전체</option> 
+							<option value="고객">전체</option> 
+							<option value="??">??</option>                          
+						</select> 
+					</div>
+					<div class="selectbox"> 					
+						<label for="depart2">전체</label> 
+						<select id="depart2"  class="s_wide"> 
+							<option selected>전체</option> 
+							<option value="고객">전체</option> 
+							<option value="??">??</option>                          
+						</select> 
+					</div>							
+					
+			 </div>				
+			 	
+            <!-- //.srchArea -->
+			<!-- .srchArea -->
+            <div class="srchArea">
+				<span class="title">키워드</span>
+				<div class="srchbox"> 					
+					<input type="text" class="ipt_txt ipt_wide" placeholder="">					
+				</div>
+				<div class="fr">	
+						<div class="srchbox"> 			
+							<button type="submit" class="btn_srch"><img src="resources/images/ico_srch_bk.png" alt="조회">조회</button>
+							<button type="submit" class="btn_srch lyr_add"><img src="resources/images/ico_add_bk.png" alt="추가">추가</button>
+							<button type="button" class="btn_srch"><img src="resources/images/ico_check_delete.png" alt="삭제">삭제</button>
+							
+						</div>
+				</div>					
+			</div>
+            <!-- //.srchArea -->
+            <!-- .content -->
+            <div class="content">
+            	<!-- .stn -->
+            	<div class="stn">
+					<table class="tbl_lst">
+						<colgroup>
+							<col><col><col><col><col>
+							<col><col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col"></th>	
+								<th scope="col">카테고리(대)</th>
+								<th scope="col">카테고리(중)</th>
+								<th scope="col">대상자</th>
+								<th scope="col">키워드</th>
+								<th scope="col">변경자</th>
+								<th scope="col">등록일자</th>								
+							</tr>
+						</thead>
+						<tbody>
+							<tr>								
+								<td><input type="checkbox" id="cb1"><label for="cb1"></label></td>
+								<td class="lyr_mfy">금칙어</td>
+								<td class="lyr_mfy">대출</td>								
+								<td class="lyr_mfy">상담사</td>
+								<td class="lyr_mfy">융통</td>
+								<td class="lyr_mfy">김영기</td>
+								<td class="lyr_mfy">2018-11-01</td>									
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="cb2"><label for="cb2"></label></td>
+								<td class="lyr_mfy">민원</td>
+								<td class="lyr_mfy">정부기관 및 감독 기관</td>								
+								<td class="lyr_mfy">고객</td>
+								<td class="lyr_mfy">금융위원회</td>
+								<td class="lyr_mfy">김영기</td>
+								<td class="lyr_mfy">2018-11-01</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="cb3"><label for="cb3"></label></td>
+								<td class="lyr_mfy">Ending Policy</td>
+								<td class="lyr_mfy">욕설</td>								
+								<td class="lyr_mfy">상담사/고객</td>
+								<td class="lyr_mfy">도욱</td>
+								<td class="lyr_mfy">김영기</td>
+								<td class="lyr_mfy">2018-11-01</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="cb4"><label for="cb4"></label></td>
+								<td></td>
+								<td></td>								
+								<td></td>
+								<td><a class="" href="#none"></a></td>
+								<td></td>
+								<td></td>					
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="cb5"><label for="cb5"></label></td>
+								<td></td>
+								<td></td>								
+								<td></td>
+								<td><a class="" href="#none"></a></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="cb6"><label for="cb6"></label></td>
+								<td></td>
+								<td></td>								
+								<td></td>
+								<td><a class="" href="#none"></a></td>
+								<td></td>
+								<td>2</td>							
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="cb7"><label for="cb7"></label></td>
+								<td></td>
+								<td></td>								
+								<td></td>
+								<td><a class="" href="#none"></a></td>
+								<td></td>
+								<td></td>
+							</tr>
+							
+							
+						</tbody>
+					</table>
+					<!-- 페이징 -->
+                    <div class="pageing">
+                        <a target="_self" href="#" class="first">처음페이지</a>
+                        <a target="_self" href="#" class="prev">이전페이지</a>
+                        <strong>1</strong>
+                        <a target="_self" href="#">2</a>
+                        <a target="_self" href="#">3</a>
+                        <a target="_self" href="#">4</a>
+                        <a target="_self" href="#">5</a>
+                        <a target="_self" href="#">6</a>
+                        <a target="_self" href="#" class="next">다음페이지</a>
+                        <a target="_self" href="#" class="end">마지막페이지</a>
+                    </div>
+                    <!-- //페이징 -->	
+                </div>
+                <!-- //.stn -->
+            </div>
+            <!-- //.content -->
+		</div>
+		<!-- //.contents -->
+	</div>
+	<!-- //#container -->
+	<!-- #footer -->
+	<div id="footer">
+		<div class="lot_c">
+			<div class="cyrt"><span>MINDsLab &copy; 2018</span></div>
+		</div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //wrap -->
+<script type="text/javascript" src="resources/js/jquery-1.11.0.min.js"></script>	
+<script type="text/javascript" src="resources/js/jquery-ui-custom.min.js"></script>	
+<script type="text/javascript" src="resources/js/grid.locale-en.js"></script>	
+<script type="text/javascript" src="resources/js/jquery.jqGrid.js"></script>	
+<script type="text/javascript" src="resources/js/common.js"></script>
+<script type="text/javascript" src="resources/js/bootstrap-datepicker.js"></script>	
+
+<script type="text/javascript">   
+$(window).load(function() {    
+	$('.page_loading').addClass('pageldg_hide').delay(300).queue(function() { 
+		$(this).remove(); 
+	});
+}); 
+</script>
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+		$('.lyr_add').on('click',function(){
+			$('.lyrWrap').fadeIn(300);
+			$('#lyr_add').show();
+			$('#lyr_modify').hide();
+		});
+		
+		//수정
+		$('.lyr_mfy').on('click',function(){
+			$('.lyrBox').hide();
+			$('.lyrWrap').fadeIn(300);			
+			$('#lyr_modify').show();
+		})
+		$('.lyr_logout').on('click',function(){
+			confirm("로그아웃 하시겠습니까?");
+		});	
+	});	
+});	
+
+	
+// datapicker
+var nowTemp = new Date();
+var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+ 
+var checkin = $('#startDate').datepicker({
+  onRender: function(date) {
+	return date.valueOf() < now.valueOf() ? 'abled' : '';
+  }
+}).on('changeDate', function(ev) {
+  if (ev.date.valueOf() > checkout.date.valueOf()) {
+	var newDate = new Date(ev.date)
+	newDate.setDate(newDate.getDate() + 1);
+	checkout.setValue(newDate);
+  }
+  checkin.hide();
+  $('#endDate')[0].focus();
+}).data('datepicker');
+var checkout = $('#endDate').datepicker({
+  onRender: function(date) {
+	return date.valueOf() <= checkin.date.valueOf() ? 'abled' : '';
+  }
+}).on('changeDate', function(ev) {
+  checkout.hide();
+}).data('datepicker');	
+	
+	
+</script>
+
+</body>
+</html>
+
+

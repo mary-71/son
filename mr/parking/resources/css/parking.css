@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+html, body {background:#0da6e4;}
+
+/* page loading */
+#pageldg {display:block; position:fixed; top:0px; left:0px; width:100%; height:100%; text-align:center; background-color:#fff; z-index:8888; opacity:1.0;}
+.pageldg_hide {-webkit-animation-duration:1s; animation-duration:1s; -webkit-animation-fill-mode:both; animation-fill-mode:both; -webkit-animation-name:pageldg_hide; animation-name:pageldg_hide;}
+@-webkit-keyframes pageldg_hide {
+0% {opacity:1;}
+100% {opacity:0;}
+}
+
+@keyframes pageldg_hide {
+0% {opacity:1;}
+100% {opacity:0;}
+}
+
+#pageldg .ico_car {position:absolute; top:75%; left:50%; width:300px; height:300px; margin:0 0 0 -150px;  background:url(../images/ico_car_b.png) 50% 50% no-repeat; background-size:100%; -webkit-animation-duration:1.2s; animation-duration:1.2s; -webkit-animation-fill-mode:both; animation-fill-mode:both; -webkit-animation-name:car_mov; animation-name:car_mov;}
+@keyframes car_mov {
+0% {top:75%; background-size:100%}
+20% {top:85%; background-size:50%}
+100% {top:-35%; background-size:50%}
+}
+
+#pageldg .bg_page {position:absolute; top:75%; left:0; width:100%; height:10000px; margin:220px 0 0 0; background:#0da6e4; -webkit-animation-duration:1.2s; animation-duration:1.2s; -webkit-animation-fill-mode:both; animation-fill-mode:both; -webkit-animation-name:bg_page_mov; animation-name:bg_page_mov;}
+@keyframes bg_page_mov {
+0% {top:75%; }
+20% {top:85%;}
+100% {top:-35%; }
+}
+
+/* 주차등록요청 */
+.parkingWrap {width:100%; height:100%; background:linear-gradient(-180deg, #39c5f3, #0da6e4);}
+.parkingWrap .parkBox {position:absolute; top:50%; left:50%; width:300px; height:480px; margin:-240px 0 0 -150px; opacity:0;}
+
+.parkingWrap .parkBox .parkBox_tit {display:block; margin:10px 0 0 0;}
+.parkingWrap .parkBox .parkBox_tit h1 {text-align:center;}
+.parkingWrap .parkBox .parkBox_tit h1 img {height:67px;}
+
+.parkingWrap .parkBox .parkBox_cont {clear:both; overflow:hidden; position:relative; margin:20px 0 0 0; padding:20px; border-radius:7px; background:#fff;}
+.parkingWrap .parkBox .parkBox_cont dl {display:block; position:relative; margin:0 0 10px 0;}
+.parkingWrap .parkBox .parkBox_cont dl dt {display:block; overflow:hidden; margin:0 0 3px 0; color:#333; font-size:13px;}
+.parkingWrap .parkBox .parkBox_cont dl dt span {float:right; color:#0da6e4; font-size:11px;}
+.parkingWrap .parkBox .parkBox_cont dl dd {display:table; width:100%;}
+.parkingWrap .parkBox .parkBox_cont dl dd .ipt_txt {width:100%; height:40px; color:#333; font-size:13px; font-weight:normal; border:1px solid #ccc; text-indent:10px; border-radius:5px; box-shadow:inset 2px 2px 3px #dcdcdc;  background:#f1f1f1; transition:all 0.3s ease-out;}
+.parkingWrap .parkBox .parkBox_cont dl dd .ipt_txt:focus {border:1px solid #0da6e4; box-shadow:none; background:#fff; transition:all 0.3s ease-out;}
+.parkingWrap .parkBox .parkBox_cont dl dd .txtArea {width:100%; height:20px; max-height:40px; padding:10px 0; color:#333; font-size:13px; font-weight:normal; text-indent:10px; line-height:20px; border:1px solid #ccc; border-radius:5px; box-shadow:inset 2px 2px 3px #dcdcdc; background:#f9f9f9;}
+.parkingWrap .parkBox .parkBox_cont dl dd .txtArea:focus {border:1px solid #0da6e4; box-shadow:none; background:#fff; transition:all 0.3s ease-out;}
+.parkingWrap .parkBox .parkBox_cont .btn_add {width:100%;height:40px; color:#fff; font-size:13px; font-weight:normal; border:none; border-radius:5px; background:#0da6e4;}
+.parkingWrap .parkBox .parkBox_cont .btn_add.disabled{background:#999;}
+.parkingWrap .parkBox .parkBox_cont .disBox {position:absolute; bottom:20px; left:0; width:100%; height:40px; background:none;}
+
+/* page ending */
+#pageEdg {display:none; position:fixed; top:0px; left:0px; width:100%; height:100%; text-align:center; background:none; z-index:99999; opacity:1.0;}
+.pageEdg_hide {-webkit-animation-duration:1s; animation-duration:1s; -webkit-animation-fill-mode:both; animation-fill-mode:both; -webkit-animation-name:pageEdg_hide; animation-name:pageEdg_hide;}
+@-webkit-keyframes pageEdg_hide {
+0% {opacity:1;}
+100% {opacity:0;}
+}
+
+@keyframes pageEdg_hide {
+0% {opacity:1;}
+100% {opacity:0;}
+}
+
+#pageEdg.pageEdg_show  {display:block; }
+.pageEdg_show {-webkit-animation-duration:1s; animation-duration:1s; -webkit-animation-fill-mode:both; animation-fill-mode:both; -webkit-animation-name:pageEdg_show; animation-name:pageEdg_show;}
+@-webkit-keyframes pageEdg_show {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@keyframes pageEdg_show {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+#pageEdg .ico_car {position:absolute; top:75%; left:50%; width:300px; height:300px; margin:0 0 0 -150px;  background:url(../images/ico_car_w.png) 50% 50% no-repeat; background-size:100%; -webkit-animation-duration:1.2s; animation-duration:1.2s; -webkit-animation-fill-mode:both; animation-fill-mode:both; -webkit-animation-name:car_end_mov; animation-name:car_end_mov;}
+@keyframes car_end_mov {
+0% {top:75%; background-size:100%}
+20% {top:85%; background-size:50%}
+100% {top:-35%; background-size:50%}
+}
+
+#pageEdg .bg_page {position:absolute; top:75%; left:0; width:100%; height:10000px; margin:220px 0 0 0; background:#fff; -webkit-animation-duration:1.2s; animation-duration:1.2s; -webkit-animation-fill-mode:both; animation-fill-mode:both; -webkit-animation-name:bg_end_mov; animation-name:bg_end_mov;}
+@keyframes bg_end_mov {
+0% {top:75%; }
+20% {top:85%;}
+100% {top:-35%; }
+}
+
+/* 주차등록결과 */
+.resultWrap {display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:#fff; opacity:0;}
+.resultWrap .resultBox {overflow:hidden;  position:absolute; top:50%; left:50%; width:300px; height:420px; border-radius:10px; margin:-210px 0 0 -150px; background:#39c5f3;  opacity:1.0;}
+
+.resultWrap .resultBox .resultBox_tit {display:block; margin:0; padding:15px 0;}
+.resultWrap .resultBox .resultBox_tit h1 {text-align:center;}
+.resultWrap .resultBox .resultBox_tit h1 img { height:67px;}
+.resultWrap .resultBox .resultBox_tit p {display:block; margin:15px 15px 0 15px; padding:25px 0 15px 0; color:#000; font-size:18px; text-align:center; border-top:1px solid #1ca6d3;}
+
+.resultWrap .resultBox .resultBox_cont {clear:both; overflow:hidden; margin:0 15px; padding:20px; border-radius:7px; background:#fff;}
+.resultWrap .resultBox .resultBox_cont dl {display:table; width:100%; position:relative; margin:0 0 10px 0; padding:0 0 10px 0; border-bottom:1px solid #f1f1f1;}
+.resultWrap .resultBox .resultBox_cont dl:last-child { margin: 0; padding: 0; border:none;}
+.resultWrap .resultBox .resultBox_cont dl dt {display:table-cell; overflow:hidden; width:70px; color:#666; font-size:14px;}
+.resultWrap .resultBox .resultBox_cont dl dd {display:table-cell; color:#333; font-size:14px;}
+.resultWrap .resultBox .resultBox_cont dl dd .ipt_txt {width:100%; height:40px; color:#333; font-size:14px; font-weight:normal; border:1px solid #ccc; text-indent:10px; border-radius:5px; box-shadow:inset 2px 2px 3px #dcdcdc;  background:#f1f1f1; transition:all 0.3s ease-out;}
+.resultWrap .resultBox .resultBox_cont dl dd .ipt_txt:focus {border:1px solid #0da6e4; box-shadow:none; background:#fff; transition:all 0.3s ease-out;}
+.resultWrap .resultBox .resultBox_cont dl dd .txtArea {width:100%; height:20px; max-height:40px; padding:10px 0; color:#333; font-size:13px; font-weight:normal; text-indent:10px; line-height:20px; border:1px solid #ccc; border-radius:5px; box-shadow:inset 2px 2px 3px #dcdcdc; background:#f9f9f9;}
+.resultWrap .resultBox .resultBox_cont dl dd .txtArea:focus {border:1px solid #0da6e4; box-shadow:none; background:#fff; transition:all 0.3s ease-out;}
+.resultWrap .resultBox  p.resultBox_btm {display:block; padding:15px;}
+.resultWrap .resultBox  p.resultBox_btm .btn_refresh {width:100%; height:40px; color:#fff; font-size:13px; font-weight:normal; border:none; border-radius:5px; background:#0b2a4a;}
+
+.layerpopup_wrap {position:fixed; top:0; left:0; width:100%; height:100%; z-index:5000; -webkit-animation-duration:0.5s; animation-duration:0.5s; -webkit-animation-fill-mode:both; animation-fill-mode:both; -webkit-animation-name:layerpopup_wrap; animation-name:layerpopup_wrap;}
+.layerpopup_wrap .layer_bg {position:absolute; width:100%; height:100%; background:rgba(0, 0, 0, 0.8);}
+.layerpopup_wrap .layerBox {position:absolute; top:50%; left:50%;}
+
+.layerpopup_wrap .alertBox {overflow: hidden; position:absolute; top:50%; left:50%; width:300px; margin-left:-150px; border-radius: 10px; background:#f9f9f9;}
+.layerpopup_wrap .alertBox .txt {display:table; width:100%; text-align:center;}
+.layerpopup_wrap .alertBox .txt span {display:table-cell; padding:35px 20px; color:#333; font-size:15px; line-height:22px; vertical-align:middle;}
+.layerpopup_wrap .alertBox .txt span em { color: #f00;}
+
+.layerpopup_wrap .alertBox ul {display:table; width:100%; clear:both; overflow:hidden; padding: 0 5px; background:#ccc;}
+.layerpopup_wrap .alertBox ul li { display: table-cell; padding:10px; border:none; text-align:center;}
+.layerpopup_wrap .alertBox ul li button {display:block; width: 100%; height:40px; color:#333; font-size:13px; text-align:center; line-height:40px; border:none; border-radius:5px; letter-spacing:-1px; background:#fff;}
+.layerpopup_wrap .alertBox ul li:first-child button { color: #fff; background:#0da6e4;}
+
+.layerpopup_hide {-webkit-animation-duration:0.5s; animation-duration:0.5s; -webkit-animation-fill-mode:both; animation-fill-mode:both; -webkit-animation-name:layerpopup_hide; animation-name:layerpopup_hide;}
+.layerClose { overflow:hidden; position:absolute; top:-40px; right:0; width:25px; height:25px; line-height:120px; opacity:0.6;}
+
+
+@-webkit-keyframes layerpopup_wrap {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@keyframes layerpopup_wrap {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@keyframes layer_close {
+0% {right:20px; opacity:0;}
+100% {right:0; opacity:0.6;}
+}
+
+@-webkit-keyframes layerpopup_hide {
+0% {opacity:1;}
+100% {opacity:0;}
+}
+
+@keyframes layerpopup_hide {
+0% {opacity:1;}
+100% {opacity:0;}
+}

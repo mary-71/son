@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<!-- icon_favicon -->
+<link rel="apple-touch-icon-precomposed" href="resources/images/ico_favicon_64x64.png" />
+<link rel="shortcut icon" type="image/x-icon" href="resources/images/ico_favicon_64x64.ico"/>
+<title>maum.ai platform</title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/font.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="resources/css/common.css" />
+	
+<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">		
+<!-- //resources -->
+
+<script type="text/javascript" src="resources/js/semantic.min.js"></script>
+<script type="text/javascript" src="resources/js/jquery-1.11.0.min.js"></script>	
+<script type="text/javascript" src="resources/js/common.js"></script>	
+
+</head>
+
+<body>
+
+<!-- .page loading -->
+<div id="page_ldWrap" class="page_loading">
+	<div class="loading_itemBox">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!-- //.page loading -->
+<!-- .lyr_lack -->
+<div class="lyr_lack">
+	<div class="lyr_bg"></div>
+	<!-- .productWrap -->
+	<div class="lyrWrap">				
+		<button class="btn_lyrWrap_close" type="button">제품 리스트 닫기</button>				
+		<!-- .lyr_bd -->
+		<div class="lyr_bd">
+			<h4></h4>				
+			<p class="notice_desc">You need more points <br>
+to proceed.  <br>
+Would you like to purchase points?</p>
+			<a href="" class="btn_cancel">NO</a>
+			<a href="" class="btn_close">YES</a>
+
+		</div>
+		<!-- //.lyr_bd -->
+
+	</div>
+	<!-- //.productWrap -->   
+</div>
+<!-- //.lyr_lack -->
+<!-- .lyr_deduct -->
+<div class="lyr_deduct">
+	<div class="lyr_bg"></div>
+	<!-- .productWrap -->
+	<div class="lyrWrap">				
+		<button class="btn_lyrWrap_close" type="button">제품 리스트 닫기</button>				
+		<!-- .lyr_bd -->
+		<div class="lyr_bd">
+			<h4></h4>				
+			<p class="notice_desc"><span>$$ points </span>will be deducted for <br>
+this sentence.<br>
+Would you like to proceed?”</p>
+			<a href="" class="btn_cancel">NO</a>
+			<a href="" class="btn_close">YES</a>
+
+		</div>
+		<!-- //.lyr_bd -->
+
+	</div>
+	<!-- //.productWrap -->   
+</div>
+<!-- //.lyr_deduct -->	
+	
+	
+<!-- wrap -->
+<div id="wrap"> 
+	<!-- #header -->
+	<div id="header">
+        <h1><a target="_self" href="welcome.html"><img src="resources/images/logo.png" alt="maum.ai"></a></h1>    
+		<!-- .sta -->
+		<div class="sta">
+			
+			<!-- .titArea -->
+			<div class="titArea">               
+                <div class="path">
+                    <span><img src="resources/images/ico_path_home_bk.png" alt="HOME"></span>
+                    <span>AI Services</span>
+                    <span>텍스트를 음성으로</span>
+                </div>
+            </div>
+            <!-- //.titArea -->	
+			
+			<!-- .etcmenu -->
+			<div class="etcmenu">
+<!--				<span><i>P</i><em>1,000</em> point</span>-->
+				<div class="userBox">
+					<dl>
+						<dt class="ico_user">User</dt>
+						<dd>
+							<a target="_self" href="#none">admin@console.com</a>
+						</dd>
+						<ul class="lst">
+							<li class="ico_profile"><a target="_self" href="#none">PROFILE</a></li>
+							<li class="ico_account"><a target="_self" href="#none">API ACCOUNT</a></li>
+							<li class="ico_payment"><a target="_self" href="#none">PAYMENT</a></li>
+						</ul>
+					</dl>
+				</div>
+			</div>
+			<!-- //.etcmenu -->
+		</div>
+		<!-- //.sta -->
+	</div>
+	<!-- //#header -->
+	<!-- .snb 한글 -->
+	<div class="snb">		
+		<ul>
+			<li class="collapsible list1"><a href="welcome.html"><i class="fas fa-home"></i>HOME</a></li>	
+			<li class="collapsible list2 active"><i class="fas fa-shapes"></i>AI Services</li>					
+			<li class="sublist list2_sub">
+				<a class="dropdwn twodepth active" id="flip">텍스트를 음성으로</a>
+				<ul class="twodepthLst panel">
+					<li class="active"><a href="tts.html">AI Voice 사용하기</a></li>
+					<li><a href="tts_record.html">내 목소리로 사용하기</a></li>
+				</ul>	
+				<a class="twodepth" href="stt.html">음성을 텍스트로</a>
+			</li>
+			<li class="collapsible list3 dropdwn"><i class="fas fa-laptop-code"></i>API Services</li>					
+			<li class="sublist list3_sub">
+				<a class="twodepth" href="api_tts.html">음성 생성</a>	
+				<a class="twodepth" href="api_stt.html">음성 인식</a>
+				<a class="twodepth" href="xdc.html">텍스트 분류</a>	
+				<a class="twodepth" href="mrc.html">AI 독해</a>
+				<a class="twodepth" href="hmd.html">패턴 분류</a>	
+				<a class="twodepth" href="nlu.html">자연어 이해</a>
+				<a class="twodepth" href="recog.html">화폐 · 고지서 인식</a>	
+			</li>		
+			<li class="collapsible list4 dropdwn"><i class="fas fa-grip-horizontal"></i>Application</li>					
+			<li class="sublist list4_sub">
+				<a class="twodepth" href="">maum VOC</a>	
+				<a class="twodepth" href="">mAI English</a>
+				<a class="twodepth" href="">날씨봇 · 위키봇</a>
+			</li>		
+			<li class="collapsible list5 dropdwn"><i class="fas fa-headphones-alt"></i>고객지원</li>					
+			<li class="sublist list5_sub">
+				<a class="twodepth" href="pricing.html">가격정책</a>	
+				 
+				<a class="twodepth" href="faq.html">FAQ</a>
+				<a class="twodepth" href="notice.html">문의 내역</a>	
+				<a class="twodepth" href="contactus.html">Contact Us</a>	
+			</li>				
+		</ul>
+	</div>
+	<!-- //.snb 한글 -->
+	<!-- aside -->
+	<div class="aside" style="display:none;">
+		<!-- .aside_top -->
+		<div class="aside_top">
+			<h1><a href="index.html"><img src="resources/images/logo_m.png" alt="maum API"></a></h1>
+		</div>
+		<!-- //.aside_top -->
+		<!-- .aside_mid -->
+		<div class="aside_mid">
+			<ul class="m_etcMenu">
+				<li class="lang">
+					<p class="lang_select"><img src="resources/images/ico_lang_kr.png" alt="한국어"><em>한국어</em></p>
+					<ul class="lst">
+						<li><a href="../en/index.html" target="_self"><img src="resources/images/ico_lang_us.png" alt="English"><em>English</em></a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="m_nav">
+				<li>
+					<h2><a href="#none">HOME</a></h2>
+				</li>
+				<li>
+					<h2><a href="#none">AI Services</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none" class="depth3">택스트를 음성으로</a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="tts.html" target="_self">AI Voice 사용하기</a></li>
+								<li><a href="tts_record.html" target="_self">내 목소리로 사용하기</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none">음성을 텍스트로</a></h3>							
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">API Services</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none">음성 생성</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">음성 인식</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">텍스트 분류</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">AI 독해</a></h3>						
+						</li>
+						<li>
+							<h3><a href="#none">패턴 분류</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">자연어 이해</a></h3>						
+						</li>
+						<li>
+							<h3><a href="#none">화폐 · 고지서 인식</a></h3>							
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">Application</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none">maum VOC</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">mAI English</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">날씨봇 · 위키봇</a></h3>							
+						</li>						
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">고객지원</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none">가격정책</a></h3>							
+						</li>
+						 
+						<li>
+							<h3><a href="#none">FAQ</a></h3>							
+						</li>	
+						<li>
+							<h3><a href="#none">문의 내역</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">Contact Us</a></h3>							
+						</li>
+					</ul>
+				</li>
+			</ul>  
+		</div>
+		<!-- //.aside_mid -->
+		<!-- .aside_btm -->
+<!--
+		<div class="aside_btm">
+			<ul>
+				<li class="btn_mail"><a href="mailto:hello@mindslab.ai">hello@mindslab.ai</a></li>
+				<li class="btn_tel"><a href="tel:+82316254340">031. 625. 4340</a></li>
+			</ul>
+		</div>
+-->
+		<!-- //.aside_btm -->
+	</div>
+	<div class="bg_aside"></div> 
+	<a class="btn_header_ham" href="#none"><span class="hamburger_icon"></span></a>  
+	<!-- //aside -->  
+	<!-- #container -->
+	<div id="container">
+		
+		<!-- .contents -->
+		<div class="contents">    
+			<!-- .api_content -->
+            <div class="content ai_content">
+				<h1 class="ai_tit">AI Voice 사용하기</h1>				
+<!--
+				<ul class="menu_lst">
+					<li class="tablinks" onclick="openTap(event, 'ttsdemo')" id="defaultOpen">데모</li>
+					<li class="tablinks" onclick="openTap(event, 'ttsmenu')">메뉴얼</li>
+					<li class="tablinks" onclick="openTap(event, 'ttsexample')">적용사례</li>
+					<li class="tablinks"><a href="https://mindslabmall.ai/category/ai-%EC%9D%8C%EC%84%B1%ED%95%A9%EC%84%B1%EC%83%9D%EC%84%B1/47/" target="_blank" title="마인즈랩 몰">구매하기</a></li>
+				</ul>
+-->
+				<!--.ttsdemo-->
+				<div class="demobox ttsdemo" id="ttsdemo">
+					<p>실제처럼 자연스러운 <em>음성생성</em><small> (TTS, Text-To-Speech)</small></p>
+					<span class="sub">마인즈랩 음성생성 AI 서비스는 실제 목소리처럼 자연스러운 음성을 만들어 줍니다.</span>
+<!--
+					<ul class="progress">
+						<li class="active">Step 1</li>
+						<li>Step 2</li>
+						<li>Step 3</li>					
+					</ul>
+-->
+<!--
+					<ul class="progress_txt">
+						<li>
+							<p class="tts_step1">언어, 음성타입 선택</p>
+						</li>							
+						<li>
+							<p>음성으로 변환할 문장 입력</p>							
+						</li>
+						<li>
+							<p>변환된 음성 파일 확인 <br> 및 다운로드 </p>
+						</li>					
+					</ul>
+-->
+					<div class="selectarea">											
+						<div class="radio">
+							<input type="radio" id="1" name="voice" checked="checked">
+							<label for="1"><img src="resources/images/img_tts1.png" alt="여성성우"><span>한국어 <br>여성성우</span></label>
+						</div>	
+						<div class="radio">
+							<input type="radio" id="2" name="voice">
+							<label for="2"><img src="resources/images/img_tts2.png" alt="남자아이"><span>한국어 <br>남자아이</span></label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="3" name="voice">
+							<label for="3"><img src="resources/images/img_tts3.png" alt="여자아이"><span>한국어 <br>여자아이</span></label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="4" name="voice">							
+							<label for="4"><img src="resources/images/img_tts4.png" alt="외국인 여성"><span>영어 <br>외국인 여성</span></label>
+						</div>
+					</div>
+					
+					<div class="tts_demo demoBox">
+						<!-- .tabUi -->
+						<div class="tabUi demoTab">		
+								<!-- #demo01 -->
+								<div id="demo01" class="tab_contents">
+									<div class="demoBox">
+										
+										<!-- .step01 -->
+										<div class="demo_intro">	
+
+											<div class="demo_infoTxt">
+												<textarea class="textArea" rows="8" maxlength="150" placeholder=""></textarea>
+												<div class="text_info">												
+													<span class=""><strong>50</strong>/100자</span>
+												</div>
+											</div>
+
+											<div class="btnBox">											
+												<div class="holeBox">
+													<div class="hole">
+														<i></i><i></i><i></i><i></i><i></i>
+													</div>
+												</div>
+												<button class="demoRecord disabled" disabled><span><i class="fas fa-play-circle"></i><b>음성 생성</b></span></button>
+												<span class="disBox"></span>
+											</div>
+										</div>
+										<!-- //.step01 -->
+										<!-- .step02 -->
+										<div class="demo_recording">
+											<div class="demo_infoTxt">파일 변환 중입니다. <br>잠시만 기다려 주시기 바랍니다.</div>	
+											<!-- recordingBox -->
+											<div class="recordingBox">
+
+												<div class="recording1 loader">												
+												</div>
+											</div>
+											<!-- //recordingBox -->
+										</div>
+										<!-- //.step02 -->
+
+										<!-- .step03 -->
+										<div class="demo_recording2">
+											<div class="demo_infoTxt">음원이 재생 되고 있습니다.</div>	
+											<!-- recording -->
+											<div class="recording">
+												<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+												<span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+											</div>
+											<!-- //recording -->
+											<div class="btnBox">										
+<!--												<button class="demoReset"><span>처음으로</span></button>-->
+												<button class="demoReplay btnbtn"><span>다시듣기</span></button>
+											</div>
+
+										</div>
+										<!-- //.step03 -->
+										<!-- .step04 -->
+										<div class="demo_result">
+											<div class="demo_infoTxt">음원을 다운로드 하실 수 있습니다.</div>
+											<div class="demo_player">
+												<audio src="../resources/audio/aekukka.mp3" preload="auto" controls></audio>
+											</div>
+											<div class="btnBox">
+												<button class="demoReset"><span>처음으로</span></button>
+												<button class="dwn"><span>다운로드</span></button>
+											</div>											
+										</div>
+										<!-- //.step05 -->
+									</div>
+								</div>
+								<!-- //#demo01 -->
+													
+						</div>
+						<!-- //.tabUi -->
+						<div class="remark">
+*한국어, 영어 외 다른 언어가 필요하시면, 고객지원센터로 연락 주세요.
+						</div>
+					</div>
+				</div>
+				<!--//.ttsdemo-->
+				
+				
+			</div>
+			<!-- //.api_content -->
+			<!-- #footer -->
+			<div id="footer">
+				<div class="lot_c">
+					<div class="cyrt"><span>MINDsLab &copy; 2019</span></div>
+				</div>
+			</div>
+			<!-- //#footer -->
+		</div>
+		<!-- //.contents -->
+	</div>
+	<!-- //#container -->
+	
+</div>
+<!-- //wrap -->
+
+<script type="text/javascript" src="resources/js/bootstrap-datepicker.js"></script>	
+<script type="text/javascript">   
+$(window).load(function() {    
+	$('.page_loading').addClass('pageldg_hide').delay(300).queue(function() { 
+		$(this).remove(); 
+	});
+}); 
+</script>
+<script type="text/javascript">
+//twodepth	
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var sublist = this.nextElementSibling;
+    if (sublist.style.maxHeight){
+      sublist.style.maxHeight = null;
+	  	
+    } else {
+      sublist.style.maxHeight = sublist.scrollHeight + "px";
+		$('.dropdwn').removeClass('.active');
+    } 
+  });
+}
+	
+//	
+//threedepth	
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+		$('.twodepth ').each(function(){
+			if($(this).hasClass('active')){
+				$(this).trigger( "click" );
+			}
+		});	
+		
+		$("#flip").click(function(){
+			if($(this).hasClass('active')){
+				$(this).removeClass('active');	
+			}else{
+				$(this).addClass('active');
+			}
+			
+			$(".panel").slideToggle("fast");
+			var sublist = this.parentNode;
+			sublist.style.maxHeight =  sublist.scrollHeight + $(".twodepthLst").prop('scrollHeight')+ "px";	
+			
+		});		
+	});	
+});
+	
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+		
+		$('.snb ul li.collapsible').each(function(){
+			if($(this).hasClass('active')){
+				$(this).trigger( "click" );				
+			}
+		});
+		// text count
+		$('.demoBox .textArea').on('input keyup paste', function() {			
+			var txtValLth = $(this).val().length;
+			
+			if ( txtValLth > 0) {
+				$('.demo_intro .btnBox .demoRecord').removeClass('disabled');	
+				$('.demo_intro .btnBox .demoRecord').removeAttr('disabled');
+				$('.demo_intro .btnBox .holeBox').show();
+				$('.demo_intro .btnBox .disBox').remove();
+				$('.progress li:nth-child(2)').addClass('active');
+			} else {
+				$('.demo_intro .btnBox .demoRecord').addClass('disabled');	
+				$('.demo_intro .btnBox .demoRecord').attr('disabled');
+				$('.demo_intro .btnBox .holeBox').hide();
+				$('.demo_intro .btnBox').append('<span class="disBox"></span>');
+				$('.progress li:nth-child(2)').removeClass('active');
+			}
+		});
+				
+		$('.holeBox').hide();
+		// step01 > step02
+		$('.tts_demo button.demoRecord').on('click', function(){	
+			$(this).parent().parent('.demo_intro').hide();
+			$(this).parent().parent().parent().children('.demo_recording').show();
+			$('.selectarea').hide();
+		});	
+		// step02> step03
+		$('.tts_demo .recording1').on('click', function(){	
+			$(this).parent().parent('.demo_recording').hide();
+			$(this).parent().parent().parent().children('.demo_recording2').show();
+			$('.selectarea').hide();
+			$('.progress li:nth-child(3)').addClass('active');
+		});	
+		
+		// step03 > step04
+		$('.tts_demo .recording').on('click', function(){	
+			$(this).parent('.demo_recording2').hide();
+			$(this).parent().parent().children('.demo_result').show();
+			$('.selectarea').hide();
+		});	
+		
+		
+		// step04 > step01
+		$('.tts_demo .demoReset').on('click', function(){	
+			$('.tts_demo .demoBox .textArea').val('');
+			$('.demo_intro .btnBox .demoRecord').addClass('disabled');	
+			$('.demo_intro .btnBox .demoRecord').attr('disabled');
+			$('.demo_intro .btnBox .holeBox').hide();
+			$('.demo_recording2').hide();
+			$('.selectarea').show();
+			$('.demo_intro .btnBox').append('<span class="disBox"></span>');
+			$(this).parent().parent('.demo_result').hide();
+			$(this).parent().parent().parent().children('.demo_intro').show();
+			$('.progress li:nth-child(2)').removeClass('active');
+			$('.progress li:nth-child(3)').removeClass('active');
+		});	
+		
+		
+		// product layer popup     
+		$('.btn_lyrWrap_close, .lyr_bg').on('click', function () {
+			$('.lyr_lack').fadeOut(300);
+			$('.lyr_deduct').fadeOut(300);
+			$('body').css({
+				'overflow': '',
+			});
+		});
+		
+	
+			  
+	});	
+});	
+	
+//API 탭  	
+function openTap(evt, menu) {
+  var i, demobox, tablinks;
+  demobox = document.getElementsByClassName("demobox");
+  for (i = 0; i < demobox.length; i++) {
+    demobox[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(menu).style.display = "block";
+  evt.currentTarget.className += " active";
+}	
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();	
+	
+	
+	
+</script>
+	
+</body>
+</html>
+
+

@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<!-- facebook Tag -->
+<meta property="fb:app_id"           content="APP_ID" />
+<!-- Open Graph Tag -->
+<meta property="og:title"            content=""/><!-- 웹 페이지 제목 -->
+<meta property="og:type"             content="website"/><!-- 웹 페이지 타입 -->
+<meta property="og:url"              content=""/><!-- 웹 페이지 URL-->
+<meta property="og:image"            content=""/><!-- 웹 페이지 대표 이미지 -->
+<meta property="og:description"      content=""/><!-- 웹 페이지 설명 -->
+<!-- twitter Tag -->
+<meta property="twitter:card"        content="summary"/>
+<meta property="twitter:url"         content=""/><!-- 웹 페이지 URL-->
+<meta property="twitter:image"       content=""/><!-- 웹 페이지 대표 이미지 -->
+<meta property="twitter:title"       content=""/><!-- 웹 페이지 제목 -->
+<meta property="twitter:description" content=""/><!-- 웹 페이지 설명 -->
+<!-- icon (Internet Explorer & Windows Phone) -->
+<meta name="msapplication-square70x70logo" content="70x70.png"><!-- smalltile -->
+<meta name="msapplication-square150x150logo" content="150x150.png"><!-- mediumtile -->
+<meta name="msapplication-wide310x150logo" content="310x150.png"><!-- widetile -->
+<!-- icon (Chrome & Opera) -->
+<link rel="icon" sizes="192x192" href="192x192.png"><!-- 아이콘의 크기는 48px을 기본으로 합니다. 48px, 96px, 144px, 192px로 늘어납니다.-->
+<!-- icon (Safari) -->
+<link rel="apple-touch-icon" sizes="76x76" href="76x76.png"/><!-- iPad -->
+<link rel="apple-touch-icon" sizes="120x120" href="120x120.png"/><!-- iPhone Retina -->
+<link rel="apple-touch-icon" sizes="152x152" href="152x152.png"/><!-- iPad Retina -->
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="64x64.ico"/><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->	
+	
+<title>IR QA :: maum API</title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="../resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../resources/css/common.css" />
+<script type="text/javascript" src="../resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="../resources/js/common.js"></script>
+<!-- //resources -->
+</head>
+
+<body>
+<!-- loading -->
+<div id="pageldg">
+    <div class="ld_item">
+        <span></span>  
+        <span></span>
+    </div>
+</div>
+<!-- //loading -->
+<!-- #wrap -->
+<div id="wrap"> 
+	<!-- #header -->
+	<div id="header" >	
+		<!-- .sta -->
+		<div class="sta">
+			<h1><a href="../index.html"><img src="../resources/images/img_cmn_h1.png" alt="maum API"></a></h1>			
+			<div class="etcMenu">
+				<ul>
+					<!-- <li class="login"><span>로그인</span></li> -->
+					<li class="lang">
+						<p class="lang_select"><img src="../resources/images/ico_lang_kr.png" alt="한국어"><em>한국어</em></p>
+						<ul class="lst">
+							<li><a href="../../en/index.html" target="_blank"><img src="../resources/images/ico_lang_us.png" alt="English"><em>English</em></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //.sta -->
+		<!-- .gnb -->
+		<div id="gnb" class="gnb">
+			<div class="gnbNavBox">
+				<ul class="gnbNav">
+					<li class="menu1depth">
+						<h2><a href="#none">제품</a></h2>
+						<div class="gnbItem">
+							<div class="lot_c">
+								<div class="itemBox">
+									<dl style="margin-bottom:55px">
+										<dt class="ico_voice"><span>음성</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="stt.html" target="_self">Speech To Text <em class="new">Demo</em></a></li>
+												<li><a href="tts.html" target="_self">Text To Speech <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="ico_visual"><span>시각</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="diarl.html" target="_self">Document Image Analysis, Recognition and Learning <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_int"><span>지능</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="ec.html" target="_self">Ensemble Classification</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_lang"><span>언어</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="nlu.html" target="_self">Natural Language Understanding</a></li>
+												<li><a href="dnn.html" target="_self">DNN Classification</a></li>
+												<li><a href="hmd.html" target="_self">Hierarchical Multiple Dictionary</a></li>
+												<li><a href="xdc.html" target="_self">eXplainable Document Classifier <em class="new">Demo</em></a></li>
+												<li><a href="if.html" target="_self">Intent Finder</a></li>
+												<li><a href="we.html" target="_self">Word Embedding</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_cvs"><span>대화</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="sds.html" target="_self">Spoken Dialogue System</a></li>
+												<li><a href="bqa.html" target="_self">Basic Question Answering <em class="new">Demo</em></a></li>
+												<li><a href="kbqa.html" target="_self">Knowledge Based Question Answering <em class="new">Demo</em></a></li>
+												<li><a href="irqa.html">Information Retrieval Question Answering <em class="new">Demo</em></a></li>
+												<li><a href="deepqa.html" target="_self">Deep Question Answering <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu1depth"><h2><a href="#none">문서</a></h2>
+						<div class="gnbItem">
+							<div class="lot_c">
+								<div class="itemBox">
+									<dl style="margin-bottom:55px">
+										<dt class="ico_voice"><span>음성</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../guide/stt.html" target="_self">Speech To Text </a></li>
+												<li><a href="../guide/tts.html" target="_self"><span>Text To Speech</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="ico_visual"><span>시각</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../guide/diarl.html" target="_self"><span>Document Image Analysis, Recognition and Learning</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_int"><span>지능</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../guide/ec.html" target="_self"><span>Ensemble Classification</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_lang"><span>언어</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../guide/nlu.html" target="_self"><span>Natural Language Understanding</span></a></li>
+												<li><a href="../guide/dnn.html" target="_self"><span>DNN Classification</span></a></li>
+												<li><a href="../guide/hmd.html" target="_self"><span>Hierarchical Multiple Dictionary</span></a></li>
+												<li><a href="../guide/xdc.html" target="_self"><span>eXplainable Document Classifier</span></a></li>
+												<li><a href="../guide/if.html" target="_self"><span>Intent Finder</span></a></li>
+												<li><a href="../guide/we.html" target="_self"><span>Word Embedding</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_cvs"><span>대화</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../guide/sds.html" target="_self"><span>Spoken Dialogue System</span></a></li>
+												<li><a href="../guide/bqa.html" target="_self"><span>Basic Question Answering</span></a></li>
+												<li><a href="../guide/kbqa.html" target="_self"><span>Knowledge Based Question Answering</span> </a></li>
+												<li><a href="../guide/irqa.html"><span>Information Retrieval Question Answering </span></a></li>
+												<li><a href="../guide/deepqa.html" target="_self"><span>Deep Question Answering</span> </a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu1depth"><h2><span>파트너</span></h2></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //.gnb -->
+		<div class="lnb">
+			<div class="lot_c">
+				<h2>IR QA</h2>
+				<ul class="nav">
+					<li><a href="#stn_demo">Demo</a></li>
+					<li><a href="#stn_process">Process</a></li>
+					<li><a href="#stn_feature">Features</a></li>
+                    <li><a href="#stn_pricing">Pricing</a></li>
+					<li><a class="point" href="#api_contact">문의하기</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- //#header -->
+
+	<!-- aside -->
+	<div class="aside" style="display:none;">
+		<!-- .aside_top -->
+		<div class="aside_top">
+			<h1><a href="index.html"><img src="resources/images/logo_aside_h1.png" alt="maum API"></a></h1>
+		</div>
+		<!-- //.aside_top -->
+		<!-- .aside_mid -->
+		<div class="aside_mid">
+			<ul class="m_etcMenu">
+				<li class="lang">
+					<p class="lang_select"><img src="../resources/images/ico_lang_kr.png" alt="한국어"><em>한국어</em></p>
+					<ul class="lst">
+						<li><a href="../../en/index.html" target="_self"><img src="../resources/images/ico_lang_us.png" alt="English"><em>English</em></a></li>
+					</ul>
+				</li>
+			</ul>
+				
+			
+			<ul class="m_nav">
+				<li>
+					<h2><span>문서</span></h2>
+				</li>
+				<li>
+					<h2><a href="#none">제품</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none"><span class="ico_voice">음성</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="stt.html" target="_self">Speech To Text <em class="new">Demo</em></a></li>
+								<li><a href="tts.html" target="_self">Text To Speech <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_visual">시각</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="diarl.html" target="_self">Document Image Analysis, Recognition and Learning <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_int">지능</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="ec.html" target="_self">Ensemble Classification</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_lang">언어</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="nlu.html" target="_self">Natural Language Processing</a></li>
+								<li><a href="dnn.html" target="_self">DNN Classification</a></li>
+								<li><a href="hmd.html" target="_self">Hierarchical Multiple Dictionary</a></li>
+								<li><a href="xdc.html" target="_self">eXplainable Document Classifier <em class="new">Demo</em></a></li>
+								<li><a href="if.html" target="_self">Intent Finder</a></li>
+								<li><a href="sc.html" target="_self">Simple Claasifier</a></li>
+								<li><a href="we.html" target="_self">Word Embedding</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_cvs">대화</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="sds.html" target="_self">Spoken Dialogue System</a></li>
+								<li><a href="bqa.html" target="_self">Basic Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="kbqa.html" target="_self">Knowledge Based Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="irqa.html" target="_self">Information Retrieval Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="deepqa.html" target="_self">Deep Question Answering <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="https://mindslabmall.ai/">구매하기</a></h2>
+				</li>
+				<li>
+					<h2><a href="#none">문의하기</a></h2>
+				</li>
+			</ul>  
+		</div>
+		<!-- //.aside_mid -->
+		<!-- .aside_btm -->
+		<div class="aside_btm">
+			<ul>
+				<li class="btn_mail"><a href="mailto:hello@mindslab.ai">hello@mindslab.ai</a></li>
+				<li class="btn_tel"><a href="tel:+82316254340">031. 625. 4340</a></li>
+			</ul>
+		</div>
+		<!-- //.aside_btm -->
+	</div>
+	<div class="bg_aside"></div> 
+	<a class="btn_header_ham" href="#none"><span class="hamburger_icon"></span></a>  
+	<!-- //aside -->      
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #contents -->
+		<div id="contents">	
+			<!-- .visualArea -->
+			<div class="visualArea">
+				<div class="lot_c">
+					<div class="visual_tit">
+						<h2>
+							<span class="slogan">세상의 모든 지식을 답하는</span>
+							<span class="logotype">IR QA</span>
+							<span class="fullName">Information Retrieval Question Answering</span>
+						</h2>
+						<p class="h2_txt">마인즈랩의 IR QA는 다양한 분야의 지식 소통이 가능한 인공지능 소프트웨어입니다.<br>
+세계 최고 수준의 자연어 심층 이해 기술을 바탕으로 한국전자통신연구원(ETRI)이 개발한<br>
+엑소브레인을 기반으로 구현된 IR QA는 완벽한 수준의 질의 응답을 구현합니다.<br>
+세상의 모든 지식을 품은 IR QA를 이제 당신의 다양한 학습, 교육, 고객 소통 콘텐츠에 더해보세요.
+</p>
+					</div>
+				</div>			
+			</div>
+			<!-- //.visualArea -->
+			<!-- .demo -->
+			<div id="stn_demo" class="stn demo_bg">
+				<!-- .bg_ani -->
+				<div class="bg_ani">
+					<div class="irqaDemo_bg">
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<!-- //.bg_ani -->
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<!-- .stn_tit -->
+					<div class="stn_tit">
+						<h3 >Demo</h3>
+					</div>
+					<!-- //.stn_tit -->
+					<!-- .irqaDemo -->
+					<div class="irqaDemo">
+						<!-- .irqaDemoBox -->
+						<div class="irqaDemoBox">
+							<!-- .step01 -->
+							<div class="demo_intro" style="display:block">
+								<div class="demo_txtArea">
+									<span>질문을 입력하고 아래의 'Answer' 버튼을 눌러주세요.<em>( 예 : 김연아 키가 몇이야? )</em></span>
+									<textarea class="textArea"></textarea>
+								</div>
+								<div class="btnBox">
+									<button class="btn_irqaDemo"><span>Find<br>Answer</span></button>
+								</div>
+								<div class="holeBox">
+									<div class="hole">
+										<i></i><i></i><i></i><i></i><i></i>
+									</div>
+								</div>
+							</div>
+							<!-- //.step01 -->
+							<!-- .step02 -->
+							<div class="demo_recording">
+								<div class="demo_infoTxt">질문에 대한 답변을 구하고 있습니다. <br>잠시만 기다려 주시기 바랍니다.</div>	
+								<!-- recording -->
+								<div class="recording">
+									<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+									<span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+								</div>
+								<!-- //recording -->
+							</div>
+							<!-- //.step02 -->
+							<!-- .step03 -->
+							<div class="demo_result">
+								<div class="irqa_resultLst">
+									<div class="resultLst_tit">정답후보 및 정답 신뢰도</div>
+									<div class="rankingBox">
+										<ol>
+											<li>
+												<span class="rank"><b>1</b>위</span>
+												<span class="txt">
+													<em>김연아(1990년 9월 5일 ~ )는 2010 밴쿠버올림픽 피겨 금메달리스트이자 대한민국의 은퇴한 국가대표 피겨 스케이팅 선수이다. 2010년 동계 올림픽 여자 싱글 부문 챔피언, 2014년 동계 올림픽 여자 싱글 부문 은메달리스트, 2009년 · 2013년 세계 선수권 챔피언이며, 대한민국 최초의 올림픽 메달리스트, 세계선수권대회 메달리스트이다. 김연아(1990년 9월 5일 ~ )는 2010 밴쿠버올림픽 피겨 금메달리스트이자 대한민국의 은퇴한 국가대표 피겨 스케이팅 선수이다. 2010년 동계 올림픽 여자 싱글 부문 챔피언, 2014년 동계 올림픽 여자 싱글 부문 은메달리스트, 2009년 · 2013년 세계 선수권 챔피언이며, 대한민국 최초의 올림픽 메달리스트, 세계선수권대회 메달리스트이다. 
+													</em>
+												</span>
+												<span class="pieChart">
+													<em class="graph"></em>
+													<em class="graphNum"><b>83</b>%</em>
+												</span>
+											</li>
+											<li>
+												<span class="rank"><b>2</b>위</span>
+												<span class="txt">
+													<em>연아 킴마틴(Yonah Kim-Martin, 본명: 김연아, 1965년 4월 11일 대한민국 서울특별시 ~ )은 캐나다 브리티시컬럼비아 주 출신의 보수당 상원 의원이다. 스티븐 하퍼 총리가 그녀를 임명했으며 연방 관공서의 요직을 차지한 최초의 한국계 캐나다인이다. 21년 경력의 전문적인 교육자, 마틴은 1987년에 브리티시컬럼비아 대학교를 졸업하였다. 연아 킴마틴(Yonah Kim-Martin, 본명: 김연아, 1965년 4월 11일 대한민국 서울특별시 ~ )은 캐나다 브리티시컬럼비아 주 출신의 보수당 상원 의원이다. 스티븐 하퍼 총리가 그녀를 임명했으며 연방 관공서의 요직을 차지한 최초의 한국계 캐나다인이다. 21년 경력의 전문적인 교육자, 마틴은 1987년에 브리티시컬럼비아 대학교를 졸업하였다.</em>
+												</span>
+												<span class="pieChart">
+													<em class="graph"></em>
+													<em class="graphNum"><b>60</b>%</em>
+												</span>
+											</li>
+											<li>
+												<span class="rank"><b>3</b>위</span>
+												<span class="txt">
+													<em>김연아(12월 24일 ~ )는 대한민국의 성우이다. 대원방송 성우극회 소속. 2010년 대원방송 성우극회 공채 2기로 입사하였다</em>
+												</span>
+												<span class="pieChart">
+													<em class="graph"></em>
+													<em class="graphNum"><b>30</b>%</em>
+												</span>
+											</li>
+										</ol>
+									</div>
+								</div>
+								<div class="btnBox">
+									<button class="demoReset"><img src="../resources/images/ico_reset.png"><span>처음으로</span></button>
+									<div class="holeBox">
+										<div class="hole">
+											<i></i><i></i><i></i><i></i><i></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //.step03 -->
+						</div>
+						<!-- //.irqaDemoBox -->
+					</div>
+					<!-- //.irqaDemo -->
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.demo -->
+            
+			<!-- .video -->
+			<div class="stn videoArea">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<!-- .stn_tit -->
+					<div class="stn_tit">
+						<h3 >VIDEO</h3>
+					</div>
+					<!-- //.stn_tit -->
+
+					<!-- .stn_cont -->
+					<div class="stn_cont">
+						<!-- .videoBox -->
+                        <div class="videoBox">
+                            <a class="btn_movLayer" href="https://youtu.be/lEOA_a2IeJA">
+                                <div class="img_info">
+                                	<img src="../resources/images/img_videoArea_irqa.png" alt="홍보영상">
+                                </div> 
+                                <strong class="ico_mov">동영상 보기</strong>
+                            </a>
+						</div>
+						<!-- //.videoBox -->
+					</div>
+					<!-- //.stn_cont -->
+					
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.video -->
+            
+			<!-- .stn -->
+			<div id="stn_process" class="stn processArea">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<div class="stn_tit">
+						<h3>Process</h3>
+					</div>
+					<div class="stn_cont">
+						<div class="processBox"><img src="../resources/images/img_processArea_irqa_m.png" alt=""></div>
+					</div>
+				</div>
+				<!-- //.lot_c -->	
+			</div>
+			<!-- //.stn -->
+			<!-- .stn -->
+			<div id="stn_feature" class="stn featureArea">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<div class="stn_tit">
+						<h3>feature</h3>
+					</div>
+					<div class="stn_cont">
+						<div class="dlBox">
+							<dl class="dltype01">
+								<dt>학습정답 후보 기반 정확한 답변 추출</dt>
+								<dd>
+									<span>엑소브레인은 다양한 지식 정보를 대화 형식으로 제공받을 수 있는 현존하는 가장 간편한 지식 소통 인공지능 소프트웨어로, 다양한 분야의 콘텐츠에 접목될 수 있습니다.</span>
+								</dd>
+							</dl>
+							<dl class="dltype01">
+								<dt>강력한 딥러닝 활용</dt>
+								<dd><span>개별 시스템 구축으로 인한 복잡한 구조 대신 maum API  하나만으로 Plug &amp; Play 방식으로 이용할 수 있습니다.</span></dd>
+							</dl>
+							<dl class="dltype01">
+								<dt>학습정답 후보 기반 정확한 답변 추출</dt>
+								<dd><span>복잡한 자연어로 기술된 문제의 의미를 이해하고 다양한 정답을 추론하여 최적의 정답을 생성할 수 있는 고도의 알고리즘을 활용합니다.</span></dd>
+							</dl>
+							<dl class="dltype01">
+								<dt>풍부한 학습데이터를 통한 지속적인 학습</dt>
+								<dd><span>엑소브레인은 1,300만 건 이상의 비정형 지식베이스와 3,800만 건의 학습 데이터를 통해 정화도 높은 답변을 제공합니다.</span></dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.stn -->
+            
+			<!-- .pricing -->
+			<div id="stn_pricing" class="stn pricingArea">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<div class="stn_tit">
+						<h3>PRICING</h3>
+					</div>
+					<div class="stn_cont">
+						<div class="fl">
+							<p>클라우드형 (SaaS)</p>
+							<div class="saas_box">
+								<div class="img">
+									<img src="../resources/images/ico_productLst_irqa.png" alt="ir QA 아이콘">
+								</div>
+								<p>AI대화엔진 (IR QA)</p>
+                                <div class="dlBox02">
+                                    <dl>
+                                        <dt>월별 과금</dt>
+                                        <dd>
+                                        	<span><b>0.5</b>원</span>
+                                            <em><b> / TALK</b></em>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="dlBox03">
+                                    <dl>
+                                        <dt>과금 기준</dt>
+                                        <dd>TALK <br>(질의&middot;응답 1개 쌍)</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>무료사용</dt>
+                                        <dd>처음 2주간 무료</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>커스텀 모델 적용시</dt>
+                                        <dd>협의</dd>
+                                    </dl>
+                                </div>
+							</div>
+						</div>
+						<div class="fr">
+							<p>구축형 (SW License) <span>단위: 원/VAT 별도</span></p>
+                            <table class="tbl_type01" summary="구분,구성요소,제품명,개수,소비자단가">
+                                <caption class="hide">구축형 소비자 단가</caption>
+                                <colgroup>
+                                    <col><col><col><col><col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">구성요소</th>
+                                        <th scope="col">제품명</th>
+                                        <th scope="col">개수</th>
+                                        <th scope="col">소비자 단가</th>
+                                    </tr>
+                                </thead>	
+                                <tbody>
+                                    <tr>
+                                        <td scope="row" class="first_col">
+                                            인공지능 대화 엔진<br>
+                                            (Question &amp; Answering Engines)
+                                        </td>
+                                        <td  class="sec_col">
+                                           IR QA
+                                        </td>
+                                        <td class="p_name">Information Retrieval Question Answering</td>
+                                        <td>1</td>
+                                        <td class="c_price">330,000,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+						</div>
+                        <ul class="license_lst">	
+                            <li><span>처음 2주간 무료</span>이며, 초과 TALK(질의&middot;응답) 당 월별 과금됩니다.</li>
+                            <li>커스텀 모델 적용 시 비용은 협의 후 결정됩니다.</li>
+                        </ul>
+					</div>
+				</div>
+				<!-- //.lot_c -->	
+			</div>
+			<!-- //.pricing -->
+            
+			<!-- .stn -->
+			<div id="api_contact" class="api_contact">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<!-- .stn_cont -->
+					<div class="stn_cont">
+						<!-- .contactBox -->
+						<div class="contactBox">
+							<!-- .leftBox -->
+							<div class="leftBox">
+								<div class="stn_tit">
+									<h3>Contact Us</h3>
+								</div>
+								<div class="leftTxtBox">
+									<p>마인즈랩과 마인즈랩의 API 서비스에 대한 문의가 있으시다면 여기에 남겨주세요.<br>페이스북과 링크드인을 팔로우하시면 새 소식을 더 빠르게 접하실 수 있습니다.</p>
+									<ul class="contact_lst">
+										<li class="btn_tel"><a href="tel:+82316254340">+82 31 625 4340</a></li>
+										<li class="btn_mail"><a href="mailto:hello@mindslab.ai">hello@mindslab.ai</a></li>
+										<li class="btn_web"><a href="http://mindslab.ai" target="_blank">마인즈랩 홈페이지 mindslab.ai</a></li>
+										<ul class="social_lst">
+											<li class="btn_fb"><a href="https://www.facebook.com/mindsinsight/?fref=ts" target="_blank">Facebook</a></li>
+											<li class="btn_ld"><a href="https://www.linkedin.com/company/mindslabai" target="_blank">Linkedin</a></li>
+										</ul>
+									</ul>
+								</div>
+							</div>
+							<!-- //.leftBox -->
+							<!-- .rightBox -->
+							<div class="rightBox">
+								<form action="contact_form">
+									<fieldset>
+										<legend>문의하기</legend>
+										<div class="contact">
+											<div class="cl_b">
+											<div class="fl">
+												<div class="txtfield">
+													<select id="contactType" class="select">
+														<option id="ctt_type01" value="문의유형">문의유형</option>
+														<option id="ctt_type02" value="유료사용신청">유료사용신청</option>
+														<option id="ctt_type03" value="마인즈랩 STT 문의">마인즈랩 STT 문의</option>
+														<option id="ctt_type04" value="사용자 피드백">사용자 피드백</option>
+													</select>
+												</div>
+											</div>
+											<div class="fr">
+												<div class="txtfield">
+													<input type="text" name="fm_name" id="fm_name" class="input_txt" placeholder="이름 *">
+												</div>
+											</div>
+											</div>
+											<div class="txtfield">
+												<input type="text" name="fm_email" id="fm_email"  class="input_txt" placeholder="이메일 *">
+											</div>
+											<div class="txtfield">
+												<input type="text" name="fm_tel" id="fm_tel"  class="input_txt" placeholder="전화번호">
+											</div>
+											<div class="txtfield">
+												<textarea name="fm_txt" id="fm_txt" class="textArea" rows="4" placeholder="문의내용 *"></textarea>
+											</div>
+											<ul class="btnBox">
+												<li><button class="btn_clor">문의하기</button></li>
+												<!-- <li><button>개발자 가이드</button></li> -->
+											</ul>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<!-- //.rightBox -->
+						</div>
+						<!-- //.contactBox -->
+					</div>
+					<!-- //.stn_cont -->
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.stn -->
+			<p class="btn_goTop"><button>맨위로</button></p>
+		</div>
+		<!-- //#contents -->
+	</div>
+	<!-- //#container -->
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="lot_c">
+			<div class="f_logo"><img src="../resources/images/logo_footer.png" alt="마인즈랩"></div>
+			<div class="cyrt"><span>MINDsLab &copy; 2018 .</span> <span>주식회사 마인즈랩ㅣ대표 유태준ㅣ</span><span>사업자 등록번호 314-86-55446</span></div>
+		</div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+<script type="text/javascript">   
+$(window).load(function() {    
+	$('#pageldg').addClass('pageldg_hide').delay(500).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<script type="text/javascript">
+jQuery(function(){
+	jQuery("a.btn_movLayer").movLayer();
+});
+</script> 
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){	
+		// Page CSS
+		$('#wrap').each(function(){				
+			$(this).addClass('type_irqa');
+		});		
+		$('.irqaDemo .demo_intro .demo_txtArea .textArea').val('');
+		
+		// step01 > step02 
+		$('.type_irqa .demo_intro button.btn_irqaDemo').on('click', function(){	
+			
+			var txtAreaValLth = $('.irqaDemo .demo_intro .demo_txtArea .textArea').val().length;	
+			
+			// 입력값 확인
+			if ( txtAreaValLth > 0 ) {
+				// 입력값 있음
+				$('.type_irqa .demo_intro').hide();
+				$('.type_irqa .demo_recording').show();
+			} else {
+				// 입력값 없음
+				$('body').append(' \
+				 	<div class="layerpopup_wrap"> \
+						<div class="layer_bg"></div> \
+						<div class="alertBox"> \
+							 <div class="txt"> \
+								<span>질문을 입력해주세요.</span> \
+							 </div> \
+							 <ul> \
+								<li><button type="button" class="btn_layerClose">확인</button></li> \
+							 </ul> \
+						</div> \
+					</div> \
+				 ');
+				
+				// alertBox 중앙정렬
+				$('.alertBox').each(function(){					
+					var alertHeight = $(this).height();
+					$(this).css({
+						'margin-top': -alertHeight/2,	
+					});
+				});				
+				
+				// 취소버튼 클릭 시
+				$('.layer_bg, .btn_layerClose').click(function(){
+					$('.layerpopup_wrap').addClass('layerpopup_hide').delay(500).queue(function() { 
+						$(this).remove(); 
+					});
+					$('.demo_intro .demo_txtArea .textArea').focus();
+				});	
+			}			
+		});	
+		
+		// step02 > step03
+		$('.demo_recording .recording').on('click', function(){	
+			$('.type_irqa .demo_recording').hide();
+			$('.type_irqa .demo_result').show();
+		});
+		
+		// ranking hover
+		$('.irqa_resultLst .rankingBox ol li').mouseover(function() {
+			$('.irqa_resultLst .rankingBox ol li span.txt em').css({
+				'max-height': '88px',
+			});
+			$(this).children('span.txt').children('em').css({
+				'max-height': '100%',
+			});
+		});
+		
+		// ranking hover
+		$('.irqa_resultLst .rankingBox ol li').mouseleave(function() {
+			$('.irqa_resultLst .rankingBox ol li span.txt em').css({
+				'max-height': '88px',
+			});
+		});
+		
+		// rankingpieChart
+		$('.irqa_resultLst .rankingBox .graphNum b').each(function(){
+			var accuracyTxt = $(this).text();
+			
+			if ( accuracyTxt <= 30  === accuracyTxt > 0  ) {
+				$(this).parent().parent().find('.graph').css({
+					'height' : accuracyTxt + '%',
+					'background-color' : '#f7778a',
+				});	
+			} else if ( accuracyTxt > 30  === accuracyTxt <= 60 ) {
+				$(this).parent().parent().find('.graph').css({
+					'height': accuracyTxt + '%',
+					'background-color' : '#27c1c1',
+				});	
+				
+			} else {
+				$(this).parent().parent().find('.graph').css({
+					'height': accuracyTxt + '%',
+					'background-color' : '#2cace5',
+				});	
+				
+			}
+		});
+		
+		// step03 > step01
+		$('.type_irqa .demo_result .demoReset').on('click', function(){	
+			$('.type_irqa .demo_result').hide();
+			$('.type_irqa .demo_intro').show();
+			$('.irqaDemo .demo_intro .demo_txtArea .textArea').val('');
+			$('.irqaDemo .demo_intro .demo_txtArea .textArea').css({
+				'background-color': '',
+			});
+			$('.irqaDemo .demo_intro .demo_txtArea span').show();
+		});
+		
+	
+	});	
+});	
+	
+// resize
+$(window).resize(function(){
+		
+});	
+// scroll event
+</script>
+	
+<script>
+
+</script>
+</body>
+</html>

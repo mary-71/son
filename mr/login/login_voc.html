@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<!-- icon_favicon -->
+<link rel="apple-touch-icon-precomposed" href="resources/images/ico_favicon_64x64.png">
+<link rel="shortcut icon" type="image/x-icon" href="resources/images/ico_favicon_64x64.ico"/>
+
+<title>maum Admin</title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/font.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/login.css" />
+<!-- //resources -->
+</head>
+
+<body>
+<!--[if lt IE 9]>
+<div class="legacy_browser">
+    <div class="legacyBox">
+    	<div class="tit">
+        	<h1><img src="resources/images/logo_mindslab_w.png" alt="MINDsLab"></h1>
+        	<button type="button" class="btn_legacy_close">닫기</button>
+        </div>
+        <div class="txt">
+            사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+            원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+        </div>
+    </div>
+</div>
+<![endif]-->
+
+<!-- .page loading -->
+<div id="page_ldWrap" class="page_loading">
+	<div class="loading_itemBox">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!-- //.page loading -->
+
+	
+<div class="main_tit">
+	<h1>FAST AICC<span> FAST AI CONTACT Center</span></h1>
+</div>	
+	
+
+<form class="loginWrap" method="get" action="">
+    <fieldset>
+        <legend>Login</legend>
+        <div class="loginBox">
+            <div class="fl"><img src="resources/images/logo_voc.png" alt="Main logo"><br><img class="sub_logo" src="resources/images/sublogo_voc.png" alt="Sub logo"></div>
+			
+            <div class="fr">
+                <span>
+					<!-- [D] ID값 에러일 경우 input에 클래스 error를 선언해주세요. -->
+					<input type="text" name="ipt_id" id="ipt_id" class="ipt_txt voc_txt" title="User Name" placeholder="Email">
+				</span>
+                <span>
+					<!-- [D] pw값 에러일 경우 input에 클래스 error를 선언해주세요. -->
+					<input type="password" name="ipt_pw" id="ipt_pw" class="ipt_txt voc_txt" title="Password" placeholder="Password">
+				</span>
+                <span class="checks">
+                	<input type="checkbox" name="ipt_check" id="ipt_check" class="ipt_check">
+                    <label for="ipt_check" class="check_voc">Remember me</label>
+                </span>
+                <span>
+					<!-- [D] 에러일 경우 .txt_error 스크립트로 구현 -->
+					<span class="txt_error">ID나 Password를 다시 입력해 주세요.</span>
+                	<em class="disbBox"></em>
+                	<input type="button" name="btn_login" id="btn_login" class="btn_login disabled btn_login_voc" title="Login" value="Login" disabled>
+                </span>
+				<a class="btn_forgot">Forgot your password?</a>
+            </div>
+        </div>
+    </fieldset>
+</form>
+<!-- //loginBox -->
+<div class="copyRight"><span>MINDsLab &copy; 2018</span></div>
+
+<script type="text/javascript" src="resources/js/jquery-1.11.0.min.js"></script>	
+<script type="text/javascript">   
+$(window).load(function() {    
+	$('.page_loading').addClass('pageldg_hide').delay(300).queue(function() { 
+		$(this).remove(); 
+	});
+}); 
+</script>
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+		// input 초기화
+		$('.ipt_txt').each(function(){					
+			$(this).val('');
+			$('#ipt_id').focus();
+		});	
+								
+		// 입력값 체크 (버튼 활성화)
+		$('.ipt_txt').on('change keyup paste click', function(e) {
+			var idValLth = $('#ipt_id').val().length;
+			var pwValLth = $('#ipt_pw').val().length;
+			
+			if ( idValLth > 0 && pwValLth > 0) {
+				$('.btn_login').removeClass('disabled');	
+				$('.btn_login').removeAttr('disabled');
+				$('.disbBox').remove();
+			} else {
+				$('.btn_login').addClass('disabled');	
+				$('.btn_login').attr('disabled');
+			}
+		});
+		
+		// 브라우저 안내메세지 닫기
+		$('.legacy_browser .legacyBox .tit .btn_legacy_close').on('click', function(e) {
+			$('.legacy_browser').hide();
+		});
+		
+		
+	});
+});	
+</script>
+</body>
+</html>
+
+

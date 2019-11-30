@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	
+<title>TTS </title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="resources/css/font.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/semantic.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/common.css" />
+<script type="text/javascript" src="resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="resources/js/common.js"></script>
+<script type="text/javascript" src="resources/js/semantic.js"></script>
+<!-- //resources -->
+</head>
+
+<body>
+<!-- loading -->
+<div id="pageldg">
+    <div class="ld_item">
+        <span></span>  
+        <span></span>
+    </div>
+</div>
+<!-- //loading -->
+<!-- #wrap -->
+<div id="wrap">   
+	<!-- #header -->
+	<div id="header">
+        <h1><a href="01_login.html"><img src="resources/images/logo_header.png" alt="maum Voice"></a></h1>
+        <div class="sub_hd">
+			<ul>
+				<li><a href="05.html">My Voice Cards</a></li>
+				<li><a href="02_process.html">Guide</a></li>
+			</ul>
+		</div>
+		
+		<!-- .etcmenu -->
+		<div class="etcmenu">
+			<div class="userBox">
+				<div class="ad_logo">
+<!--				네이버일때는 logo_naver.png로 바꾸기-->										
+				</div>
+				<div class="ad_mail"><a href="">hello@mindslab.ai</a></div>
+				<div class="btn_logout">
+					<button type="button">Log Out</button>
+				</div>			
+			</div>
+		</div>
+		<!-- //.etcmenu -->
+	</div>
+	<!-- //#header -->	
+	<!-- #container -->
+	<div id="container">
+			<!-- .visualArea -->
+			<div class="card_lst">
+				<ul>
+					<li class="w_card">
+						<div class="card_btn">
+							<button class="btn_edit"></button>
+							<button class="btn_x"></button>						
+						</div>
+						<div class="w_img"></div>
+						<p class="name">한혜진</p>
+						<p class="gender"> 여성 │ 20 대 중반</p>
+						<p class="desc"> 차분하고 다큐멘터리 성우 톤</p>
+						<div class="btn_cdtion">
+							<a class="myVoice" id="lyr_my">My Voice</a>
+							<a class="record" style="display: none;">Record</a>
+							<div class="ing" style="display: none;">
+								<span>In Progress.</span>
+							</div>
+						</div>
+					</li>
+					<li class="m_card">
+						<div class="card_btn">
+							<button class="btn_edit"></button>
+							<button class="btn_x"></button>						
+						</div>
+						<div class="m_img"></div>
+						<p class="name">옥택연</p>
+						<p class="gender"> 남성 │ 20 대 중반</p>
+						<p class="desc"> 유쾌한 엔터테인먼트 톤</p>
+						<div class="btn_cdtion">
+							<a class="myVoice"  style="display: none;">my Voice</a>
+							<a class="record" href="06_start.html">Record</a>
+							<div class="ing" style="display: none;">
+								<span>In Progress.</span>
+							</div>	
+						</div>	
+					</li>
+					<li class="m_card">
+						<div class="card_btn">
+							<button class="btn_edit"></button>
+							<button class="btn_x"></button>						
+						</div>
+						<div class="m_img"></div>
+						<p class="name">Henry</p>
+						<p class="gender"> 남성 │ 30 대 초반</p>
+						<p class="desc"> 유쾌한 엔터테인먼트 톤</p>
+						<div class="btn_cdtion">
+							<a class="myVoice"  style="display: none;">my Voice</a>
+							<a class="record" style="display: none;">Record</a>
+							<div class="ing">
+								<span>In Progress..</span>
+							</div>
+						</div>	
+					</li>
+					<li class="m_card">
+						<div class="card_btn">
+							<button class="btn_edit"></button>
+							<button class="btn_x"></button>						
+						</div>
+						<div class="m_img"></div>
+						<p class="name">Henry</p>
+						<p class="gender"> 남성 │ 30 대 초반</p>
+						<p class="desc"> 유쾌한 엔터테인먼트 톤</p>
+						<div class="btn_cdtion">
+							<a class="myVoice"  style="display: none;">my Voice</a>
+							<a class="record" style="display: none;">Record</a>
+							<div class="ing" style="display: none;">
+								<span>In Progress..</span>
+							</div>
+							<div class="re_record">
+								<a class="record_s">Record</a>
+								<div class="graph_long">
+									<span class="graph_clr"></span>
+								</div>
+								<span class="percent">65%</span>
+							</div>
+						</div>	
+					</li>
+					<li class="add_card">
+						<a class="add_btn" id="lyr_add">
+						<p>Add My Voice Card</p>
+						</a>
+					</li>
+					
+				</ul>
+			
+			</div>
+			<!-- //.visualArea -->
+			<!-- .lyr_add -->
+			<div class="lyr_add">
+				<div class="lyr_bg"></div>
+				<!-- .productWrap -->
+				<div class="lyrWrap">				
+					<button class="btn_lyrWrap_close" type="button">제품 리스트 닫기</button>				
+					<!-- .lyr_bd -->
+					<div class="lyr_bd">
+						<h4>Add My Voice</h4>
+						<span>Gender :</span>
+						<div class="select_gender">
+	<!--					체크가 하나만 되게 스크립트 부타케요 -->
+							<div class="gender_box">						
+								<input type="checkbox" id="female" name="gender" value="female" checked>
+								<label for="female" class="female"></label>
+							</div>
+							<div class="gender_box">
+								<input type="checkbox" id="male" name="gender" value="male" >
+								<label for="male"  class="male"></label>
+							</div>
+						</div>
+						<span>Name :</span>
+						<input type="text" placeholder="이름을 입력하세요" class="name_taxt" value="한혜진">
+						<span>Age :</span>
+						<select class="ui fluid search dropdown" >
+							<option value="">10대 이하</option>
+							<option value="0">10대 이하</option>
+							<option value="1">11~20세</option>
+							<option value="2">21~30세</option>
+							<option value="3">31~40세</option>
+							<option value="4">41~50세</option>
+							<option value="5">51~60세</option>
+							<option value="6">60세 이상</option>					
+						</select>
+						<span>Description :</span>
+						<input type="text" placeholder="목소리를 설정해주세요" class="description" value="차분하고 다큐멘터리 성우 톤">
+						<a href="05.html" class="btn_save">Save</a>
+
+					</div>
+					<!-- //.lyr_bd -->
+
+				</div>
+				<!-- //.productWrap -->   
+			</div>
+			<!-- //.lyr_add -->
+		
+			<!-- .lyr_my -->
+			<div class="lyr_my">
+				<div class="lyr_bg"></div>
+				<!-- .productWrap -->
+				<div class="lyrWrap">				
+					<button class="btn_lyrWrap_close" type="button">제품 리스트 닫기</button>				
+					<!-- .lyr_bd -->
+					<div class="lyr_bd">
+						<h4>My Voice</h4>
+						<textarea placeholder="나의 목소리로 듣고 싶은 문장을 100자 이내로 입력해 주세요."></textarea>
+						<a href="" class="btn_save">Save</a>
+						<a href="" class="btn_dwl">Download</a>
+					</div>
+					<!-- //.lyr_bd -->
+
+				</div>
+				<!-- //.productWrap -->   
+			</div>
+			<!-- //.lyr_my --> 
+		
+	</div>
+</div>
+<!-- //#wrap -->
+<script type="text/javascript" src="resources/js/player.js"></script>
+<script type="text/javascript">
+    $(window).load(function () {
+        $('#pageldg').addClass('pageldg_hide').delay(500).queue(function () { $(this).remove(); });
+    });
+</script>
+
+<script type="text/javascript">
+    jQuery.event.add(window, "load", function () {
+        $(document).ready(function () {
+           
+        //add layer popup
+		$('#lyr_add').on('click', function () {
+			$('.lyr_add').fadeIn(300);              
+			$('body').css({
+				'overflow': 'hidden',
+			});
+			
+		});
+		$('#lyr_my').on('click', function () {
+			$('.lyr_my').fadeIn(300);              
+			$('body').css({
+				'overflow': 'hidden',
+			});
+			
+		});
+		// product layer popup     
+		$('.btn_lyrWrap_close, .lyr_bg').on('click', function () {
+			$('.lyr_add').fadeOut(300);
+			$('.lyr_my').fadeOut(300);
+			$('body').css({
+				'overflow': '',
+			});
+		});
+			   
+            
+          
+    });
+});
+$('.ui.dropdown')
+  .dropdown()
+;
+
+</script>
+</body>
+</html>
+	

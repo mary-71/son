@@ -1,0 +1,121 @@
+
+<div class="chat_loading" >
+	   <div class="loadingBox">
+			<div class="loading_txt">시스템에 연결 중입니다.<span>잠시만 기다려 주시기 바랍니다.</span></div>
+			<div class="circle"></div>
+	   </div>
+</div>
+
+<div class="chatbot_contents">
+	<!-- .chat_top -->
+	<div class="chat_top">
+		<h3>고객센터</h3>
+		<button type="button" class="btn_cb_close">close</button>
+	</div>
+	<!-- //.chat_top -->
+	<!-- .chat_mid -->
+	<div class="chat_mid">
+		<ul class="talkLst">
+			<li class="newDate"><span><!-- 날짜는 스크립트가 정의--></span></li>
+			<!-- 봇 메세지 (평문) -->
+			<li class="bot">
+<!--			<span class="thumb"><img id="thumb" src="{% static 'chatbot/images/ico_bot_sully.png' %}" alt="sully"></span>-->
+				<span class="cont">
+					<em class="txt">
+						안녕하세요, 무엇을 도와드릴까요?
+					</em>
+                </span>
+                <ul class="info_btnBox">
+                    <li><button type="button">데모 체험</button></li>
+                    <li><button type="button">가격 문의</button></li>
+                    <li><button type="button">사용자 가이드</button></li>
+                    <li><button type="button">문의 남기기</button></li>
+                </ul>
+            </li>	
+			<li class="user">
+<!--			<span class="thumb"><img id="thumb" src="{% static 'chatbot/images/ico_bot_sully.png' %}" alt="sully"></span>-->
+				<span class="cont">
+					<em class="txt">
+						사용자 가이드 알려주세요
+					</em>
+                </span>                
+            </li>	
+		</ul>
+	</div>
+	<!-- //.chat_mid -->
+	<!-- .chat_btm -->
+	<div class="chat_btm">
+		 <form class="form-inline" method="post" action="" id="formChat" name="formChat">
+			<label class="btn-file">
+				<img id="file" src="resources/images/ico_file.png" alt="파일첨부 이미지">
+				<input type="file" style="display: none;">
+			</label>
+			<textarea id="textline" class="textArea" placeholder="메세지를 입력해 주세요."></textarea>
+			<input type="button" class="btn btn-default btn_chat" name="btn_chat" id="btn_chat"  title="전송" value="전송">
+		</form>
+	</div>
+	<!-- //.chat_btm -->
+</div>
+
+<script type="text/javascript" src="resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="resources/js/chatbot.js"></script>
+<script type="text/javascript">
+    jQuery.event.add(window, "load", function () {
+        $(document).ready(function () {
+            $('.chatbot_contents .talkLst').css({
+                'display': 'block',
+            });
+        });
+    });
+
+    $(document).ready(function () {
+        console.log("auth_id: ",document.getElementById('AUTH_ID').value, document.getElementById('AUTH_ID'));
+        chatOpen('Sully');
+
+        $('#btn_cb_close').click(function () {
+            closeDialogService();
+        });
+
+        // $('.chatbot_contents .chat_btm .textArea').keyup(function (event) {
+        //     if (event.keyCode == 13 && event.shiftKey) {
+        //         var chatTxt = this.value;
+        //         var caret = getCaret(this);
+        //         this.value = chatTxt.substring(0, caret) + "\n" + chatTxt.substring(carent, chatTxt.length - 1);
+        //         event.stopPropagation();
+        //     } else if (event.keyCode == 13) {
+        //         $('#btn_chat').trigger('click');
+        //     }
+        // });
+
+
+        // chatbot close
+        $('.btn_cb_close').on('click', function () {
+            closeDialogService();
+            $(this).parent().parent().parent().fadeOut(300);
+            $('#maumWrap').css({
+                'overflow': '',
+            });
+            $('#livechatWrap .chatbot_contents').remove();
+        });
+
+    });
+
+
+    $('.chatbot_contents .chat_mid').scrollTop($('.chatbot_contents .chat_mid')[0].scrollHeight);
+    $('.chatbot_contents .bot_infoBox').css({
+    	'display':'none',
+    });
+    $('.chat_loading').css({
+        'display':'none',
+    });
+    $('.chatbot_contents .talkLst').css({
+        'display':'block',
+    });
+
+	
+    // $('#btn_cb_close').click(function () {
+    //     closeDialogService();
+    // });
+
+
+</script>

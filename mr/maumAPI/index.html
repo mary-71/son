@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<!-- facebook Tag -->
+<meta property="fb:app_id"           content="APP_ID" />
+<!-- Open Graph Tag -->
+<meta property="og:title"            content=""/><!-- 웹 페이지 제목 -->
+<meta property="og:type"             content="website"/><!-- 웹 페이지 타입 -->
+<meta property="og:url"              content=""/><!-- 웹 페이지 URL-->
+<meta property="og:image"            content="resources/images/img_og_image.png"/><!-- 웹 페이지 대표 이미지 -->
+<meta property="og:description"      content=""/><!-- 웹 페이지 설명 -->
+<!-- twitter Tag -->
+<meta property="twitter:card"        content="summary"/>
+<meta property="twitter:url"         content=""/><!-- 웹 페이지 URL-->
+<meta property="twitter:image"       content="resources/images/img_og_image.png"/><!-- 웹 페이지 대표 이미지 -->
+<meta property="twitter:title"       content=""/><!-- 웹 페이지 제목 -->
+<meta property="twitter:description" content=""/><!-- 웹 페이지 설명 -->
+<!-- icon (Internet Explorer & Windows Phone) -->
+<meta name="msapplication-square70x70logo"   content="resources/images/ico_api_70x70.png"><!-- smalltile -->
+<meta name="msapplication-square150x150logo" content="resources/images/ico_api_150x150.png"><!-- mediumtile -->
+<meta name="msapplication-wide310x150logo"   content="resources/images/ico_api_310x150.png"><!-- widetile -->
+<!-- icon (Chrome & Opera) -->
+<link rel="icon" sizes="192x192" href="resources/images/ico_api_192x192.png"><!-- 아이콘의 크기는 48px을 기본으로 합니다. 48px, 96px, 144px, 192px로 늘어납니다.-->
+<!-- icon (Safari) -->
+<link rel="apple-touch-icon" sizes="76x76"   href="resources/images/ico_api_76x76.png"/><!-- iPad -->
+<link rel="apple-touch-icon" sizes="120x120" href="resources/images/ico_api_120x120.png"/><!-- iPhone Retina -->
+<link rel="apple-touch-icon" sizes="152x152" href="resources/images/ico_api_152x152.png"/><!-- iPad Retina -->
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="resources/images/ico_api_64x64.ico"/><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">	
+<title>maum API</title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/common.css" />
+<script type="text/javascript" src="resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="resources/js/common.js"></script>
+<!-- //resources -->
+
+</head>
+
+<body>
+<!-- loading -->
+<div id="pageldg">
+    <div class="ld_item">
+        <span></span>  
+        <span></span>
+    </div>
+</div>
+<!-- //loading -->
+<!-- #wrap -->
+<div id="wrap"> 
+	<!-- #header -->
+	<div id="header" >	
+		<!-- .sta -->
+		<div class="sta">
+			<h1><a href="index.html"><img src="resources/images/img_cmn_h1.png" alt="maum API"></a></h1>			
+			<div class="etcMenu">
+				<ul>
+					<!-- <li class="login"><span>로그인</span></li> -->
+					<li class="lang">
+						<p class="lang_select"><img src="resources/images/ico_lang_kr.png" alt="한국어"><em>한국어</em></p>
+						<ul class="lst">
+							<li><a href="../en/index.html" target="_self"><img src="resources/images/ico_lang_us.png" alt="English"><em>English</em></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //.sta -->
+		<!-- .gnb -->
+		<div id="gnb" class="gnb">
+			<div class="gnbNavBox">
+				<ul class="gnbNav">
+					<li class="menu1depth">
+						<h2><a href="#none">제품</a></h2>
+						<div class="gnbItem">
+							<div class="lot_c">
+								<div class="itemBox">
+									<dl style="margin-bottom:55px">
+										<dt class="ico_voice"><span>음성</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="product/stt.html" target="_self">Speech To Text <em class="new">Demo</em></a></li>
+												<li><a href="product/tts.html" target="_self">Text To Speech <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="ico_visual"><span>시각</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="product/diarl.html" target="_self">Document Image Analysis, Recognition and Learning <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_int"><span>지능</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="product/ec.html" target="_self">Ensemble Classification</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_lang"><span>언어</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="product/nlu.html" target="_self">Natural Language Understanding</a></li>
+												<li><a href="product/dnn.html" target="_self">DNN Classification</a></li>
+												<li><a href="product/hmd.html" target="_self">Hierarchical Multiple Dictionary</a></li>
+												<li><a href="product/xdc.html" target="_self">eXplainable Document Classifier <em class="new">Demo</em></a></li>
+												<li><a href="product/if.html" target="_self">Intent Finder</a></li>
+												<li><a href="product/we.html" target="_self">Word Embedding</a></li>
+												<li><a href="product/mrc.html" target="_self">Machine Reading Comprehension <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_cvs"><span>대화</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="product/sds.html" target="_self">Spoken Dialogue System</a></li>
+												<li><a href="product/bqa.html" target="_self">Basic Question Answering <em class="new">Demo</em></a></li>
+												<li><a href="product/kbqa.html" target="_self">Knowledge based Question Answering</a></li>
+												<li><a href="product/irqa.html">Information Retrieval Question Answering <em class="new">Demo</em></a></li>
+												<li><a href="product/deepqa.html" target="_self">Deep Question Answering <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu1depth"><h2><a href="guide/public.html">개발 가이드</a></h2>
+
+					</li>
+					<li class="menu1depth"><h2><a href="https://mindslabmall.ai/">구매하기</a></h2></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //.gnb -->
+	</div>
+	<!-- //#header -->
+
+	<!-- aside -->
+	<div class="aside" style="display:none;">
+		<!-- .aside_top -->
+		<div class="aside_top">
+			<h1><a href="index.html"><img src="resources/images/logo_aside_h1.png" alt="maum API"></a></h1>
+		</div>
+		<!-- //.aside_top -->
+		<!-- .aside_mid -->
+		<div class="aside_mid">
+			<ul class="m_etcMenu">
+				<li class="lang">
+					<p class="lang_select"><img src="resources/images/ico_lang_kr.png" alt="한국어"><em>한국어</em></p>
+					<ul class="lst">
+						<li><a href="../en/index.html" target="_self"><img src="resources/images/ico_lang_us.png" alt="English"><em>English</em></a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="m_nav">
+				<li>
+					<h2><a href="#none">개발 가이드</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none"><span class="ico_voice">음성</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="guide/stt.html" target="_self">Speech To Text  <em class="new">New</em></a></li>
+<!--							<li><a href="product/tts.html" target="_self">Text To Speech <em class="new">Demo</em></a></li>-->
+							</ul>
+						</li>
+<!--
+						<li>
+							<h3><a href="#none"><span class="ico_visual">시각</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="product/diarl.html" target="_self">Document Image Analysis, Recognition and Learning <em class="new">New</em></a></li>
+							</ul>
+						</li>
+-->
+<!--
+						<li>
+							<h3><a href="#none"><span class="ico_int">지능</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="product/ec.html" target="_self">Ensemble Classification</a></li>
+							</ul>
+						</li>
+-->
+						<li>
+							<h3><a href="#none"><span class="ico_lang">언어</span></a></h3>
+							<ul class="m_lst_sub">
+<!--
+								<li><a href="product/nlu.html" target="_self">Natural Language Understanding</a></li>
+								<li><a href="product/dnn.html" target="_self">DNN Classification</a></li>
+								<li><a href="product/hmd.html" target="_self">Hierarchical Multiple Dictionary</a></li>
+-->
+								<li><a href="guide/xdc.html" target="_self">eXplainable Document Classifier <em class="new">New</em></a></li>
+<!--
+								<li><a href="product/if.html" target="_self">Intent Finder</a></li>
+								<li><a href="product/we.html" target="_self">Word Embedding</a></li>
+-->
+								<li><a href="guide/mrc.html" target="_self">Machine Reading Comprehension <em class="new">New</em></a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_cvs">대화</span></a></h3>
+							<ul class="m_lst_sub">
+<!--
+								<li><a href="product/sds.html" target="_self">Spoken Dialogue System</a></li>
+								<li><a href="product/bqa.html" target="_self">Basic Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="product/kbqa.html" target="_self">Knowledge based Question Answering <em class="new">Demo</em></a></li>
+-->
+								<li><a href="guide/irqa.html" target="_self">Information Retrieval Question Answering <em class="new">New</em></a></li>
+								<li><a href="guide/dqa.html" target="_self">Deep Question Answering <em class="new">New</em></a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">제품</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none"><span class="ico_voice">음성</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="product/stt.html" target="_self">Speech To Text <em class="new">Demo</em></a></li>
+								<li><a href="product/tts.html" target="_self">Text To Speech <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_visual">시각</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="product/diarl.html" target="_self">Document Image Analysis, Recognition and Learning <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_int">지능</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="product/ec.html" target="_self">Ensemble Classification</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_lang">언어</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="product/nlu.html" target="_self">Natural Language Understanding</a></li>
+								<li><a href="product/dnn.html" target="_self">DNN Classification</a></li>
+								<li><a href="product/hmd.html" target="_self">Hierarchical Multiple Dictionary</a></li>
+								<li><a href="product/xdc.html" target="_self">eXplainable Document Classifier <em class="new">Demo</em></a></li>
+								<li><a href="product/if.html" target="_self">Intent Finder</a></li>
+								<li><a href="product/we.html" target="_self">Word Embedding</a></li>
+								<li><a href="product/mrc.html" target="_self">Machine Reading Comprehension <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_cvs">대화</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="product/sds.html" target="_self">Spoken Dialogue System</a></li>
+								<li><a href="product/bqa.html" target="_self">Basic Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="product/kbqa.html" target="_self">Knowledge based Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="product/irqa.html" target="_self">Information Retrieval Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="product/deepqa.html" target="_self">Deep Question Answering <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="https://mindslabmall.ai/">구매하기</a></h2>
+				</li>
+				<li>
+					<h2><a href="#none">문의하기</a></h2>
+				</li>
+			</ul>  
+		</div>
+		<!-- //.aside_mid -->
+		<!-- .aside_btm -->
+		<div class="aside_btm">
+			<ul>
+				<li class="btn_mail"><a href="mailto:hello@mindslab.ai">hello@mindslab.ai</a></li>
+				<li class="btn_tel"><a href="tel:+82316254340">031. 625. 4340</a></li>
+			</ul>
+		</div>
+		<!-- //.aside_btm -->
+	</div>
+	<div class="bg_aside"></div> 
+	<a class="btn_header_ham" href="#none"><span class="hamburger_icon"></span></a>  
+	<!-- //aside -->   
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #contents -->
+		<div id="contents">	
+			<!-- .mainVisual -->
+			<div class="mainVisual">
+				<div class="lot_c">
+					<div class="mainTop">
+						<dl>
+							<dt class="animated fadeInUp">마인즈랩의 API 서비스로 <br>당신의 비즈니스에 AI를 결합하세요.</dt>
+							<dd class="animated fadeInUp delay-1">마인즈랩의 API는 풍부한 학습 데이터와 <br>최신 AI 알고리즘을 활용하여 <br>고객에게 가장 필요한 서비스를 제공합니다.</dd>
+							<dd class="animated fadeInUp delay-2">
+								<a class="btn_clor" href="#api_contact">문의하기</a>
+								<a class="btn_clor btn_border" href="https://mindslabmall.ai">구매하기</a>
+							</dd>
+						</dl>
+					</div>
+<!--
+					<div class="mainLst">
+						<dl>
+							<dt>풍부한 학습 데이터 활용</dt>
+							<dd>마인즈랩이 제공하는 모든 API 서비스는 전문 인력이 관리하는 풍부한 학습 데이터를 학습한 AI 엔진을 기반으로 제공됩니다.</dd>
+						</dl>
+						<dl>
+							<dt>고객 맞춤형 서비스 제공</dt>
+							<dd>언어지능부터 사고지능까지 AI의 모든 영역에서 고객의 비즈니스에 꼭 필요한 API를 맞춤형으로 제공합니다.</dd>
+						</dl>
+						<dl>
+							<dt>최신 기술 기반의 서비스</dt>
+							<dd>마인즈랩의  API 서비스는 별도의 업데이트 과정 없이도 새로운 기술과 알고리즘을 신속하게 반영합니다.</dd>
+						</dl>
+					</div>
+-->
+				</div>
+			</div>
+			<!-- //.mainVisual -->
+			<!-- .productLst -->
+			<div class="productLst">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<!-- .productGroup -->
+					<div class="productGroup">
+						<h4>음성</h4>
+						<ul class="line01">
+							<li>
+								<dl class="stt">
+									<dt>STT</dt>
+									<dd>사람의 음성을 텍스트로 변환하는 음성인식 엔진으로, 음성을 활용한 다양한 서비스에 적용할 수 있습니다.</dd>
+									<a href="product/stt.html" target="_self"><dd class="btn"><span>데모 보기</span></dd></a>
+									<a href="guide/stt.html" target="_self" class="btn_1"><dd class="btn"><span>개발 가이드</span></dd></a>
+									<a href="http://mindslab.cafe24.com/product/stt-speech-to-text/16/category/1/display/2/" target="_blank" title="새창열림" class="btn_2"><dd class="btn"><span>구매하기</span></dd></a>
+								</dl>
+							</li>								
+							<li>
+								<dl class="tts">
+									<dt>TTS</dt>
+									<dd>텍스트를 사람의 음성으로 변환하는 음성 합성 기술로, 음성을 활용한 다양한 서비스에 활용할 수 있습니다.</dd>
+									<a href="product/tts.html" target="_self"><dd class="btn"><span>데모 보기</span></dd></a>
+									<a class="btn_3"><dd class="btn blank_btn "><span>개발 가이드</span></dd></a>
+									<a href="http://mindslab.cafe24.com/product/tts-text-to-speech/15/category/33/display/1/" target="_blank" title="새창열림" class="btn_2"><dd class="btn"><span>구매하기</span></dd></a>
+								</dl>
+							</li>
+						</ul>
+					</div>
+					<!-- //.productGroup -->
+					<!-- .productGroup -->
+					<div class="productGroup">
+						<h4>시각</h4>
+						<ul class="line02">
+							<li>
+								<dl class="diarl">
+									<dt>DIARL</dt>
+									<dd>고지서, 화폐, 영수증 등의 이미지 내에 있는 텍스트를 감지하여 정보를 제공합니다.</dd>
+									<a href="product/diarl.html" target="_self"><dd class="btn active_btn"><span>데모 보기</span></dd></a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>개발 가이드</span></dd></a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>구매하기</span></dd></a>
+								</dl>
+							</li>
+							
+						</ul>
+					</div>
+					<!-- //.productGroup -->
+					<!-- .productGroup -->
+					<div class="productGroup">
+						<h4>사고</h4>
+						<ul class="line03">
+							<li>
+								<dl class="ec">
+									<dt>Ensemble Classification</dt>
+									<dd>다양한 알고리즘의 조합으로 최적의 성능을 찾아내는 앙상블 분류 모델로, 정교한 데이터 분류가 필요한 서비스에 활용할 수 있습니다.</dd>
+									<a href="product/ec.html" target="_self"><dd class="btn active_btn"><span>데모 보기</span></dd> </a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>개발 가이드</span></dd></a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>구매하기</span></dd></a>
+								</dl>
+							</li>
+						</ul>
+					</div>
+					<!-- //.productGroup -->
+				</div>
+				<!-- //.lot_c -->
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<!-- .productGroup -->
+					<div class="productGroup">
+						<h4>언어</h4>
+						<ul class="line04">
+							<li>
+                            
+								<dl class="nlu">
+									<dt>NLU</dt>
+									<dd>텍스트에서 의미있는 정보를 분석 및 추출하고 이해하는 기술로, 자연어를 활용한 모든 서비스에 활용할 수 있습니다.</dd>
+									<a href="product/nlu.html" target="_self"><dd class="btn active_btn"><span>데모 보기</span></dd> </a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>개발 가이드</span></dd></a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>구매하기</span></dd></a>
+								</dl>
+                              
+							</li>
+							<li>
+							   <dl class="dnn">
+									<dt>DNN Classification</dt>
+									<dd>딥러닝 기반의 문서 분류 엔진으로, 문장이나 단락 단위의 텍스트를 입력하면 해당 문서의 감성을 분석하고 의도를 분류할 수 있습니다.</dd>
+									<a href="product/dnn.html" target="_self"><dd class="btn active_btn"><span>데모 보기</span></dd></a>
+								    <a target="_self" class="btn_3"><dd class="btn blank_btn"><span>개발 가이드</span></dd></a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>구매하기</span></dd></a>
+								</dl>
+							</li>							
+							<li>
+								<dl class="hmd">
+									<dt>HMD</dt>
+									<dd>텍스트에서 사용자가 미리 정의해둔 단어를 탐지하여 분류하는 엔진으로, 정확한 분류가 필요한 서비스에 활용됩니다.</dd>
+									<a href="product/hmd.html" target="_self"><dd class="btn active_btn"><span>데모 보기</span></dd> </a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>개발 가이드</span></dd></a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>구매하기</span></dd></a>
+								</dl>
+							</li>							
+							<li>
+								<dl class="xdc">
+									<dt>XDC</dt>
+									<dd>텍스트를 일정 분류 기준에 의해 분류할 뿐 아니라, 분류하게 된 이유가 되는 문장 및 단어를 찾아주는 딥러닝 기반 XAI(eXplainable Artificial Intelligence) 엔진입니다.</dd>
+									<a href="product/xdc.html" target="_self"><dd class="btn active_btn"><span>데모 보기</span></dd> </a>
+									<a href="guide/xdc.html" target="_self" class="btn_1"><dd class="btn active_btn"><span>개발 가이드</span></dd></a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>구매하기</span></dd></a>
+								</dl>
+							</li>
+							<li>
+								<dl class="if">
+									<dt>Intent Finder</dt>
+									<dd>사용자의 의도를 이해하고 분류할 수 있는 엔진으로, 가장 적절한 답변을 찾아 챗봇이 대답할 수 있도록 합니다.</dd>
+									<a href="product/if.html" target="_self"><dd class="btn active_btn"><span>데모 보기</span></dd></a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>개발 가이드</span></dd></a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>구매하기</span></dd></a>
+								</dl>
+							</li>	
+							<li>
+                           		<dl class="we">
+									<dt>Word Embedding</dt>
+									<dd>텍스트를 구성하는 각 단어를 컴퓨터가 이해할 수 있도록 수치화하는 기술로, 유사한 단어를 추천해주는 서비스에 활용할 수 있습니다.</dd>
+                                    <a href="product/we.html" target="_self"><dd class="btn active_btn"><span>데모 보기</span></dd> </a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>개발 가이드</span></dd></a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>구매하기</span></dd></a>
+								</dl>
+							</li>
+							<li>
+								<dl class="deepqa">
+									<dt>MRC</dt>
+									<dd>내용과 분량에 관계없이 어떤 문서든 즉시 독해한 뒤 사용자의 질문에 빠르고 정확하게 답하는 기계 독해 기술로, 질의응답 (QA) 서비스에 폭넓게 활용될 수 있습니다.</dd>
+									<a href="product/mrc.html" target="_self"><dd class="btn active_btn"><span>데모 보기</span></dd> </a>
+									<a href="guide/mrc.html" target="_self" class="btn_1"><dd class="btn active_btn"><span>개발 가이드</span></dd></a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>구매하기</span></dd></a>
+								</dl>
+							</li>
+						</ul>
+					</div>
+					<!-- //.productGroup -->
+					<!-- .productGroup -->
+					<div class="productGroup">
+						<h4>대화</h4>
+						<ul class="line05">
+							<li>
+								<dl class="sds">
+									<dt>SDS</dt>
+									<dd>사용자의 컴퓨터가 주고받는 멀티턴의 대화가 가능하도록 시나리오를 만드는 시스템으로, 다양한 대화 서비스에 활용됩니다.</dd>
+									<a href="product/sds.html" target="_self"><dd class="btn active_btn"><span>데모 보기</span></dd>  </a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>개발 가이드</span></dd></a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>구매하기</span></dd></a>
+								</dl>
+							</li>
+							<li>
+								<dl class="bqa">
+									<dt>Basic QA</dt>
+									<dd>미리 등록되어있는 질의응답 데이터를 이용하여 질문에 대한 답변을 제공하는 서비스에 활용할 수 있습니다.</dd>
+                                    <a href="product/bqa.html" target="_self"><dd class="btn active_btn"><span>데모 보기</span></dd> </a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>개발 가이드</span></dd></a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>구매하기</span></dd></a>
+								</dl>
+							</li>
+							<li>
+								<dl class="kbqa">
+									<dt>KB QA</dt>
+									<dd>개체에 대한 속성 값을 이용하여 질문에 답변할 수 있는 질의응답 엔진입니다.</dd>
+									<a href="product/kbqa.html" target="_self"><dd class="btn active_btn"><span>데모 보기</span></dd> </a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>개발 가이드</span></dd></a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>구매하기</span></dd></a>
+								</dl>
+							</li>
+							
+							<li>
+								<dl class="irqa">
+									<dt>IR QA</dt>
+									<dd>세계 최고 수준의 자연어 심층 이해 기술을 바탕으로 다양한 분야의 지식 소통이 가능한 인공지능 소프트웨어입니다.</dd>
+									<a href="product/irqa.html" target="_self"><dd class="btn active_btn"><span>데모 보기</span></dd></a>
+									<a href="guide/irqa.html" target="_self" class="btn_1"><dd class="btn active_btn"><span>개발 가이드</span></dd></a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>구매하기</span></dd></a>
+								</dl>
+							</li>
+							<li>
+								<dl class="deepqa">
+									<dt>Deep QA</dt>
+									<dd>내용과 분량에 관계없이 어떤 문서든 즉시 독해한 뒤 사용자의 질문에 빠르고 정확하게 답하는 기계 독해 기술로, 질의응답 (QA) 서비스에 폭넓게 활용될 수 있습니다.</dd>
+									<a href="product/deepqa.html" target="_self"><dd class="btn active_btn"><span>데모 보기</span></dd> </a>
+									<a href="guide/dqa.html" target="_self" class="btn_1"><dd class="btn active_btn"><span>개발 가이드</span></dd></a>
+									<a target="_self" class="btn_3"><dd class="btn blank_btn"><span>구매하기</span></dd></a>
+								</dl>
+							</li>
+							
+						</ul>
+					</div>
+					<!-- //.productGroup -->
+					
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.productLst -->
+			<!-- .stn -->
+			<div id="api_contact" class="api_contact">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<!-- .stn_cont -->
+					<div class="stn_cont">
+						<!-- .contactBox -->
+						<div class="contactBox">
+							<!-- .leftBox -->
+							<div class="leftBox">
+								<div class="stn_tit">
+									<h3>Contact Us</h3>
+								</div>
+								<div class="leftTxtBox">
+									<p>마인즈랩과 마인즈랩의 API 서비스에 대한 문의가 있으시다면 여기에 남겨주세요.<br>페이스북과 링크드인을 팔로우하시면 새 소식을 더 빠르게 접하실 수 있습니다.</p>
+									<ul class="contact_lst">
+										<li class="btn_tel"><a href="tel:+82316254340">+82 31 625 4340</a></li>
+										<li class="btn_mail"><a href="mailto:hello@mindslab.ai">hello@mindslab.ai</a></li>
+										<li class="btn_web"><a href="http://mindslab.ai" target="_blank">마인즈랩 홈페이지 mindslab.ai</a></li>
+										<ul class="social_lst">
+											<li class="btn_fb"><a href="https://www.facebook.com/mindsinsight/?fref=ts" target="_blank">Facebook</a></li>
+											<li class="btn_ld"><a href="https://www.linkedin.com/company/mindslabai" target="_blank">Linkedin</a></li>
+										</ul>
+									</ul>
+								</div>
+							</div>
+							<!-- //.leftBox -->
+							<!-- .rightBox -->
+							<div class="rightBox">
+								<form action="contact_form">
+									<fieldset>
+										<legend>문의하기</legend>
+										<div class="contact">
+											<div class="cl_b">
+											<div class="fl">
+												<div class="txtfield">
+													<select id="contactType" class="select">
+														<option id="ctt_type01" value="문의유형">문의유형</option>
+														<option id="ctt_type02" value="유료사용신청">유료사용신청</option>
+														<option id="ctt_type03" value="마인즈랩 STT 문의">마인즈랩 STT 문의</option>
+														<option id="ctt_type04" value="사용자 피드백">사용자 피드백</option>
+													</select>
+												</div>
+											</div>
+											<div class="fr">
+												<div class="txtfield">
+													<input type="text" name="fm_name" id="fm_name" class="input_txt" placeholder="이름 *">
+												</div>
+											</div>
+											</div>
+											<div class="txtfield">
+												<input type="text" name="fm_email" id="fm_email"  class="input_txt" placeholder="이메일 *">
+											</div>
+											<div class="txtfield">
+												<input type="text" name="fm_tel" id="fm_tel"  class="input_txt" placeholder="전화번호">
+											</div>
+											<div class="txtfield">
+												<textarea name="fm_txt" id="fm_txt" class="textArea" rows="4" placeholder="문의내용 *"></textarea>
+											</div>
+											<ul class="btnBox">
+												<li><button class="btn_clor">문의하기</button></li>
+												<!-- <li><button>개발자 가이드</button></li> -->
+											</ul>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<!-- //.rightBox -->
+						</div>
+						<!-- //.contactBox -->
+					</div>
+					<!-- //.stn_cont -->
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.stn -->
+			<p class="btn_goTop"><button>맨위로</button></p>
+		</div>
+		<!-- //#contents -->
+	</div>
+	<!-- //#container -->
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="lot_c">
+			<div class="f_logo"><img src="resources/images/logo_footer.png" alt="마인즈랩"></div>
+			<div class="cyrt"><span>MINDsLab &copy; 2018 .</span> <span>주식회사 마인즈랩ㅣ대표 유태준ㅣ</span><span>사업자 등록번호 314-86-55446</span></div>
+		</div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+<script type="text/javascript">   
+$(window).load(function() {    
+	$('#pageldg').addClass('pageldg_hide').delay(500).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){	
+		// Page CSS
+		$('#wrap').each(function(){				
+			$(this).addClass('type_stt');
+		});	
+	
+		// Demo 가능 여부 체크	
+		function hasGetUserMedia() {
+		  return !!(navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia);
+		}
+
+		if ( hasGetUserMedia() ) {
+			// Demo 가능 브라우저
+			$('.demoTab .leftBox .btnBox .btn_infoTxt').each(function(){				
+				$(this).append('<li>RECORD 버튼을 클릭하고 마이크를 사용하여 인식하고자 하는 말을 말씀해 보세요.</li>');
+			});	
+		} else {
+			// Demo 불가능 브라우저
+			$('.demoTab .leftBox .btnBox button').each(function(){				
+				$(this).hide();
+			});	
+			
+			// 브라우저 업데이트 안내 메세지
+			var agent = navigator.userAgent.toLowerCase();
+			if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+				$('.demoTab .leftBox .btnBox .btn_infoTxt').each(function(){				
+					$(this).append('<li>마이크를 사용하여 자신의 음성으로 데모를 사용해 보려면 최신 버전의 Microsoft Edge, Firefox 또는 Chrome과 같은 WebRTC 지원을 제공하는 다른 브라우저로 변경하세요.</li>');
+				});	
+			}		
+		}
+		
+		// Demo 음성
+		var userMike = false; // 사용자 마이크 연결 체크		
+		
+		// step01 > step02 
+		$('.type_stt .demo_intro button.demoRecord').on('click', function(){	
+			// 사용자 마이크 연결 체크
+			if ( userMike == false) {
+				// 사용자 마이크 연결 됐을때
+				$('.demoTab .rightBox .demo_intro').hide();
+				$('.demoTab .rightBox .demo_info').show();
+			} else {
+				// 사용자 마이크 연결 안 됐을 때
+				$(this).parent().parent().find('.demo_infoTxt').addClass('errorTxt').text('마이크가 연결 되어있지 않습니다. 마이크를 연결하시고 다시 시도하여 주시기 바랍니다.');
+			}			
+		});	
+		
+		// step02 > step03
+		$('.type_stt .demo_info button.demoStop').on('click', function(){	
+			$('.demoTab .rightBox .demo_info').hide();
+			$('.demoTab .rightBox .demo_recording').show();
+			$('.demoTab .rightBox .demo_infoTxt').removeClass('errorTxt');
+		});	
+		
+		// step03 > step04
+		$('.type_stt .demo_recording .recording').on('click', function(){	
+			$('.demoTab .rightBox .demo_recording').hide();
+			$('.demoTab .rightBox .demo_result').show();
+		});
+		
+		// step04 > step01
+		$('.type_stt .demo_result button.demoReset').on('click', function(){	
+			$('.demoTab .rightBox .demo_result').hide();
+			$('.demoTab .rightBox .demo_intro').show();
+		});
+		
+		// Demo 파일업로드
+		$('.demoFile').on('change', function() {
+			var fileTxt = $('.demoFile').val(); //파일을 추가한 input 박스의 값
+			var fneTxt = fileTxt.split(".").pop(-1).toLowerCase();
+
+			if ( fneTxt != "mp3" && fneTxt != "wav" && fneTxt != "pcm") { // 음성파일 체크
+				// 실패
+				$('#demo04 .demo_fileTxt').addClass('errorTxt').text('잘못된 파일입니다. mp3, wav, pcm 파일을 넣어주세요.');	
+			} else {
+				// 성공
+				$('.demoTab .rightBox .demo_intro').hide();
+				$('.demoTab .rightBox .demo_recording').show();	
+			}
+		});
+		
+		// 샘플재생
+		var btn_sample_kr = 'resources/audio/aekukka.mp3';
+		var btn_sample_en = 'resources/audio/eng_16k_1.mp3';
+		var btn_sample_ads= 'resources/audio/address1.mp3';
+			
+		$('.type_stt .demo_sample .btnBox02 button').on('click', function(){	
+			$('.demoTab .demo_sample .sampleTxt').hide();
+			$('.demoTab .demo_sample .demo_recording').show();
+			$('.demo_sample .sample_result').hide();
+		});
+		
+		$('.type_stt .demo_sample .recording').on('click', function(){	
+			$('.demoTab .demo_sample .demo_recording').hide();
+			$('.demoTab .demo_sample .sample_result').show();
+		});
+		
+		$('.demoTab .rightBox .btnBox02 #btn_sample_kr').on('click', function(){	
+			
+			$('.demoPlayer audio source').attr('resources/audio/aekukka.mp3');
+		});
+		$('.demoTab .rightBox .btnBox02 #btn_sample_en').on('click', function(){	
+			$('.demoPlayer audio source').attr('resources/audio/eng_16k_1.mp3');
+		});
+		$('.demoTab .rightBox .btnBox02 #btn_sample_ads').on('click', function(){	
+			$('.demoPlayer audio source').attr('resources/audio/address1.mp3');
+		});
+		
+		(function() {
+			// strict mode
+			"use strict";
+			// configurable options that determine particle behavior and appearance
+			var options = {
+					// connector line options
+					connector: {
+						// color of line
+						color: "white",
+						// base line width of each connector
+						lineWidth: 0.5
+					},
+					// individual particle options
+					particle: {
+						// base color
+						color: "white",
+						// number of particles to render onto stage
+						count: 75,
+						// size of particle influence when drawing connectors (in pixels)
+						influence: 75,
+						// a range of sizes for an individual particle (falls within max-min)
+						sizeRange: {
+							min: 1,
+							max: 5
+						},
+						// a range of velocities for each particle to inherit (falls within max-min)
+						velocityRange: {
+							min: 10,
+							max: 60
+						}
+					}
+				},
+				particles,
+				stage;
+			// sets the render loop state based on page's visibility
+			function handleDocumentVisibilityChange() {
+				document.hidden ?
+					stage.render.pause() :
+					stage.render.resume();
+			}
+
+			function initPage() {
+				initObjects();
+				initListeners();
+			}
+			// invoked when page has loaded
+			// registers window and document level event listeners
+			// required post object instantiation
+			function initListeners() {
+				// resize canvas on window resize
+				window.addEventListener(
+					"resize",
+					stage.resize);
+				// pause and resume rendering loop when visibility state is changed
+				document.addEventListener(
+					"visibilitychange",
+					handleDocumentVisibilityChange);
+			}
+			// invoked when page has loaded
+			// performs setup of stage and particles
+			// triggers the rendering loop
+			function initObjects() {
+				particles = new ParticleGroup();
+				// create our stage instance
+				stage = new Stage(document.querySelector("canvas"));
+				// init the canvas bounds and fidelity
+				stage.resize();
+				// populate particle group collection
+				particles.populate();
+				// begin stage rendering with the renderAll draw routine on each tick
+				stage.render.begin(
+					particles.render.bind(particles));
+			}
+			// renders an FPS value to the canvas top-left corner
+			function renderFPS(value) {
+				context.save();
+				context.font = 10 * stage.pixelRatio + "px sans-serif";
+				context.fillStyle = "white";
+				context.textBaseline = "top";
+				context.fillText(value, 5 * stage.pixelRatio, 5 * stage.pixelRatio);
+				context.restore();
+			}
+			// Paricle object construct:
+			// stores critical particle information regarding trajectory and location
+			// 		v: distance delta coefficient
+			// 		t: angular theta in degrees
+			//		r: particle radius
+			//		p: position on stage, x:y coordinate properties
+			// 		influence: radial influence of connectivity to other particles
+			// defines methods relating to particle rendering and comparison to other particle locations
+			function Particle(props) {
+				// private particle properties
+				var x = props.x || 0,
+					y = props.y || 0,
+					v = props.speed,
+					t = props.theta,
+					r = props.radius,
+					influence = props.influence,
+					color = props.color;
+				// public properties and methods
+				return {
+					// position property getter: read-only
+					get x() {
+						return x;
+					},
+					get y() {
+						return y;
+					},
+					// compares this particle location to another
+					// returns a coefficient describing the ratio of closeness to particle influence
+					influencedBy: function(a, b) {
+						var hyp = Math.sqrt(Math.pow(a - x, 2) + Math.pow(b - y, 2));
+						return Math.abs(hyp) <= influence ?
+							hyp / influence : 0;
+					},
+					// render this particle to a given context
+					render: function(ctx) {
+						ctx.strokeStyle = color;
+						ctx.lineWidth = 1 / r * r * stage.pixelRatio;
+						ctx.beginPath();
+						ctx.arc(x || 10, y || 10, r, 0, 8);
+						ctx.stroke();
+					},
+					// sets the position of this particle compared to its previous position
+					// in relation to a total time delta since last positioning
+					// positions infinitely loop within canvas bounds
+					setPosition: function(timeDelta) {
+						x += timeDelta / v * Math.cos(t);
+						x = x > stage.width + r ? 0 - r : x;
+						x = x < 0 - r ? stage.width + r : x;
+						y += timeDelta / v / 2 * Math.sin(t);
+						y = y > stage.height + r ? 0 - r : y;
+						y = y < 0 - r ? stage.height + r : y;
+					}
+				}
+			}
+			// ParticleGroup object construct
+			// an object which controls higher level methods to create, destroy and compare
+			// a grouping of Particle instances. Holds a private collection of all existing particles
+			function ParticleGroup() {
+				// particle instance array
+				var _collection = [],
+					// cache connector option property values
+					_connectColor = options.connector.color,
+					_connectWidth = options.connector.lineWidth,
+					_particleCount = options.particle.count;
+				// generates and returns a new particle instance with 
+				// randomized properties within ranges defined in the options object
+				function _generateNewParticle() {
+					return new Particle({
+						x: stage.width * Math.random(),
+						y: stage.height * Math.random(),
+						speed: getRandomWithinRange(options.particle.velocityRange) / stage.pixelRatio,
+						radius: getRandomWithinRange(options.particle.sizeRange),
+						theta: Math.round(Math.random() * 360),
+						influence: options.particle.influence * stage.pixelRatio,
+						color: options.particle.color
+					});
+					// random number generator within a given range object defined by a max and min property
+					function getRandomWithinRange(range) {
+						return ((range.max - range.min) * Math.random() + range.min) * stage.pixelRatio;
+					}
+				}
+				// loops through particle collection
+				// sets the new particle location given a time delta
+				// queries other particles to see if a connection between particles should be rendered
+				function _checkForNeighboringParticles(ctx, p1) {
+					// cache particle influence method
+					var getInfluenceCoeff = p1.influencedBy;
+					// particle collection iterator
+					for (var i = 0, p2, d; i < _particleCount; i++) {
+						p2 = _collection[i];
+						// conditional checks - ignore if p2 is the same as p1
+						// or if p2 has already been iterated through to check for neighbors
+						if (p1 !== p2 && !p2.checked) {
+							// compare the distance delta between the two particles
+							d = getInfluenceCoeff(p2.x, p2.y);
+							// render the connector if coefficient is non-zero
+							if (d) {
+								_connectParticles(ctx, p1.x, p1.y, p2.x, p2.y, d);
+							}
+						}
+					}
+				}
+				// given two particles and an influence coefficient between them,
+				// renders a connecting line between the two particles
+				// the coefficient determines the opacity (strength) of the connection
+				function _connectParticles(ctx, x1, y1, x2, y2, d) {
+					ctx.save();
+					ctx.globalAlpha = 1 - d;
+					ctx.strokeStyle = _connectColor;
+					ctx.lineWidth = _connectWidth * (1 - d) * stage.pixelRatio;
+					ctx.beginPath();
+					ctx.moveTo(x1, y1);
+					ctx.lineTo(x2, y2);
+					ctx.stroke();
+					ctx.restore();
+				}
+				// public object
+				return {
+					// returns the size of the collection
+					get length() {
+						return _collection.length;
+					},
+					// adds a particle object instance to the collection
+					add: function(p) {
+						_collection.push(p || _generateNewParticle());
+					},
+					// initial population of bar collection
+					populate: function() {
+						for (var i = 0; i < _particleCount; i++) {
+							this.add();
+						}
+					},
+					// loops through all particle instances within collection and
+					// invokes instance rendering method on a given context at tick coefficient t
+					render: function(ctx, t) {
+						// loop through each particle, position it and render
+						for (var i = 0, p; i < _particleCount; i++) {
+							p = _collection[i];
+							p.checked = false;
+							p.setPosition(t);
+							p.render(ctx);
+						}
+						// loop through each particle, check for connectors to be rendered with neighboring particles
+						for (var i = 0, p; i < _particleCount; i++) {
+							p = _collection[i];
+							_checkForNeighboringParticles(ctx, p);
+							p.checked = true;
+						}
+					}
+				};
+			}
+			// Stage object construct
+			// provides a structure to store a canvas and its context upon isntantiation
+			// provides methods to interact with and adjust the canvas
+			function Stage(canvasEl) {
+				// canvas element reference
+				var canvas = canvasEl instanceof Node ?
+					canvasEl :
+					document.querySelector(canvasEl),
+					// 2d context reference
+					context = canvas.getContext("2d"),
+					// cache the device pixel ratio
+					pixelRatio = window.devicePixelRatio;
+				// resize the canvas initially to fit its containing element
+				function _adjustCanvasBounds() {
+					var parentSize = canvas.parentNode.getBoundingClientRect();
+					canvas.width = parentSize.width;
+					canvas.height = parentSize.height;
+				}
+				// updates the canvas dimensions relative to the device's pixel ratio for highest fidelity and accuracy
+				function _adjustCanvasFidelity() {
+					canvas.style.width = canvas.width + "px";
+					canvas.style.height = canvas.height + "px";
+					canvas.width *= pixelRatio;
+					canvas.height *= pixelRatio;
+				}
+				// public object returned
+				return {
+					// dimension getters
+					get height() {
+						return canvas.height;
+					},
+					get width() {
+						return canvas.width;
+					},
+					get pixelRatio() {
+						return pixelRatio;
+					},
+					init: function(el) {
+						canvas = el;
+						context = canvas.getContext("2d");
+					},
+					resize: function() {
+						_adjustCanvasBounds();
+						_adjustCanvasFidelity();
+					},
+					render: (function() {
+						// a flag indicating state of animation loop
+						var paused = false,
+							// animation request ID reported during loop
+							requestID = null,
+							// reference to a function detailing all draw operations per frame of animation
+							renderMethod;
+						// public methods
+						return {
+							// once invoked, creates a rendering loop which in turn invokes
+							// drawMethod argument, passing along the delta (in milliseconds) since the last frame draw
+							begin: function(drawMethod) {
+								// cache the draw method to invoke per frame
+								renderMethod = drawMethod;
+								// a reference to requestAnimationFrame object
+								// this should also utilize some vendor prefixing and a setTimeout fallback
+								var requestFrame = window.requestAnimationFrame,
+									// get initial start time
+									latestTime, startTime = Date.now(),
+									// during each interval, clear the canvas and invoke renderMethod
+									intervalMethod = function(tick) {
+										this.clear();
+										renderMethod(
+											context,
+											tick);
+									}.bind(this);
+								// start animation loop
+								(function loop() {
+									// calculate tick time between frames
+									var now = Date.now(),
+										tick = now - latestTime || 1;
+									// update latest time stamp
+									latestTime = now;
+									// report tick value to intervalCallback
+									intervalMethod(tick);
+									// loop iteration if no pause state is set
+									requestID = paused ?
+										null :
+										requestAnimationFrame(loop);
+								})();
+							},
+							// clears the stage's canvas
+							clear: function() {
+								context.clearRect(0, 0, canvas.width, canvas.height);
+							},
+							// pause the canvas rendering
+							pause: function() {
+								paused = true;
+								cancelAnimationFrame(requestID);
+							},
+							// resumes the animation with a given rendering method
+							resume: function() {
+								paused = false;
+								this.begin(renderMethod);
+							}
+						}
+					}())
+				};
+			}
+			// our init is triggered when the window is loaded/ready
+			window.addEventListener(
+				"load",
+				initPage);
+		}());
+
+	});	
+});	
+	
+// resize
+$(window).resize(function(){
+		
+});	
+// scroll event
+</script>
+	
+<script>
+
+</script>
+</body>
+</html>

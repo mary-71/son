@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<!-- icon_favicon -->
+<link rel="apple-touch-icon-precomposed" href="resources/images/ico_favicon_64x64.png" />
+<link rel="shortcut icon" type="image/x-icon" href="resources/images/ico_favicon_64x64.ico"/>
+<title>maum.ai platform</title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/font.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/common.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/chatbot.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">		
+<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- //resources -->
+</head>
+
+<body>
+
+<!-- .page loading -->
+<div id="page_ldWrap" class="page_loading">
+	<div class="loading_itemBox">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!-- //.page loading -->
+
+	
+<!-- wrap -->
+<div id="wrap"> 
+	<!-- #header -->
+	<div id="header">
+        <h1><a target="_self" href="welcome.html"><img src="resources/images/logo.png" alt="maum.ai"></a></h1>    
+		<!-- .sta -->
+		<div class="sta">			
+			<!-- .titArea -->
+			<div class="titArea">               
+                <div class="path">
+                    <span><img src="resources/images/ico_path_home_bk.png" alt="HOME"></span>
+                    <span>고객지원</span>
+                    <span>문의 내역</span>
+                </div>
+            </div>
+            <!-- //.titArea -->	
+			
+			<!-- .etcmenu -->
+			<div class="etcmenu">
+<!--			<span><i>P</i><em>1,000</em> point</span>-->
+				<div class="userBox">
+					<dl>
+						<dt class="ico_user">User</dt>
+						<dd>
+							<a target="_self" href="#none">admin@console.com</a>
+						</dd>
+						<ul class="lst">
+							<li class="ico_profile"><a target="_self" href="#none">PROFILE</a></li>
+							<li class="ico_account"><a target="_self" href="#none">API ACCOUNT</a></li>
+							<li class="ico_payment"><a target="_self" href="#none">PAYMENT</a></li>
+						</ul>
+					</dl>
+				</div>
+			</div>
+			<!-- //.etcmenu -->
+		</div>
+		<!-- //.sta -->
+	</div>
+	<!-- //#header -->
+	<!-- .snb 한글 -->
+	<div class="snb">		
+		<ul>
+			<li class="collapsible list1"><a href="https://dev-api.maum.ai/"><i class="fas fa-home"></i>HOME</a></li>	
+			<li class="collapsible list2 active"><i class="fas fa-shapes"></i>AI Services</li>					
+			<li class="sublist list2_sub">
+				<a class="dropdwn twodepth " id="flip">텍스트를 음성으로</a>
+				<ul class="twodepthLst panel">
+					<li><a href="tts.html">AI Voice 사용하기</a></li>
+					<li class=""><a href="tts_record.html">내 목소리로 사용하기</a></li>
+				</ul>	
+				<a class="twodepth" href="stt.html">음성을 텍스트로</a>
+			</li>
+			<li class="collapsible list3 dropdwn"><i class="fas fa-laptop-code"></i>API Services</li>					
+			<li class="sublist list3_sub">
+				<a class="twodepth" href="api_tts.html">음성 생성</a>	
+				<a class="twodepth" href="api_stt.html">음성 인식</a>
+				<a class="twodepth" href="xdc.html">텍스트 분류</a>	
+				<a class="twodepth" href="mrc.html">AI 독해</a>
+				<a class="twodepth" href="hmd.html">패턴 분류</a>	
+				<a class="twodepth" href="nlu.html">자연어 이해</a>
+				<a class="twodepth" href="recog.html">화폐 · 고지서 인식</a>	
+			</li>		
+			<li class="collapsible list4 dropdwn"><i class="fas fa-grip-horizontal"></i>Application</li>					
+			<li class="sublist list4_sub">
+				<a class="twodepth" href="voc.html">maum VOC</a>	
+				<a class="twodepth" href="mai_1.html">mAI English</a>
+				<a class="twodepth" href="chatbot.html">날씨봇 · 위키봇</a>
+			</li>		
+			<li class="collapsible list5 dropdwn active"><i class="fas fa-headphones-alt"></i>고객지원</li>					
+			<li class="sublist list5_sub">
+				<a class="twodepth" href="pricing.html">가격정책</a>	
+				 
+				<a class="twodepth" href="faq.html">FAQ</a>
+				<a class="twodepth active" href="request.html">문의 내역</a>	
+				<a class="twodepth" href="contactus.html">Contact Us</a>	
+			</li>					
+		</ul>
+	</div>
+	<!-- //.snb 한글 -->	
+	<!-- aside -->
+	<div class="aside" style="display:none;">
+		<!-- .aside_top -->
+		<div class="aside_top">
+			<h1><a href="index.html"><img src="resources/images/logo_m.png" alt="maum API"></a></h1>
+		</div>
+		<!-- //.aside_top -->
+		<!-- .aside_mid -->
+		<div class="aside_mid">
+			<ul class="m_etcMenu">
+				<li class="lang">
+					<p class="lang_select"><img src="resources/images/ico_lang_kr.png" alt="한국어"><em>한국어</em></p>
+					<ul class="lst">
+						<li><a href="../en/index.html" target="_self"><img src="resources/images/ico_lang_us.png" alt="English"><em>English</em></a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="m_nav">
+				<li>
+					<h2><a href="#none">HOME</a></h2>
+				</li>
+				<li>
+					<h2><a href="#none">AI Services</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none" class="depth3">택스트를 음성으로</a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="tts.html" target="_self">AI Voice 사용하기</a></li>
+								<li><a href="tts_record.html" target="_self">내 목소리로 사용하기</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none">음성을 텍스트로</a></h3>							
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">API Services</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none">음성 생성</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">음성 인식</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">텍스트 분류</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">AI 독해</a></h3>						
+						</li>
+						<li>
+							<h3><a href="#none">패턴 분류</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">자연어 이해</a></h3>						
+						</li>
+						<li>
+							<h3><a href="#none">화폐 · 고지서 인식</a></h3>							
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">Application</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none">maum VOC</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">mAI English</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">날씨봇 · 위키봇</a></h3>							
+						</li>						
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">고객지원</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none">가격정책</a></h3>							
+						</li>
+						 
+						<li>
+							<h3><a href="#none">FAQ</a></h3>							
+						</li>	
+						<li>
+							<h3><a href="#none">문의 내역</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">Contact Us</a></h3>							
+						</li>
+					</ul>
+				</li>
+			</ul>  
+		</div>
+		<!-- //.aside_mid -->
+		<!-- .aside_btm -->
+<!--
+		<div class="aside_btm">
+			<ul>
+				<li class="btn_mail"><a href="mailto:hello@mindslab.ai">hello@mindslab.ai</a></li>
+				<li class="btn_tel"><a href="tel:+82316254340">031. 625. 4340</a></li>
+			</ul>
+		</div>
+-->
+		<!-- //.aside_btm -->
+	</div>
+	<div class="bg_aside"></div> 
+	<a class="btn_header_ham" href="#none"><span class="hamburger_icon"></span></a>  
+	<!-- //aside -->
+	
+	<!-- #container -->
+	<div id="container">		
+		<!-- .contents -->
+		<div class="contents"> 
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+				<div class="modalImg">
+				  <a href="#none" class="layer_close"></a>
+				  <img class="modal-content" id="img01">
+				</div>
+			</div>
+			<div id="myModal2" class="modal">
+				<div class="modalImg">
+				  <a href="#none" class="layer_close"></a>
+				  <img class="modal-content" id="img02">
+				</div>
+			</div>
+			<!-- //The Modal -->
+			
+			<!--content-->
+            <div class="content">
+				<h1>문의 내역</h1>
+				<!-- .notice -->
+				<div id="noticeBox" class="request">	
+					<div class="chackboxarea">
+						<div class="checkbox">
+							<input type="checkbox" id="checkboxType01"><label for="checkboxType01">완료</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" id="checkboxType02" checked="checked"><label for="checkboxType02">진행중</label>
+						</div>
+					</div>
+					<div class="lst_stn">
+						<button class="noticetit">Puchasing process<div class="right_txt"><span>2019.03.09 17:25</span> <em class="incomplete">진행중</em></div></button>						
+						<div class="noticetxt">
+							<div class="txt_area">	
+						  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>	
+						</div>
+						<button class="noticetit"><span class="tag">&#91;음성생성&#93; &#91;버그&#93;</span>Puchasing process<div class="right_txt"><span>2019.03.09 17:25</span> <em class="complete">완료</em></div></button>
+						<div class="noticetxt">
+						     <div class="txt_area">	
+								 <em class="writer">작성자 : admin@gmail.com</em>
+								 <p>안녕하세요,<br>시간외근로 수당 자동합계 오류 입니다.</p>
+								 <div class="imgarea">
+									<span class="img">
+										<img id="myImg" src="resources/images/capture.jpg" alt="불러온 이미지">										
+									</span>	
+									 <span class="img">
+										<img id="myImg2" src="resources/images/capture.jpg" alt="불러온 이미지">								
+									</span>	
+								 </div>									 
+								 <span class="attach_file">첨부파일</span>
+								 <span class="attach_file_tit">캡쳐.JPG <img src="resources/images/ico_download_c.png" alt="다운로드"></span>	
+								 <span class="attach_file_tit">캡쳐2.JPG <img src="resources/images/ico_download_c.png" alt="다운로드"></span>
+							 </div>							
+							 <div class="txt_area">
+								<div class="answer_area">
+									<textarea rows="4" cols="50"></textarea>
+									 <button type="submit">전송</button>
+								</div>
+								 <div class="answer_complete">
+									 <span>maum.ai C/S</span>
+									 <em>2019.03.09 17:25</em>
+									 <p>확인을 해보니 현재 정상적으로 합계가 되어지는 것으로 보입니다.<br>
+다시 한 번 시도 후에도 같은 현상이 발생하신다면 정확한 상황 설명 부탁드립니다. 감사합니다.</p>
+								</div>
+							 </div>
+						</div>
+						<button class="noticetit">Puchasing process<div class="right_txt"><span>2019.03.09 17:25</span> <em class="complete">완료</em></div></button>
+						<div class="noticetxt">
+						    <div class="txt_area">	
+						  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>	
+						</div>	
+						<button class="noticetit">Puchasing process<div class="right_txt"><span>2019.03.09 17:25</span> <em class="complete">완료</em></div></button>
+						<div class="noticetxt">
+						    <div class="txt_area">	
+						  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>	
+						</div>
+						<button class="noticetit">Puchasing process<div class="right_txt"><span>2019.03.09 17:25</span> <em class="complete">완료</em></div></button>
+						<div class="noticetxt">
+						    <div class="txt_area">	
+						  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>	
+						</div>
+						<button class="noticetit last">Puchasing process<div class="right_txt"><span>2019.03.09 17:25</span> <em class="complete">완료</em></div></button>
+						<div class="noticetxt">
+						    <div class="txt_area">	
+						  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>	
+						</div>
+					</div>
+					<!-- 페이징 -->
+                    <div class="pageing">
+                        <a href="#" class="first">처음페이지</a>
+                        <a href="#" class="prev">이전페이지</a>
+                        <strong>1</strong>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#" class="next">다음페이지</a>
+                        <a href="#" class="end">마지막페이지</a>
+                    </div>
+                    <!-- //페이징 -->
+				</div>
+				<!-- //.notice -->
+		
+			</div>	
+			<!--content-->
+			<!-- #footer -->
+			<div id="footer">
+				<div class="lot_c">
+					<div class="cyrt"><span>MINDsLab &copy; 2019</span></div>
+				</div>
+				<input type="hidden" id="AUTH_ID">
+				<input type="hidden" id="SESSION_ID">
+			</div>
+			<!-- //#footer -->
+		</div>
+		<!-- //.contents -->
+	</div>
+	<!-- //#container -->
+	
+    <!-- cahtbot floating -->
+    <div class="btn_fltBox">    	
+        <div class="btnBox">
+        	<button type="button" id="btn_flt_cb" class="btn_flt_cb"></button>
+        </div>
+    </div>
+    <div id="livechatWrap"></div>		
+    <!-- cahtbot floating -->
+</div>
+<!-- //wrap -->
+
+
+
+<script type="text/javascript" src="resources/js/jquery.min.js"></script>		
+<script type="text/javascript" src="resources/js/common.js"></script>
+<script type="text/javascript" src="resources/js/bootstrap-datepicker.js"></script>	
+<script type="text/javascript">   
+$(window).load(function() {    
+	$('.page_loading').addClass('pageldg_hide').delay(300).queue(function() { 
+		$(this).remove(); 
+	});
+}); 
+</script>
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+		
+		
+		// 전송 버튼	
+		$('.answer_area button').on('click',function(){
+			$(this).parent().hide();
+			$('.answer_complete').fadeIn(300);	
+		});
+	
+		//이미지 닫기
+		$('.layer_close, #myModal').on('click',function(){
+			$('.modal').fadeOut(300);
+
+		});
+		
+		// live chat 플로팅
+		$('#btn_flt_cb').on('click', function() {
+			$.ajax({
+				url: 'chatbot/bot_sully_floating.html',
+				//url: '/kr/maumbot',
+				type: 'GET',
+				dataType: 'html',
+				async: false,
+				success:function(data){
+					$('#livechatWrap').html(data);
+				},
+				error:function(){
+					console.log("hi");
+				}
+			});
+		});
+		
+	});	
+});	
+
+		
+//twodepth	
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var sublist = this.nextElementSibling;
+    if (sublist.style.maxHeight){
+      sublist.style.maxHeight = null;
+	  	
+    } else {
+      sublist.style.maxHeight = sublist.scrollHeight + "px";
+		$('.dropdwn').removeClass('.active');
+    } 
+  });
+}
+//$('.snb ul li.collapsible').each(function(){
+//			if($(this).hasClass('active')){
+//				$(this).trigger( "click" );
+//			}
+//		});	
+//	
+//threedepth	
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+		$('.snb ul li.collapsible').each(function(){
+			if($(this).hasClass('active')){
+				$(this).trigger( "click" );
+				$(this).addClass('active');
+			}
+		});	
+		
+		$("#flip").click(function(){
+			if($(this).hasClass('active')){
+				$(this).removeClass('active');	
+			}else{
+				$(this).addClass('active');
+			}
+			
+			$(".panel").slideToggle("fast");
+			var sublist = this.parentNode;
+			sublist.style.maxHeight =  sublist.scrollHeight + $(".twodepthLst").prop('scrollHeight')+ "px";	
+			
+		});	
+		
+	
+	});	
+});
+
+
+//notice 리스트	
+var coll = document.getElementsByClassName("noticetit");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var noticetxt = this.nextElementSibling;
+    if (noticetxt.style.maxHeight){
+      noticetxt.style.maxHeight = null;
+    } else {
+      noticetxt.style.maxHeight = noticetxt.scrollHeight + "px";
+    } 
+  });
+}
+		
+	
+// 이미지 모달
+var modal = document.getElementById('myModal');
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+}
+
+var modal = document.getElementById('myModal2');
+var img = document.getElementById('myImg2');
+var modalImg = document.getElementById("img02");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+}
+
+// Get the <span> element that closes the modal
+//var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+//span.onclick = function() { 
+//  modal.style.display = "none";
+//}	
+
+
+</script>
+	
+</body>
+</html>
+
+

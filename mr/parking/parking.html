@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="타이틀" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link href="resources/images/img_favicon.ico" rel="shortcut icon" />
+<link rel="apple-touch-icon-precomposed" href="resources/images/img_favicon.png">
+	
+<title>주차등록요청</title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/parking.css" />
+<script type="text/javascript" src="resources/js/jquery.min.js"></script>
+<!-- //resources -->
+</head>
+
+<body>
+<!-- loading -->
+<div id="pageldg">
+	<span class="ico_car"></span>	
+	<span class="bg_page"></span>
+</div>
+<!-- //loading -->
+<!-- #parkingWrap -->
+<div class="parkingWrap"> 
+	<div class="parkBox">
+		<div class="parkBox_tit">
+			<h1><img src="resources/images/logo_h1_parking.png" alt="주차등록요청"></h1>
+		</div>
+		<div class="parkBox_cont">
+			<dl class="dlStyle01">
+				<dt>신청자</dt>
+				<dd><input type="text" id="myName" class="ipt_txt" placeholder="신청자 이름을 입력해주세요."></dd>
+			</dl>
+			<dl class="dlStyle01">
+				<dt>방문자</dt>
+				<dd><input type="text" id="gstName" class="ipt_txt" placeholder="방문자 이름을 입력해주세요."></dd>
+			</dl>
+			<dl class="dlStyle01">
+				<dt>차량번호</dt>
+				<dd><input type="text" id="carNum" class="ipt_txt" placeholder="ex) 12가3456"></dd>
+			</dl>
+			<dl class="dlStyle01">
+				<dt>방문사유<span>방문 업체명을 꼭 넣어주세요.</span></dt>
+				<dd>
+					<input type="text" id="whyTxt" class="ipt_txt" placeholder="ex) LGU+회의, 에버커스 계약">
+				</dd>
+			</dl>
+			<button type="button" class="btn_add disabled" disabled>요청</button>
+		</div>
+	</div>
+</div>
+<!-- //#parkingWrap -->
+<!-- ending -->
+<div id="pageEdg">
+	<span class="ico_car"></span>	
+	<span class="bg_page"></span>
+</div>
+<!-- //loading -->
+<!-- .resultWrap -->
+<div class="resultWrap">
+	<div class="resultBox">
+		<div class="resultBox_tit">
+			<h1><img src="resources/images/logo_h1_parking.png" alt="주차등록요청"></h1>
+			<p>요청이 완료 되었습니다.</p>
+		</div>
+		<div class="resultBox_cont">
+			<dl class="dlStyle02">
+				<dt>신청자</dt>
+				<dd id="myName_rst"></dd>
+			</dl>
+			<dl class="dlStyle02">
+				<dt>방문자</dt>
+				<dd id="gstName_rst"></dd>
+			</dl>
+			<dl class="dlStyle02">
+				<dt>차량번호</dt>
+				<dd id="carNum_rst"></dd>
+			</dl>
+			<dl class="dlStyle02">
+				<dt>방문사유</dt>
+				<dd id="whyTxt_rst"></dd>
+			</dl>			
+		</div>
+		<p class="resultBox_btm"><button type="button" class="btn_refresh">처음으로</button></p>
+	</div>
+</div>
+<!-- //.resultWrap -->
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+		// input 초기화
+		$('.ipt_txt').each(function(){					
+			$(this).val('');
+		});		
+		
+		// opening
+		$('#pageldg').delay(1200).queue(function() { 
+			$(this).addClass('pageldg_hide').delay(1700).remove(); 
+		});
+		
+		$('.parkBox').delay(1200).animate({	
+			'opacity': 1.0,
+		},1000);
+		$('.parkBox_cont').append('<span class="disBox"></span>');
+						
+		// 입력값 체크 (요청버튼 활성화)
+		$('.ipt_txt').on('change keyup paste click', function(e) {
+			var myNameValLth = $('#myName').val().length;
+			var gstNameValLth = $('#gstName').val().length;
+			var carNumValLth = $('#carNum').val().length;
+			var whyTxtValLth = $('#whyTxt').val().length;
+			
+			if ( myNameValLth > 0 && gstNameValLth > 0 && carNumValLth > 0 && whyTxtValLth > 0) {
+				$('.btn_add').removeClass('disabled');	
+				$('.btn_add').removeAttr('disabled');
+				$('.disBox').remove();
+			} else {
+				$('.btn_add').addClass('disabled');	
+				$('.btn_add').attr('disabled');
+			}
+		});
+		
+		// 입력값 확인 (레이어팝업)
+		$('.btn_add').on('click', function(e) {
+			
+			var myName_rst = $('#myName').val();
+			var gstName_rst = $('#gstName').val();
+			var carNum_rst = $('#carNum').val();
+			var whyTxt_rst = $('#whyTxt').val();
+			
+			if ( myName_rst === gstName_rst) {
+				// 신청자,방문자 같을 때 안내 멘트
+				$('body').append(' \
+				 	<div class="layerpopup_wrap"> \
+						<div class="layer_bg"></div> \
+						<div class="alertBox"> \
+							 <div class="txt"> \
+								<span>신청자와 방문자 이름이 같습니다.<br><em>본인 차량을 요청하실 경우, <br>사전에 품의서를 기안하셔야 <br>요청처리가 가능</em>합니다.</span> \
+							 </div> \
+							 <ul> \
+								<li><button type="button" class="btn_goResult">확인</button></li> \
+								<li><button type="button" class="btn_layerClose">취소</button></li> \
+							 </ul> \
+						</div> \
+					</div> \
+				 ');
+				
+				// alertBox 중앙정렬
+				$('.alertBox').each(function(){					
+					var alertHeight = $(this).height();
+					$(this).css({
+						'margin-top': -alertHeight/2,	
+					});
+				});				
+				
+				// 취버튼 클릭 시
+				$('.layer_bg, .btn_layerClose').click(function(){
+					$('.layerpopup_wrap').addClass('layerpopup_hide').delay(500).queue(function() { 
+						$(this).remove(); 
+					});
+				});	
+				
+				// 확인버튼 클릭 시
+				$('.btn_goResult').click(function(){
+					$('.layerpopup_wrap').addClass('layerpopup_hide').delay(500).queue(function() { 
+						$(this).remove(); 
+					});
+					
+					$('.parkBox').animate({	
+						'opacity': 0,
+					},1000);
+
+					$('#pageEdg').delay(500).queue(function() { 
+						$(this).addClass('pageEdg_show'); 
+					});
+
+					$('.resultWrap').delay(1600).queue(function() { 
+						$('#pageEdg').removeClass('pageEdg_show');
+						$('.parkingWrap').css({	
+							'display': 'none',
+						});
+						$(this).css({	
+							'display': 'block',
+							'opacity': '1.0',
+						});
+					});
+
+					// 입력값 결과페이지 출력
+					$('#myName_rst').text(myName_rst);
+					$('#gstName_rst').text(gstName_rst);
+					$('#carNum_rst').text(carNum_rst);
+					$('#whyTxt_rst').text(whyTxt_rst);
+				});	
+			} else {
+				// 신청자,방문자 같은지 확인
+				$('.parkBox').animate({	
+					'opacity': 0,
+				},1000);
+
+				$('#pageEdg').delay(500).queue(function() { 
+					$(this).addClass('pageEdg_show'); 
+				});
+
+				$('.resultWrap').delay(1600).queue(function() { 
+					$('#pageEdg').removeClass('pageEdg_show');
+					$('.parkingWrap').css({	
+						'display': 'none',
+					});
+					$(this).css({	
+						'display': 'block',
+						'opacity': '1.0',
+					});
+				});
+
+				// 입력값 결과페이지 출력
+				$('#myName_rst').text(myName_rst);
+				$('#gstName_rst').text(gstName_rst);
+				$('#carNum_rst').text(carNum_rst);
+				$('#whyTxt_rst').text(whyTxt_rst);
+			}
+		});
+		
+		// 처음으로
+		$('.btn_refresh').on('click', function(e) {
+			location.reload();
+		});
+	});	
+});	
+
+</script>
+	
+</body>
+</html>

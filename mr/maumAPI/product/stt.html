@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<!-- facebook Tag -->
+<meta property="fb:app_id"           content="APP_ID" />
+<!-- Open Graph Tag -->
+<meta property="og:title"            content=""/><!-- 웹 페이지 제목 -->
+<meta property="og:type"             content="website"/><!-- 웹 페이지 타입 -->
+<meta property="og:url"              content=""/><!-- 웹 페이지 URL-->
+<meta property="og:image"            content=""/><!-- 웹 페이지 대표 이미지 -->
+<meta property="og:description"      content=""/><!-- 웹 페이지 설명 -->
+<!-- twitter Tag -->
+<meta property="twitter:card"        content="summary"/>
+<meta property="twitter:url"         content=""/><!-- 웹 페이지 URL-->
+<meta property="twitter:image"       content=""/><!-- 웹 페이지 대표 이미지 -->
+<meta property="twitter:title"       content=""/><!-- 웹 페이지 제목 -->
+<meta property="twitter:description" content=""/><!-- 웹 페이지 설명 -->
+<!-- icon (Internet Explorer & Windows Phone) -->
+<meta name="msapplication-square70x70logo" content="70x70.png"><!-- smalltile -->
+<meta name="msapplication-square150x150logo" content="150x150.png"><!-- mediumtile -->
+<meta name="msapplication-wide310x150logo" content="310x150.png"><!-- widetile -->
+<!-- icon (Chrome & Opera) -->
+<link rel="icon" sizes="192x192" href="192x192.png"><!-- 아이콘의 크기는 48px을 기본으로 합니다. 48px, 96px, 144px, 192px로 늘어납니다.-->
+<!-- icon (Safari) -->
+<link rel="apple-touch-icon" sizes="76x76" href="76x76.png"/><!-- iPad -->
+<link rel="apple-touch-icon" sizes="120x120" href="120x120.png"/><!-- iPhone Retina -->
+<link rel="apple-touch-icon" sizes="152x152" href="152x152.png"/><!-- iPad Retina -->
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="64x64.ico"/><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->	
+	
+<title>STT :: maum API</title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="../resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../resources/css/common.css" />
+<script type="text/javascript" src="../resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="../resources/js/common.js"></script>
+<!-- //resources -->
+</head>
+
+<body>
+<!-- loading -->
+<div id="pageldg">
+    <div class="ld_item">
+        <span></span>  
+        <span></span>
+    </div>
+</div>
+<!-- //loading -->
+<!-- #wrap -->
+<div id="wrap"> 
+	<!-- #header -->
+	<div id="header" >	
+		<!-- .sta -->
+		<div class="sta">
+			<h1><a href="../index.html"><img src="../resources/images/img_cmn_h1.png" alt="maum API"></a></h1>			
+			<div class="etcMenu">
+				<ul>
+					<!-- <li class="login"><span>로그인</span></li> -->
+					<li class="lang">
+						<p class="lang_select"><img src="../resources/images/ico_lang_kr.png" alt="한국어"><em>한국어</em></p>
+						<ul class="lst">
+							<li><a href="../../en/index.html" target="_blank"><img src="../resources/images/ico_lang_us.png" alt="English"><em>English</em></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //.sta -->
+		<!-- .gnb -->
+		<div id="gnb" class="gnb">
+			<div class="gnbNavBox">
+				<ul class="gnbNav">
+					<li class="menu1depth">
+						<h2><a href="#none">제품</a></h2>
+						<div class="gnbItem">
+							<div class="lot_c">
+								<div class="itemBox">
+									<dl style="margin-bottom:55px">
+										<dt class="ico_voice"><span>음성</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="stt.html" target="_self">Speech To Text <em class="new">Demo</em></a></li>
+												<li><a href="tts.html" target="_self">Text To Speech <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="ico_visual"><span>시각</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="diarl.html" target="_self">Document Image Analysis, Recognition and Learning <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_int"><span>지능</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="ec.html" target="_self">Ensemble Classification</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_lang"><span>언어</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="nlu.html" target="_self">Natural Language Understanding</a></li>
+												<li><a href="dnn.html" target="_self">DNN Classification</a></li>
+												<li><a href="hmd.html" target="_self">Hierarchical Multiple Dictionary</a></li>
+												<li><a href="xdc.html" target="_self">eXplainable Document Classifier <em class="new">Demo</em></a></li>
+												<li><a href="if.html" target="_self">Intent Finder</a></li>
+												<li><a href="we.html" target="_self">Word Embedding</a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_cvs"><span>대화</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="sds.html" target="_self">Spoken Dialogue System</a></li>
+												<li><a href="bqa.html" target="_self">Basic Question Answering <em class="new">Demo</em></a></li>
+												<li><a href="kbqa.html" target="_self">Knowledge Based Question Answering <em class="new">Demo</em></a></li>
+												<li><a href="irqa.html">Information Retrieval Question Answering <em class="new">Demo</em></a></li>
+												<li><a href="deepqa.html" target="_self">Deep Question Answering <em class="new">Demo</em></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu1depth"><h2><a href="#none">개발 가이드</a></h2>
+						<div class="gnbItem">
+							<div class="lot_c">
+								<div class="itemBox">
+									<dl style="margin-bottom:55px">
+										<dt class="ico_voice"><span>음성</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../guide/stt.html" target="_self">Speech To Text </a></li>
+												<li><a href="../guide/tts.html" target="_self"><span>Text To Speech</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="ico_visual"><span>시각</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../guide/diarl.html" target="_self"><span>Document Image Analysis, Recognition and Learning</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_int"><span>지능</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../guide/ec.html" target="_self"><span>Ensemble Classification</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_lang"><span>언어</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../guide/nlu.html" target="_self"><span>Natural Language Understanding</span></a></li>
+												<li><a href="../guide/dnn.html" target="_self"><span>DNN Classification</span></a></li>
+												<li><a href="../guide/hmd.html" target="_self"><span>Hierarchical Multiple Dictionary</span></a></li>
+												<li><a href="../guide/xdc.html" target="_self"><span>eXplainable Document Classifier</span></a></li>
+												<li><a href="../guide/if.html" target="_self"><span>Intent Finder</span></a></li>
+												<li><a href="../guide/we.html" target="_self"><span>Word Embedding</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="itemBox">
+									<dl>
+										<dt class="ico_cvs"><span>대화</span></dt>
+										<dd>
+											<ul class="lst">
+												<li><a href="../guide/sds.html" target="_self"><span>Spoken Dialogue System</span></a></li>
+												<li><a href="../guide/bqa.html" target="_self"><span>Basic Question Answering</span></a></li>
+												<li><a href="../guide/kbqa.html" target="_self"><span>Knowledge Based Question Answering</span> </a></li>
+												<li><a href="../guide/irqa.html"><span>Information Retrieval Question Answering </span></a></li>
+												<li><a href="../guide/deepqa.html" target="_self"><span>Deep Question Answering</span> </a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu1depth"><h2><span>파트너</span></h2></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //.gnb -->
+		<div class="lnb">
+			<div class="lot_c">
+				<h2>STT</h2>
+				<ul class="nav">
+					<li><a href="#stn_demo">Demo</a></li>
+					<li><a href="#stn_process">Process</a></li>
+					<li><a href="#stn_feature">Features</a></li>
+                    <li><a href="#stn_pricing">Pricing</a></li>
+					<li><a class="point" href="#api_contact">문의하기</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- //#header -->
+
+	<!-- aside -->
+	<div class="aside" style="display:none;">
+		<!-- .aside_top -->
+		<div class="aside_top">
+			<h1><a href="index.html"><img src="../resources/images/logo_aside_h1.png" alt="maum API"></a></h1>
+		</div>
+		<!-- //.aside_top -->
+		<!-- .aside_mid -->
+		<div class="aside_mid">
+			<ul class="m_etcMenu">
+				<li class="lang">
+					<p class="lang_select"><img src="../resources/images/ico_lang_kr.png" alt="한국어"><em>한국어</em></p>
+					<ul class="lst">
+						<li><a href="../../en/index.html" target="_self"><img src="../resources/images/ico_lang_us.png" alt="English"><em>English</em></a></li>
+					</ul>
+				</li>
+			</ul>
+				
+			
+			<ul class="m_nav">
+				<li>
+					<h2><a href="#none">개발 가이드</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none"><span class="ico_voice">음성</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="../guide/stt.html" target="_self">Speech To Text </a></li>
+<!--							<li><a href="tts.html" target="_self">Text To Speech <em class="new">Demo</em></a></li>-->
+							</ul>
+						</li>
+<!--
+						<li>
+							<h3><a href="#none"><span class="ico_visual">시각</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="diarl.html" target="_self">Document Image Analysis, Recognition and Learning <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_int">지능</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="ec.html" target="_self">Ensemble Classification</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_lang">언어</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="nlu.html" target="_self">Natural Language Processing</a></li>
+								<li><a href="dnn.html" target="_self">DNN Classification</a></li>
+								<li><a href="hmd.html" target="_self">Hierarchical Multiple Dictionary</a></li>
+								<li><a href="xdc.html" target="_self">eXplainable Document Classifier <em class="new">Demo</em></a></li>
+								<li><a href="if.html" target="_self">Intent Finder</a></li>
+								<li><a href="sc.html" target="_self">Simple Claasifier</a></li>
+								<li><a href="we.html" target="_self">Word Embedding</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_cvs">대화</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="sds.html" target="_self">Spoken Dialogue System</a></li>
+								<li><a href="bqa.html" target="_self">Basic Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="kbqa.html" target="_self">Knowledge Based Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="irqa.html" target="_self">Information Retrieval Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="deepqa.html" target="_self">Deep Question Answering <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+-->
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">제품</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none"><span class="ico_voice">음성</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="stt.html" target="_self">Speech To Text <em class="new">Demo</em></a></li>
+								<li><a href="tts.html" target="_self">Text To Speech <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_visual">시각</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="diarl.html" target="_self">Document Image Analysis, Recognition and Learning <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_int">지능</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="ec.html" target="_self">Ensemble Classification</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_lang">언어</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="nlu.html" target="_self">Natural Language Processing</a></li>
+								<li><a href="dnn.html" target="_self">DNN Classification</a></li>
+								<li><a href="hmd.html" target="_self">Hierarchical Multiple Dictionary</a></li>
+								<li><a href="xdc.html" target="_self">eXplainable Document Classifier <em class="new">Demo</em></a></li>
+								<li><a href="if.html" target="_self">Intent Finder</a></li>
+								<li><a href="sc.html" target="_self">Simple Claasifier</a></li>
+								<li><a href="we.html" target="_self">Word Embedding</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none"><span class="ico_cvs">대화</span></a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="sds.html" target="_self">Spoken Dialogue System</a></li>
+								<li><a href="bqa.html" target="_self">Basic Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="kbqa.html" target="_self">Knowledge Based Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="irqa.html" target="_self">Information Retrieval Question Answering <em class="new">Demo</em></a></li>
+								<li><a href="deepqa.html" target="_self">Deep Question Answering <em class="new">Demo</em></a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><span>파트너</span></h2>
+				</li>
+				<li>
+					<h2><a href="#none">문의하기</a></h2>
+				</li>
+			</ul>  
+		</div>
+		<!-- //.aside_mid -->
+		<!-- .aside_btm -->
+		<div class="aside_btm">
+			<ul>
+				<li class="btn_mail"><a href="mailto:hello@mindslab.ai">hello@mindslab.ai</a></li>
+				<li class="btn_tel"><a href="tel:+82316254340">031. 625. 4340</a></li>
+			</ul>
+		</div>
+		<!-- //.aside_btm -->
+	</div>
+	<div class="bg_aside"></div> 
+	<a class="btn_header_ham" href="#none"><span class="hamburger_icon"></span></a>  
+	<!-- //aside -->     
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #contents -->
+		<div id="contents">	
+			<!-- .visualArea -->
+			<div class="visualArea">
+				<div class="lot_c">
+					<div class="visual_tit">
+						<h2>
+							<span class="slogan">정확하고 강력한 음성 인식</span>
+							<span class="logotype">STT</span>
+                            <span class="fullName">Speech To Text</span>
+						</h2>
+						<p class="h2_txt">마인즈랩의 STT(Speech To Text) 엔진은 음성을 텍스트로 빠르고 정확하게 변환하는 음성 인식 엔진입니다.<br>
+							딥러닝 방식의 인공 신경망(DNN)이 적용된 마인즈랩의 STT는 한국어와 영어에 특화된 강력한 음성인식 성능을 자랑합니다.<br> 실시간으로 사용자의 음성을 텍스트로 변환하거나, 기존 음성 파일을 한번에 텍스트로 변환하여 다양한 비즈니스에 적용할 수 있습니다.</p>
+						<div class="link_box">
+							<div class="demo_link"><a href="../guide/stt.html">개발 가이드</a></div>
+							<div class="demo_link btn_buy"><a href="http://mindslab.cafe24.com/product/stt-speech-to-text/16/category/1/display/2/">구매 하기</a></div>
+						</div>
+					</div>
+					
+				</div>			
+			</div>
+			<!-- //.visualArea -->
+			<!-- .demo -->
+			<div id="stn_demo" class="stn demo_bg">
+				<div class="bg_ani"> 
+					<div class="demo01">
+						<span></span><span></span><span></span>
+					</div>
+				</div>
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<!-- .stn_tit -->
+					<div class="stn_tit">
+						<h3 >Demo</h3>
+					</div>
+					<!-- //.stn_tit -->
+					<!-- .tabUi -->
+					<div class="tabUi demoTab">
+						<!-- .tab_nav -->
+						<div class="tab_nav">
+							<ul>
+								<li><a href="#demo01">한국어인식</a></li>
+								<li><a href="#demo02">영어인식</a></li>
+								<li><a href="#demo06">한국식 영어인식</a></li>
+								<li><a href="#demo03">한국어 주소인식</a></li>
+								<li><a href="#demo04">파일업로드</a></li>
+								<li><a href="#demo05">샘플재생</a></li>
+							</ul>
+						</div>
+						<!-- //.tab_nav -->
+						<!-- .tab_container -->
+						<div class="tab_container">
+							<!-- #demo01 -->
+							<div id="demo01" class="tab_contents">
+								<div class="leftBox">
+									<div class="tit">한국어 인식</div>
+									<div class="txt">마인즈랩의 음성인식 엔진은 국내 최고 수준의 음성인식 기술을 보유하고 있는 ETRI의 최신 딥러닝 기반 STT 엔진을 기술이전 받아 어떠한 주변 환경에서도 당신의 음성을 알아들으며, 약간의 적응학습을 통해 인식률을 획기적으로 높일 수 있습니다. 지금 사용해 보세요.</div>
+									<p>&#8226; 조용한 곳에서 진행하시면 인식율이 높아집니다.</p>
+								</div>
+								<!-- .rightBox -->
+								<div class="rightBox">
+									<!-- .step01 -->
+									<div class="demo_intro">
+										<div class="demo_infoTxt">RECORD 버튼을 클릭하고 마이크를 사용하여 인식하고자 하는 한국어를 말씀해 보세요.</div>
+										<div class="btnBox">
+											<button class="demoRecord"><span>RECORD</span></button>
+										</div>
+										<div class="holeBox">
+											<div class="hole">
+												<i></i><i></i><i></i><i></i><i></i>
+											</div>
+										</div>
+									</div>
+									<!-- //.step01 -->
+									<!-- .step02 -->
+									<div class="demo_info">
+										<div class="demo_infoTxt">음성을 듣고 있습니다.<br>STOP버튼을 클릭하시면 변환을 시작합니다.</div>
+										<div class="btnBox">
+											<em class="wave"></em>
+											<button class="demoStop"><span>STOP</span></button>
+										</div>
+									</div>
+									<!-- //.step02 -->
+									<!-- .step03 -->
+									<div class="demo_recording">
+										<div class="demo_infoTxt">음성을 변환하고 있습니다. <br>잠시만 기다려 주시기 바랍니다.</div>	
+										<!-- recording -->
+										<div class="recording">
+											<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+											<span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+										</div>
+										<!-- //recording -->
+									</div>
+									<!-- //.step03 -->
+									<!-- .step04 -->
+									<div class="demo_result">
+										<div class="resultTxt"><span>남산 위에 저 소나무 철갑을 두른 듯 바람 서리 불변함은 우리 기상일세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른 듯 바람 서리 불변함은 우리 기상일세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세</span></div>
+										<div class="btnBox">
+											<button class="demoReset"><span>RESET</span></button>
+										</div>
+									</div>
+									<!-- //.step04 -->
+								</div>
+								<!-- //.rightBox -->
+							</div>
+							<!-- //#demo01 -->
+							<!-- #demo02 -->
+							<div id="demo02" class="tab_contents">
+								<div class="leftBox">
+									<div class="tit">영어 인식</div>
+									<div class="txt">마인즈랩 영어 음성인식 엔진은 수천시간의 영어 음성 학습 데이터를 사전학습 하여 다양한 뉘앙스의 영어 음성도 척척 알아듣습니다. 지금 확인해 보세요.</div>
+									<p>&#8226; 조용한 곳에서 진행하시면 인식율이 높아집니다.</p>
+								</div>
+								<!-- .rightBox -->
+								<div class="rightBox">
+									<!-- .step01 -->
+									<div class="demo_intro">
+										<div class="demo_infoTxt">RECORD 버튼을 클릭하고 마이크를 사용하여 인식하고자 하는 영어를 말씀해 보세요.</div>
+										<div class="btnBox">
+											<button class="demoRecord"><span>RECORD</span></button>
+										</div>
+										<div class="holeBox">
+											<div class="hole">
+												<i></i><i></i><i></i><i></i><i></i>
+											</div>
+										</div>
+									</div>
+									<!-- //.step01 -->
+									<!-- .step02 -->
+									<div class="demo_info">
+										<div class="demo_infoTxt">음성을 듣고 있습니다.<br>STOP버튼을 클릭하시면 변환을 시작합니다.</div>
+										<div class="btnBox">
+											<em class="wave"></em>
+											<button class="demoStop"><span>STOP</span></button>
+										</div>
+									</div>
+									<!-- //.step02 -->
+									<!-- .step03 -->
+									<div class="demo_recording">
+										<div class="demo_infoTxt">음성을 변환하고 있습니다. <br>잠시만 기다려 주시기 바랍니다.</div>	
+										<!-- recording -->
+										<div class="recording">
+											<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+											<span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+										</div>
+										<!-- //recording -->
+									</div>
+									<!-- //.step03 -->
+									<!-- .step04 -->
+									<div class="demo_result">
+										<div class="resultTxt">Remember those walls I built Well, baby, they're tumbling down And they didn't even put up a fight They didn't even make a sound</div>
+										<div class="btnBox">
+											<button class="demoReset"><span>RESET</span></button>
+										</div>
+									</div>
+									<!-- //.step04 -->
+								</div>
+								<!-- //.rightBox -->
+								
+							</div>
+							<!-- //#demo02 -->
+							<!-- #demo06 -->
+							<div id="demo06" class="tab_contents">
+								<div class="leftBox">
+									<div class="tit">한국식 영어인식</div>
+									<div class="txt">한국인 특유의 영어 발음 및 발화 특성을 반영한 음성인식 엔진으로 취약한 발음도 잘 인지합니다.</div>
+									<p>&#8226; 조용한 곳에서 진행하시면 인식율이 높아집니다.</p>
+								</div>
+								<!-- .rightBox -->
+								<div class="rightBox">
+									<!-- .step01 -->
+									<div class="demo_intro">
+										<div class="demo_infoTxt">RECORD 버튼을 클릭하고 마이크를 사용하여 인식하고자 하는 한국식 영어를 말씀해 보세요.</div>
+										<div class="btnBox">
+											<button class="demoRecord"><span>RECORD</span></button>
+										</div>
+										<div class="holeBox">
+											<div class="hole">
+												<i></i><i></i><i></i><i></i><i></i>
+											</div>
+										</div>
+									</div>
+									<!-- //.step01 -->
+									<!-- .step02 -->
+									<div class="demo_info">
+										<div class="demo_infoTxt">음성을 듣고 있습니다.<br>STOP버튼을 클릭하시면 변환을 시작합니다.</div>
+										<div class="btnBox">
+											<em class="wave"></em>
+											<button class="demoStop"><span>STOP</span></button>
+										</div>
+									</div>
+									<!-- //.step02 -->
+									<!-- .step03 -->
+									<div class="demo_recording">
+										<div class="demo_infoTxt">음성을 변환하고 있습니다. <br>잠시만 기다려 주시기 바랍니다.</div>	
+										<!-- recording -->
+										<div class="recording">
+											<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+											<span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+										</div>
+										<!-- //recording -->
+									</div>
+									<!-- //.step03 -->
+									<!-- .step04 -->
+									<div class="demo_result">
+										<div class="resultTxt">Remember those walls I built Well, baby, they're tumbling down And they didn't even put up a fight They didn't even make a sound</div>
+										<div class="btnBox">
+											<button class="demoReset"><span>RESET</span></button>
+										</div>
+									</div>
+									<!-- //.step04 -->
+								</div>
+								<!-- //.rightBox -->
+								
+							</div>
+							<!-- //#demo06 -->
+							<!-- #demo03 -->
+							<div id="demo03" class="tab_contents">
+								<div class="leftBox">
+									<div class="tit">한국어 주소 인식</div>
+									<div class="txt">일반적인 음성인식 엔진은 번지수나 도로명, 숫자 등을 제대로 인식하지 못합니다. 마인즈랩의 주소인식 엔진은 생소한 주소명이나 포함되어 있는 숫자 등을 정확하게 인식합니다. 지금 테스트해보세요.</div>
+									<p>&#8226; 조용한 곳에서 진행하시면 인식율이 높아집니다.</p>
+								</div>
+								<!-- .rightBox -->
+								<div class="rightBox">
+									<!-- .step01 -->
+									<div class="demo_intro">
+										<div class="demo_infoTxt">RECORD 버튼을 클릭하고 마이크를 사용하여 인식하고자 하는 주소를 말씀해 보세요.</div>
+										<div class="btnBox">
+											<button class="demoRecord"><span>RECORD</span></button>
+										</div>
+										<div class="holeBox">
+											<div class="hole">
+												<i></i><i></i><i></i><i></i><i></i>
+											</div>
+										</div>
+									</div>
+									<!-- //.step01 -->
+									<!-- .step02 -->
+									<div class="demo_info">
+										<div class="demo_infoTxt">음성을 듣고 있습니다.<br>STOP버튼을 클릭하시면 변환을 시작합니다.</div>
+										<div class="btnBox">
+											<em class="wave"></em>
+											<button class="demoStop"><span>STOP</span></button>
+										</div>
+									</div>
+									<!-- //.step02 -->
+									<!-- .step03 -->
+									<div class="demo_recording">
+										<div class="demo_infoTxt">음성을 변환하고 있습니다. <br>잠시만 기다려 주시기 바랍니다.</div>	
+										<!-- recording -->
+										<div class="recording">
+											<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+											<span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+										</div>
+										<!-- //recording -->
+									</div>
+									<!-- //.step03 -->
+									<!-- .step04 -->
+									<div class="demo_result">
+										<div class="resultTxt">남산 위에 저 소나무 철갑을 두른 듯 바람 서리 불변함은 우리 기상일세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세</div>
+										<div class="btnBox">
+											<button class="demoReset"><span>RESET</span></button>
+										</div>
+									</div>
+									<!-- //.step04 -->
+								</div>
+								<!-- //.rightBox -->
+							</div>
+							<!-- //#demo03 -->
+							<!-- #demo04 -->
+							<div id="demo04" class="tab_contents">
+								<div class="leftBox">
+									<div class="tit">파일업로드</div>
+									<div class="txt">보유하신 음성 파일을 업로드하여 마인즈랩의 STT에 적용 할 수 있습니다. 지금 바로 적용해 보세요.</div>
+									<ul class="adEx">
+										<li>Demo에서는 한국어로 녹음되어 있는 파일을 적용해야 올바른 결과를 얻을 수 있습니다.</li>
+										<li>파일 확장자가 mp3, wav, pcm 파일만 적용 가능합니다.</li>
+										<li>파일명에 공백이나 특수문자가 없어야 파일 인식 시 오류가 나지 않습니다.</li>
+									</ul>
+								</div>
+								<!-- .rightBox -->
+								<div class="rightBox">
+									<!-- .step01 -->
+									<div class="demo_intro">
+										<div class="demo_fileTxt">UPLOAD 버튼을 클릭하고 보유하신 음성 파일을 업로드 해 보세요.</div>
+										<div class="btnBox">
+											<label for="demoFile"><span>UPLOAD</span></label> 
+											<input type="file" id="demoFile" class="demoFile"> 
+										</div>
+										<div class="holeBox">
+											<div class="hole">
+												<i></i><i></i><i></i><i></i><i></i>
+											</div>
+										</div>
+									</div>
+									<!-- //.step01 -->
+									<!-- .step03 -->
+									<div class="demo_recording">
+										<div class="demo_infoTxt">파일을 변환하고 있습니다. <br>잠시만 기다려 주시기 바랍니다.</div>	
+										<!-- recording -->
+										<div class="recording">
+											<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+											<span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+										</div>
+										<!-- //recording -->
+									</div>
+									<!-- //.step03 -->
+									<!-- .step04 -->
+									<div class="demo_result">
+										<div class="resultTxt">남산 위에 저 소나무 철갑을 두른 듯 바람 서리 불변함은 우리 기상일세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세</div>
+										<div class="btnBox">
+											<button class="demoReset"><span>RESET</span></button>
+										</div>
+									</div>
+									<!-- //.step04 -->
+								</div>
+								<!-- //.rightBox -->
+							</div>
+							<!-- //#demo04 -->
+							<!-- #demo05 -->
+							<div id="demo05" class="tab_contents">
+								<div class="leftBox">
+									<div class="tit">샘플재생</div>
+									<div class="txt">마이크가 연결되어 있지 않거나, 보유하신 음성 파일이 없으시다면<br>샘플재생을 통하여 마인즈랩 STT를 경험해 보세요.</div>
+								</div>
+								<!-- .rightBox -->
+								<div class="rightBox">
+									<div class="demo_sample">
+										<!-- .step01 -->
+										<div class="sampleTxt">
+											<div class="demo_infoTxt">SAMPLE 버튼을 클릭해 주세요.</div>
+										</div>
+										<!-- //.step01 -->
+										<!-- .step03 -->
+										<div class="demo_recording">
+											<div class="demo_infoTxt">파일을 변환하고 있습니다. <br>잠시만 기다려 주시기 바랍니다.</div>	
+											<!-- recording -->
+											<div class="recording">
+												<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+												<span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+											</div>
+											<!-- //recording -->
+										</div>
+										<!-- //.step03 -->
+										<!-- .step04 -->
+										<div class="sample_result">
+											<div class="resultTxt">남산 위에 저 소나무 철갑을 두른 듯 바람 서리 불변함은 우리 기상일세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세</div>
+											<div class="demoPlayer">
+												<audio controls>
+													<source src="" type="audio/mpeg"/>
+												</audio>
+											</div>
+										</div>
+										<!-- //.step04 -->
+										<div class="btnBox02">
+											<button id="btn_sample_kr" class="sample"><span>SAMPLE (한국어)</span></button>
+											<button id="btn_sample_en" class="sample"><span>SAMPLE (영어)</span></button>
+											<button id="btn_sample_ads"  class="sample"><span>SAMPLE (주소)</span></button>
+										</div>
+									</div>
+								</div>
+								<!-- //.rightBox -->
+							</div>
+							<!-- //#demo05 -->
+						</div>
+						<!-- //.tab_container -->
+					</div>
+					<!-- //.tabUi -->
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.demo -->
+			<!-- .stn -->
+			<div class="stn bg_gray">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<div class="stn_cont">
+						<p class="txt_w">한국전자통신연구원(ETRI)의 기술을 이전받은 마인즈랩의 STT 엔진은 기술적으로 국내 최고 수준의 음성인식 인식률을 보입니다. <br>또한 다양한 산업 분야에 적용되면서 안정성을 인정받았습니다.</p>
+					</div>
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.stn -->
+            
+            
+			<!-- .stn -->
+			<div class="stn videoArea">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<div class="stn_tit">
+						<h3>Video</h3>
+					</div>
+					<div class="stn_cont">
+						<!-- .tabUi02 -->
+						<div class="tabUi02">
+							<!-- .tab_nav -->
+							<div class="tab_nav02">
+								<ul>
+									<li><a href="#video01">마인즈랩 <span>음성인식</span></a></li>
+									<li><a href="#video02">한국어 <span>인식</span></a></li>
+									<li><a href="#video03">영어 <span>인식</span></a></li>
+									<li><a href="#video04">한국어 <span>주소인식</span></a></li>
+									<li><a href="#video05">한국식 <span>영어인식</span></a></li>
+								</ul>
+							</div>
+							<!-- //.tab_nav -->
+							<!-- .tab_container -->
+							<div class="tab_container02">
+								<div id="video01" class="tab_contents02 videoBox">
+                                    <a id="stt_mov01" class="btn_movLayer" href="https://youtu.be/OZ-X2X5ZwF0">
+                                        <div class="img_info">
+                                        	<img src="../resources/images/img_videoArea_stt01.png" alt="홍보영상">
+                                        </div> 
+                                        <strong class="ico_mov">동영상 보기</strong>
+                                    </a>
+								</div>
+								<div id="video02" class="tab_contents02 videoBox">
+                                    <a id="stt_mov02" class="btn_movLayer" href="https://youtu.be/2tL06h-LGJw">
+                                        <div class="img_info">
+                                        	<img src="../resources/images/img_videoArea_stt02.png" alt="홍보영상">
+                                        </div> 
+                                        <strong class="ico_mov">동영상 보기</strong>
+                                    </a>						
+								</div>
+								<div id="video03" class="tab_contents02 videoBox">
+                                    <a id="stt_mov03" class="btn_movLayer" href="https://youtu.be/w_FPE07EVOQ">
+                                        <div class="img_info">
+                                        	<img src="../resources/images/img_videoArea_stt03.png" alt="홍보영상">
+                                        </div> 
+                                        <strong class="ico_mov">동영상 보기</strong>
+                                    </a>
+								</div>
+								<div id="video04" class="tab_contents02 videoBox">
+                                    <a id="stt_mov04" class="btn_movLayer" href="https://youtu.be/tql05Tcm1o0">
+                                        <div class="img_info">
+                                        	<img src="../resources/images/img_videoArea_stt04.png" alt="홍보영상">
+                                        </div> 
+                                        <strong class="ico_mov">동영상 보기</strong>
+                                    </a>
+								</div>
+								<div id="video05" class="tab_contents02 videoBox">
+                                    <a class="btn_movLayer" href="https://youtu.be/8w-Ik6e5Xxs">
+                                        <div class="img_info">
+                                        	<img src="../resources/images/img_videoArea_stt05.png" alt="홍보영상">
+                                        </div> 
+                                        <strong class="ico_mov">동영상 보기</strong>
+                                    </a>
+								</div>
+							</div>
+							<!-- //.tab_container -->
+						</div>
+						<!-- //.tabUi02 -->
+					</div>
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.stn -->
+            
+			<!-- .stn -->
+			<div id="stn_process" class="stn processArea">
+				<div id="particles-js"></div>
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<div class="stn_tit">
+						<h3>Process</h3>
+					</div>
+					<div class="stn_cont">
+						<div class="processBox"><img src="../resources/images/img_processArea_stt_m.png" alt=""></div>
+					</div>
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.stn -->
+            
+			<!-- .stn -->
+			<div id="stn_feature" class="stn featureArea">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<div class="stn_tit">
+						<h3>features</h3>
+					</div>
+					<div class="stn_cont">
+						<div class="dlBox">
+							<dl class="dltype01">
+								<dt>정확한 한국어 인식</dt>
+								<dd>
+									<span>마인즈랩의 STT는 한국어에 특화된 언어 및 단어 모델 기반의 학습을 마쳤습니다. 각 나라의 언어에 맞도록 별도로 설정해야 하는 기존 글로벌 엔진 대비 더 높은 정확도와 인식률을 자랑합니다.</span>
+								</dd>
+							</dl>
+							<dl class="dltype01">
+								<dt>강력한 딥러닝 활용</dt>
+								<dd><span>국내 최고 수준의 강력한 DNN(인공신경망)을 활용한 마인즈랩의 STT는 화자의 발성 파형에서 특징을 추출하여 가장 유사한 텍스트로 정확하게 변환합니다.</span></dd>
+							</dl>
+							<dl class="dltype01">
+								<dt>추가 학습을 통한 커스터마이징</dt>
+								<dd><span>기본적으로 1,000시간의 음성 데이터 학습을 마친 마인즈랩의 STT는 각 산업 영역 고유의 음성 데이터를 바탕으로 추가 학습이 가능합니다. 추가 음성 학습을 마친 마인즈랩의 STT를 통해 산업 특성에 맞게 음성인식 기능을 커스터마이징해보세요</span></dd>
+							</dl>
+						</div>
+						<div class="dlBox">
+							<dl class="dltype01">
+								<dt>소음 환경에서도 정확한 인식</dt>
+								<dd>한국전자통신연구원의 고속 잡음 전처리 기술이 적용된 마인즈랩 STT는 주변의 소음이 심하더라도 정확하게 음성을 인식합니다.</dd>
+							</dl>
+							<dl class="dltype01">
+								<dt>실시간 텍스트 변환</dt>
+								<dd>마인즈랩의 STT 엔진은 실시간으로 텍스트 결과를 스트리밍할 수 있습니다. API 호출로 인한 결과가 실시간으로 스트리밍되거나, 저장된 녹취 파일을 실시간으로 변화하여 API 형태로 호출됩니다.</dd>
+							</dl>
+							<dl class="dltype01">
+								<dt>높은 확장성과 활용성</dt>
+								<dd>다양한 기기에서 작동하는 마인즈랩의 STT 엔진은 유통, 물류, IT 등 모든 분야에서 활용할 수 있습니다. 자동 음성 인식 시스템을 비롯하여 음성 검색은 물론 음성 데이터 분석 등 심층적인 목적으로도 사용할 수 있습니다.</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.stn -->
+
+			<!-- .pricing -->
+			<div id="stn_pricing" class="stn pricingArea">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<div class="stn_tit">
+						<h3>PRICING</h3>
+					</div>
+					<div class="stn_cont">
+						<div class="fl">
+							<p>클라우드형 (SaaS)</p>
+							<div class="saas_box">
+								<div class="img">
+									<img src="../resources/images/ico_productLst_stt.png" alt="STT 아이콘">
+								</div>
+								<p>음성인식 (STT)</p>
+                                <div class="dlBox02">
+                                    <dl>
+                                        <dt>월별 과금</dt>
+                                        <dd>
+                                        	<span><b>20</b>원</span>
+                                            <em><b>/ 초과 1분당</b></em>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="dlBox03">
+                                    <dl>
+                                        <dt>무료 사용량</dt>
+                                        <dd>60분 무료</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>커스텀 모델 적용시</dt>
+                                        <dd>협의</dd>
+                                    </dl>
+                                </div>
+							</div>
+						</div>
+						<div class="fr">
+							<p>구축형 (SW License) <span>단위: 원/VAT 별도</span></p>
+                            <table class="tbl_type01" summary="구분,구성요소,제품명,개수,소비자단가">
+                                <caption class="hide">구축형 소비자 단가</caption>
+                                <colgroup>
+                                    <col><col><col><col><col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">구성요소</th>
+                                        <th scope="col">제품명</th>
+                                        <th scope="col">개수</th>
+                                        <th scope="col">소비자 단가</th>
+                                    </tr>
+                                </thead>	
+                                <tbody>
+                                <tr>
+                                    <td scope="row" rowspan="5" class="first_col">
+                                        음성 엔진<br>
+                                        (Voice Engines)
+                                    </td>
+                                    <td rowspan="5" class="sec_col">
+                                        STT
+                                    </td>
+                                    <td class="p_name">STT(Speech To Text) for KR-8K</td>
+                                    <td>100</td>
+                                    <td class="c_price">1,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="p_name">STT(Speech To Text) for EN-8K</td>
+                                    <td>100</td>
+                                    <td class="c_price">1,000,000</td>
+                                </tr>
+                                <tr>
+                                       <td class="p_name">STT(Speech To Text) for KR-16K</td>
+                                    <td>100</td>
+                                    <td class="c_price">1,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="p_name">STT(Speech To Text) for EN-16K</td>
+                                    <td>100</td>
+                                    <td class="c_price">1,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="p_name">Real Time STT Server</td>
+                                    <td>100</td>
+                                    <td class="c_price">60,000,000</td>
+                                </tr>
+                            </tbody>
+                            </table>
+						</div>
+                        <ul class="license_lst">	
+                            <li><span>최초 60분은 무료</span>이며, 초과 1분당 월별 과금됩니다.</li>
+                            <li>커스텀 모델 적용 시 비용은 협의 후 결정됩니다.</li>
+                        </ul>
+					</div>
+				</div>
+				<!-- //.lot_c -->	
+			</div>
+			<!-- //.pricing -->
+			<!-- .stn -->
+			<div id="api_contact" class="api_contact">
+				<!-- .lot_c -->
+				<div class="lot_c">
+					<!-- .stn_cont -->
+					<div class="stn_cont">
+						<!-- .contactBox -->
+						<div class="contactBox">
+							<!-- .leftBox -->
+							<div class="leftBox">
+								<div class="stn_tit">
+									<h3>Contact Us</h3>
+								</div>
+								<div class="leftTxtBox">
+									<p>마인즈랩과 마인즈랩의 API 서비스에 대한 문의가 있으시다면 여기에 남겨주세요.<br>페이스북과 링크드인을 팔로우하시면 새 소식을 더 빠르게 접하실 수 있습니다.</p>
+									<ul class="contact_lst">
+										<li class="btn_tel"><a href="tel:+82316254340">+82 31 625 4340</a></li>
+										<li class="btn_mail"><a href="mailto:hello@mindslab.ai">hello@mindslab.ai</a></li>
+										<li class="btn_web"><a href="http://mindslab.ai" target="_blank">마인즈랩 홈페이지 mindslab.ai</a></li>
+										<ul class="social_lst">
+											<li class="btn_fb"><a href="https://www.facebook.com/mindsinsight/?fref=ts" target="_blank">Facebook</a></li>
+											<li class="btn_ld"><a href="https://www.linkedin.com/company/mindslabai" target="_blank">Linkedin</a></li>
+										</ul>
+									</ul>
+								</div>
+							</div>
+							<!-- //.leftBox -->
+							<!-- .rightBox -->
+							<div class="rightBox">
+								<form action="contact_form">
+									<fieldset>
+										<legend>문의하기</legend>
+										<div class="contact">
+											<div class="cl_b">
+											<div class="fl">
+												<div class="txtfield">
+													<select id="contactType" class="select">
+														<option id="ctt_type01" value="문의유형">문의유형</option>
+														<option id="ctt_type02" value="유료사용신청">유료사용신청</option>
+														<option id="ctt_type03" value="마인즈랩 STT 문의">마인즈랩 STT 문의</option>
+														<option id="ctt_type04" value="사용자 피드백">사용자 피드백</option>
+													</select>
+												</div>
+											</div>
+											<div class="fr">
+												<div class="txtfield">
+													<input type="text" name="fm_name" id="fm_name" class="input_txt" placeholder="이름 *">
+												</div>
+											</div>
+											</div>
+											<div class="txtfield">
+												<input type="text" name="fm_email" id="fm_email"  class="input_txt" placeholder="이메일 *">
+											</div>
+											<div class="txtfield">
+												<input type="text" name="fm_tel" id="fm_tel"  class="input_txt" placeholder="전화번호">
+											</div>
+											<div class="txtfield">
+												<textarea name="fm_txt" id="fm_txt" class="textArea" rows="4" placeholder="문의내용 *"></textarea>
+											</div>
+											<ul class="btnBox">
+												<li><button class="btn_clor">문의하기</button></li>
+												<!-- <li><button>개발자 가이드</button></li> -->
+											</ul>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<!-- //.rightBox -->
+						</div>
+						<!-- //.contactBox -->
+					</div>
+					<!-- //.stn_cont -->
+				</div>
+				<!-- //.lot_c -->
+			</div>
+			<!-- //.stn -->
+			<p class="btn_goTop"><button>맨위로</button></p>
+		</div>
+		<!-- //#contents -->
+	</div>
+	<!-- //#container -->
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="lot_c">
+			<div class="f_logo"><img src="../resources/images/logo_footer.png" alt="마인즈랩"></div>
+			<div class="cyrt"><span>MINDsLab &copy; 2018 .</span> <span>주식회사 마인즈랩ㅣ대표 유태준ㅣ</span><span>사업자 등록번호 314-86-55446</span></div>
+		</div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+<script type="text/javascript" src="../resources/js/particles.js"></script>
+<script type="text/javascript" src="../resources/js/app.js"></script>
+<script type="text/javascript">   
+$(window).load(function() {    
+	$('#pageldg').addClass('pageldg_hide').delay(500).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<script type="text/javascript">
+jQuery(function(){
+	jQuery("a#stt_mov01").movLayer();
+	jQuery("a#stt_mov02").movLayer();
+	jQuery("a#stt_mov03").movLayer();
+	jQuery("a#stt_mov04").movLayer();
+});
+</script> 
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){	
+		// Page CSS
+		$('#wrap').each(function(){				
+			$(this).addClass('type_stt');
+		});	
+	
+		// Demo 가능 여부 체크	
+		function hasGetUserMedia() {
+		  return !!(navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia);
+		}
+
+		if ( hasGetUserMedia() ) {
+			// Demo 가능 브라우저
+			$('.demoTab .leftBox .btnBox .btn_infoTxt').each(function(){				
+				$(this).append('<li>RECORD 버튼을 클릭하고 마이크를 사용하여 인식하고자 하는 말을 말씀해 보세요.</li>');
+			});	
+		} else {
+			// Demo 불가능 브라우저
+			$('.demoTab .leftBox .btnBox button').each(function(){				
+				$(this).hide();
+			});	
+			
+			// 브라우저 업데이트 안내 메세지
+			var agent = navigator.userAgent.toLowerCase();
+			if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+				$('.demoTab .leftBox .btnBox .btn_infoTxt').each(function(){				
+					$(this).append('<li>마이크를 사용하여 자신의 음성으로 데모를 사용해 보려면 최신 버전의 Microsoft Edge, Firefox 또는 Chrome과 같은 WebRTC 지원을 제공하는 다른 브라우저로 변경하세요.</li>');
+				});	
+			}		
+		}
+		
+		// Demo 음성
+		var userMike = false; // 사용자 마이크 연결 체크		
+		
+		// step01 > step02 
+		$('.type_stt .demo_intro button.demoRecord').on('click', function(){	
+			// 사용자 마이크 연결 체크
+			if ( userMike == false) {
+				// 사용자 마이크 연결 됐을때
+				$('.demoTab .rightBox .demo_intro').hide();
+				$('.demoTab .rightBox .demo_info').show();
+			} else {
+				// 사용자 마이크 연결 안 됐을 때
+				$(this).parent().parent().find('.demo_infoTxt').addClass('errorTxt').text('마이크가 연결 되어있지 않습니다. 마이크를 연결하시고 다시 시도하여 주시기 바랍니다.');
+			}			
+		});	
+		
+		// step02 > step03
+		$('.type_stt .demo_info button.demoStop').on('click', function(){	
+			$('.demoTab .rightBox .demo_info').hide();
+			$('.demoTab .rightBox .demo_recording').show();
+			$('.demoTab .rightBox .demo_infoTxt').removeClass('errorTxt');
+		});	
+		
+		// step03 > step04
+		$('.type_stt .demo_recording .recording').on('click', function(){	
+			$('.demoTab .rightBox .demo_recording').hide();
+			$('.demoTab .rightBox .demo_result').show();
+		});
+		
+		// step04 > step01
+		$('.type_stt .demo_result button.demoReset').on('click', function(){	
+			$('.demoTab .rightBox .demo_result').hide();
+			$('.demoTab .rightBox .demo_intro').show();
+		});
+		
+		// Demo 파일업로드
+		$('.demoFile').on('change', function() {
+			var fileTxt = $('.demoFile').val(); //파일을 추가한 input 박스의 값
+			var fneTxt = fileTxt.split(".").pop(-1).toLowerCase();
+
+			if ( fneTxt != "mp3" && fneTxt != "wav" && fneTxt != "pcm") { // 음성파일 체크
+				// 실패
+				$('#demo04 .demo_fileTxt').addClass('errorTxt').text('잘못된 파일입니다. mp3, wav, pcm 파일을 넣어주세요.');	
+			} else {
+				// 성공
+				$('.demoTab .rightBox .demo_intro').hide();
+				$('.demoTab .rightBox .demo_recording').show();	
+			}
+		});
+		
+		// 샘플재생
+		var btn_sample_kr = 'resources/audio/aekukka.mp3';
+		var btn_sample_en = 'resources/audio/eng_16k_1.mp3';
+		var btn_sample_ads= 'resources/audio/address1.mp3';
+			
+		$('.type_stt .demo_sample .btnBox02 button').on('click', function(){	
+			$('.demoTab .demo_sample .sampleTxt').hide();
+			$('.demoTab .demo_sample .demo_recording').show();
+			$('.demo_sample .sample_result').hide();
+		});
+		
+		$('.type_stt .demo_sample .recording').on('click', function(){	
+			$('.demoTab .demo_sample .demo_recording').hide();
+			$('.demoTab .demo_sample .sample_result').show();
+		});
+		
+		$('.demoTab .rightBox .btnBox02 #btn_sample_kr').on('click', function(){	
+			
+			$('.demoPlayer audio source').attr('resources/audio/aekukka.mp3');
+		});
+		$('.demoTab .rightBox .btnBox02 #btn_sample_en').on('click', function(){	
+			$('.demoPlayer audio source').attr('resources/audio/eng_16k_1.mp3');
+		});
+		$('.demoTab .rightBox .btnBox02 #btn_sample_ads').on('click', function(){	
+			$('.demoPlayer audio source').attr('resources/audio/address1.mp3');
+		});
+		
+		(function() {
+			// strict mode
+			"use strict";
+			// configurable options that determine particle behavior and appearance
+			var options = {
+					// connector line options
+					connector: {
+						// color of line
+						color: "white",
+						// base line width of each connector
+						lineWidth: 0.5
+					},
+					// individual particle options
+					particle: {
+						// base color
+						color: "white",
+						// number of particles to render onto stage
+						count: 75,
+						// size of particle influence when drawing connectors (in pixels)
+						influence: 75,
+						// a range of sizes for an individual particle (falls within max-min)
+						sizeRange: {
+							min: 1,
+							max: 5
+						},
+						// a range of velocities for each particle to inherit (falls within max-min)
+						velocityRange: {
+							min: 10,
+							max: 60
+						}
+					}
+				},
+				particles,
+				stage;
+			// sets the render loop state based on page's visibility
+			function handleDocumentVisibilityChange() {
+				document.hidden ?
+					stage.render.pause() :
+					stage.render.resume();
+			}
+
+			function initPage() {
+				initObjects();
+				initListeners();
+			}
+			// invoked when page has loaded
+			// registers window and document level event listeners
+			// required post object instantiation
+			function initListeners() {
+				// resize canvas on window resize
+				window.addEventListener(
+					"resize",
+					stage.resize);
+				// pause and resume rendering loop when visibility state is changed
+				document.addEventListener(
+					"visibilitychange",
+					handleDocumentVisibilityChange);
+			}
+			// invoked when page has loaded
+			// performs setup of stage and particles
+			// triggers the rendering loop
+			function initObjects() {
+				particles = new ParticleGroup();
+				// create our stage instance
+				stage = new Stage(document.querySelector("canvas"));
+				// init the canvas bounds and fidelity
+				stage.resize();
+				// populate particle group collection
+				particles.populate();
+				// begin stage rendering with the renderAll draw routine on each tick
+				stage.render.begin(
+					particles.render.bind(particles));
+			}
+			// renders an FPS value to the canvas top-left corner
+			function renderFPS(value) {
+				context.save();
+				context.font = 10 * stage.pixelRatio + "px sans-serif";
+				context.fillStyle = "white";
+				context.textBaseline = "top";
+				context.fillText(value, 5 * stage.pixelRatio, 5 * stage.pixelRatio);
+				context.restore();
+			}
+			// Paricle object construct:
+			// stores critical particle information regarding trajectory and location
+			// 		v: distance delta coefficient
+			// 		t: angular theta in degrees
+			//		r: particle radius
+			//		p: position on stage, x:y coordinate properties
+			// 		influence: radial influence of connectivity to other particles
+			// defines methods relating to particle rendering and comparison to other particle locations
+			function Particle(props) {
+				// private particle properties
+				var x = props.x || 0,
+					y = props.y || 0,
+					v = props.speed,
+					t = props.theta,
+					r = props.radius,
+					influence = props.influence,
+					color = props.color;
+				// public properties and methods
+				return {
+					// position property getter: read-only
+					get x() {
+						return x;
+					},
+					get y() {
+						return y;
+					},
+					// compares this particle location to another
+					// returns a coefficient describing the ratio of closeness to particle influence
+					influencedBy: function(a, b) {
+						var hyp = Math.sqrt(Math.pow(a - x, 2) + Math.pow(b - y, 2));
+						return Math.abs(hyp) <= influence ?
+							hyp / influence : 0;
+					},
+					// render this particle to a given context
+					render: function(ctx) {
+						ctx.strokeStyle = color;
+						ctx.lineWidth = 1 / r * r * stage.pixelRatio;
+						ctx.beginPath();
+						ctx.arc(x || 10, y || 10, r, 0, 8);
+						ctx.stroke();
+					},
+					// sets the position of this particle compared to its previous position
+					// in relation to a total time delta since last positioning
+					// positions infinitely loop within canvas bounds
+					setPosition: function(timeDelta) {
+						x += timeDelta / v * Math.cos(t);
+						x = x > stage.width + r ? 0 - r : x;
+						x = x < 0 - r ? stage.width + r : x;
+						y += timeDelta / v / 2 * Math.sin(t);
+						y = y > stage.height + r ? 0 - r : y;
+						y = y < 0 - r ? stage.height + r : y;
+					}
+				}
+			}
+			// ParticleGroup object construct
+			// an object which controls higher level methods to create, destroy and compare
+			// a grouping of Particle instances. Holds a private collection of all existing particles
+			function ParticleGroup() {
+				// particle instance array
+				var _collection = [],
+					// cache connector option property values
+					_connectColor = options.connector.color,
+					_connectWidth = options.connector.lineWidth,
+					_particleCount = options.particle.count;
+				// generates and returns a new particle instance with 
+				// randomized properties within ranges defined in the options object
+				function _generateNewParticle() {
+					return new Particle({
+						x: stage.width * Math.random(),
+						y: stage.height * Math.random(),
+						speed: getRandomWithinRange(options.particle.velocityRange) / stage.pixelRatio,
+						radius: getRandomWithinRange(options.particle.sizeRange),
+						theta: Math.round(Math.random() * 360),
+						influence: options.particle.influence * stage.pixelRatio,
+						color: options.particle.color
+					});
+					// random number generator within a given range object defined by a max and min property
+					function getRandomWithinRange(range) {
+						return ((range.max - range.min) * Math.random() + range.min) * stage.pixelRatio;
+					}
+				}
+				// loops through particle collection
+				// sets the new particle location given a time delta
+				// queries other particles to see if a connection between particles should be rendered
+				function _checkForNeighboringParticles(ctx, p1) {
+					// cache particle influence method
+					var getInfluenceCoeff = p1.influencedBy;
+					// particle collection iterator
+					for (var i = 0, p2, d; i < _particleCount; i++) {
+						p2 = _collection[i];
+						// conditional checks - ignore if p2 is the same as p1
+						// or if p2 has already been iterated through to check for neighbors
+						if (p1 !== p2 && !p2.checked) {
+							// compare the distance delta between the two particles
+							d = getInfluenceCoeff(p2.x, p2.y);
+							// render the connector if coefficient is non-zero
+							if (d) {
+								_connectParticles(ctx, p1.x, p1.y, p2.x, p2.y, d);
+							}
+						}
+					}
+				}
+				// given two particles and an influence coefficient between them,
+				// renders a connecting line between the two particles
+				// the coefficient determines the opacity (strength) of the connection
+				function _connectParticles(ctx, x1, y1, x2, y2, d) {
+					ctx.save();
+					ctx.globalAlpha = 1 - d;
+					ctx.strokeStyle = _connectColor;
+					ctx.lineWidth = _connectWidth * (1 - d) * stage.pixelRatio;
+					ctx.beginPath();
+					ctx.moveTo(x1, y1);
+					ctx.lineTo(x2, y2);
+					ctx.stroke();
+					ctx.restore();
+				}
+				// public object
+				return {
+					// returns the size of the collection
+					get length() {
+						return _collection.length;
+					},
+					// adds a particle object instance to the collection
+					add: function(p) {
+						_collection.push(p || _generateNewParticle());
+					},
+					// initial population of bar collection
+					populate: function() {
+						for (var i = 0; i < _particleCount; i++) {
+							this.add();
+						}
+					},
+					// loops through all particle instances within collection and
+					// invokes instance rendering method on a given context at tick coefficient t
+					render: function(ctx, t) {
+						// loop through each particle, position it and render
+						for (var i = 0, p; i < _particleCount; i++) {
+							p = _collection[i];
+							p.checked = false;
+							p.setPosition(t);
+							p.render(ctx);
+						}
+						// loop through each particle, check for connectors to be rendered with neighboring particles
+						for (var i = 0, p; i < _particleCount; i++) {
+							p = _collection[i];
+							_checkForNeighboringParticles(ctx, p);
+							p.checked = true;
+						}
+					}
+				};
+			}
+			// Stage object construct
+			// provides a structure to store a canvas and its context upon isntantiation
+			// provides methods to interact with and adjust the canvas
+			function Stage(canvasEl) {
+				// canvas element reference
+				var canvas = canvasEl instanceof Node ?
+					canvasEl :
+					document.querySelector(canvasEl),
+					// 2d context reference
+					context = canvas.getContext("2d"),
+					// cache the device pixel ratio
+					pixelRatio = window.devicePixelRatio;
+				// resize the canvas initially to fit its containing element
+				function _adjustCanvasBounds() {
+					var parentSize = canvas.parentNode.getBoundingClientRect();
+					canvas.width = parentSize.width;
+					canvas.height = parentSize.height;
+				}
+				// updates the canvas dimensions relative to the device's pixel ratio for highest fidelity and accuracy
+				function _adjustCanvasFidelity() {
+					canvas.style.width = canvas.width + "px";
+					canvas.style.height = canvas.height + "px";
+					canvas.width *= pixelRatio;
+					canvas.height *= pixelRatio;
+				}
+				// public object returned
+				return {
+					// dimension getters
+					get height() {
+						return canvas.height;
+					},
+					get width() {
+						return canvas.width;
+					},
+					get pixelRatio() {
+						return pixelRatio;
+					},
+					init: function(el) {
+						canvas = el;
+						context = canvas.getContext("2d");
+					},
+					resize: function() {
+						_adjustCanvasBounds();
+						_adjustCanvasFidelity();
+					},
+					render: (function() {
+						// a flag indicating state of animation loop
+						var paused = false,
+							// animation request ID reported during loop
+							requestID = null,
+							// reference to a function detailing all draw operations per frame of animation
+							renderMethod;
+						// public methods
+						return {
+							// once invoked, creates a rendering loop which in turn invokes
+							// drawMethod argument, passing along the delta (in milliseconds) since the last frame draw
+							begin: function(drawMethod) {
+								// cache the draw method to invoke per frame
+								renderMethod = drawMethod;
+								// a reference to requestAnimationFrame object
+								// this should also utilize some vendor prefixing and a setTimeout fallback
+								var requestFrame = window.requestAnimationFrame,
+									// get initial start time
+									latestTime, startTime = Date.now(),
+									// during each interval, clear the canvas and invoke renderMethod
+									intervalMethod = function(tick) {
+										this.clear();
+										renderMethod(
+											context,
+											tick);
+									}.bind(this);
+								// start animation loop
+								(function loop() {
+									// calculate tick time between frames
+									var now = Date.now(),
+										tick = now - latestTime || 1;
+									// update latest time stamp
+									latestTime = now;
+									// report tick value to intervalCallback
+									intervalMethod(tick);
+									// loop iteration if no pause state is set
+									requestID = paused ?
+										null :
+										requestAnimationFrame(loop);
+								})();
+							},
+							// clears the stage's canvas
+							clear: function() {
+								context.clearRect(0, 0, canvas.width, canvas.height);
+							},
+							// pause the canvas rendering
+							pause: function() {
+								paused = true;
+								cancelAnimationFrame(requestID);
+							},
+							// resumes the animation with a given rendering method
+							resume: function() {
+								paused = false;
+								this.begin(renderMethod);
+							}
+						}
+					}())
+				};
+			}
+			// our init is triggered when the window is loaded/ready
+			window.addEventListener(
+				"load",
+				initPage);
+		}());
+	});	
+});	
+	
+	
+// resize
+$(window).resize(function(){
+		
+});	
+// scroll event
+</script>
+</body>
+</html>

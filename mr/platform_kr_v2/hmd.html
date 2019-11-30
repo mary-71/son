@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta http-equiv="Expires" content="-1"> <!--캐시된 페이지가 만료되어 삭제되는 시간을 정의합니다. 특별한 경우가 아니면 -1로 설정합니다. -->
+<meta http-equiv="Pragma" content="no-cache"> <!--  페이지 로드시마다 페이지를 캐싱하지 않습니다. (HTTP 1.0) -->
+<meta http-equiv="Cache-Control" content="no-cache"> <!-- 페이지 로드시마다 페이지를 캐싱하지 않습니다. (HTTP 1.1)-->
+
+<!-- icon_favicon -->
+<link rel="apple-touch-icon-precomposed" href="resources/images/ico_favicon_64x64.png" />
+<link rel="shortcut icon" type="image/x-icon" href="resources/images/ico_favicon_64x64.ico"/>
+<title>maum.ai platform</title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/font.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/common.css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">		
+
+<!-- //resources -->
+
+<script type="text/javascript" src="resources/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="resources/js/common.js"></script>
+
+</head>
+
+<body>
+
+<!-- .page loading -->
+<div id="page_ldWrap" class="page_loading">
+	<div class="loading_itemBox">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!-- //.page loading -->
+
+
+<!-- wrap -->
+<div id="wrap">
+	<!-- #header -->
+	<div id="header">
+        <h1><a target="_self" href="welcome.html"><img src="resources/images/logo.png" alt="maum.ai"></a></h1>
+		<!-- .sta -->
+		<div class="sta">
+			<!-- .titArea -->
+			<div class="titArea">
+                <div class="path">
+                    <span><img src="resources/images/ico_path_home_bk.png" alt="HOME"></span>
+                <span class="pop_term">API Services</span>
+				<!--<span>Uploading</span>-->
+                </div>
+            </div>
+            <!-- //.titArea -->
+
+			<!-- .etcmenu -->
+			<div class="etcmenu">
+<!--				<span><i>P</i><em>1,000</em> point</span>-->
+				<div class="userBox">
+					<dl>
+						<dt class="ico_user">User</dt>
+						<dd>
+							<a target="_self" href="#none">admin@console.com</a>
+						</dd>
+						<ul class="lst">
+							<li class="ico_profile"><a target="_self" href="#none">PROFILE</a></li>
+							<li class="ico_account"><a target="_self" href="#none">API ACCOUNT</a></li>
+							<li class="ico_payment"><a target="_self" href="#none">PAYMENT</a></li>
+							<li class="ico_logout"><a target="_self" href="#none">LOGOUT</a></li>
+						</ul>
+					</dl>
+				</div>
+			</div>
+			<!-- //.etcmenu -->
+		</div>
+		<!-- //.sta -->
+	</div>
+	<!-- //#header -->
+	<!-- .snb 한글 -->
+	<div class="snb">		
+		<ul>
+			<li class="collapsible list1"><a href="https://dev-api.maum.ai/"><i class="fas fa-home"></i>HOME</a></li>	
+			<li class="collapsible list2 active"><i class="fas fa-shapes"></i>AI Services</li>					
+			<li class="sublist list2_sub">
+				<a class="dropdwn twodepth " id="flip">텍스트를 음성으로</a>
+				<ul class="twodepthLst panel">
+					<li class=""><a href="tts.html">AI Voice 사용하기</a></li>
+					<li><a href="tts_record.html">내 목소리로 사용하기</a></li>
+				</ul>	
+				<a class="twodepth" href="stt.html">음성을 텍스트로</a>
+			</li>
+			<li class="collapsible list3 dropdwn active"><i class="fas fa-laptop-code"></i>API Services</li>					
+			<li class="sublist list3_sub">
+				<a class="twodepth" href="api_tts.html">음성 생성</a>	
+				<a class="twodepth" href="api_stt.html">음성 인식</a>
+				<a class="twodepth" href="xdc.html">텍스트 분류</a>	
+				<a class="twodepth" href="mrc.html">AI 독해</a>
+				<a class="twodepth active" href="hmd.html">패턴 분류</a>	
+				<a class="twodepth" href="nlu.html">자연어 이해</a>
+				<a class="twodepth" href="recog.html">화폐 · 고지서 인식</a>	
+			</li>		
+			<li class="collapsible list4 dropdwn"><i class="fas fa-grip-horizontal"></i>Application</li>					
+			<li class="sublist list4_sub">
+				<a class="twodepth" href="voc.html">maum VOC</a>	
+				<a class="twodepth" href="mai_1.html">mAI English</a>
+				<a class="twodepth" href="chatbot.html">날씨봇 · 위키봇</a>
+			</li>		
+			<li class="collapsible list5 dropdwn"><i class="fas fa-headphones-alt"></i>고객지원</li>					
+			<li class="sublist list5_sub">
+				<a class="twodepth" href="pricing.html">가격정책</a>	
+				 
+				<a class="twodepth" href="faq.html">FAQ</a>
+				<a class="twodepth" href="request.html">문의 내역</a>	
+				<a class="twodepth" href="contactus.html">Contact Us</a>	
+			</li>				
+		</ul>
+	</div>
+	<!-- //.snb 한글 -->	
+	<!-- aside -->
+	<div class="aside" style="display:none;">
+		<!-- .aside_top -->
+		<div class="aside_top">
+			<h1><a href="index.html"><img src="resources/images/logo_m.png" alt="maum API"></a></h1>
+		</div>
+		<!-- //.aside_top -->
+		<!-- .aside_mid -->
+		<div class="aside_mid">
+			<ul class="m_etcMenu">
+				<li class="lang">
+					<p class="lang_select"><img src="resources/images/ico_lang_kr.png" alt="한국어"><em>한국어</em></p>
+					<ul class="lst">
+						<li><a href="../en/index.html" target="_self"><img src="resources/images/ico_lang_us.png" alt="English"><em>English</em></a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="m_nav">
+				<li>
+					<h2><a href="#none">HOME</a></h2>
+				</li>
+				<li>
+					<h2><a href="#none">AI Services</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none" class="depth3">택스트를 음성으로</a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="tts.html" target="_self">AI Voice 사용하기</a></li>
+								<li><a href="tts_record.html" target="_self">내 목소리로 사용하기</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none">음성을 텍스트로</a></h3>							
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">API Services</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none">음성 생성</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">음성 인식</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">텍스트 분류</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">AI 독해</a></h3>						
+						</li>
+						<li>
+							<h3><a href="#none">패턴 분류</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">자연어 이해</a></h3>						
+						</li>
+						<li>
+							<h3><a href="#none">화폐 · 고지서 인식</a></h3>							
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">Application</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none">maum VOC</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">mAI English</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">날씨봇 · 위키봇</a></h3>							
+						</li>						
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">고객지원</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none">가격정책</a></h3>							
+						</li>
+						 
+						<li>
+							<h3><a href="#none">FAQ</a></h3>							
+						</li>	
+						<li>
+							<h3><a href="#none">문의 내역</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">Contact Us</a></h3>							
+						</li>
+					</ul>
+				</li>
+			</ul>  
+		</div>
+		<!-- //.aside_mid -->
+		<!-- .aside_btm -->
+<!--
+		<div class="aside_btm">
+			<ul>
+				<li class="btn_mail"><a href="mailto:hello@mindslab.ai">hello@mindslab.ai</a></li>
+				<li class="btn_tel"><a href="tel:+82316254340">031. 625. 4340</a></li>
+			</ul>
+		</div>
+-->
+		<!-- //.aside_btm -->
+	</div>
+	<div class="bg_aside"></div> 
+	<a class="btn_header_ham" href="#none"><span class="hamburger_icon"></span></a>  
+	<!-- //aside -->
+	<!-- #container -->
+	<div id="container">
+		<!-- .contents -->
+		<div class="contents">
+			<div class="content">
+				<h1>패턴 분류</h1>
+				<div class="demobox demobox_hmd">
+<!--				<p>감정 패턴 분류 <small>(HMD, Hierarchical Multiple Dictionary)</small></p>-->
+					<p>계층적 다중 탐지 사전<small>(HMD, Hierarchical Multiple Dictionary)</small>을 이용한 패턴(감정) 분류</p>
+<!--				<span class="sub">문장에 들어 있는 감정표현을 분석합니다</span>-->
+					<span class="sub">기존에 구축한 사전을 이용하여 문장 패턴을 탐지하고 문장을 분류합니다</span>
+					
+					<form>
+						<!--.hmd_box-->
+						<div class="hmd_box">
+<!--
+							<dl class="radio_area">
+								<dt>언어선택</dt>
+								<dd class="type_radio"><input type="radio" name="language" id="language_ko" checked /><label for="language_ko">한국어</label></dd>
+								<dd class="type_radio"><input type="radio" name="language" id="language_en" /><label for="language_en">영어</label></dd>
+							</dl>
+-->
+							<div class="text_area">
+								<textarea rows="12" maxlength="1050" placeholder="텍스트를 직접 입력하거나 텍스트 파일을 업로드 해주세요."></textarea>
+							</div>
+							<div class="text_info">
+								<p>* 텍스트 1000자 이내, 파일 바이트 30KB 이내 [파일확장자:  .txt ]</p>
+								<span class=""><strong>50</strong>/1000자</span>
+							</div>
+						</div>
+						<!--//.hmd_box-->
+						<!--.btn_area-->
+						<div class="btn_area btn_area_815 step_1btn">
+							<div class="btn_float_l">
+								<input type="file" id="file-down" class="demoFile" /><label for="file-down" class="btn_type btn_gray">파일 업로드</label>
+							</div>
+							<button type="button" class="btn_type btn_blue" disabled><i class="fas fa-file-invoice"></i>분석하기<span class="disBox"></span></button>							
+						</div>
+						<!--//.btn_area-->
+					</form>
+					
+					<!--posi_nega_area-->
+					<div class="posi_nega_area">
+						<!--posi_box-->
+						<div class="posi_box">
+							<div class="tit_posi"><span>긍정 표현</span></div>
+							<div class="posiNega_area">
+								<ul class="tab_posi_nega">
+									<li><span>낮음</span></li>
+									<li><span></span></li>
+									<li><span></span></li>
+									<li><span>높음</span></li>
+								</ul>
+								<ul class="tab_posi_nega2">
+									<li>5개</li>
+									<li>5개</li>
+									<li>12개</li>
+									<li>5개</li>
+								</ul>
+								
+								<div class="posi_nega_conts posi_nega_close">
+									<div class="posi_nega_list">
+										<ul>
+											<li>텍스트</li>
+											<li>텍스트</li>
+											<li>텍스트</li>
+											<li>텍스트</li>
+										</ul>
+									</div>
+									<div class="posi_nega_list">
+										<ul>
+											<li>텍스트</li>
+											<li>텍스트</li>
+											<li>텍스트텍스트텍스트</li>
+											<li>텍스트</li>
+											<li>텍스트</li>
+											<li>텍스트</li>
+										</ul>
+									</div>
+									<div class="posi_nega_list">
+										<ul>
+											<li>텍스트</li>
+											<li>텍스트</li>
+											<li>텍스트</li>
+											<li>텍스트</li>
+											<li>텍스트</li>
+											<li>텍스트</li>
+											<li>텍스트</li>
+											<li>텍스트</li>
+											<li>텍스트</li>
+											<li>텍스트</li>
+											<li>텍스트</li>
+											<li>텍스트</li>
+										</ul>
+									</div>
+									<div class="posi_nega_list">
+										<ul>
+											<li>텍스트</li>
+											<li>텍스트</li>
+											<li>텍스트</li>
+											<li>텍스트</li>
+										</ul>
+									</div>
+									<a href="#none" class="btn_more">더보기</a>
+								</div>
+							</div>
+						</div>
+						<!--//.posi_box-->
+						<!--.nega_box-->
+						<div class="nega_box">
+							<div class="tit_posi tit_nega"><span>부정 표현</span></div>
+							<div class="posiNega_area">
+								<ul class="tab_posi_nega tab_nega">
+									<li><span>낮음</span></li>
+									<li><span></span></li>
+									<li><span></span></li>
+									<li><span>높음</span></li>
+								</ul>
+								<ul class="tab_posi_nega2">
+									<li>5개</li>
+									<li>5개</li>
+									<li>5개</li>
+									<li>5개</li>
+								</ul>
+								
+								<div class="posi_nega_conts01">
+									<div class="posi_nega_list">
+										<ul>
+											<li>텍스트</li>
+											<li>텍스트</li>
+											<li>텍스트</li>
+										</ul>
+									</div>
+									<div class="posi_nega_list">
+										<ul>
+											<li>텍스트</li>
+											<li>텍스트</li>
+											<li>텍스트텍스트텍스트</li>
+											<li>텍스트</li>
+										</ul>
+									</div>
+									<div class="posi_nega_list">
+										<ul>
+											<li>텍스트</li>
+											<li>텍스트</li>
+											<li>텍스트</li>
+										</ul>
+									</div>
+									<div class="posi_nega_list">
+										<ul>
+											<li>텍스트</li>
+											<li>텍스트</li>
+											<li>텍스트</li>
+										</ul>
+									</div>
+									<a href="#none" class="btn_more">더보기</a>
+								</div>
+							</div>
+						</div>
+						<!--//.nega_box-->
+						
+						<!--.btn_area-->
+						<div class="btn_area btn_area_815">
+							<button type="button" class="btn_type btn_blue btn_goback">처음으로</button>
+						</div>
+						<!--//.btn_area-->
+						
+					</div>
+					<!--//posi_nega_area-->	
+				</div>
+				<!-- .demobox -->
+			</div>
+			<!-- #footer -->
+			<div id="footer">
+				<div class="lot_c">
+					<div class="cyrt"><span>MINDsLab &copy; 2019</span></div>
+				</div>
+			</div>
+			<!-- //#footer -->
+		</div>
+		<!-- //.contents -->
+	</div>
+	<!-- //#container -->
+</div>
+<!-- //wrap -->
+
+<script type="text/javascript">
+$(window).load(function() {
+	$('.page_loading').addClass('pageldg_hide').delay(300).queue(function() {
+		$(this).remove();
+	});
+});
+</script>
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){		
+		
+		//HMD
+		
+		$('.btn_float_l').on('click', function () {
+			$('.progress li:nth-child(2)').addClass('active'); 	
+		});
+		
+		$('.btn_blue').on('click', function () {
+			$(this).parent().parent().hide();
+			$('.posi_nega_area').fadeIn(300);
+			$('.progress li:nth-child(2)').addClass('active'); 
+			$('.progress li:nth-child(3)').addClass('active'); 	
+		});
+		
+		var pnHeight = $(".posi_nega_conts").height();
+		var pnHeight01 = $(".posi_nega_conts01").height();
+		if(pnHeight>205){
+			$(".posi_nega_conts").addClass('posi_nega_close');
+		}if(pnHeight01>205){
+			$(".posi_nega_conts01").addClass('posi_nega_close');
+		}else{
+			//$(".posi_nega_conts, .posi_nega_conts01").removeClass('posi_nega_close');
+		}
+		
+		//
+		var txtOpen = "더보기"
+		$('.btn_more').click(function() {
+			$(this).toggleClass('on');
+			$(this).parent().toggleClass('on');
+			
+			if($(this).text() == txtOpen ){
+				$(this).text("접기");
+			}else{
+				$(this).text("더보기");
+			}
+		});	
+		
+		$('.btn_goback').on('click', function () {
+			$(this).parent().parent().hide();
+			$('form').fadeIn(300);
+			$('.progress li:nth-child(1)').addClass('active'); 	
+			$('.progress li:nth-child(2)').removeClass('active');
+			$('.progress li:nth-child(3)').removeClass('active');
+		});
+			
+		
+		// step01 > step02
+		$('.hmd_box .text_area textarea').on('input keyup paste', function() {			
+			var txtValLth = $(this).val().length;			
+			if ( txtValLth > 0) {
+				$('.progress li:nth-child(2)').addClass('active'); 		
+				$('.demobox_hmd .step_1btn .btn_type').removeClass('disable'); 	
+				$('.demobox_hmd .step_1btn .btn_type').removeAttr('disabled');
+				$('.demobox_hmd .btn_area .disable .disBox').remove();
+				$('.demobox_hmd .step_1btn .disBox').remove();
+			} else {
+				$('.progress li:nth-child(2)').removeClass('active');	
+				$('.demobox_hmd .step_1btn .disable').attr('disabled');
+				$('.demobox_hmd .step_1btn').append('<span class="disBox"></span>');
+			}
+		});
+				
+		
+		//HMD_end
+		
+	});
+});
+
+
+</script>
+
+
+<script type="text/javascript">
+//twodepth	
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var sublist = this.nextElementSibling;
+    if (sublist.style.maxHeight){
+      sublist.style.maxHeight = null;
+	  	
+    } else {
+      sublist.style.maxHeight = sublist.scrollHeight + "px";
+		$('.dropdwn').removeClass('.active');
+    } 
+  });
+}
+	
+//	
+//threedepth	
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+		$('.twodepth ').each(function(){
+			if($(this).hasClass('active')){
+				$(this).trigger( "click" );
+			}
+		});	
+		
+		$("#flip").click(function(){
+			if($(this).hasClass('active')){
+				$(this).removeClass('active');	
+			}else{
+				$(this).addClass('active');
+			}
+			
+			$(".panel").slideToggle("fast");
+			var sublist = this.parentNode;
+			sublist.style.maxHeight =  sublist.scrollHeight + $(".twodepthLst").prop('scrollHeight')+ "px";	
+			
+		});		
+	});	
+});
+
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){		
+		$('.snb ul li.collapsible').each(function(){
+			if($(this).hasClass('active')){
+				$(this).trigger( "click" );				
+			}
+		});
+		
+	});
+});
+	
+	
+</script>
+
+
+</body>
+</html>
+
+

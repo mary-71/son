@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<!-- icon_favicon -->
+<link rel="apple-touch-icon-precomposed" href="resources/images/ico_favicon_64x64.png" />
+<link rel="shortcut icon" type="image/x-icon" href="resources/images/ico_favicon_64x64.ico"/>
+<title>maum.ai platform</title>
+<!-- resources -->
+<link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/font.css" />
+<link rel="stylesheet" type="text/css" href="resources/css/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="resources/css/common.css" />
+	
+<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">		
+<!-- //resources -->
+
+<script type="text/javascript" src="resources/js/semantic.min.js"></script>
+<script type="text/javascript" src="resources/js/jquery-1.11.0.min.js"></script>	
+<script type="text/javascript" src="resources/js/common.js"></script>
+</head>
+
+<body>
+
+<!-- .page loading -->
+<div id="page_ldWrap" class="page_loading">
+	<div class="loading_itemBox">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!-- //.page loading -->
+
+	
+<!-- wrap -->
+<div id="wrap"> 
+	<!-- #header -->
+	<div id="header">
+        <h1><a target="_self" href="welcome.html"><img src="resources/images/logo.png" alt="maum.ai"></a></h1>    
+		<!-- .sta -->
+		<div class="sta">
+			
+			<!-- .titArea -->
+			<div class="titArea">               
+                <div class="path">
+                    <span><img src="resources/images/ico_path_home_bk.png" alt="HOME"></span>
+                    <span>API Services</span>
+<!--                    <span>음성인식</span>-->
+                </div>
+            </div>
+            <!-- //.titArea -->	
+			
+			<!-- .etcmenu -->
+			<div class="etcmenu">
+<!--				<span><i>P</i><em>1,000</em> point</span>-->
+				<div class="userBox">
+					<dl>
+						<dt class="ico_user">User</dt>
+						<dd>
+							<a target="_self" href="#none">admin@console.com</a>
+						</dd>
+						<ul class="lst">
+							<li class="ico_profile"><a target="_self" href="#none">PROFILE</a></li>
+							<li class="ico_account"><a target="_self" href="#none">API ACCOUNT</a></li>
+							<li class="ico_payment"><a target="_self" href="#none">PAYMENT</a></li>
+						</ul>
+					</dl>
+				</div>
+			</div>
+			<!-- //.etcmenu -->
+		</div>
+		<!-- //.sta -->
+	</div>
+	<!-- //#header -->
+	<!-- .snb 한글 -->
+	<div class="snb">		
+		<ul>
+			<li class="collapsible list1"><a href="https://dev-api.maum.ai/"><i class="fas fa-home"></i>HOME</a></li>	
+			<li class="collapsible list2 active"><i class="fas fa-shapes"></i>AI Services</li>					
+			<li class="sublist list2_sub">
+				<a class="dropdwn twodepth " id="flip">텍스트를 음성으로</a>
+				<ul class="twodepthLst panel">
+					<li class=""><a href="tts.html">AI Voice 사용하기</a></li>
+					<li><a href="tts_record.html">내 목소리로 사용하기</a></li>
+				</ul>	
+				<a class="twodepth" href="stt.html">음성을 텍스트로</a>
+			</li>
+			<li class="collapsible list3 dropdwn active"><i class="fas fa-laptop-code"></i>API Services</li>					
+			<li class="sublist list3_sub">
+				<a class="twodepth" href="api_tts.html">음성 생성</a>	
+				<a class="twodepth active" href="api_stt.html">음성 인식</a>
+				<a class="twodepth" href="xdc.html">텍스트 분류</a>	
+				<a class="twodepth" href="mrc.html">AI 독해</a>
+				<a class="twodepth" href="hmd.html">패턴 분류</a>	
+				<a class="twodepth" href="nlu.html">자연어 이해</a>
+				<a class="twodepth" href="recog.html">화폐 · 고지서 인식</a>	
+			</li>		
+			<li class="collapsible list4 dropdwn"><i class="fas fa-grip-horizontal"></i>Application</li>					
+			<li class="sublist list4_sub">
+				<a class="twodepth" href="voc.html">maum VOC</a>	
+				<a class="twodepth" href="mai_1.html">mAI English</a>
+				<a class="twodepth" href="chatbot.html">날씨봇 · 위키봇</a>
+			</li>		
+			<li class="collapsible list5 dropdwn"><i class="fas fa-headphones-alt"></i>고객지원</li>					
+			<li class="sublist list5_sub">
+				<a class="twodepth" href="pricing.html">가격정책</a>	
+				 
+				<a class="twodepth" href="faq.html">FAQ</a>
+				<a class="twodepth" href="request.html">문의 내역</a>	
+				<a class="twodepth" href="contactus.html">Contact Us</a>	
+			</li>				
+		</ul>
+	</div>
+	<!-- //.snb 한글 -->
+	<!-- aside -->
+	<div class="aside" style="display:none;">
+		<!-- .aside_top -->
+		<div class="aside_top">
+			<h1><a href="index.html"><img src="resources/images/logo_m.png" alt="maum API"></a></h1>
+		</div>
+		<!-- //.aside_top -->
+		<!-- .aside_mid -->
+		<div class="aside_mid">
+			<ul class="m_etcMenu">
+				<li class="lang">
+					<p class="lang_select"><img src="resources/images/ico_lang_kr.png" alt="한국어"><em>한국어</em></p>
+					<ul class="lst">
+						<li><a href="../en/index.html" target="_self"><img src="resources/images/ico_lang_us.png" alt="English"><em>English</em></a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="m_nav">
+				<li>
+					<h2><a href="#none">HOME</a></h2>
+				</li>
+				<li>
+					<h2><a href="#none">AI Services</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none" class="depth3">택스트를 음성으로</a></h3>
+							<ul class="m_lst_sub">
+								<li><a href="tts.html" target="_self">AI Voice 사용하기</a></li>
+								<li><a href="tts_record.html" target="_self">내 목소리로 사용하기</a></li>
+							</ul>
+						</li>
+						<li>
+							<h3><a href="#none">음성을 텍스트로</a></h3>							
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">API Services</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none">음성 생성</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">음성 인식</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">텍스트 분류</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">AI 독해</a></h3>						
+						</li>
+						<li>
+							<h3><a href="#none">패턴 분류</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">자연어 이해</a></h3>						
+						</li>
+						<li>
+							<h3><a href="#none">화폐 · 고지서 인식</a></h3>							
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">Application</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none">maum VOC</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">mAI English</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">날씨봇 · 위키봇</a></h3>							
+						</li>						
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">고객지원</a></h2>
+					<ul class="m_lst">
+						<li>
+							<h3><a href="#none">가격정책</a></h3>							
+						</li>
+						 
+						<li>
+							<h3><a href="#none">FAQ</a></h3>							
+						</li>	
+						<li>
+							<h3><a href="#none">문의 내역</a></h3>							
+						</li>
+						<li>
+							<h3><a href="#none">Contact Us</a></h3>							
+						</li>
+					</ul>
+				</li>
+			</ul>  
+		</div>
+		<!-- //.aside_mid -->
+		<!-- .aside_btm -->
+<!--
+		<div class="aside_btm">
+			<ul>
+				<li class="btn_mail"><a href="mailto:hello@mindslab.ai">hello@mindslab.ai</a></li>
+				<li class="btn_tel"><a href="tel:+82316254340">031. 625. 4340</a></li>
+			</ul>
+		</div>
+-->
+		<!-- //.aside_btm -->
+	</div>
+	<div class="bg_aside"></div> 
+	<a class="btn_header_ham" href="#none"><span class="hamburger_icon"></span></a>  
+	<!-- //aside -->
+	<!-- #container -->
+	<div id="container">
+		
+		<!-- .contents -->
+		<div class="contents">        	
+            <div class="content api_content">
+				<h1 class="api_tit">음성인식</h1>
+				<ul class="menu_lst">
+					<li class="tablinks" onclick="openTap(event, 'sttdemo')" id="defaultOpen">데모</li>
+					<li class="tablinks" onclick="openTap(event, 'sttmenu')">메뉴얼</li>
+					<li class="tablinks" onclick="openTap(event, 'sttexample')">적용사례</li>
+					<li class="tablinks"><a href="https://mindslabmall.ai/category/ai-%EC%9D%8C%EC%84%B1%EC%9D%B8%EC%8B%9D/25/" target="_blank" title="마인즈랩 몰">구매하기</a></li>
+				</ul>
+				<div class="demobox sttdemo apisttdemo" id="sttdemo">
+					<p>정확하고 강력한 <em>음성인식</em> <small>(Speech Recognition)</small></p>
+					<span class="sub">음성을 텍스트로 빠르고 정확하게 변환합니다 </span>
+<!--
+					<ul class="progress">
+						<li class="active">Step 1</li>
+						<li>Step 2</li>
+						<li>Step 3</li>					
+					</ul>
+					<ul class="progress_txt">
+						<li><p>언어, 타입 선택</p></li>
+						<li><p>인식할 문장 녹음 or <br>음성 파일 업로드</p></li>
+						<li><p>텍스트로 변환된 <br>결과값 확인</p></li>					
+					</ul>
+-->
+					
+					<div class="stt_demo">
+						<!-- #demo04 -->
+							<div id="demo04" class="tab_contents">
+								
+								<!-- .rightBox -->
+								<div class="rightBox">
+<!--
+									<div class="selectarea">											
+											<div class="select_box">
+												<label for="language">언어</label> 
+												<select name="Language" id="language"> 		
+													<option value="" selected>언어</option>
+													<option value="한국어">한국어</option>		
+													<option value="영어">영어</option>
+												</select>
+											</div>	
+											<div class="select_box">
+												<label for="Type1">모델</label> 
+												<select name="Type2" id="Type2" > 
+													<option value="General">일반</option>
+													<option value="Phone call">고객센터</option>		
+													<option value="Address (S.Korea)">주소인식</option>
+												</select>
+												<select name="Voice" id="Type1" style="display: none;"> 	
+													<option value="일반">일반</option>	
+													<option value="고객센터" selected>고객센터</option>
+													<option value="콩글리시">콩글리시</option>
+													<option value="전화영어">전화영어</option>
+													<option value="영어교육">영어교육</option>
+												</select>												
+											</div>	
+									</div>
+-->
+									<div class="selectarea">											
+										<div class="radio">
+											<input type="radio" id="1" name="voice" checked="checked">
+											<label for="1"><span>한국어</span></label>
+										</div>	
+										<div class="radio">
+											<input type="radio" id="2" name="voice">
+											<label for="2"><span>한국어 주소</span></label>
+										</div>
+										<div class="radio">
+											<input type="radio" id="3" name="voice">
+											<label for="3"><span>영어</span></label>
+										</div>
+										<div class="radio minipopbtn">
+											<i class="fas fa-plus-circle"></i>
+											<span>더보기</span>
+											<b class="minipop"> 한국어, 영어 콜센터 전용, 영어 교육용 음성인식 api는 별도 문의 바랍니다. <br>(hello@mindslab.ai)</b>
+										</div>
+
+									</div>	
+									<!-- .step01 -->
+									<div class="demo_intro">
+										<div class="demo_fileTxt">녹음 버튼 누른 후, 문장을 말하거나,<br>음성파일을 업로드 해주세요.</div>
+										<div class="demo_recordTxt">문장을 말해 주세요.</div>
+										<div class="btnupload"> 
+											<label for="demoFile"><span><i class="fas fa-file-upload"></i>파일 업로드</span></label> 
+											<input type="file" id="demoFile" class="demoFile"> 
+										</div>
+										<div class="btnBox">
+											<span><i>녹음</i></span>
+										</div>
+										<div class="btnreset">
+											<button class="demoReset"><span>다시하기</span></button>
+											<button class="demoStop"><span>완료</span></button>
+										</div>
+										<div class="holeBox">
+											<div class="hole">
+												<i></i><i></i><i></i><i></i><i></i>
+											</div>
+										</div>
+									</div>
+									<!-- //.step01 -->
+									<!-- .step03 -->
+									<div class="demo_recording">
+										<div class="demo_infoTxt">파일을 변환 중입니다. <br>
+잠시만 기다려 주세요.<br></div>	
+										<!-- recording -->
+										<div class="recording">
+											<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+											<span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+										</div>
+										<!-- //recording -->
+									</div>
+									<!-- //.step03 -->
+									<!-- .step04 -->
+									<div class="demo_result">
+										<div class="resultTxt">남산 위에 저 소나무 철갑을 두른 듯 바람 서리 불변함은 우리 기상일세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세
+										</div>
+										<div class="btnBox">
+											<button class="demoReset"><span>다시하기</span></button>
+										</div>
+										<div class="btnBox btndwn">
+											<button class="dwn"><span>다운로드</span></button>
+										</div>
+									</div>
+									<!-- //.step04 -->
+									
+								</div>
+								<!-- //.rightBox -->
+								
+							</div>
+							<!-- //#demo04 -->	
+						
+						
+							<div class="remark">
+*지원가능한 파일 확장자 : .mp3, .wav, .pcm <br>
+*100mb 이하의 파일만 지원됩니다.<br>
+*한국어, 영어 외 다른 언어가 필요하시면, 고객지원센터로 연락 주세요.
+							</div>
+					</div>	
+				</div>
+				
+				<!--.ttsmenu-->
+				<div class="demobox" id="sttmenu">				
+					<!--guide_box-->
+					<div class="guide_box">
+
+					<div class="guide_group">
+						<div class="title">
+							STT (Speech-To-Text)			
+						</div>
+						<p class="sub_txt">마인즈랩의 STT API는 다양한 환경의 음성을 텍스트로 변환시켜주는 API입니다.</p>
+
+						<span class="sub_title">
+							준비사항			
+						</span>
+						<p class="sub_txt">① Input: 음성파일 (.wav/.pcm/.mp3)  </p>
+						<p class="sub_txt">② 아래 Model 중 택 1  </p>
+						<ul>
+							<li>한글 8K (baseline, kor, 8000)</li>
+							<li>한글 16K (baseline, kor, 16000)</li>
+							<li>영어 8K (baseline, eng, 8000)</li>
+							<li>영어 16K (baseline, eng, 16000)</li>
+							<li>주소인식 (address, kor, 8000)</li>
+							<li>한국식 영어 발음 (kor_accent, eng, 8000)</li>
+							<li>영어 강사용 (mindsedu_t, eng, 8000)</li>
+							<li>영어 학생용 (mindsedu_s, eng, 8000)</li>						
+						</ul>
+						<span class="sub_title">
+							 실행 가이드			
+						</span>
+						<p class="sub_txt">① Request  </p>
+						<ul>
+							<li>Method : POST</li>
+							<li>URL : https://api.maum.ai/api/stt/</li>										
+						</ul>
+						<p class="sub_txt">② Request 파라미터 설명 </p>
+						<table>
+							<tr>
+								<th>키</th>
+								<th>설명</th>
+								<th>type</th>
+							</tr>
+							<tr>
+								<td>ID</td>
+								<td>사용자의 고유 ID. 마인즈랩 담당자에게 이메일로 발급요청 </td>
+								<td>string</td>
+							</tr>
+							<tr>
+								<td>key</td>
+								<td>사용자의 고유 key. 마인즈랩 담당자에게 이메일로 발급요청 </td>
+								<td>string</td>
+							</tr>
+							<tr>
+								<td>cmd</td>
+								<td>어떤 API 를 사용할지에 대한 간단한 키워드 (runFileStt) </td>
+								<td>string</td>
+							</tr>
+							<tr>
+								<td>lang</td>
+								<td>사용할 모델의 언어 ( kor / eng ) </td>
+								<td>string</td>
+							</tr>
+							<tr>
+								<td>sampling</td>
+								<td>사용할 모델의 sampling rate (8000 / 16000) </td>
+								<td>string</td>
+							</tr>
+							<tr>
+								<td>level</td>
+								<td>사용할 모델의 level (baseline / address / kor_accent /  mindsedu_t / mindsedu_s )</td>
+								<td>string</td>
+							</tr>
+							<tr>
+								<td>file</td>
+								<td>type:file (wav, pcm, mp3) 음성파일 </td>
+								<td>string</td>
+							</tr>
+
+						</table>
+						<p class="sub_txt">③ Request 예제 </p>
+						<div class="code_box">
+		curl -X POST \<br>
+	 https://api.maum.ai/api/stt/ \<br>
+	 -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \<br>
+	 -F ID= (*ID 요청 필요) \<br>
+	 -F key= (*key 요청 필요) \<br>
+	 -F lang=eng \<br>
+	 -F sampling=8000 \<br>
+	 -F level=baseline \<br>
+	 -F 'file=@eng_8k_1.wav' \<br>
+	 -F cmd=runFileStt<br>
+
+						</div>
+
+						<p class="sub_txt">④ Response 파라미터 설명 </p>
+						<span class="table_tit">Response</span>
+						<table>
+							<tr>
+								<th>키</th>
+								<th>설명</th>
+								<th>타입</th>
+							</tr>
+							<tr>
+								<td>status</td>
+								<td>API 동작여부 (Success / Fail) </td>
+								<td>string</td>
+							</tr>
+							<tr>
+								<td>extra_data</td>
+								<td>음성파일에 대한 데이터</td>
+								<td>object</td>
+							</tr>
+							<tr>
+								<td>data</td>
+								<td>인식한 text 결과</td>
+								<td>string</td>
+							</tr>							
+						</table>
+						<span class="table_tit">extra_data: 음성파일에 대한 데이터</span>
+						<table>
+							<tr>
+								<th>키</th>
+								<th>설명</th>
+								<th>타입</th>
+							</tr>
+							<tr>
+								<td>stt_length</td>
+								<td>입력된 글자 수  </td>
+								<td>int</td>
+							</tr>
+							<tr>
+								<td>stt_data</td>
+								<td>STT 변환 결과</td>
+								<td>string</td>
+							</tr>
+							<tr>
+								<td>stt_duration</td>
+								<td>음성파일 길이(초) </td>
+								<td>number</td>
+							</tr>	
+						</table>
+						<p class="sub_txt">⑤ Response 예제 </p>
+						<div class="code_box">
+											{ <br>
+<span> "status": "Success", </span><br>
+<span>"extra_data": { </span><br>
+<span class="twoD">"stt_data": "Let's play badminton.\n",</span> <br>
+<span class="twoD">"stt_duration": "2.387" </span><br>
+<span>}, </span><br>
+<span> "data": "Let's play badminton.\n" </span><br>
+	}
+
+						</div>
+					</div>
+				</div>
+				<!--//.guide_box-->			
+				</div>
+				<!--//ttsmenu-->
+				<!--.sttexample-->
+				<div class="demobox" id="sttexample">	
+					<div class="coming_txt">
+						<h5>준비중입니다</h5>
+					</div>
+				</div>
+				
+			</div>
+			
+			<!-- #footer -->
+			<div id="footer">
+				<div class="lot_c">
+					<div class="cyrt"><span>MINDsLab &copy; 2019</span></div>
+				</div>
+			</div>
+			<!-- //#footer -->
+		</div>
+		<!-- //.contents -->
+	</div>
+	<!-- //#container -->
+	
+</div>
+<!-- //wrap -->
+
+<script type="text/javascript" src="resources/js/bootstrap-datepicker.js"></script>	
+<script type="text/javascript">   
+$(window).load(function() {    
+	$('.page_loading').addClass('pageldg_hide').delay(300).queue(function() { 
+		$(this).remove(); 
+	});
+}); 
+</script>
+<script type="text/javascript">
+	
+	
+//twodepth	
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var sublist = this.nextElementSibling;
+    if (sublist.style.maxHeight){
+      sublist.style.maxHeight = null;
+	  	
+    } else {
+      sublist.style.maxHeight = sublist.scrollHeight + "px";
+		$('.dropdwn').removeClass('.active');
+    } 
+  });
+}
+	
+//	
+//threedepth	
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+		$('.twodepth ').each(function(){
+			if($(this).hasClass('active')){
+				$(this).trigger( "click" );
+			}
+		});	
+		
+		$("#flip").click(function(){
+			if($(this).hasClass('active')){
+				$(this).removeClass('active');	
+			}else{
+				$(this).addClass('active');
+			}
+			
+			$(".panel").slideToggle("fast");
+			var sublist = this.parentNode;
+			sublist.style.maxHeight =  sublist.scrollHeight + $(".twodepthLst").prop('scrollHeight')+ "px";	
+			
+		});		
+	});	
+});
+
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+		$('.snb ul li.collapsible').each(function(){
+			if($(this).hasClass('active')){
+				$(this).trigger( "click" );				
+			}
+		});	
+	
+		$('.holeBox').hide();
+		$('.demo_recording').hide();
+		$('.demo_result').hide();	
+		
+		// 녹음버튼 눌렀을 때
+		$('.demo_intro .btnBox').on('click', function(){
+			$('.btnupload').hide();											   
+			$('.demo_fileTxt').hide();	
+			$('.demo_recordTxt').fadeIn(200);
+			$('.btnBox').hide();
+			$('.apisttdemo .rightBox .btnreset').show();
+			$('.btnreset .demoStop').show();
+			$('.stt_demo .rightBox .selectarea').hide();	
+			$('.holeBox').fadeIn(200);
+			$('.progress li:nth-child(2)').addClass('active'); 
+		});	
+		
+		$('.holeBox .hole i').on('click', function(){
+			$(this).parent().parent().hide();
+			$(this).parent().parent().parent().children('.btnBox').hide();
+			$('.demo_recordTxt').hide();
+			$('.btnreset').hide();
+			$('.rightBox .demo_recording').hide();
+			$('.rightBox .demo_result').show();
+			$('.progress li:nth-child(3)').addClass('active'); 
+			
+		});	
+		 
+//		스탑버튼 누를때
+		$('.btnreset .demoStop').on('click', function(){
+			$(this).parent().parent().hide();
+			$(this).parent().parent().parent().children('.btnBox').hide();
+			$('.demo_recording').show();
+			$('.progress li:nth-child(2)').addClass('active'); 
+			
+		});	
+		
+		
+		//잘못된 파일 후 리셋 누를 때
+		$('.btnreset').on('click', function(){			
+			$('.btnupload').show();	
+			$('.btnBox').show();											   
+			$('.demo_fileTxt').show();													   
+		});
+		// 녹음 중
+		$('.demo_recording .recording').on('click', function(){
+			$('.rightBox .demo_recording').hide();
+			$('.rightBox .demo_result').show();
+			$('.btnBox').show();	
+			$('.progress li:nth-child(2)').addClass('active'); 
+			$('.progress li:nth-child(3)').addClass('active'); 
+															   
+		});
+		// 리셋 버튼 누를때
+		$('.demo_result button.demoReset').on('click', function(){
+			$('.rightBox .demo_result').hide();
+			$('.demo_recordTxt').hide();
+			$('.holeBox').hide();
+			$('.stt_demo .rightBox .selectarea').show();
+			$('.rightBox .demo_intro').show();
+			$('.btnupload').show();	
+			$('.demo_fileTxt').show();	
+			$('.btnBox').show();	
+			$('.progress li:nth-child(1)').addClass('active'); 	
+			$('.progress li:nth-child(2)').removeClass('active');
+			$('.progress li:nth-child(3)').removeClass('active');
+			$('.apisttdemo .rightBox .btnreset').hide();
+		});
+		
+		// Demo 파일업로드
+		$('.demoFile').on('change', function() {var fileTxt = $('.demoFile').val(); //파일을 추가한 input 박스의 값
+			var fneTxt = fileTxt.split(".").pop(-1).toLowerCase();
+
+			if ( fneTxt != "mp3" && fneTxt != "wav" && fneTxt != "pcm") {// 음성파일 체크
+				// 실패
+				$('#demo04 .demo_fileTxt').addClass('errorTxt').text('잘못된 파일입니다. mp3, wav, pcm 파일을 넣어주세요.');					
+//				$('.btnBox').hide();
+				$('.holeBox').hide();
+				$('.btnreset .demoReset').show();
+				$('.btnreset .demoStop').hide();
+				$('.btnreset').on('click', function(){	
+					$('#demo04 .demo_fileTxt').removeClass('errorTxt').text('녹음 버튼을 클릭하고 인식하고자 하는 문장을 말하거나, 음성파일을 직접 업로드 해주세요.');
+					$('.btnupload').show();	
+					$('.btnBox').show();											   
+					$('.demo_fileTxt').show();	
+					$('.progress li:nth-child(2)').removeClass('active');
+				});
+				$('.progress li:nth-child(2)').addClass('active');
+			} else {// 성공				
+				$('.stt_demo .rightBox .demo_intro').hide();
+				$('.stt_demo .rightBox .selectarea').hide();
+				$('.stt_demo .rightBox .demo_recording').show();	
+				$('.progress li:nth-child(2)').addClass('active');
+				$('.progress li:nth-child(3)').addClass('active')
+				
+			}
+		});
+		
+		$('.minipopbtn').on('click', function(){
+			$('.minipop').fadeIn(300);			
+															   
+		});
+	});	
+});	
+	
+//API 탭  	
+function openTap(evt, menu) {
+  var i, demobox, tablinks;
+  demobox = document.getElementsByClassName("demobox");
+  for (i = 0; i < demobox.length; i++) {
+    demobox[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(menu).style.display = "block";
+  evt.currentTarget.className += " active";
+}	
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();	
+	
+	
+</script>
+	
+</body>
+</html>
+
+
