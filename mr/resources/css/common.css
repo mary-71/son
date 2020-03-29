@@ -7,7 +7,7 @@ body {
 #wrap {}
 #header{max-width:1200px; margin:0 auto;height:80px;line-height:80px;}
 #header h1 {font-size:30px;display: inline-block;color:#fff;}
-#header h1 a {color:#d1d1d1; font-family: 'Nanum Myeongjo', serif; font-weight: bold;}
+#header h1 a {color:#d1d1d1;font-family: 'Caveat', cursive; font-weight: bold;}
 
 .gnb{float:right;}
 .gnb ul {}
@@ -20,7 +20,8 @@ body {
 .main .left {width:50%; height:100%;float: left;background:#3a3a3a;}
 .main .left img{float:right; padding: 120px 50px 0 0; width: 88%;}
 .main_in { text-align: right;background-position: left;}
-.main_in h2 {padding:31.9vh 50px 0 0;font-size:110px;font-weight:bold;color:#3a3a3a; height: 260px;line-height: 260px;}
+.main_in h2 {padding:31.9vh 50px 50px 0;font-size:65px;font-weight:bold;color:#3a3a3a; line-height:100px;}
+.main_in h2 em {display:block;color: #c7c5e4; font-size: 112px;}
 .main_in p {font-size:17px; color:#3a3a3a; margin:10px 0 100px 0; float:right;padding:0 50px 0 0; text-align: right;width:660px;line-height:30px;font-family: 'Nanum Myeongjo', serif;}
 .main_in i {color:#3a3a3a; position: absolute;bottom:40px;font-size:80px; right: 50px;
   animation-name: ButtonScroll-bounceAnimation;
@@ -78,7 +79,7 @@ body {
 .item_content header .category_name {font-size:42px; line-height: 50px; letter-spacing: -0.05em;margin-left:4px;}
 .item_content header .category_name span {font-weight:900; color:#909496; font-size:12px; letter-spacing: 0.125em; display:inline-block; }
 .item_content header h2 {font-family: 'Vidaloka', serif;width:360px; padding-right:15px; font-size:42px; line-height: 50px;font-weight:900; color:#000; max-height:200px; overflow: hidden;overflow-wrap: break-word; transition: color 0.3s ease;}
-.item_content header span {width: 360px;font-size:18px;display: block; margin:20px 0 0 0; color:plum;overflow-wrap: break-word; line-height: 24px;}
+.item_content header span {width: 360px;font-size:18px;display: block; margin:20px 0 0 0; color: #948fd4;overflow-wrap: break-word; line-height: 24px;}
 .item_content header span small { display: block; margin: 10px 0 0 0; line-height: 20px;}
 .item_content header span b{font-size: 14px; font-weight: 300; line-height: 17px; color: #27c1c1; display: block; margin: 10px 0 0 0;}
 .item_content aside {position: absolute;height: 30px;bottom:22px;font-size: 25px;color: rgb(144,148,150);}
@@ -230,4 +231,5 @@ body {
 @media screen and (max-width: 760px) {
 	
 }
+
 
